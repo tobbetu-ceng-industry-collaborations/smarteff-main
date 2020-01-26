@@ -3,14 +3,30 @@ from app import db
 
 # Define person model
 class Person(db.Model):
+
+    __tablename__ = 'Person'
+
     person_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     person_name = db.Column(db.String(128),nullable=False)
-    is_inside = db.Column(db.Boolean, nullable=False)
-    should_receive_notifications = db.Column(db.Boolean,nullable=False)
+    is_inside = db.Column(db.Integer, nullable=False)
+    should_receive_notifications = db.Column(db.Integer,nullable=False)
     
     def __init__(self, person_name, is_inside, should_receive_notifications):
         self.person_name = person_name
         self.is_inside = is_inside
         self.should_receive_notifications = should_receive_notifications
+
+# Define device model
+class Device(db.Model):
+
+    __tablename__ = 'Device'
+
+    device_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
+    device_name = db.Column(db.String(128),nullable=False)
+    is_on = db.Column(db.Integer, nullable=False)
+        
+    def __init__(self, device_name, is_on):
+        self.device_name = device_name
+        self.is_on = is_on
 
 
