@@ -48,7 +48,7 @@ def device_event():
     # get person or throw 404
     device = Device.query.get_or_404(device_id)
 
-    # change is_inside status according to event
+    # change is_on status according to event
     if event == 'turnon':
         device.is_on = 1;
     elif event == 'turnoff':
