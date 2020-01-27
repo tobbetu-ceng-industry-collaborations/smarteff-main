@@ -1,0 +1,26 @@
+﻿@model WebApplication10.Models.Person
+
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Devices</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

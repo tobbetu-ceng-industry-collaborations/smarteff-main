@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WebApplication10.Models.Person>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Select User</h2>
+
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonName)
+            </td>
+
+            <td>
+                @Html.ActionLink("Login", "Login", new { id = item.PersonId }) 
+                
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
