@@ -75,3 +75,40 @@ def device_event():
 
     return resp, 200
 
+# endpoint to manage device requests which will be redirected to component #6
+@app.route("/ManageDevice", methods=['POST'])
+def manage_device():
+
+    # parse http request body
+    data = request.json
+    person_id= data['personid']
+    device_id= data['deviceid']
+    action = data['action']
+
+    # get person or throw 404
+    person = Person.query.get_or_404(person_id)
+
+    # get device or throw 404
+    device = Device.query.get_or_404(device_id)
+
+    # redirect and log according to action
+    if action == 'turnon':
+
+        # TODO
+        # (1) redirect to component #6
+
+        logging.warning('[request_event]A person(id=%s) has requested a device(id=%s) to be turned on!', str(person_id), str(device_id))
+
+    elif action == 'turnoff':
+
+        # TODO
+        # (1) redirect to component #6
+
+        logging.warning('[request_event]A person(id=%s) has requested a device(id=%s) to be turned off!', str(person_id), str(device_id))
+
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
