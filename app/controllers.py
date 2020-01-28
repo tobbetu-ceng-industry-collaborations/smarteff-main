@@ -9,6 +9,10 @@ from flask import jsonify
 # import request to fetch the information about events
 from flask import request
 
+import logging
+
+logging.basicConfig(filename='event_history.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.WARNING)
+
 # endpoint to handle person events
 @app.route("/HandlePersonEvent", methods=['POST'])
 def person_event():
@@ -24,8 +28,14 @@ def person_event():
     # change is_inside status according to event
     if event == 'entry':
         person.is_inside = 1;
+        logging.warning('[person_event]A person(id=%s) has entered!', str(person_id))
     elif event == 'exit':
         person.is_inside = 0;
+        logging.warning('[person_event]A person(id=%s) has left!', str(person_id))
+
+        # TODO
+        # (1) check person's devices
+        # (2) check assigned persons 
 
     # write changes to DB
     db.session.add(person)
@@ -45,14 +55,16 @@ def device_event():
     device_id= data['deviceid']
     event = data['event']
 
-    # get person or throw 404
+    # get device or throw 404
     device = Device.query.get_or_404(device_id)
 
     # change is_on status according to event
     if event == 'turnon':
         device.is_on = 1;
+        logging.warning('[device_event]A device(id=%s) has turned on!', str(device_id))
     elif event == 'turnoff':
         device.is_on = 0;
+        logging.warning('[device_event]A device(id=%s) has turned off!', str(device_id))
 
     # write changes to DB
     db.session.add(device)

@@ -1,0 +1,12 @@
+28-Jan-20 11:53:27 - [person_event]A person(id=2) has entered!
+28-Jan-20 11:53:27 - 127.0.0.1 - - [28/Jan/2020 11:53:27] "POST /HandlePersonEvent HTTP/1.1" 200 -
+28-Jan-20 11:54:40 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Jan-20 11:54:40 -  * Restarting with stat
+28-Jan-20 11:55:29 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Jan-20 11:55:29 -  * Restarting with stat
+28-Jan-20 11:55:47 - [device_event]A device(id=1) has turned on!
+28-Jan-20 11:55:47 - 127.0.0.1 - - [28/Jan/2020 11:55:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+28-Jan-20 12:06:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Jan-20 12:06:42 -  * Restarting with stat
+28-Jan-20 12:39:47 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
+28-Jan-20 12:39:47 -  * Restarting with stat
