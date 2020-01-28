@@ -7,7 +7,7 @@ person_device = db.Table('person_device',
     db.Column('device_id', db.Integer, db.ForeignKey('Device.device_id'))
     )
 
-# person_device table to keep track of the relation between persons and devices
+# suspension_request table to keep track of the suspensions of devices
 suspension_request = db.Table('suspension_request',
     db.Column('person_id', db.Integer, db.ForeignKey('Person.person_id')),
     db.Column('device_id', db.Integer, db.ForeignKey('Device.device_id')),

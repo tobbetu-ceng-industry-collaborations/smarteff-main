@@ -1,27 +1,7 @@
-28-Jan-20 11:53:27 - [person_event]A person(id=2) has entered!
-28-Jan-20 11:53:27 - 127.0.0.1 - - [28/Jan/2020 11:53:27] "POST /HandlePersonEvent HTTP/1.1" 200 -
-28-Jan-20 11:54:40 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 11:54:40 -  * Restarting with stat
-28-Jan-20 11:55:29 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 11:55:29 -  * Restarting with stat
-28-Jan-20 11:55:47 - [device_event]A device(id=1) has turned on!
-28-Jan-20 11:55:47 - 127.0.0.1 - - [28/Jan/2020 11:55:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
-28-Jan-20 12:06:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:06:42 -  * Restarting with stat
-28-Jan-20 12:39:47 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-28-Jan-20 12:39:47 -  * Restarting with stat
-28-Jan-20 12:51:47 - 127.0.0.1 - - [28/Jan/2020 12:51:47] "GET /list HTTP/1.1" 200 -
-28-Jan-20 12:53:49 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:53:49 -  * Restarting with stat
-28-Jan-20 12:55:30 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:55:30 -  * Restarting with stat
-28-Jan-20 12:57:17 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:57:17 -  * Restarting with stat
-28-Jan-20 12:58:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:58:28 -  * Restarting with stat
-28-Jan-20 12:59:11 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:59:11 -  * Restarting with stat
-28-Jan-20 12:59:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-28-Jan-20 12:59:28 -  * Restarting with stat
-28-Jan-20 13:00:03 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
-28-Jan-20 13:00:03 - 127.0.0.1 - - [28/Jan/2020 13:00:03] "POST /ManageDevice HTTP/1.1" 200 -
+28-Jan-20 13:41:42 - 127.0.0.1 - - [28/Jan/2020 13:41:42] "GET /log HTTP/1.1" 200 -
+28-Jan-20 13:41:50 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+28-Jan-20 13:41:50 - 127.0.0.1 - - [28/Jan/2020 13:41:50] "POST /ManageDevice HTTP/1.1" 200 -
+28-Jan-20 13:41:51 - 127.0.0.1 - - [28/Jan/2020 13:41:51] "GET /log HTTP/1.1" 200 -
+28-Jan-20 13:42:17 - [person_event]A person(id=2) has entered!
+28-Jan-20 13:42:17 - 127.0.0.1 - - [28/Jan/2020 13:42:17] "POST /HandlePersonEvent HTTP/1.1" 200 -
+28-Jan-20 13:42:18 - 127.0.0.1 - - [28/Jan/2020 13:42:18] "GET /log HTTP/1.1" 200 -

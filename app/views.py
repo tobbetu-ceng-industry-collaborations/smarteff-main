@@ -1,6 +1,12 @@
 from app import app
+from flask import render_template
 
-# show current DB tables under the route /list
-@app.route("/list")
-def list():
-    return "Hello, tables will be listed here soon!"
+# show current event log under the route /log
+@app.route("/log", methods=['POST','GET'])
+def log():
+
+	# read event history file
+    event_log = open('event_history.log', "r")
+    content = event_log.read()
+
+    return render_template("log.html", log=content)

@@ -11,7 +11,11 @@ from flask import request
 
 import logging
 
+logger = logging.getLogger('my-logger')
+logger.propagate = False
+
 logging.basicConfig(filename='event_history.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.WARNING)
+logging.StreamHandler(stream=None)
 
 # endpoint to handle person events
 @app.route("/HandlePersonEvent", methods=['POST'])
