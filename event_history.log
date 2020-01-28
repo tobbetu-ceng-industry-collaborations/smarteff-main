@@ -1,7 +1,4 @@
-28-Jan-20 13:41:42 - 127.0.0.1 - - [28/Jan/2020 13:41:42] "GET /log HTTP/1.1" 200 -
-28-Jan-20 13:41:50 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
-28-Jan-20 13:41:50 - 127.0.0.1 - - [28/Jan/2020 13:41:50] "POST /ManageDevice HTTP/1.1" 200 -
-28-Jan-20 13:41:51 - 127.0.0.1 - - [28/Jan/2020 13:41:51] "GET /log HTTP/1.1" 200 -
-28-Jan-20 13:42:17 - [person_event]A person(id=2) has entered!
-28-Jan-20 13:42:17 - 127.0.0.1 - - [28/Jan/2020 13:42:17] "POST /HandlePersonEvent HTTP/1.1" 200 -
-28-Jan-20 13:42:18 - 127.0.0.1 - - [28/Jan/2020 13:42:18] "GET /log HTTP/1.1" 200 -
+28-Jan-20 16:11:36 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
+28-Jan-20 16:11:36 - 127.0.0.1 - - [28/Jan/2020 16:11:36] "POST /SuspendAutomation HTTP/1.1" 200 -
+28-Jan-20 16:11:38 - 127.0.0.1 - - [28/Jan/2020 16:11:38] "GET /log HTTP/1.1" 200 -
+28-Jan-20 16:11:38 - 127.0.0.1 - - [28/Jan/2020 16:11:38] "GET /favicon.ico HTTP/1.1" 404 -

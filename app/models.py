@@ -1,6 +1,8 @@
 # Import the database object from the main app module
 from app import db
 
+from datetime import datetime
+
 # person_device table to keep track of the relation between persons and devices
 person_device = db.Table('person_device',
     db.Column('person_id', db.Integer, db.ForeignKey('Person.person_id')),
@@ -11,7 +13,7 @@ person_device = db.Table('person_device',
 suspension_request = db.Table('suspension_request',
     db.Column('person_id', db.Integer, db.ForeignKey('Person.person_id')),
     db.Column('device_id', db.Integer, db.ForeignKey('Device.device_id')),
-    db.Column('suspension_start', db.DateTime, nullable=False),
+    db.Column('suspension_start', db.DateTime, nullable=False, default=datetime.utcnow),
     db.Column('suspension_end', db.DateTime, nullable=False),
     )
 

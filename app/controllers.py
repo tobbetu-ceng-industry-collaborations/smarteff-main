@@ -11,9 +11,11 @@ from flask import request
 
 import logging
 
+from datetime import datetime
+
+# logger setup
 logger = logging.getLogger('my-logger')
 logger.propagate = False
-
 logging.basicConfig(filename='event_history.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.WARNING)
 logging.StreamHandler(stream=None)
 
@@ -110,6 +112,44 @@ def manage_device():
 
         logging.warning('[request_event]A person(id=%s) has requested a device(id=%s) to be turned off!', str(person_id), str(device_id))
 
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
+# endpoint to suspend automation on a device for a defined person
+@app.route("/SuspendAutomation", methods=['POST'])
+def suspend_automation():
+
+    # parse http request body
+    data = request.json
+    person_id= data['personid']
+    device_id= data['deviceid']
+    until = data['until']
+
+    # get person or throw 404
+    person = Person.query.get_or_404(person_id)
+
+    # get device or throw 404
+    device = Device.query.get_or_404(device_id)
+
+    # parse the date
+    dates = until.split('-')
+    year = int(dates[0])
+    month = int(dates[1])
+    day = int(dates[2])
+    hour = int(dates[3])
+    minute = int(dates[4])
+    second = int(dates[5])
+
+    # insert suspension to table
+    values = [person_id, device_id, datetime.now(), datetime(year, month, day, hour, minute, second)]
+    insert_statement = suspension_request.insert().values(values)
+    db.session.execute(insert_statement)
+    db.session.commit()
+
+    logging.warning('[automation_event]A person(id=%s) has requested a suspension for the automation of device(id=%s) until %s!', str(person_id), str(device_id), until)
 
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
