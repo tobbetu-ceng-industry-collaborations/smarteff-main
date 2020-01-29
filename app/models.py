@@ -34,6 +34,11 @@ class Person(db.Model):
         self.is_inside = is_inside
         self.should_receive_notifications = should_receive_notifications
 
+   # Serialize json object
+    @property
+    def serialize(self):
+        return {'id':self.person_id,'name': self.person_name}
+
 # Define device model
 class Device(db.Model):
 
@@ -48,5 +53,10 @@ class Device(db.Model):
     def __init__(self, device_name, is_on):
         self.device_name = device_name
         self.is_on = is_on
+
+   # Serialize json object
+    @property
+    def serialize(self):
+        return {'id':self.device_id,'name':self.device_name,'isOn':self.is_on,'automation':''}
 
 

@@ -1,0 +1,1 @@
+curl -d '{"personid":"1", "deviceid":"1", "action":"turnoff"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/ManageDevice

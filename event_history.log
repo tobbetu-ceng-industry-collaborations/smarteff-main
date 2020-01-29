@@ -1,4 +1,25 @@
-28-Jan-20 16:11:36 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
-28-Jan-20 16:11:36 - 127.0.0.1 - - [28/Jan/2020 16:11:36] "POST /SuspendAutomation HTTP/1.1" 200 -
-28-Jan-20 16:11:38 - 127.0.0.1 - - [28/Jan/2020 16:11:38] "GET /log HTTP/1.1" 200 -
-28-Jan-20 16:11:38 - 127.0.0.1 - - [28/Jan/2020 16:11:38] "GET /favicon.ico HTTP/1.1" 404 -
+29-Jan-20 15:41:35 - 127.0.0.1 - - [29/Jan/2020 15:41:35] "GET /ListDevices/3 HTTP/1.1" 200 -
+29-Jan-20 15:41:37 - 127.0.0.1 - - [29/Jan/2020 15:41:37] "GET /ListDevices/1 HTTP/1.1" 200 -
+29-Jan-20 15:41:41 - 127.0.0.1 - - [29/Jan/2020 15:41:41] "GET /ListPersons HTTP/1.1" 200 -
+29-Jan-20 15:42:48 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
+29-Jan-20 15:42:48 - 127.0.0.1 - - [29/Jan/2020 15:42:48] "POST /SuspendAutomation HTTP/1.1" 200 -
+29-Jan-20 15:43:26 - [person_event]A person(id=2) has entered!
+29-Jan-20 15:43:26 - 127.0.0.1 - - [29/Jan/2020 15:43:26] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Jan-20 15:44:10 - [person_event]A person(id=2) has left!
+29-Jan-20 15:44:10 - 127.0.0.1 - - [29/Jan/2020 15:44:10] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Jan-20 15:44:17 - [person_event]A person(id=2) has entered!
+29-Jan-20 15:44:17 - 127.0.0.1 - - [29/Jan/2020 15:44:17] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Jan-20 15:44:39 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Jan-20 15:44:39 - 127.0.0.1 - - [29/Jan/2020 15:44:39] "POST /ManageDevice HTTP/1.1" 200 -
+29-Jan-20 15:45:18 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+29-Jan-20 15:45:18 - 127.0.0.1 - - [29/Jan/2020 15:45:18] "POST /ManageDevice HTTP/1.1" 200 -
+29-Jan-20 15:46:02 - [device_event]A device(id=2) has turned on!
+29-Jan-20 15:46:02 - 127.0.0.1 - - [29/Jan/2020 15:46:02] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Jan-20 15:46:27 - [device_event]A device(id=2) has turned on!
+29-Jan-20 15:46:27 - 127.0.0.1 - - [29/Jan/2020 15:46:27] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Jan-20 15:46:38 - [device_event]A device(id=2) has turned off!
+29-Jan-20 15:46:38 - 127.0.0.1 - - [29/Jan/2020 15:46:38] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Jan-20 15:52:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Jan-20 15:52:28 -  * Restarting with stat
+29-Jan-20 15:59:25 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Jan-20 15:59:25 -  * Restarting with stat
