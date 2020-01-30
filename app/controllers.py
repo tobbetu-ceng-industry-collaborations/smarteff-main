@@ -172,62 +172,62 @@ def suspend_automation():
 
 
 
-# # endpoint to list all persons
-# @app.route("/ListPersons", methods=['GET'])
-# def list_users():
+# endpoint to list all persons
+@app.route("/ListPersons", methods=['GET'])
+def list_users():
 
-#     # get all persons
-#     persons = Person.query.all()
+    # get all persons
+    persons = Person.query.all()
 
-#     # if persons are not empty, return person information in JSON format
-#     if persons is None:
-#         return make_response('There are no persons!', 400)
-#     return jsonify({'people': [person.serialize for person in persons]})
+    # if persons are not empty, return person information in JSON format
+    if persons is None:
+        return make_response('There are no persons!', 400)
+    return jsonify({'people': [person.serialize for person in persons]})
 
-# # endpoint to list devices of specified person with suspension information 
-# @app.route("/ListDevices/<person_id>", methods=['GET'])
-# def list_devices(person_id):
+# endpoint to list devices of specified person with suspension information 
+@app.route("/ListDevices/<person_id>", methods=['GET'])
+def list_devices(person_id):
 
-#     # get person
-#     person = Person.query.get_or_404(person_id)
+    # get person
+    person = Person.query.get_or_404(person_id)
     
-#     # automation field templates to append
-#     automation_body1={
-#     	'suspend':"True",
-#     	'expiration':""
-#     }
-#     automation_body2={
-#     	'suspend':"False",
-#     }
+    # automation field templates to append
+    automation_body1={
+    	'suspend':"True",
+    	'expiration':""
+    }
+    automation_body2={
+    	'suspend':"False",
+    }
 
-#     # response json
-#     response = []
+    # response json
+    response = []
 
-#     # for every device, check if there is any suspension, append information accordingly
-#     for device in person.devices:
+    # for every device, check if there is any suspension, append information accordingly
+    for device in person.devices:
         
-#         # fetch device info
-#         device_info = device.serialize
-#         device_id = device_info["id"]
+        # fetch device info
+        device_info = device.serialize
+        device_id = device_info["id"]
         
-#         # check if there is any suspension for the device
-#         select_statement = db.select([suspension_request]).where(db.and_(suspension_request.c.person_id==person_id, suspension_request.c.device_id==device_id))
-#         query = db.session.execute(select_statement)
+        # check if there is any suspension for the device
+        select_statement = db.select([suspension_request]).where(db.and_(suspension_request.c.person_id==person_id, suspension_request.c.device_id==device_id))
+        query = db.session.execute(select_statement)
 
-#         # result
-#         query = query.first()
+        # result
+        query = query.first()
 
-#         # append automation body as json
-#         if query != None:
-#             expire_date = query.suspension_end
-#             automation_body3 = automation_body1
-#             automation_body3["expiration"] = expire_date
-#             device_info["automation"] = automation_body3
-#         else:
-#             device_info["automation"] = automation_body2
+        # append automation body as json
+        if query != None:
+            expire_date = query.suspension_end
+            automation_body3 = automation_body1
+            automation_body3["expiration"] = expire_date
+            device_info["automation"] = automation_body3
+        else:
+            device_info["automation"] = automation_body2
         
-#         # concat new information(automation) with device information
-#         response.append(device_info)
+        # concat new information(automation) with device information
+        response.append(device_info)
 
-#     # return json
-#     return jsonify({'devices': response})
+    # return json
+    return jsonify({'devices': response})
