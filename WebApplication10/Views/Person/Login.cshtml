@@ -1,26 +1,49 @@
-﻿@model WebApplication10.Models.Person
-
-
+﻿
 @{
     ViewBag.Title = "Login";
 }
 
 <h2>Devices</h2>
+<table style="width:100%" bordercolor="Grey" id="table">
+    <tr>
+        <th>Devices</th>
+        <th>Status</th>
+        <th>Automation</th>
+    </tr>
+</table>
 
-<div>
 
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.PersonName)
-        </dt>
+@section scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-        <dd>
-            @Html.DisplayFor(model => model.PersonName)
-        </dd>
+                $.ajax({
+                    url:'https://api.myjson.com/bins/1cltpq' ,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (result) {
+                        var i,x="",trHTML='';
+                        for (i in result.devices) {
+                            x += result.devices[i].name+" ";
+                            x += result.devices[i].isOn + " "; result.devices[i].automation.suspended
+                             trHTML += '<tr><td>' + result.devices[i].name + '</td><td>' + result.devices[i].isOn + '</td><td>' + result.devices[i].automation.suspended + '</td> </tr>';
+                            //x += result.people[i].id + "<br>";
+                         //   $("#name").append("<option value='" + result.people[i]["id"] + "'>" + result.people[i]["name"] + "</option>");
+                         }
+                        //alert(x+"*");
+                        $('#table').append(trHTML);
 
-    </dl>
-</div>
+
+                    }
+                });
+
+        });
+
+
+    </script>
+
+}
 <p>
     @Html.ActionLink("Back to List", "Index")
 </p>

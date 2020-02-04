@@ -7,31 +7,49 @@
 <h2>Select User</h2>
 
 
+<select name="İsim" id="name">
+    <option value="">İsim seciniz</option>
 
+</select>
+<br />
+<br />
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.PersonName)
-        </th>
-        <th></th>
-    </tr>
+<input id="Button1" type="button" value="login" />
 
-    @foreach (var item in Model)
+@section scripts
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.PersonName)
-            </td>
+    <script type="text/javascript">
+        $(document).ready(function () {
+              $('#Button1').click(function(){ 
+                 // alert($('#name :selected').text());
+                  document.location = '@Url.Action("login","Person")';
+              });
+            $.ajax({
+                url: 'https://api.myjson.com/bins/14dj1q',
+                type: 'GET',
+                dataType: 'json',
+                success: function (result) {
+                    var i, x = "";
+                    for (i in result.people) {
+                        x = result.people[i].name;
+                        //x += result.people[i].id + "<br>";
+                        $("#name").append("<option value='" + result.people[i]["id"] + "'>" + result.people[i]["name"] + "</option>");
+                    }
+                    //var conceptName = $('#name').find(":selected").text();
 
-            <td>
-                @Html.ActionLink("Login", "Login", new { id = item.PersonId }) 
-                
-            </td>
-        </tr>
-    }
 
-</table>
 
+                }
+            });
+                    var conceptName = $('#name').val();
+                   // alert(conceptName+"*");
+                    console.log(conceptName);
+
+        });
+
+
+    </script>
+
+}
 
 

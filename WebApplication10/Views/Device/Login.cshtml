@@ -1,0 +1,42 @@
+﻿@model WebApplication10.Models.Device
+
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Devices </h2>
+
+@section scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+                $.ajax({
+                    url:'https://api.myjson.com/bins/14dj1q' ,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (result) {
+                        var i,x="";
+                        for (i in result.people) {
+                            x = result.people[i].name ;
+                            //x += result.people[i].id + "<br>";
+                            $("#name").append("<option value='" + result.people[i]["id"] + "'>" + result.people[i]["name"] + "</option>");
+                         }
+                        
+                        
+                        
+
+                    }
+                });
+            
+        });
+
+
+    </script>
+    
+    }
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
