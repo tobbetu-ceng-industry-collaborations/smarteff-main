@@ -1,29 +1,17 @@
-30-Jan-20 13:27:03 - 127.0.0.1 - - [30/Jan/2020 13:27:03] "GET /log HTTP/1.1" 200 -
-30-Jan-20 13:27:06 - 127.0.0.1 - - [30/Jan/2020 13:27:06] "GET /log HTTP/1.1" 200 -
-30-Jan-20 13:27:39 - [person_event]A person(id=2) has entered!
-30-Jan-20 13:27:39 - 127.0.0.1 - - [30/Jan/2020 13:27:39] "POST /HandlePersonEvent HTTP/1.1" 200 -
-30-Jan-20 13:27:40 - 127.0.0.1 - - [30/Jan/2020 13:27:40] "GET /log HTTP/1.1" 200 -
-30-Jan-20 13:40:52 - [person_event]A person(id=2) has entered!
-30-Jan-20 13:40:52 - 127.0.0.1 - - [30/Jan/2020 13:40:52] "POST /HandlePersonEvent HTTP/1.1" 200 -
-30-Jan-20 13:41:20 - [device_event]A device(id=2) has turned off!
-30-Jan-20 13:41:20 - 127.0.0.1 - - [30/Jan/2020 13:41:20] "POST /HandleDeviceEvent HTTP/1.1" 200 -
-30-Jan-20 13:41:40 - 127.0.0.1 - - [30/Jan/2020 13:41:40] "GET /log HTTP/1.1" 200 -
-30-Jan-20 16:14:53 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-30-Jan-20 16:14:53 -  * Restarting with stat
-30-Jan-20 16:15:25 - 127.0.0.1 - - [30/Jan/2020 16:15:25] "GET /ListPersons HTTP/1.1" 200 -
-30-Jan-20 16:17:23 - 127.0.0.1 - - [30/Jan/2020 16:17:23] "GET /ListDevices/1 HTTP/1.1" 200 -
-30-Jan-20 16:20:17 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
-30-Jan-20 16:20:17 - 127.0.0.1 - - [30/Jan/2020 16:20:17] "POST /SuspendAutomation HTTP/1.1" 200 -
-30-Jan-20 16:20:53 - 127.0.0.1 - - [30/Jan/2020 16:20:53] "GET /ListDevices/1 HTTP/1.1" 200 -
-30-Jan-20 16:21:35 - 127.0.0.1 - - [30/Jan/2020 16:21:35] "GET /ListDevices/1 HTTP/1.1" 200 -
-30-Jan-20 16:21:37 - 127.0.0.1 - - [30/Jan/2020 16:21:37] "GET /ListDevices/1 HTTP/1.1" 200 -
-30-Jan-20 16:22:33 - 127.0.0.1 - - [30/Jan/2020 16:22:33] "GET /ListPersons HTTP/1.1" 200 -
-30-Jan-20 16:26:31 - 127.0.0.1 - - [30/Jan/2020 16:26:31] "GET / HTTP/1.1" 404 -
-30-Jan-20 16:26:33 - 127.0.0.1 - - [30/Jan/2020 16:26:33] "GET /log HTTP/1.1" 200 -
-30-Jan-20 16:26:36 - 127.0.0.1 - - [30/Jan/2020 16:26:36] "GET /log HTTP/1.1" 200 -
-30-Jan-20 16:26:37 - 127.0.0.1 - - [30/Jan/2020 16:26:37] "GET /log HTTP/1.1" 200 -
-30-Jan-20 16:27:03 - [person_event]A person(id=2) has entered!
-30-Jan-20 16:27:03 - 127.0.0.1 - - [30/Jan/2020 16:27:03] "POST /HandlePersonEvent HTTP/1.1" 200 -
-30-Jan-20 16:27:10 - 127.0.0.1 - - [30/Jan/2020 16:27:10] "GET /log HTTP/1.1" 200 -
-30-Jan-20 16:27:28 - 127.0.0.1 - - [30/Jan/2020 16:27:28] "GET /log HTTP/1.1" 200 -
-30-Jan-20 16:27:28 - 127.0.0.1 - - [30/Jan/2020 16:27:28] "GET /log HTTP/1.1" 200 -
+06-Feb-20 17:55:34 - 127.0.0.1 - - [06/Feb/2020 17:55:34] "GET /log HTTP/1.1" 200 -
+06-Feb-20 17:55:35 - 127.0.0.1 - - [06/Feb/2020 17:55:35] "GET /log HTTP/1.1" 200 -
+06-Feb-20 17:55:35 - 127.0.0.1 - - [06/Feb/2020 17:55:35] "GET /log HTTP/1.1" 200 -
+06-Feb-20 17:55:38 - [automation_event]A person(id=1) has enabled automation of device(id=2)
+06-Feb-20 17:55:38 - 127.0.0.1 - - [06/Feb/2020 17:55:38] "POST /EnableAutomation HTTP/1.1" 200 -
+06-Feb-20 17:55:39 - 127.0.0.1 - - [06/Feb/2020 17:55:39] "GET /log HTTP/1.1" 200 -
+06-Feb-20 17:59:36 - 127.0.0.1 - - [06/Feb/2020 17:59:36] "GET /log HTTP/1.1" 200 -
+06-Feb-20 18:00:26 - 127.0.0.1 - - [06/Feb/2020 18:00:26] "POST /EnableAutomation HTTP/1.1" 500 -
+06-Feb-20 18:01:35 - 127.0.0.1 - - [06/Feb/2020 18:01:35] "POST /EnableAutomation HTTP/1.1" 500 -
+06-Feb-20 18:03:00 - [automation_event]A person(id=1) has enabled automation of device(id=2)
+06-Feb-20 18:03:00 - 127.0.0.1 - - [06/Feb/2020 18:03:00] "POST /EnableAutomation HTTP/1.1" 200 -
+06-Feb-20 18:03:09 - 127.0.0.1 - - [06/Feb/2020 18:03:09] "GET /log HTTP/1.1" 200 -
+06-Feb-20 18:03:09 - 127.0.0.1 - - [06/Feb/2020 18:03:09] "GET /log HTTP/1.1" 200 -
+06-Feb-20 18:04:18 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+06-Feb-20 18:04:18 -  * Restarting with stat
+06-Feb-20 18:05:08 - [automation_event]A person(id=1) has enabled automation of device(id=2)
+06-Feb-20 18:05:08 - 127.0.0.1 - - [06/Feb/2020 18:05:08] "POST /EnableAutomation HTTP/1.1" 200 -

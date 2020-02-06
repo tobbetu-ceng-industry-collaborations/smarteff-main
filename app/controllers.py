@@ -143,6 +143,9 @@ def suspend_automation():
     minute = int(dates[4])
     second = int(dates[5])
 
+    # TODO
+    # (1) remove previous suspensions of the device since they are meaningless from now on.
+
     # insert suspension to table
     values = [person_id, device_id, datetime.now(), datetime(year, month, day, hour, minute, second)]
     insert_statement = suspension_request.insert().values(values)
@@ -157,10 +160,49 @@ def suspend_automation():
     return resp, 200
 
 
-
 # endpoint to enable automation for a defined person
-#@app.route("/EnableAutomation", methods=['POST'])
-	# TODO
+@app.route("/EnableAutomation", methods=['POST'])
+def enable_automation():
+	# parse http request body
+    data = request.json
+    person_id= data['personid']
+    device_id= data['deviceid']
+
+    # get person or throw 404
+    person = Person.query.get_or_404(person_id)
+
+    # get device or throw 404
+    device = Device.query.get_or_404(device_id)
+
+    # initialize new suspension list
+    updated_suspensions = []
+
+    # filter specified person's suspensions
+    for suspension in device.suspensions:
+    	if suspension == person:
+    		continue
+    	else:
+    		updated_suspensions.append(suspension)
+
+
+    # update new suspensions
+    device.suspensions = updated_suspensions
+
+    # write changes
+    db.session.add(device)
+    db.session.commit()    	
+
+
+    logging.warning('[automation_event]A person(id=%s) has enabled automation of device(id=%s)', str(person_id), str(device_id))
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
+    
+
+    # TODO
 	# (1) Receive request
 	# (2) Parse body
 	# (3) Remove all previous suspension requets for the specified user
