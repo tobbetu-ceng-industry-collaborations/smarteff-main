@@ -59,4 +59,26 @@ class Device(db.Model):
     def serialize(self):
         return {'id':self.device_id,'name':self.device_name,'isOn':self.is_on,'automation':''}
 
+# Define scheduled shutdown model
+class ScheduledShutdown(db.Model):
+
+    __tablename__ = 'scheduled_shutdown'
+
+    shutdown_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    person_id = db.Column(db.Integer, nullable=False)
+    device_id = db.Column(db.Integer, nullable=False)
+    device_name = db.Column(db.String(128),nullable=False)
+    shutdown_time = db.Column(db.DateTime, nullable=False)
+
+    def __init__(self, device_id, shutdown_time, device_name):
+        self.person_id = person_id
+        self.device_id = device_id
+        self.device_name = device_name
+        self.shutdown_time = shutdown_time
+
+   # Serialize json object
+    @property
+    def serialize(self):
+        return {'device':{'id':self.device_id,'name':self.device_name},'timestamp':self.shutdown_time}
+
 

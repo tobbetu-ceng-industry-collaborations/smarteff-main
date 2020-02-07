@@ -41,7 +41,8 @@ def person_event():
 
         # TODO
         # (1) check person's devices
-        # (2) check assigned persons 
+        # (2) check assigned persons
+        # (3) check simulation/normal mode, fire necessary shutdowns accordingly
 
     # write changes to DB
     db.session.add(person)
@@ -145,6 +146,7 @@ def suspend_automation():
 
     # TODO
     # (1) remove previous suspensions of the device since they are meaningless from now on.
+    # (2) check format of the parsed date. (until) 
 
     # insert suspension to table
     values = [person_id, device_id, datetime.now(), datetime(year, month, day, hour, minute, second)]
@@ -163,6 +165,7 @@ def suspend_automation():
 # endpoint to enable automation for a defined person
 @app.route("/EnableAutomation", methods=['POST'])
 def enable_automation():
+	
 	# parse http request body
     data = request.json
     person_id= data['personid']
@@ -199,18 +202,10 @@ def enable_automation():
     resp = jsonify({'success':True})
 
     return resp, 200
-
     
-
-    # TODO
-	# (1) Receive request
-	# (2) Parse body
-	# (3) Remove all previous suspension requets for the specified user
-
 
 
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
-
 
 
 
@@ -273,3 +268,23 @@ def list_devices(person_id):
 
     # return json
     return jsonify({'devices': response})
+
+# # endpoint to list scheduled shutdowns for specified person
+# @app.route("/ListScheduledShutdowns/<person_id>", methods=['GET'])
+# def list_scheduled_shutdowns(person_id):
+
+#     # get person
+#     person = Person.query.get_or_404(person_id)
+
+#     # scheduled devices waiting to be turned off
+#     scheduled_devices = ScheduledShutdown.query.filter(ScheduledShutdown.person_id==person_id).all()
+
+#     # response json
+#     shutdown_devices = []
+
+#     # append shutdown information as json
+#     for shutdown in scheduled_devices:
+#     	shutdown_devices.append(shutdown.serialize)
+
+#     # return json
+#     return jsonify({'scheduledShutdowns': shutdown_devices})
