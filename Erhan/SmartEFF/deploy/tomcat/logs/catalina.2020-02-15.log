@@ -1,0 +1,244 @@
+15-Feb-2020 14:39:11.420 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\AdoptOpenJDK\jdk-11.0.6.10-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\sqlite;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\sqlite;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\heroku\bin;C:\Users\Erhan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Erhan\.dotnet\tools;C:\Users\Erhan\AppData\Roaming\npm;.]
+15-Feb-2020 14:39:19.350 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Feb-2020 14:39:19.720 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+15-Feb-2020 14:39:19.756 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [10,795] milliseconds
+15-Feb-2020 14:39:20.228 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Feb-2020 14:39:20.232 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+15-Feb-2020 14:39:20.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Erhan\IdeaProjects\SmartEFF\deploy\tomcat\webapps\app]
+15-Feb-2020 14:40:29.313 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [225] milliseconds.
+15-Feb-2020 14:40:31.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Erhan\IdeaProjects\SmartEFF\deploy\tomcat\webapps\app] has finished in [70,820] ms
+15-Feb-2020 14:40:31.155 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Erhan\IdeaProjects\SmartEFF\deploy\tomcat\webapps\app-core]
+15-Feb-2020 14:41:08.709 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+15-Feb-2020 14:41:08.710 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/app-core] startup failed due to previous errors
+15-Feb-2020 14:41:08.726 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [app-core] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.5/java.lang.Object.wait(Native Method)
+ java.base@11.0.5/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@11.0.5/java.util.TimerThread.run(Timer.java:506)
+15-Feb-2020 14:41:08.761 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Erhan\IdeaProjects\SmartEFF\deploy\tomcat\webapps\app-core] has finished in [37,605] ms
+15-Feb-2020 14:41:08.766 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Feb-2020 14:41:08.841 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+15-Feb-2020 14:41:08.914 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [109,152] milliseconds
+15-Feb-2020 14:41:35.309 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:41:35.312 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:42:35.305 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:42:35.308 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:43:35.306 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:43:35.308 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:44:35.306 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:44:35.307 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:45:35.326 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:45:35.327 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:46:35.327 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:46:35.328 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:47:35.327 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:76)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+15-Feb-2020 14:47:35.328 INFO [ServerInfoTimer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.haulmont.cuba.core.sys.persistence.HsqlDbTypeConverter]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1383)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1371)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1186)
+	at com.haulmont.bali.util.ReflectionHelper.loadClass(ReflectionHelper.java:61)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:80)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.create(DbmsSpecificFactory.java:66)
+	at com.haulmont.cuba.core.sys.persistence.DbmsSpecificFactory.getDbTypeConverter(DbmsSpecificFactory.java:54)
+	at com.haulmont.cuba.core.sys.PersistenceImpl.getDbTypeConverter(PersistenceImpl.java:96)
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:170)
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:130)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+

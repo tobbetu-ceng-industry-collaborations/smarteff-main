@@ -1,0 +1,3 @@
+-- begin BPM_STENCIL_SET
+create unique index IDX_BPM_STENCIL_SET_UNIQ_NAME on BPM_STENCIL_SET (NAME) ^
+-- end BPM_STENCIL_SET

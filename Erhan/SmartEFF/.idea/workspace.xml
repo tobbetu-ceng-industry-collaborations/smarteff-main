@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6200ee6d-a23b-466b-8bf3-fd772d4cc972" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Entity" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1XpvrfiipNnpUVeph00VYXq7oHq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="cuba" />
+  </component>
+  <component name="RunManager" selected="CUBA Application.CUBA Application">
+    <configuration name="localhost:8787" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8787" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CUBA Application" type="cubaTomcatConfiguration" factoryName="CUBA Application" jdk="11">
+      <predefined_log_file enabled="true" id="catalina" />
+      <method v="2">
+        <option name="DeployTomcatTaskProvider" enabled="true" />
+        <option name="CopyDbDriversTaskProvider" enabled="true" />
+        <option name="CheckDataBaseTaskProvider" enabled="true" />
+        <option name="DeployCubaApplicationTaskProvider" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6200ee6d-a23b-466b-8bf3-fd772d4cc972" name="Default Changelist" comment="" />
+      <created>1581756050503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581756050503</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="353" y="42" key="#CUBA_Application" timestamp="1581766186787">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="353" y="42" key="#CUBA_Application/0.0.1366.740@0.0.1366.740" timestamp="1581766186787" />
+    <state width="1324" height="125" key="GridCell.Tab.0.bottom" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.0.bottom/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.0.center" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.0.center/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.0.left" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.0.right" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.0.right/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.1.bottom" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.1.bottom/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.1.center" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.1.center/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.1.left" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.1.left/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state width="1324" height="125" key="GridCell.Tab.1.right" timestamp="1581767318252">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1324" height="125" key="GridCell.Tab.1.right/0.0.1366.740@0.0.1366.740" timestamp="1581767318252" />
+    <state x="639" y="289" key="LocMessageEditor" timestamp="1581759830497">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="639" y="289" key="LocMessageEditor/0.0.1366.740@0.0.1366.740" timestamp="1581759830497" />
+    <state x="210" y="6" key="SettingsEditor" timestamp="1581761783916">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="210" y="6" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1581761783916" />
+    <state x="526" y="262" key="class com.haulmont.studio.intellij.action.creation.entity.EntityCreationDialog" timestamp="1581759411411">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="526" y="262" key="class com.haulmont.studio.intellij.action.creation.entity.EntityCreationDialog/0.0.1366.740@0.0.1366.740" timestamp="1581759411411" />
+    <state x="296" y="0" key="class com.haulmont.studio.intellij.ui.appcomponents.AppComponentsUiManager$AppComponentsDialog" timestamp="1581764073611">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="296" y="0" key="class com.haulmont.studio.intellij.ui.appcomponents.AppComponentsUiManager$AppComponentsDialog/0.0.1366.740@0.0.1366.740" timestamp="1581764073611" />
+    <state x="267" y="29" key="class com.haulmont.studio.intellij.ui.dbupdate.DbUpdateDialog" timestamp="1581766715115">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="267" y="29" key="class com.haulmont.studio.intellij.ui.dbupdate.DbUpdateDialog/0.0.1366.740@0.0.1366.740" timestamp="1581766715115" />
+    <state x="440" y="314" key="class com.haulmont.studio.intellij.ui.dialog.ConfirmDialog" timestamp="1581761738347">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="440" y="314" key="class com.haulmont.studio.intellij.ui.dialog.ConfirmDialog/0.0.1366.740@0.0.1366.740" timestamp="1581761738347" />
+    <state x="523" y="308" key="class com.haulmont.studio.intellij.ui.entity.AttributeDeleteDialog" timestamp="1581759279437">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="523" y="308" key="class com.haulmont.studio.intellij.ui.entity.AttributeDeleteDialog/0.0.1366.740@0.0.1366.740" timestamp="1581759279437" />
+    <state x="580" y="236" width="630" height="455" key="class com.haulmont.studio.intellij.ui.entity.attr.CreateAttributeWindow" timestamp="1581761446144">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="580" y="236" width="630" height="455" key="class com.haulmont.studio.intellij.ui.entity.attr.CreateAttributeWindow/0.0.1366.740@0.0.1366.740" timestamp="1581761446144" />
+    <state x="679" y="227" key="class com.haulmont.studio.intellij.ui.entity.attr.RelatedPropertiesEditor" timestamp="1581760470561">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="679" y="227" key="class com.haulmont.studio.intellij.ui.entity.attr.RelatedPropertiesEditor/0.0.1366.740@0.0.1366.740" timestamp="1581760470561" />
+    <state x="464" y="294" key="class com.haulmont.studio.intellij.ui.se.h" timestamp="1581756735301">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="464" y="294" key="class com.haulmont.studio.intellij.ui.se.h/0.0.1366.740@0.0.1366.740" timestamp="1581756735301" />
+    <state x="460" y="265" key="class com.haulmont.studio.intellij.ui.settings.dbdrivers.AddDriverDialog" timestamp="1581761765547">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="460" y="265" key="class com.haulmont.studio.intellij.ui.settings.dbdrivers.AddDriverDialog/0.0.1366.740@0.0.1366.740" timestamp="1581761765547" />
+    <state x="347" y="73" key="com.haulmont.studio.intellij.action.creation.template.CreateFromTemplateWizard" timestamp="1581764945207">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="347" y="73" key="com.haulmont.studio.intellij.action.creation.template.CreateFromTemplateWizard/0.0.1366.740@0.0.1366.740" timestamp="1581764945207" />
+    <state x="343" y="163" key="run.anything.popup" timestamp="1581759404533">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="343" y="163" key="run.anything.popup/0.0.1366.740@0.0.1366.740" timestamp="1581759404533" />
+  </component>
+</project>

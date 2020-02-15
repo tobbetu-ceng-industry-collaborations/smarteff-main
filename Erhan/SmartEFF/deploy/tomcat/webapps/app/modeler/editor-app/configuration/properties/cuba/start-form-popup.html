@@ -1,0 +1,67 @@
+
+<div class="modal" ng-controller="KisBpmStartFormPopupCtrl">
+    <div class="modal-dialog modal-wide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">&times;</button>
+                <h2>{{'PROPERTY.PROPERTY.EDIT.TITLE' | translate:property}}</h2>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="formNameField">{{'PROPERTY.STARTFORM.NAME' | translate}}</label>
+                    <select id="formNameField"
+                            class="form-control"
+                            ng-model="form.name"
+                            ng-options="form.name as form.caption for form in formDescriptions">
+                        <option value="">{{'PROPERTY.STARTFORM.NOT_SELECTED' | translate}}</option>
+                    </select>
+
+                </div>
+
+                <div class="row row-no-gutter">
+
+                    <div class="col-xs-6">
+                        <span>{{'PROPERTY.STARTFORM.PARAMETERS'|translate}}</span>
+                        <div class="default-grid" ng-grid="gridOptions"></div>
+                        <div class="btn-group">
+                            <a class="btn btn-icon btn-lg" rel="tooltip" data-title="{{'ACTION.ADD' | translate}}"
+                               data-placement="bottom" data-original-title="" title=""
+                               ng-click="addNewFormProperty()"><i class="glyphicon glyphicon-plus"></i></a>
+                            <a class="btn btn-icon btn-lg" rel="tooltip" data-title="{{'ACTION.REMOVE' | translate}}"
+                               data-placement="bottom" data-original-title="" title=""
+                               ng-click="removeFormProperty()"><i class="glyphicon glyphicon-minus"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                            <div ng-show="selectedFormParams.length > 0">
+                                <div class="form-group">
+                                    <label for="formParamNameField">{{'PROPERTY.STARTFORM.PARAM.NAME' |
+                                        translate}}</label>
+                                    <select id="formParamNameField"
+                                            class="form-control"
+                                            ng-model="selectedFormParams[0].name"
+                                            ng-options="param.name as param.name for param in currentFormDescription.params"
+                                            ng-change="setDefaultParamValue()">
+                                        <option value="">{{'PROPERTY.TASKOUTCOMES.PARAM.NAME.NOT_SELECTED' | translate}}</option>
+                                    </select>
+                                    <label for="formPropertyValueField">{{'PROPERTY.STARTFORM.PARAM.VALUE' |
+                                        translate}}</label>
+                                    <input id="formPropertyValueField" class="form-control" type="text"
+                                           ng-model="selectedFormParams[0].value"
+                                           placeholder="{{'PROPERTY.TASKOUTCOMES.FORM.PARAM.VALUE.PLACEHOLDER' | translate }}"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div ng-show="selectedProperties.length == 0" class="muted no-property-selected" translate>PROPERTY.FORMPROPERTIES.EMPTY</div>-->
+
+                </div>
+            <div class="modal-footer">
+                <button ng-click="cancel()" class="btn btn-primary" translate>ACTION.CANCEL</button>
+                <button ng-click="save()" class="btn btn-primary" translate>ACTION.SAVE</button>
+            </div>
+        </div>
+    </div>
+</div>

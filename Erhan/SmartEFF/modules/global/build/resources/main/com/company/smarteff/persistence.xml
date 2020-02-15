@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="SmartEFF" transaction-type="RESOURCE_LOCAL">
+
+        <class>com.company.smarteff.entity.Person</class>
+        <class>com.company.smarteff.entity.Device</class>
+        <class>com.company.smarteff.entity.ScheduledShutdown</class>
+    </persistence-unit>
+</persistence>

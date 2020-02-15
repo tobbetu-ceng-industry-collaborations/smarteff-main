@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://browseCaption"
+        focusComponent="devicesTable"
+        messagesPack="com.company.smarteff.web.screens.device">
+    <data readOnly="true">
+        <collection id="devicesDc"
+                    class="com.company.smarteff.entity.Device"
+                    view="_local">
+            <loader id="devicesDl">
+                <query>
+                    <![CDATA[select e from smarteff_Device e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="devicesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="devicesTable"
+                dataLoader="devicesDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="devicesTable"
+                    width="100%"
+                    dataContainer="devicesDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="device_id"/>
+                <column id="device_name"/>
+                <column id="is_on"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="devicesTable.create"/>
+                <button id="editBtn" action="devicesTable.edit"/>
+                <button id="removeBtn" action="devicesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>

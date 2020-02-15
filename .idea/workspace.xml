@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bae64e84-fa55-43c7-854e-3dbc5bb896d3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Erhan\Desktop\smarteff-main\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xpz16bF933lcW7aTIdllffyqrv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bae64e84-fa55-43c7-854e-3dbc5bb896d3" name="Default Changelist" comment="" />
+      <created>1581757605880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581757605880</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="178" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581757655017">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="458" y="178" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.740@0.0.1366.740" timestamp="1581757655017" />
+    <state x="467" y="129" key="FileChooserDialogImpl" timestamp="1581757773683">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="467" y="129" key="FileChooserDialogImpl/0.0.1366.740@0.0.1366.740" timestamp="1581757773683" />
+    <state x="112" y="77" key="new project wizard" timestamp="1581758147722">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="112" y="77" key="new project wizard/0.0.1366.740@0.0.1366.740" timestamp="1581758147722" />
+  </component>
+</project>

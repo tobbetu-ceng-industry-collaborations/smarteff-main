@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://caption"
+        messagesPack="com.company.smarteff.web.screens">
+    <layout>
+        <actions>
+            <action id="create" type="create"/>
+            <action id="edit" type="edit"/>
+            <action id="remove" type="remove"/>
+        </actions>
+        <buttonsPanel width="650" height="50">
+            <button caption="DESK1" id="editBtn" action="devicesTable.edit"/>
+            <button caption="DESK2" id="editBtn2" action="devicesTable.edit"/>
+            <button caption="DESK3" id="editBtn3" action="devicesTable.edit"/>
+        </buttonsPanel>
+        <buttonsPanel height="50" width="650">
+            <button caption="DESK4" id="editBtn4" action="devicesTable.edit"/>
+            <button caption="DESK5" id="editBtn5" action="devicesTable.edit" align="TOP_RIGHT"/>
+            <button caption="DESK6" id="editBtn6" action="devicesTable.edit"/>
+
+    </layout>
+</window>
