@@ -2,41 +2,197 @@
 @{
     ViewBag.Title = "Login";
 }
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+    }
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css" />
+
+
+<meta charset=utf-8 />
 
 <h2>Devices</h2>
 <table style="width:100%" bordercolor="Grey" id="table">
-    <tr>
-        <th>Devices</th>
-        <th>Status</th>
-        <th>Automation</th>
-    </tr>
+    <thead>
+        <tr>
+
+            <th>Devices</th>
+            <th>Status</th>
+            <th>Automation</th>
+            <th>Edit / Delete</th>
+
+
+        </tr>
+    </thead>
+
+
 </table>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Edit</h2>
+        </div>
+        <div class="modal-body">
+            <p>Suspend the automation</p>
+            <input type="radio" id="1hours" name="hours" value="1hours">
+            <label for="male">1hours</label><br>
+            <input type="radio" id="3hours" name="hours" value="3hours">
+            <label for="female">3hours</label><br>
+            <input type="radio" id="6hours" name="hours" value="6hours">
+            <label for="other">6hours</label><br>
+            <input type="radio" id="24hours" name="hours" value="24hours">
+            <label for="other">24hours</label><br>
+            <button onclick="myFunction()">Suspend</button>
+
+        </div>
+        <div class="modal-footer">
+            <h3></h3>
+        </div>
+    </div>
+
+</div>
 
 
 @section scripts
     {
-    <script type="text/javascript">
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.1/datatables.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="//editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        var editor;
+        var machineid;
+        function myFunction() {
+            
+            var radioValue = $("input[name='hours']:checked").val();
+            if(radioValue){
+                alert("Your are a - " + radioValue+" "+machineid+"*");
+            }
+
+
+}
         $(document).ready(function () {
 
-                $.ajax({
-                    url:'https://api.myjson.com/bins/1cltpq' ,
-                    type: 'GET',
-                    dataType: 'json',
-                    success: function (result) {
-                        var i,x="",trHTML='';
-                        for (i in result.devices) {
-                            x += result.devices[i].name+" ";
-                            x += result.devices[i].isOn + " "; result.devices[i].automation.suspended
-                             trHTML += '<tr><td>' + result.devices[i].name + '</td><td>' + result.devices[i].isOn + '</td><td>' + result.devices[i].automation.suspended + '</td> </tr>';
-                            //x += result.people[i].id + "<br>";
-                         //   $("#name").append("<option value='" + result.people[i]["id"] + "'>" + result.people[i]["name"] + "</option>");
-                         }
-                        //alert(x+"*");
-                        $('#table').append(trHTML);
+
+            var table=$('#table').DataTable(
+                {
+
+                    ajax: {
+                        "url": "https://api.myjson.com/bins/1cltpq",
+                        "type": "GET",
+                        "datatype": "json",
+                        "dataSrc": "devices"
+                    },
+
+                    aoColumns: [
+
+                        { mData: 'name' },
+                        { mData: 'isOn' },
+                        { mData: 'automation.suspended' },
+                        { defaultContent: '<input type="button" class="Edit" value="Edit"/><input type="button" class="Delete" value="Delete"/>' }
 
 
-                    }
+                    ],
+
+
+
+
+
                 });
+
+            $('#table tbody').on('click', '.Edit', function () {
+                // alert("world");
+                  var data = table.row( $(this).parents('tr') ).data();
+                
+                machineid = data.id;
+
+                   modal.style.display = "block";
+            });
+
+
+
+            span.onclick = function() {
+                 modal.style.display = "none";
+            }
+
+// When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+             if (event.target == modal) {
+                 modal.style.display = "none";
+
+  }
+            }
+           
 
         });
 
