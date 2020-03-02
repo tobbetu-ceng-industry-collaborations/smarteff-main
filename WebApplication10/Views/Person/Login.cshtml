@@ -107,7 +107,7 @@
             <label for="other">6hours</label><br>
             <input type="radio" id="24hours" name="hours" value="24hours">
             <label for="other">24hours</label><br>
-            <button onclick="myFunction()">Suspend</button>
+            <input id="button" type="button" value="save" />
 
         </div>
         <div class="modal-footer">
@@ -131,16 +131,20 @@
         var modal = document.getElementById("myModal");
         var span = document.getElementsByClassName("close")[0];
         var editor;
-        var machineid;
+        var tarih;//degisen tarih bilgisini tutar
+        var data;//post edilecek json için
+        var radioValue;//ertelencek saat bilgisi tutar
+        var machineid;//tablodan secilen cihazin idsi
+        /*
         function myFunction() {
             
-            var radioValue = $("input[name='hours']:checked").val();
+            var radioValue = $("input[name='hours']:checked").val();//degistirilmek istenen id
             if(radioValue){
                 alert("Your are a - " + radioValue+" "+machineid+"*");
             }
 
-
-}
+            */
+//}
         $(document).ready(function () {
 
 
@@ -172,11 +176,12 @@
 
             $('#table tbody').on('click', '.Edit', function () {
                 // alert("world");
-                  var data = table.row( $(this).parents('tr') ).data();
-                
-                machineid = data.id;
+                var data = table.row($(this).parents('tr')).data();
+                alert(data.automation.suspended + "a");
+                if (data.automation.suspended == 'true') { modal.style.display = "block"; }
+                    machineid = data.id;
 
-                   modal.style.display = "block";
+                   
             });
 
 
@@ -185,14 +190,139 @@
                  modal.style.display = "none";
             }
 
-// When the user clicks anywhere outside of the modal, close it
+            // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
              if (event.target == modal) {
                  modal.style.display = "none";
 
   }
             }
-           
+
+
+
+
+            button.onclick = function (event) {
+                radioValue = $("input[name='hours']:checked").val();//degistirilmek istenen id
+
+                $.ajax({
+                    url:'https://api.myjson.com/bins/1cltpq' ,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (result) {
+
+                   var i,x="",tr='';
+                        for (i in result.devices) {
+   
+                            var deger = '';
+
+                            if (result.devices[i].id == machineid) {
+
+
+                                n =  new Date(); //get current date
+                                var month = n.getMonth() + 1;
+                                var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+                                month = monthArr[month];
+                                var day = n.getDate();
+                                var hour = n.getHours();
+                                var year = n.getFullYear();
+                                var min = n.getMinutes();
+                                
+                                var pos = radioValue.search("h");
+                                pos = radioValue.slice(0,pos);
+                                
+
+                                hour = +hour + +pos;
+      
+                                var count;
+                                if (hour >= Number(24)) {//saat 24 satti gectiyse bir sonraki gune gecilir
+                                    count = 1;
+                                    hour = Number(hour) - Number(24);
+            
+                                }
+                                if (count == 1) {
+
+                                    day = +day + +1;
+                                    //bir sonraki aya gecme durumu kontrolu
+                                    if (Number(month) % Number(2) == 1) {//tek ay 31 gun
+                                        if (Number(day) > 31) {
+                                            day = 1; month = +month + +1;
+                                            month = monthArr[month];
+                                        }
+                                    }
+
+                                    if (Number(month) % Number(2) == 0) {//cift ay 30 gun
+                                        if (month == 8) {//agustos olma durumu
+
+                                            if (Number(day) > 31) {
+                                                day = 1; month = +month + +1;
+                                                month = monthArr[month];
+                                            }
+
+                                        } else if (Number(day) > 30) {
+                                            day = 1; month = +month + +1;
+                                            month = monthArr[month];
+                                        }
+                                    }
+                                }
+                                if (month > 12) {//bir sonraki yila gecme kontrolu
+
+                                    year = +year + +1;
+                                    month = 1;
+                                    month = monthArr[month];
+
+                                }
+                                
+                                //format : 15 January 20:00pm 2020
+                                var amPm;
+                                if (hour < 12) {
+                                    amPm = "a.m.";
+                                }
+                                else {
+                                    amPm = "p.m";
+                                }
+                                tarih = day + " " + month + " " + hour + ":" + min + amPm+" " + year;// degisen tarih
+                                alert("extended to :" + tarih);
+
+
+                                //format: {"name":"D9123","id":"32","isOn":"true","automation":{"suspended":"true","expiration":"15 January 20:00pm 2020"}
+                                data = {
+                                    name: result.devices[i].name, id: result.devices[i].id, isOn: result.devices[i].isOn, automation: { suspend: true, expiration: tarih }
+                                };
+
+
+                            }
+                        }
+                  
+                    
+
+                    }
+                });
+
+                var stringData = JSON.stringify(data); //olusturulan datanin jsona donusturulmesi
+
+                //post islemi
+            /* $.ajax({      
+               type: "POST",      
+               url: "url",      
+               data: stringData,      
+               contentType: "application/json; charset=utf-8",      
+               dataType: "json",      
+               success: OnSucces,      
+               error: OnError      
+           });   */    
+               function OnSucces(response) {      
+                   if (response == 1) {      
+                       alert('Category Updated Successfully !!!');      
+                       reset();      
+                   }      
+                   else {      
+                       alert(response);      
+                   }      
+               }      
+               function OnError(response) {      
+                   alert(response);      
+                                   }   
+            }
 
         });
 
