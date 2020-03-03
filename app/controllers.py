@@ -269,22 +269,22 @@ def list_devices(person_id):
     # return json
     return jsonify({'devices': response})
 
-# # endpoint to list scheduled shutdowns for specified person
-# @app.route("/ListScheduledShutdowns/<person_id>", methods=['GET'])
-# def list_scheduled_shutdowns(person_id):
+# endpoint to list scheduled shutdowns for specified person
+@app.route("/ListScheduledShutdowns/<person_id>", methods=['GET'])
+def list_scheduled_shutdowns(person_id):
 
-#     # get person
-#     person = Person.query.get_or_404(person_id)
+    # get person
+    person = Person.query.get_or_404(person_id)
 
-#     # scheduled devices waiting to be turned off
-#     scheduled_devices = ScheduledShutdown.query.filter(ScheduledShutdown.person_id==person_id).all()
+    # scheduled devices waiting to be turned off
+    scheduled_devices = ScheduledShutdown.query.filter(ScheduledShutdown.person_id==person_id).all()
 
-#     # response json
-#     shutdown_devices = []
+    # response json
+    shutdown_devices = []
 
-#     # append shutdown information as json
-#     for shutdown in scheduled_devices:
-#     	shutdown_devices.append(shutdown.serialize)
+    # append shutdown information as json
+    for shutdown in scheduled_devices:
+    	shutdown_devices.append(shutdown.serialize)
 
-#     # return json
-#     return jsonify({'scheduledShutdowns': shutdown_devices})
+    # return json
+    return jsonify({'scheduledShutdowns': shutdown_devices})

@@ -1,124 +1,17 @@
-06-Feb-20 17:55:34 - 127.0.0.1 - - [06/Feb/2020 17:55:34] "GET /log HTTP/1.1" 200 -
-06-Feb-20 17:55:35 - 127.0.0.1 - - [06/Feb/2020 17:55:35] "GET /log HTTP/1.1" 200 -
-06-Feb-20 17:55:35 - 127.0.0.1 - - [06/Feb/2020 17:55:35] "GET /log HTTP/1.1" 200 -
-06-Feb-20 17:55:38 - [automation_event]A person(id=1) has enabled automation of device(id=2)
-06-Feb-20 17:55:38 - 127.0.0.1 - - [06/Feb/2020 17:55:38] "POST /EnableAutomation HTTP/1.1" 200 -
-06-Feb-20 17:55:39 - 127.0.0.1 - - [06/Feb/2020 17:55:39] "GET /log HTTP/1.1" 200 -
-06-Feb-20 17:59:36 - 127.0.0.1 - - [06/Feb/2020 17:59:36] "GET /log HTTP/1.1" 200 -
-06-Feb-20 18:00:26 - 127.0.0.1 - - [06/Feb/2020 18:00:26] "POST /EnableAutomation HTTP/1.1" 500 -
-06-Feb-20 18:01:35 - 127.0.0.1 - - [06/Feb/2020 18:01:35] "POST /EnableAutomation HTTP/1.1" 500 -
-06-Feb-20 18:03:00 - [automation_event]A person(id=1) has enabled automation of device(id=2)
-06-Feb-20 18:03:00 - 127.0.0.1 - - [06/Feb/2020 18:03:00] "POST /EnableAutomation HTTP/1.1" 200 -
-06-Feb-20 18:03:09 - 127.0.0.1 - - [06/Feb/2020 18:03:09] "GET /log HTTP/1.1" 200 -
-06-Feb-20 18:03:09 - 127.0.0.1 - - [06/Feb/2020 18:03:09] "GET /log HTTP/1.1" 200 -
-06-Feb-20 18:04:18 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-06-Feb-20 18:04:18 -  * Restarting with stat
-06-Feb-20 18:05:08 - [automation_event]A person(id=1) has enabled automation of device(id=2)
-06-Feb-20 18:05:08 - 127.0.0.1 - - [06/Feb/2020 18:05:08] "POST /EnableAutomation HTTP/1.1" 200 -
-07-Feb-20 11:30:43 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 11:30:43 -  * Restarting with stat
-07-Feb-20 11:32:06 - 127.0.0.1 - - [07/Feb/2020 11:32:06] "GET /ListDevices/1 HTTP/1.1" 200 -
-07-Feb-20 11:32:17 - 127.0.0.1 - - [07/Feb/2020 11:32:17] "GET /ListPersons HTTP/1.1" 200 -
-07-Feb-20 11:32:49 - 127.0.0.1 - - [07/Feb/2020 11:32:49] "GET /log HTTP/1.1" 200 -
-07-Feb-20 11:32:51 - 127.0.0.1 - - [07/Feb/2020 11:32:51] "GET /log HTTP/1.1" 200 -
-07-Feb-20 11:32:51 - 127.0.0.1 - - [07/Feb/2020 11:32:51] "GET /log HTTP/1.1" 200 -
-07-Feb-20 11:33:25 - [device_event]A device(id=2) has turned off!
-07-Feb-20 11:33:25 - 127.0.0.1 - - [07/Feb/2020 11:33:25] "POST /HandleDeviceEvent HTTP/1.1" 200 -
-07-Feb-20 11:33:29 - [device_event]A device(id=2) has turned on!
-07-Feb-20 11:33:29 - 127.0.0.1 - - [07/Feb/2020 11:33:29] "POST /HandleDeviceEvent HTTP/1.1" 200 -
-07-Feb-20 11:33:34 - [person_event]A person(id=2) has entered!
-07-Feb-20 11:33:34 - 127.0.0.1 - - [07/Feb/2020 11:33:34] "POST /HandlePersonEvent HTTP/1.1" 200 -
-07-Feb-20 11:33:37 - 127.0.0.1 - - [07/Feb/2020 11:33:37] "GET /log HTTP/1.1" 200 -
-07-Feb-20 11:41:26 - 127.0.0.1 - - [07/Feb/2020 11:41:26] "GET /log HTTP/1.1" 200 -
-07-Feb-20 11:41:27 - 127.0.0.1 - - [07/Feb/2020 11:41:27] "GET /log HTTP/1.1" 200 -
-07-Feb-20 11:53:54 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 11:53:54 -  * Restarting with stat
-07-Feb-20 12:08:29 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:08:29 -  * Restarting with stat
-07-Feb-20 12:08:43 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:08:43 -  * Restarting with stat
-07-Feb-20 12:09:03 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:09:03 -  * Restarting with stat
-07-Feb-20 12:09:59 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:09:59 -  * Restarting with stat
-07-Feb-20 12:12:29 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:12:29 -  * Restarting with stat
-07-Feb-20 12:19:16 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
-07-Feb-20 12:19:16 - 127.0.0.1 - - [07/Feb/2020 12:19:16] "POST /SuspendAutomation HTTP/1.1" 200 -
-07-Feb-20 12:45:46 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:45:46 -  * Restarting with stat
-07-Feb-20 12:46:22 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:46:22 -  * Restarting with stat
-07-Feb-20 12:52:59 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:52:59 -  * Restarting with stat
-07-Feb-20 12:53:21 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:53:21 -  * Restarting with stat
-07-Feb-20 12:54:24 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:54:24 -  * Restarting with stat
-07-Feb-20 12:54:39 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:54:39 -  * Restarting with stat
-07-Feb-20 12:55:01 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 12:55:01 -  * Restarting with stat
-07-Feb-20 12:56:44 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:56:44 -  * Restarting with stat
-07-Feb-20 12:56:51 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:56:51 -  * Restarting with stat
-07-Feb-20 12:57:08 -  * Detected change in '/home/erhan/smarteff-main/app/models.py', reloading
-07-Feb-20 12:57:08 -  * Restarting with stat
-07-Feb-20 13:00:42 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
-07-Feb-20 13:00:42 - 127.0.0.1 - - [07/Feb/2020 13:00:42] "POST /SuspendAutomation HTTP/1.1" 200 -
-07-Feb-20 13:03:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:03:07 -  * Restarting with stat
-07-Feb-20 13:03:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:03:28 -  * Restarting with stat
-07-Feb-20 13:04:30 - 127.0.0.1 - - [07/Feb/2020 13:04:30] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:04:48 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:04:48 -  * Restarting with stat
-07-Feb-20 13:05:06 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:05:06 -  * Restarting with stat
-07-Feb-20 13:05:06 - 127.0.0.1 - - [07/Feb/2020 13:05:06] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:06:53 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:06:54 -  * Restarting with stat
-07-Feb-20 13:07:06 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:07:06 -  * Restarting with stat
-07-Feb-20 13:07:07 - 127.0.0.1 - - [07/Feb/2020 13:07:07] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:07:29 - 127.0.0.1 - - [07/Feb/2020 13:07:29] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:07:43 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:07:43 -  * Restarting with stat
-07-Feb-20 13:07:44 - 127.0.0.1 - - [07/Feb/2020 13:07:44] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:08:16 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:08:16 -  * Restarting with stat
-07-Feb-20 13:08:17 - 127.0.0.1 - - [07/Feb/2020 13:08:17] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:08:30 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:08:30 -  * Restarting with stat
-07-Feb-20 13:08:57 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:08:57 -  * Restarting with stat
-07-Feb-20 13:08:58 - 127.0.0.1 - - [07/Feb/2020 13:08:58] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:10:12 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:10:12 -  * Restarting with stat
-07-Feb-20 13:10:27 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:10:27 -  * Restarting with stat
-07-Feb-20 13:10:40 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:10:40 -  * Restarting with stat
-07-Feb-20 13:10:42 - 127.0.0.1 - - [07/Feb/2020 13:10:42] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:10:55 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:10:55 -  * Restarting with stat
-07-Feb-20 13:10:56 - 127.0.0.1 - - [07/Feb/2020 13:10:56] "GET /ListScheduledShutdowns/1 HTTP/1.1" 500 -
-07-Feb-20 13:12:37 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:12:38 -  * Restarting with stat
-07-Feb-20 13:12:50 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:12:50 -  * Restarting with stat
-07-Feb-20 13:13:06 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:13:06 -  * Restarting with stat
-07-Feb-20 13:13:16 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:13:17 -  * Restarting with stat
-07-Feb-20 13:13:31 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:13:31 -  * Restarting with stat
-07-Feb-20 13:13:33 - 127.0.0.1 - - [07/Feb/2020 13:13:33] "GET /ListScheduledShutdowns/1 HTTP/1.1" 200 -
-07-Feb-20 13:14:39 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:14:39 -  * Restarting with stat
-07-Feb-20 13:15:24 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:15:24 -  * Restarting with stat
-07-Feb-20 13:15:31 - 127.0.0.1 - - [07/Feb/2020 13:15:31] "GET /ListScheduledShutdowns/1 HTTP/1.1" 200 -
-07-Feb-20 13:16:04 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
-07-Feb-20 13:16:04 -  * Restarting with stat
+11-Feb-20 14:43:28 - [device_event]A device(id=2) has turned off!
+11-Feb-20 14:43:28 - 127.0.0.1 - - [11/Feb/2020 14:43:28] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+11-Feb-20 14:43:29 - 127.0.0.1 - - [11/Feb/2020 14:43:29] "GET /log HTTP/1.1" 200 -
+11-Feb-20 14:43:34 - [device_event]A device(id=2) has turned on!
+11-Feb-20 14:43:34 - 127.0.0.1 - - [11/Feb/2020 14:43:34] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+11-Feb-20 14:43:36 - 127.0.0.1 - - [11/Feb/2020 14:43:36] "GET /log HTTP/1.1" 200 -
+11-Feb-20 14:44:32 - [person_event]A person(id=2) has entered!
+11-Feb-20 14:44:32 - 127.0.0.1 - - [11/Feb/2020 14:44:32] "POST /HandlePersonEvent HTTP/1.1" 200 -
+11-Feb-20 14:44:33 - 127.0.0.1 - - [11/Feb/2020 14:44:33] "GET /log HTTP/1.1" 200 -
+23-Feb-20 13:05:43 - 127.0.0.1 - - [23/Feb/2020 13:05:43] "GET / HTTP/1.1" 404 -
+23-Feb-20 13:05:43 - 127.0.0.1 - - [23/Feb/2020 13:05:43] "GET /favicon.ico HTTP/1.1" 404 -
+23-Feb-20 13:05:46 - 127.0.0.1 - - [23/Feb/2020 13:05:46] "GET /log HTTP/1.1" 200 -
+23-Feb-20 13:05:47 - 127.0.0.1 - - [23/Feb/2020 13:05:47] "GET /log HTTP/1.1" 200 -
+23-Feb-20 13:05:47 - 127.0.0.1 - - [23/Feb/2020 13:05:47] "GET /log HTTP/1.1" 200 -
+03-Mar-20 10:35:40 - 127.0.0.1 - - [03/Mar/2020 10:35:40] "GET /ListDevices/1 HTTP/1.1" 200 -
+03-Mar-20 10:35:46 - 127.0.0.1 - - [03/Mar/2020 10:35:46] "GET /ListPersons HTTP/1.1" 200 -
+03-Mar-20 10:35:54 - 127.0.0.1 - - [03/Mar/2020 10:35:54] "GET /ListScheduledShutdowns/1 HTTP/1.1" 200 -
