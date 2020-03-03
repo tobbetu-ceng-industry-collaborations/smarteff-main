@@ -1,1 +1,1 @@
-curl -d '{"deviceid":"2", "personid":"1"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/EnableAutomation
+curl -d "{\"deviceid\":\"$2\", \"personid\":\"$1\"}" -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/EnableAutomation

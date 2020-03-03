@@ -15,3 +15,63 @@
 03-Mar-20 10:35:40 - 127.0.0.1 - - [03/Mar/2020 10:35:40] "GET /ListDevices/1 HTTP/1.1" 200 -
 03-Mar-20 10:35:46 - 127.0.0.1 - - [03/Mar/2020 10:35:46] "GET /ListPersons HTTP/1.1" 200 -
 03-Mar-20 10:35:54 - 127.0.0.1 - - [03/Mar/2020 10:35:54] "GET /ListScheduledShutdowns/1 HTTP/1.1" 200 -
+03-Mar-20 12:08:43 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+03-Mar-20 12:08:43 - 127.0.0.1 - - [03/Mar/2020 12:08:43] "POST /ManageDevice HTTP/1.1" 200 -
+03-Mar-20 14:42:18 - [device_event]A device(id=2) has turned off!
+03-Mar-20 14:42:18 - 127.0.0.1 - - [03/Mar/2020 14:42:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+03-Mar-20 14:42:34 - [device_event]A device(id=2) has turned on!
+03-Mar-20 14:42:34 - 127.0.0.1 - - [03/Mar/2020 14:42:34] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+03-Mar-20 14:49:11 - 127.0.0.1 - - [03/Mar/2020 14:49:11] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:49:25 - 127.0.0.1 - - [03/Mar/2020 14:49:25] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:49:38 - 127.0.0.1 - - [03/Mar/2020 14:49:38] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:49:48 - 127.0.0.1 - - [03/Mar/2020 14:49:48] "POST /HandlePersonEvent HTTP/1.1" 400 -
+03-Mar-20 14:50:00 - 127.0.0.1 - - [03/Mar/2020 14:50:00] "POST /HandlePersonEvent HTTP/1.1" 400 -
+03-Mar-20 14:51:38 - 127.0.0.1 - - [03/Mar/2020 14:51:38] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:51:49 - 127.0.0.1 - - [03/Mar/2020 14:51:49] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:51:55 - [person_event]A person(id=2) has entered!
+03-Mar-20 14:51:55 - 127.0.0.1 - - [03/Mar/2020 14:51:55] "POST /HandlePersonEvent HTTP/1.1" 200 -
+03-Mar-20 14:52:13 - 127.0.0.1 - - [03/Mar/2020 14:52:13] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:52:19 - 127.0.0.1 - - [03/Mar/2020 14:52:19] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:52:29 - 127.0.0.1 - - [03/Mar/2020 14:52:29] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:52:40 - 127.0.0.1 - - [03/Mar/2020 14:52:40] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:53:27 - 127.0.0.1 - - [03/Mar/2020 14:53:27] "POST /HandlePersonEvent HTTP/1.1" 400 -
+03-Mar-20 14:53:48 - 127.0.0.1 - - [03/Mar/2020 14:53:48] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:55:45 - [person_event]A person(id=1) has entered!
+03-Mar-20 14:55:45 - 127.0.0.1 - - [03/Mar/2020 14:55:45] "POST /HandlePersonEvent HTTP/1.1" 200 -
+03-Mar-20 14:55:47 - [person_event]A person(id=2) has entered!
+03-Mar-20 14:55:47 - 127.0.0.1 - - [03/Mar/2020 14:55:47] "POST /HandlePersonEvent HTTP/1.1" 200 -
+03-Mar-20 14:56:00 - [person_event]A person(id=1) has entered!
+03-Mar-20 14:56:05 - 127.0.0.1 - - [03/Mar/2020 14:56:05] "POST /HandlePersonEvent HTTP/1.1" 500 -
+03-Mar-20 14:56:22 - [person_event]A person(id=1) has entered!
+03-Mar-20 14:56:22 - 127.0.0.1 - - [03/Mar/2020 14:56:22] "POST /HandlePersonEvent HTTP/1.1" 200 -
+03-Mar-20 14:56:24 - 127.0.0.1 - - [03/Mar/2020 14:56:24] "POST /HandlePersonEvent HTTP/1.1" 404 -
+03-Mar-20 14:56:25 - [person_event]A person(id=2) has entered!
+03-Mar-20 14:56:25 - 127.0.0.1 - - [03/Mar/2020 14:56:25] "POST /HandlePersonEvent HTTP/1.1" 200 -
+03-Mar-20 14:57:39 - [person_event]A person(id=1) has left!
+03-Mar-20 14:57:39 - 127.0.0.1 - - [03/Mar/2020 14:57:39] "POST /HandlePersonEvent HTTP/1.1" 200 -
+03-Mar-20 14:58:21 - [device_event]A device(id=1) has turned on!
+03-Mar-20 14:58:21 - 127.0.0.1 - - [03/Mar/2020 14:58:21] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+03-Mar-20 14:59:00 - [device_event]A device(id=1) has turned off!
+03-Mar-20 14:59:00 - 127.0.0.1 - - [03/Mar/2020 14:59:00] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+03-Mar-20 14:59:10 - [device_event]A device(id=1) has turned on!
+03-Mar-20 14:59:10 - 127.0.0.1 - - [03/Mar/2020 14:59:10] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+03-Mar-20 15:00:22 - [request_event]A person(id=1) has requested a device(id=2) to be turned on!
+03-Mar-20 15:00:22 - 127.0.0.1 - - [03/Mar/2020 15:00:22] "POST /ManageDevice HTTP/1.1" 200 -
+03-Mar-20 15:02:18 - [automation_event]A person(id=1) has enabled automation of device(id=2)
+03-Mar-20 15:02:18 - 127.0.0.1 - - [03/Mar/2020 15:02:18] "POST /EnableAutomation HTTP/1.1" 200 -
+03-Mar-20 15:02:22 - [automation_event]A person(id=1) has enabled automation of device(id=5)
+03-Mar-20 15:02:22 - 127.0.0.1 - - [03/Mar/2020 15:02:22] "POST /EnableAutomation HTTP/1.1" 200 -
+03-Mar-20 15:03:14 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=2) until 2020-01-03-10-20-11!
+03-Mar-20 15:03:14 - 127.0.0.1 - - [03/Mar/2020 15:03:14] "POST /SuspendAutomation HTTP/1.1" 200 -
+03-Mar-20 15:03:25 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=3) until 2020-01-03-10-20-11!
+03-Mar-20 15:03:25 - 127.0.0.1 - - [03/Mar/2020 15:03:25] "POST /SuspendAutomation HTTP/1.1" 200 -
+03-Mar-20 15:06:52 - 127.0.0.1 - - [03/Mar/2020 15:06:52] "POST /HandleDeviceEvent HTTP/1.1" 404 -
+03-Mar-20 15:07:24 - 127.0.0.1 - - [03/Mar/2020 15:07:24] "POST /HandleDeviceEvent HTTP/1.1" 404 -
+03-Mar-20 15:10:36 - 127.0.0.1 - - [03/Mar/2020 15:10:36] "POST /HandleDeviceEvent HTTP/1.1" 404 -
+03-Mar-20 15:10:59 - 127.0.0.1 - - [03/Mar/2020 15:10:59] "POST /HandleDeviceEvent HTTP/1.1" 404 -
+03-Mar-20 15:11:20 - 127.0.0.1 - - [03/Mar/2020 15:11:20] "POST /HandleDeviceEvent HTTP/1.1" 404 -
+03-Mar-20 15:11:32 - 127.0.0.1 - - [03/Mar/2020 15:11:32] "POST /HandleDeviceEvent HTTP/1.1" 404 -
+03-Mar-20 15:11:50 - [device_event]A device(id=2) has turned off!
+03-Mar-20 15:11:50 - 127.0.0.1 - - [03/Mar/2020 15:11:50] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+03-Mar-20 15:12:32 - [device_event]A device(id=2) has turned off!
+03-Mar-20 15:12:32 - 127.0.0.1 - - [03/Mar/2020 15:12:32] "POST /HandleDeviceEvent HTTP/1.1" 200 -
