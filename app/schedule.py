@@ -20,16 +20,14 @@ def device_off(dev_id):
 	# print(("bash ../test_api/POST/device_off.sh " +  str(dev_id)).format())
 	
 	# make call from test_api
-	os.system(("bash ../test_api/POST/device_off.sh " +  str(dev_id)).format() )
+	os.system(("bash ../test_api/POST/device_off.sh " +  str(dev_id)).format())
 
 # general scheduler
-def schedule():
+def schedule(device_id, until_suspension):
 
-	#temp device id, dont forget to read real device id from table..
-    device_id = 2
 
     # enter queue
-    s.enter(3, 1, device_off, argument=(device_id,))
+    s.enter(until_suspension, 1, device_off, argument=(device_id,))
     
     #execute queue
     s.run()
@@ -37,10 +35,11 @@ def schedule():
 # fetch scheduled shutdown ID   
 scheduledShutdownID =  int(sys.argv[1])
 deviceID =  int(sys.argv[2])
+until_suspension =  int(sys.argv[3])
 
 # dont forget to fetch deviceID-personIO from tables.
 # you will referencing a scheduled shutdown with the IDs given..
-schedule()
+schedule(deviceID, until_suspension)
 
 # it will be most likeliy looking sth like this
 #schedule(deviceID)

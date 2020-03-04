@@ -249,3 +249,9 @@
 04-Mar-20 15:28:29 - 10.5.43.144 - - [04/Mar/2020 15:28:29] "GET /log HTTP/1.1" 200 -
 04-Mar-20 15:30:08 - [device_event]A device(id=2) has turned off!
 04-Mar-20 15:30:08 - 10.5.43.144 - - [04/Mar/2020 15:30:08] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+04-Mar-20 15:45:51 - [device_event]A device(id=3) has turned off!
+04-Mar-20 15:45:51 - 127.0.0.1 - - [04/Mar/2020 15:45:51] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+04-Mar-20 15:46:19 - [device_event]A device(id=3) has turned off!
+04-Mar-20 15:46:19 - 127.0.0.1 - - [04/Mar/2020 15:46:19] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+04-Mar-20 15:59:29 - 127.0.0.1 - - [04/Mar/2020 15:59:29] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 15:59:29 - 127.0.0.1 - - [04/Mar/2020 15:59:29] "GET /favicon.ico HTTP/1.1" 404 -
