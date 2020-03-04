@@ -16,6 +16,8 @@ time = []
 date = []
 action = []
 randomAct=["enter","exit"]
+randomTimeHour=["08","09","10","11","12","13","14","15","16","17","18"]
+randomTimeMin= ["10","20","30","40","50","00"]
 randomAction=""
 allUsers = ["Ahmet", "Ali", "Ayşe",
             "Burak",
@@ -51,9 +53,10 @@ inUsers = ""
 outUsers = ""
 
 temp = ""
-dyear = datetime.datetime.now().strftime('%Y-%m-%d')
+dyear = datetime.datetime.now().strftime('%d-%m-%Y')
 dtime = datetime.datetime.now().strftime('%H:%M:%S')
 data = {}
+randomDay=dyear[0:2]
 
 app.layout = html.Div(children=[
     html.H1(children='\tEnter/Exit Simulation', style={'marginLeft': 400}),
@@ -176,38 +179,53 @@ def simulate_event(n_clicks, value):
         value,
         n_clicks,
     )
+    global randomDay
+    tutDay=""
+    dayInt=int(randomDay)
+    if n_clicks == 1:
+        for o in range(5):
+            for z in range(30):
+                isim=random.choice(allUsers)
+                randomAction=random.choice(randomAct)
+                if randomAction == 'enter':
+                    if isim in inside:
+                        a = 2
+                    else:
+                        if isim in outside:
+                            outside.remove(isim)
+                        inside.append(isim)
+                        user.append(isim)
+                        tutDay=randomDay+dyear[2:]
+                        if tutDay[1] == '-':
+                            tutDay = "0" + tutDay
+                        date.append(tutDay)
+                        tutSaat = random.choice(randomTimeHour)
+                        tutDakika = random.choice(randomTimeMin)
+                        dtime2 = tutSaat + ":" + tutDakika + ":" + dtime[6:]
+                        time.append(dtime2)
+                        action.append(randomAction)
 
-    for z in range(30):
-        isim=random.choice(allUsers)
-        randomAction=random.choice(randomAct)
+                if randomAction == 'exit':
+                    if isim in outside:
+                        a = 2
+                    else:
+                        if isim in inside:
+                            inside.remove(isim)
+                        outside.append(isim)
+                        user.append(isim)
+                        tutDay = randomDay + dyear[2:]
+                        if tutDay[1] == '-':
+                            tutDay = "0" + tutDay
+                        date.append(tutDay)
+                        tutSaat = random.choice(randomTimeHour)
+                        tutDakika = random.choice(randomTimeMin)
+                        dtime2=tutSaat+":"+tutDakika+":"+dtime[6:]
+                        time.append(dtime2)
+                        action.append(randomAction)
+            dayInt=dayInt+1
+            randomDay = str(dayInt)
 
-        if randomAction == 'enter':
-            print(isim)
-            print("ENTERDAYIZ"+randomAction)
-            if isim in inside:
-                a = 2
-            else:
-                if isim in outside:
-                    outside.remove(isim)
-                inside.append(isim)
-                user.append(isim)
-                date.append(dyear)
-                time.append(dtime)
-                action.append(randomAction)
 
-        if randomAction == 'exit':
-            print(isim)
-            print("EXİTTAYIZ:"+randomAction)
-            if isim in outside:
-                a = 2 
-            else:
-                if isim in inside:
-                    inside.remove(isim)
-                outside.append(isim)
-                user.append(isim)
-                date.append(dyear)
-                time.append(dtime)
-                action.append(randomAction)
 
 
 
@@ -317,20 +335,17 @@ def update_backlog(n_clicks, value):
         value,
         n_clicks,
     )
-
-    events.append(user)
-    events.append(date)
-    events.append(time)
-    events.append(action)
-    # data['events'] = { "name":user,"date":date,"time":time,"action",action }
-    person_dict = {"name": user, "date": date, "time": time, "action": action}
-    data['events'] = person_dict
-
-    # for i in range(6):
-    # print("random item from list is: ", random.choice(allUsers))
-
-    with open('data.json', 'w', encoding='utf-8') as outfile:
-        json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
+    if n_clicks == 1:
+        events.append(user)
+        events.append(date)
+        events.append(time)
+        events.append(action)
+        person_dict = {"name": user, "date": date, "time": time, "action": action}
+        data['events'] = person_dict
+        # for i in range(6):
+        # print("random item from list is: ", random.choice(allUsers))
+        with open('data.json', 'w', encoding='utf-8') as outfile:
+            json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
 
 
 if __name__ == '__main__':
