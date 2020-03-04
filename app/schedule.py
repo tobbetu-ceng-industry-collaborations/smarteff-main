@@ -36,7 +36,11 @@ def schedule():
 
 # fetch scheduled shutdown ID   
 scheduledShutdownID =  int(sys.argv[1])
+deviceID =  int(sys.argv[2])
 
 # dont forget to fetch deviceID-personIO from tables.
 # you will referencing a scheduled shutdown with the IDs given..
 schedule()
+
+# it will be most likeliy looking sth like this
+#schedule(deviceID)

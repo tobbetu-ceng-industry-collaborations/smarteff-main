@@ -10,3 +10,10 @@ def log():
     content = event_log.read()
 
     return render_template("log.html", log=content)
+
+# admin view to define office layout
+@app.route("/admin", methods=['POST','GET'])
+def admin():
+
+    return render_template("office.html")
+

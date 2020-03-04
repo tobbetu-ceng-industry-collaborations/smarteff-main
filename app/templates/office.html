@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* stiller */
+        .parts {
+            background-color: white;
+            margin: 30px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            /* border-style: double; */
+            /* border burayada koyabilirsin istersen */ 
+        }
+
+        .desk {
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            margin: auto;
+            border-style: double;
+            /*border koyarak cesitlerine bakarak duvar gibi ayirabilirsin*/
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content Tiklayinca cikan pop-up stili  */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Masalar img src resimleri internetten aliyo internetsiz calismaz istersen locale indir src olarak oranin directorysini ver resimleri degistirmek istersen baska bi linkle degistir -->
+    <div class="parts">
+        <div class="desk" id="1">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(1)">
+            <h2>Desk 1</h2>
+        </div>
+    </div>
+
+    <div class="parts">
+        <div class="desk" id="2">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(2)">
+            <h2>Desk 2</h2>
+        </div>
+        <div class="desk" id="3">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(3)">
+            <h2>Desk 3</h2>
+        </div>
+        <div class="desk" id="4">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(4)">
+            <h2>Desk 4</h2>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content Pop-upin kendisi-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p2 id="p1">For Desk Number </p2>
+            <p2 id="p2">1</p2><br><br>
+            <label for="username">Enter User Name:</label>
+            <input type="text" id="usernameS" name="username"><br><br>
+            <label for="divId">Enter Device ID:</label>
+            <input type="text" id="divIdS" name="divId"><br><br>
+            <input type="submit" value="Submit" onclick="getInfo()">
+        </div>
+
+    </div>
+
+    <div class="parts">
+        <div class="desk" id="5">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(5)">
+            <h2>Desk 5</h2>
+        </div>
+        <div class="desk" id="6">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(6)">
+            <h2>Desk 6</h2>
+        </div>
+        <div class="desk" id="7">
+            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(7)">
+            <h2>Desk 7</h2>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("desk");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        function popup(number) {
+            modal.style.display = "block";
+            document.getElementById("p2").innerHTML = number;
+        }
+        //onemli!!!
+        //Bilgiler girilip submite tiklayinca yazlanlari ceken metod
+        function getInfo() {
+            var username = document.getElementById("usernameS").value; //back-ende verecegin user name
+            var tableNo = document.getElementById("p2").innerHTML; //back-ende vermek istersen masa no
+            var devId = document.getElementById("divIdS").value; //back-ende verecegin device id
+            var result = "User name:" + username + " device id:" + devId + " desk number:" + tableNo;
+            alert(result);//dogru geliyomu ici gormek icin koydum silebilirsin
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            
+            }
+        }
+    </script>
+
+</body>
+</html>
