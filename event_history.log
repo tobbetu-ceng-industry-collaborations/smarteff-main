@@ -255,3 +255,5 @@
 04-Mar-20 15:46:19 - 127.0.0.1 - - [04/Mar/2020 15:46:19] "POST /HandleDeviceEvent HTTP/1.1" 200 -
 04-Mar-20 15:59:29 - 127.0.0.1 - - [04/Mar/2020 15:59:29] "GET /admin HTTP/1.1" 200 -
 04-Mar-20 15:59:29 - 127.0.0.1 - - [04/Mar/2020 15:59:29] "GET /favicon.ico HTTP/1.1" 404 -
+04-Mar-20 17:03:55 - [device_event]A device(id=4) has turned off!
+04-Mar-20 17:03:55 - 127.0.0.1 - - [04/Mar/2020 17:03:55] "POST /HandleDeviceEvent HTTP/1.1" 200 -

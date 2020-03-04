@@ -1,11 +1,9 @@
 from subprocess import PIPE, run
 import sys
+import os
 
-# TODO
-# (1) Retrieve background processes
-# (2) Find process with given ID
-# (3) Suspend scheduled operation
-# (4) Remove entry from scheduled shutdown table
+# --------------USAGE------------------
+# $ python3 de_schedule.py <shutDownID> 
 
 # fetch scheduled shutdown ID   
 scheduledShutdownID =  int(sys.argv[1])
@@ -32,6 +30,9 @@ for line in lines:
         if (arguments[2] == 'S'):
             found.append(arguments[0])
 
-
-
-# print(found)
+# Kill matching scheduled-shutdown processes
+for process in found:
+    print("Killing:" + str(process))
+    command = ( "kill " + str(process) )
+    print(command)
+    os.system(command)

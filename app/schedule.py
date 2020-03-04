@@ -3,9 +3,7 @@ import sys
 import os
 
 # RUN THIS SCRIPT AS:
-# $ nohup python3 schedule.py <Scheduled Shutdown ID> &
-# $ ps ax | grep schedule.py -> will return processes called from this script
-# you can kill the processes with matching Scheduled shutdown ID before autonomous shutdown happens 
+# $ python3 schedule.py <Scheduled Shutdown ID> <Device ID> <secondsUntilShutdown>&
 
 # create scheduler
 s = sched.scheduler(time.time, time.sleep)
@@ -16,15 +14,12 @@ def request_device_off(dev_id):
 
 # turn device off with its given id
 def device_off(dev_id):
-	
-	# print(("bash ../test_api/POST/device_off.sh " +  str(dev_id)).format())
-	
+
 	# make call from test_api
 	os.system(("bash ../test_api/POST/device_off.sh " +  str(dev_id)).format())
 
 # general scheduler
 def schedule(device_id, until_suspension):
-
 
     # enter queue
     s.enter(until_suspension, 1, device_off, argument=(device_id,))
@@ -34,12 +29,12 @@ def schedule(device_id, until_suspension):
 
 # fetch scheduled shutdown ID   
 scheduledShutdownID =  int(sys.argv[1])
+
+# fetch device ID  
 deviceID =  int(sys.argv[2])
+
+# fetch suspension time in terms of seconds  
 until_suspension =  int(sys.argv[3])
 
-# dont forget to fetch deviceID-personIO from tables.
-# you will referencing a scheduled shutdown with the IDs given..
+# schedule shutdown event
 schedule(deviceID, until_suspension)
-
-# it will be most likeliy looking sth like this
-#schedule(deviceID)
