@@ -199,7 +199,7 @@ def simulate_event(n_clicks, value):
             print(isim)
             print("EXİTTAYIZ:"+randomAction)
             if isim in outside:
-                a = 2
+                a = 2 
             else:
                 if isim in inside:
                     inside.remove(isim)
