@@ -56,6 +56,10 @@ temp = ""
 dyear = datetime.datetime.now().strftime('%d-%m-%Y')
 dtime = datetime.datetime.now().strftime('%H:%M:%S')
 data = {}
+dataName = {}
+dataDate = {}
+dataTime = {}
+dataAct = {}
 randomDay=dyear[0:2]
 
 app.layout = html.Div(children=[
@@ -340,10 +344,21 @@ def update_backlog(n_clicks, value):
         events.append(date)
         events.append(time)
         events.append(action)
+
         person_dict = {"name": user, "date": date, "time": time, "action": action}
-        data['events'] = person_dict
-        # for i in range(6):
-        # print("random item from list is: ", random.choice(allUsers))
+        index=0
+
+        data['events']=[]
+        for i in user:
+            data['events'].append({
+                'name': user[index],
+                'date': date[index],
+                'time': time[index],
+                'action': action[index]
+            })
+            index=index+1
+
+
         with open('data.json', 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
 
