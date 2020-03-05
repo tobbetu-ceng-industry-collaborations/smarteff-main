@@ -1,124 +1,287 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        /* stiller */
-        .parts {
-            background-color: white;
-            margin: 30px;
-            padding: 10px;
-            align-items: center;
-            justify-content: center;
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style type="text/css">
+          .dot {
+            height: 18px;
+            width: 18px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+          }
+          .overlay{
+            opacity:5;
+            position:fixed;
+            width:100%;
+            height:100%;
+            top:0px;
+            left:0px;
+            z-index:1000;
+            border: 8px solid;
+          }
+          .overlay2{
+            opacity:1;
+            width:120%;
+            height:170%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 40%;
+            margin-top: 5%;
+
+          }
+          .overlay3{
+            opacity:1;
+            width:80%;
+            height:140%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 10%;
+            margin-top: 15%;
+          }
+          .overlay4{
+            opacity:1;
+            width:80%;
+            height:140%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 100%;
+            margin-top: -89%;
+          }
+          .overlay5{
+            opacity:1;
+            width:60%;
+            height:60%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 100%;
+            margin-top: 15%;
+          }
+          .overlay6{
+            opacity:1;
+            width:60%;
+            height:60%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 100%;
+            margin-top: 40%;
+          }
+          .overlay7{
+            opacity:1;
+            width:60%;
+            height:60%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 100%;
+            margin-top: 17%;
+          }
+          .overlay8{
+            opacity:1;
+            width:60%;
+            height:60%;
+            z-index:1000;
+            border: 4px solid;
+            margin-left: 100%;
+            margin-top: 40%;
+          }
+          .overlay9{
+            opacity:1;
+            width:60%;
+            height:60%;
+            z-index:1000;
+            border: 4px solid;
+            margin-top: -175%;
+            margin-left: 5%;
+          }
+          .overlay10{<!desk 4-->
+            opacity:1;
+            width:60%;
+            height:60%;
+            z-index:1000;
+            border: 4px solid;
+            margin-top: 40%;
+            margin-left: 5%;
+          }
+
+          .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
             display: flex;
-            flex-direction: row;
-            /* border-style: double; */
-            /* border burayada koyabilirsin istersen */ 
-        }
+          }
 
-        .desk {
-            width: 400px;
-            height: 400px;
+          .flex-start {
+            justify-content: flex-start;
+          }
+
+          .flex-end {
+            justify-content: flex-end;
+          }  
+          .flex-end li {
+            background: gold;
+          }
+
+          .center {
             justify-content: center;
-            margin: auto;
-            border-style: double;
-            /*border koyarak cesitlerine bakarak duvar gibi ayirabilirsin*/
-        }
+          }  
+          .center li {
+            background: deepskyblue;
+          }
 
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
+          .space-between {
+            justify-content: space-between;
+          }  
+          .space-between li {
+            background: lightgreen;
+          }
 
-        /* Modal Content Tiklayinca cikan pop-up stili  */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
+          .space-around {
+            justify-content: space-around;
+          }
+          .space-around li {
+            background: hotpink;
+          }
 
-        /* The Close Button */
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
+          .space-evenly {
+            justify-content: space-evenly;
+          }
+          .space-evenly li {
+            background: #bada55;
+          }
+
+          .flex-item {
+            background: tomato;
+            padding: 5px;
+            width: 60px;
+            height: 50px;
+            margin: 5px;
+            line-height: 50px;
+            color: white;
             font-weight: bold;
-        }
+            font-size: 2em;
+            text-align: center;
+          }
 
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <!-- Masalar img src resimleri internetten aliyo internetsiz calismaz istersen locale indir src olarak oranin directorysini ver resimleri degistirmek istersen baska bi linkle degistir -->
-    <div class="parts">
-        <div class="desk" id="1">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(1)">
-            <h2>Desk 1</h2>
-        </div>
-    </div>
+        </style>
+      </head>
+      <body>
+  <div id="myModal" class="modal">
 
-    <div class="parts">
-        <div class="desk" id="2">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(2)">
-            <h2>Desk 2</h2>
-        </div>
-        <div class="desk" id="3">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(3)">
-            <h2>Desk 3</h2>
-        </div>
-        <div class="desk" id="4">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(4)">
-            <h2>Desk 4</h2>
-        </div>
-    </div>
-
-    <div id="myModal" class="modal">
-
-        <!-- Modal content Pop-upin kendisi-->
-        <div class="modal-content">
+        <!-- Modal content Pop-upýn kendisi-->
+        <div class="modal-content" style="width: 15% ; margin-top:15.0%;margin-left: 40%;text-align:center;">
             <span class="close">&times;</span>
             <p2 id="p1">For Desk Number </p2>
             <p2 id="p2">1</p2><br><br>
-            <label for="username">Enter User Name:</label>
-            <input type="text" id="usernameS" name="username"><br><br>
-            <label for="divId">Enter Device ID:</label>
-            <input type="text" id="divIdS" name="divId"><br><br>
+            <label for="username">Select User:</label>
+            <select id="usernameS">
+              {% for person in persons %}
+              <option value={{person}}>{{person}}</option>
+              {% endfor %}
+            </select>
+            <br>    <br>   
             <input type="submit" value="Submit" onclick="getInfo()">
+            <br>            <br>
         </div>
 
     </div>
 
-    <div class="parts">
-        <div class="desk" id="5">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(5)">
-            <h2>Desk 5</h2>
-        </div>
-        <div class="desk" id="6">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(6)">
-            <h2>Desk 6</h2>
-        </div>
-        <div class="desk" id="7">
-            <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="200" height="200" onclick="popup(7)">
-            <h2>Desk 7</h2>
-        </div>
     </div>
+        <div class="overlay">
+          <div style="width: 50%; height: 50%;">
+            <div class="overlay2" style="position: relative;">
+              <div style="width: 50%;height: 50%">
+                <div class="overlay3" style="position: relative;">
+                  <div style="width: 50%;height: 50%">
+                    <div class ="overlay5" style="position: relative;"> 
+                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(1)">
+                      <div style="font-weight:bold; text-align:rigt;position: absolute; bottom:0; right: :0">D1
+                      </div>
+                      <div id="D1"; style="font-weight:bold">
 
+                      </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                    </div>
+                    <div class ="overlay6" style="position: relative;">
+                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(2)">
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D2
+                      </div>
+                      <div id="D2"; style="font-weight:bold">
+
+                      </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                    </div>
+                  </div>
+                  <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D7
+                  </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                </div>
+                <div class="overlay4" style="position: relative;">
+                  <div style="width: 50%;height: 50%">
+                    <div class="overlay7" style="position: relative;">
+                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(5)">
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D5
+                      </div>
+                      <div id="D5"; style="font-weight:bold">
+
+                      </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                    </div>
+                    <div class="overlay8" style="position: relative;">
+                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(6)">
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D6
+                      </div>
+                      <div id="D6"; style="font-weight:bold">
+
+                      </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                    </div>
+
+                    <div class="overlay9" style="position: relative;">
+                     <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(3)"> 
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D3
+                      </div>
+                      <div id="D3"; style="font-weight:bold">
+
+                      </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                   </div>
+                   <div class="overlay10" style="position: relative;">
+                     <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(4)">
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D4
+                      </div>
+                      <div id="D4"; style="font-weight:bold">
+
+                      </div>
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                   </div>
+                 </div>
+                  <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D9
+                  </div>  
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+               </div>
+             </div>
+              <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D8
+              </div>  
+                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+           </div>
+         </div>
+       </div>
     <script>
+
+
+
+        document.getElementById("D1").innerHTML = "John";
+        document.getElementById("D2").innerHTML = "Jane";
+
+        document.getElementById("D3").innerHTML = "Ali";
+        document.getElementById("D4").innerHTML = "Veli";
+        document.getElementById("D5").innerHTML = "Ayse";
+        document.getElementById("D6").innerHTML = "Fatma";
+
         // Get the modal
         var modal = document.getElementById("myModal");
 
@@ -128,19 +291,25 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        var temp = "";
+
         // When the user clicks the button, open the modal
         function popup(number) {
             modal.style.display = "block";
+            var deskName = "D" + number;
+            temp = deskName;
+            
+
             document.getElementById("p2").innerHTML = number;
         }
-        //onemli!!!
-        //Bilgiler girilip submite tiklayinca yazlanlari ceken metod
+        //önemli!!!
+        //Bilgiler girilip submite týklayýnca yazýlanlarý ceken metod
         function getInfo() {
-            var username = document.getElementById("usernameS").value; //back-ende verecegin user name
-            var tableNo = document.getElementById("p2").innerHTML; //back-ende vermek istersen masa no
-            var devId = document.getElementById("divIdS").value; //back-ende verecegin device id
-            var result = "User name:" + username + " device id:" + devId + " desk number:" + tableNo;
-            alert(result);//dogru geliyomu ici gormek icin koydum silebilirsin
+            var username = document.getElementById("usernameS").value; //back-ende 
+            var myElement = document.getElementById(temp);
+            myElement.innerHTML = username;
+            modal.style.display = "none";
+
         }
 
         // When the user clicks on <span> (x), close the modal
@@ -152,10 +321,11 @@
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
-            
+                
             }
         }
     </script>
-
+    
 </body>
 </html>
+

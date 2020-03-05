@@ -257,3 +257,361 @@
 04-Mar-20 15:59:29 - 127.0.0.1 - - [04/Mar/2020 15:59:29] "GET /favicon.ico HTTP/1.1" 404 -
 04-Mar-20 17:03:55 - [device_event]A device(id=4) has turned off!
 04-Mar-20 17:03:55 - 127.0.0.1 - - [04/Mar/2020 17:03:55] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+04-Mar-20 22:09:59 - 127.0.0.1 - - [04/Mar/2020 22:09:59] "GET / HTTP/1.1" 404 -
+04-Mar-20 22:10:00 - 127.0.0.1 - - [04/Mar/2020 22:10:00] "GET /favicon.ico HTTP/1.1" 404 -
+04-Mar-20 22:10:05 - 127.0.0.1 - - [04/Mar/2020 22:10:05] "GET /log HTTP/1.1" 200 -
+04-Mar-20 22:10:18 - 127.0.0.1 - - [04/Mar/2020 22:10:18] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:15:20 - 127.0.0.1 - - [04/Mar/2020 23:15:20] "GET /log HTTP/1.1" 200 -
+04-Mar-20 23:15:25 - 127.0.0.1 - - [04/Mar/2020 23:15:25] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:15:50 - 127.0.0.1 - - [04/Mar/2020 23:15:50] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:16:03 - 127.0.0.1 - - [04/Mar/2020 23:16:03] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:16:15 - 127.0.0.1 - - [04/Mar/2020 23:16:15] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:26:37 - 127.0.0.1 - - [04/Mar/2020 23:26:37] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:26:37 - 127.0.0.1 - - [04/Mar/2020 23:26:37] "GET /favicon.ico HTTP/1.1" 404 -
+04-Mar-20 23:26:56 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+04-Mar-20 23:26:56 -  * Restarting with stat
+04-Mar-20 23:30:58 - 127.0.0.1 - - [04/Mar/2020 23:30:58] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:32:43 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+04-Mar-20 23:32:43 -  * Restarting with stat
+04-Mar-20 23:33:02 - 127.0.0.1 - - [04/Mar/2020 23:33:02] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:35:15 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+04-Mar-20 23:35:15 -  * Restarting with stat
+04-Mar-20 23:41:12 - 127.0.0.1 - - [04/Mar/2020 23:41:12] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:41:36 - 127.0.0.1 - - [04/Mar/2020 23:41:36] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:42:14 - 127.0.0.1 - - [04/Mar/2020 23:42:14] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:42:41 - 127.0.0.1 - - [04/Mar/2020 23:42:41] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:43:53 - 127.0.0.1 - - [04/Mar/2020 23:43:53] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:44:25 - 127.0.0.1 - - [04/Mar/2020 23:44:25] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:45:13 - 127.0.0.1 - - [04/Mar/2020 23:45:13] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:45:56 - 127.0.0.1 - - [04/Mar/2020 23:45:56] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:47:33 - 127.0.0.1 - - [04/Mar/2020 23:47:33] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:51:15 - 127.0.0.1 - - [04/Mar/2020 23:51:15] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:53:42 - 127.0.0.1 - - [04/Mar/2020 23:53:42] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:54:07 - 127.0.0.1 - - [04/Mar/2020 23:54:07] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:57:51 - 127.0.0.1 - - [04/Mar/2020 23:57:51] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:58:59 - 127.0.0.1 - - [04/Mar/2020 23:58:59] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:59:16 - 127.0.0.1 - - [04/Mar/2020 23:59:16] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:59:38 - 127.0.0.1 - - [04/Mar/2020 23:59:38] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:59:49 - 127.0.0.1 - - [04/Mar/2020 23:59:49] "GET /admin HTTP/1.1" 200 -
+04-Mar-20 23:59:58 - 127.0.0.1 - - [04/Mar/2020 23:59:58] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:00:06 - 127.0.0.1 - - [05/Mar/2020 00:00:06] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:00:13 - 127.0.0.1 - - [05/Mar/2020 00:00:13] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:00:38 - 127.0.0.1 - - [05/Mar/2020 00:00:38] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:00:40 - 127.0.0.1 - - [05/Mar/2020 00:00:40] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:00:59 - 127.0.0.1 - - [05/Mar/2020 00:00:59] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:01:14 - 127.0.0.1 - - [05/Mar/2020 00:01:14] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:01:35 - 127.0.0.1 - - [05/Mar/2020 00:01:35] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:02:02 - 127.0.0.1 - - [05/Mar/2020 00:02:02] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:02:22 - 127.0.0.1 - - [05/Mar/2020 00:02:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:02:44 - 127.0.0.1 - - [05/Mar/2020 00:02:44] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:03:10 - 127.0.0.1 - - [05/Mar/2020 00:03:10] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:22:16 - 127.0.0.1 - - [05/Mar/2020 00:22:16] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:25:00 - 127.0.0.1 - - [05/Mar/2020 00:25:00] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:26:57 - 127.0.0.1 - - [05/Mar/2020 00:26:57] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:27:16 - 127.0.0.1 - - [05/Mar/2020 00:27:16] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:27:34 - 127.0.0.1 - - [05/Mar/2020 00:27:34] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:27:49 - 127.0.0.1 - - [05/Mar/2020 00:27:49] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:28:22 - 127.0.0.1 - - [05/Mar/2020 00:28:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:28:46 - 127.0.0.1 - - [05/Mar/2020 00:28:46] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:29:19 - 127.0.0.1 - - [05/Mar/2020 00:29:19] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:29:55 - 127.0.0.1 - - [05/Mar/2020 00:29:55] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:30:36 - 127.0.0.1 - - [05/Mar/2020 00:30:36] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:30:57 - 127.0.0.1 - - [05/Mar/2020 00:30:57] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:31:17 - 127.0.0.1 - - [05/Mar/2020 00:31:17] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:31:24 - 127.0.0.1 - - [05/Mar/2020 00:31:24] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:31:35 - 127.0.0.1 - - [05/Mar/2020 00:31:35] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:32:57 - 127.0.0.1 - - [05/Mar/2020 00:32:57] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:34:06 - 127.0.0.1 - - [05/Mar/2020 00:34:06] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:34:42 - 127.0.0.1 - - [05/Mar/2020 00:34:42] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:37:54 - 127.0.0.1 - - [05/Mar/2020 00:37:54] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:38:39 - 127.0.0.1 - - [05/Mar/2020 00:38:39] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:38:56 - 127.0.0.1 - - [05/Mar/2020 00:38:56] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:39:16 - 127.0.0.1 - - [05/Mar/2020 00:39:16] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:40:14 - 127.0.0.1 - - [05/Mar/2020 00:40:14] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:40:18 - 127.0.0.1 - - [05/Mar/2020 00:40:18] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:40:48 - 127.0.0.1 - - [05/Mar/2020 00:40:48] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:41:02 - 127.0.0.1 - - [05/Mar/2020 00:41:02] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:41:27 - 127.0.0.1 - - [05/Mar/2020 00:41:27] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:41:48 - 127.0.0.1 - - [05/Mar/2020 00:41:48] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:42:55 - 127.0.0.1 - - [05/Mar/2020 00:42:55] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:44:30 - 127.0.0.1 - - [05/Mar/2020 00:44:30] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:44:45 - 127.0.0.1 - - [05/Mar/2020 00:44:45] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:45:22 - 127.0.0.1 - - [05/Mar/2020 00:45:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:45:40 - 127.0.0.1 - - [05/Mar/2020 00:45:40] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:46:52 - 127.0.0.1 - - [05/Mar/2020 00:46:52] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:46:56 - 127.0.0.1 - - [05/Mar/2020 00:46:56] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:47:21 - 127.0.0.1 - - [05/Mar/2020 00:47:21] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:47:39 - 127.0.0.1 - - [05/Mar/2020 00:47:39] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:47:59 - 127.0.0.1 - - [05/Mar/2020 00:47:59] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:48:08 - 127.0.0.1 - - [05/Mar/2020 00:48:08] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 00:48:37 - 127.0.0.1 - - [05/Mar/2020 00:48:37] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:01:06 - 127.0.0.1 - - [05/Mar/2020 01:01:06] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:01:06 - 127.0.0.1 - - [05/Mar/2020 01:01:06] "GET /favicon.ico HTTP/1.1" 404 -
+05-Mar-20 01:01:36 - 127.0.0.1 - - [05/Mar/2020 01:01:36] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:02:22 - 127.0.0.1 - - [05/Mar/2020 01:02:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:02:32 - 127.0.0.1 - - [05/Mar/2020 01:02:32] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:02:53 - 127.0.0.1 - - [05/Mar/2020 01:02:53] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:03:32 - 127.0.0.1 - - [05/Mar/2020 01:03:32] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:03:51 - 127.0.0.1 - - [05/Mar/2020 01:03:51] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:04:18 - 127.0.0.1 - - [05/Mar/2020 01:04:18] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:04:26 - 127.0.0.1 - - [05/Mar/2020 01:04:26] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:04:36 - 127.0.0.1 - - [05/Mar/2020 01:04:36] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:04:43 - 127.0.0.1 - - [05/Mar/2020 01:04:43] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:04:57 - 127.0.0.1 - - [05/Mar/2020 01:04:57] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:05:06 - 127.0.0.1 - - [05/Mar/2020 01:05:06] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:05:21 - 127.0.0.1 - - [05/Mar/2020 01:05:21] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:05:46 - 127.0.0.1 - - [05/Mar/2020 01:05:46] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:06:10 - 127.0.0.1 - - [05/Mar/2020 01:06:10] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:06:19 - 127.0.0.1 - - [05/Mar/2020 01:06:19] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:06:40 - 127.0.0.1 - - [05/Mar/2020 01:06:40] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:07:11 - 127.0.0.1 - - [05/Mar/2020 01:07:11] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:07:17 - 127.0.0.1 - - [05/Mar/2020 01:07:17] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:09:09 - 127.0.0.1 - - [05/Mar/2020 01:09:09] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:09:51 - 127.0.0.1 - - [05/Mar/2020 01:09:51] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:10:05 - 127.0.0.1 - - [05/Mar/2020 01:10:05] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:35:41 - 127.0.0.1 - - [05/Mar/2020 01:35:41] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:36:21 - 127.0.0.1 - - [05/Mar/2020 01:36:21] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:37:02 - 127.0.0.1 - - [05/Mar/2020 01:37:02] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:37:23 - 127.0.0.1 - - [05/Mar/2020 01:37:23] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:37:31 - 127.0.0.1 - - [05/Mar/2020 01:37:31] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:37:49 - 127.0.0.1 - - [05/Mar/2020 01:37:49] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:37:54 - 127.0.0.1 - - [05/Mar/2020 01:37:54] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:38:39 - 127.0.0.1 - - [05/Mar/2020 01:38:39] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:38:49 - 127.0.0.1 - - [05/Mar/2020 01:38:49] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:39:23 - 127.0.0.1 - - [05/Mar/2020 01:39:23] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:39:33 - 127.0.0.1 - - [05/Mar/2020 01:39:33] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:39:56 - 127.0.0.1 - - [05/Mar/2020 01:39:56] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:40:22 - 127.0.0.1 - - [05/Mar/2020 01:40:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:41:24 - 127.0.0.1 - - [05/Mar/2020 01:41:24] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:41:26 - 127.0.0.1 - - [05/Mar/2020 01:41:26] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:41:32 - 127.0.0.1 - - [05/Mar/2020 01:41:32] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:08 - 127.0.0.1 - - [05/Mar/2020 01:42:08] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:18 - 127.0.0.1 - - [05/Mar/2020 01:42:18] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:19 - 127.0.0.1 - - [05/Mar/2020 01:42:19] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:32 - 127.0.0.1 - - [05/Mar/2020 01:42:32] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:38 - 127.0.0.1 - - [05/Mar/2020 01:42:38] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:44 - 127.0.0.1 - - [05/Mar/2020 01:42:44] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:49 - 127.0.0.1 - - [05/Mar/2020 01:42:49] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:42:54 - 127.0.0.1 - - [05/Mar/2020 01:42:54] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:43:16 - 127.0.0.1 - - [05/Mar/2020 01:43:16] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:43:22 - 127.0.0.1 - - [05/Mar/2020 01:43:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:43:36 - 127.0.0.1 - - [05/Mar/2020 01:43:36] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:43:44 - 127.0.0.1 - - [05/Mar/2020 01:43:44] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:44:06 - 127.0.0.1 - - [05/Mar/2020 01:44:06] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:44:51 - 127.0.0.1 - - [05/Mar/2020 01:44:51] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:44:58 - 127.0.0.1 - - [05/Mar/2020 01:44:58] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:45:28 - 127.0.0.1 - - [05/Mar/2020 01:45:28] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:45:35 - 127.0.0.1 - - [05/Mar/2020 01:45:35] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:46:22 - 127.0.0.1 - - [05/Mar/2020 01:46:22] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:46:26 - 127.0.0.1 - - [05/Mar/2020 01:46:26] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:46:46 - 127.0.0.1 - - [05/Mar/2020 01:46:46] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:46:59 - 127.0.0.1 - - [05/Mar/2020 01:46:59] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:47:33 - 127.0.0.1 - - [05/Mar/2020 01:47:33] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:47:37 - 127.0.0.1 - - [05/Mar/2020 01:47:37] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:49:41 - 127.0.0.1 - - [05/Mar/2020 01:49:41] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:50:40 - 127.0.0.1 - - [05/Mar/2020 01:50:40] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:50:57 - 127.0.0.1 - - [05/Mar/2020 01:50:57] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:51:04 - 127.0.0.1 - - [05/Mar/2020 01:51:04] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:51:12 - 127.0.0.1 - - [05/Mar/2020 01:51:12] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:51:21 - 127.0.0.1 - - [05/Mar/2020 01:51:21] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:51:43 - 127.0.0.1 - - [05/Mar/2020 01:51:43] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:52:03 - 127.0.0.1 - - [05/Mar/2020 01:52:03] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:52:08 - 127.0.0.1 - - [05/Mar/2020 01:52:08] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:52:15 - 127.0.0.1 - - [05/Mar/2020 01:52:15] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:53:53 - 127.0.0.1 - - [05/Mar/2020 01:53:53] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:55:59 - 127.0.0.1 - - [05/Mar/2020 01:55:59] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 01:58:25 - 127.0.0.1 - - [05/Mar/2020 01:58:25] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:00:10 - 127.0.0.1 - - [05/Mar/2020 02:00:10] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:02:52 - 127.0.0.1 - - [05/Mar/2020 02:02:52] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:05:57 - 127.0.0.1 - - [05/Mar/2020 02:05:57] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:07:13 - 127.0.0.1 - - [05/Mar/2020 02:07:13] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:07:55 - 127.0.0.1 - - [05/Mar/2020 02:07:55] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:08:14 - 127.0.0.1 - - [05/Mar/2020 02:08:14] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:08:45 - 127.0.0.1 - - [05/Mar/2020 02:08:45] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:08:45 - 127.0.0.1 - - [05/Mar/2020 02:08:45] "GET /favicon.ico HTTP/1.1" 404 -
+05-Mar-20 02:09:15 - 127.0.0.1 - - [05/Mar/2020 02:09:15] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:09:38 - 127.0.0.1 - - [05/Mar/2020 02:09:38] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:10:05 - 127.0.0.1 - - [05/Mar/2020 02:10:05] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:10:25 - 127.0.0.1 - - [05/Mar/2020 02:10:25] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:11:07 - 127.0.0.1 - - [05/Mar/2020 02:11:07] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:11:50 - 127.0.0.1 - - [05/Mar/2020 02:11:50] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:12:26 - 127.0.0.1 - - [05/Mar/2020 02:12:26] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:18:18 - 127.0.0.1 - - [05/Mar/2020 02:18:18] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:21:09 - 127.0.0.1 - - [05/Mar/2020 02:21:09] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:21:27 - 127.0.0.1 - - [05/Mar/2020 02:21:27] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:21:37 - 127.0.0.1 - - [05/Mar/2020 02:21:37] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:33:31 - 127.0.0.1 - - [05/Mar/2020 02:33:31] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:33:31 - 127.0.0.1 - - [05/Mar/2020 02:33:31] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:34:01 - 127.0.0.1 - - [05/Mar/2020 02:34:01] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:35:59 - 127.0.0.1 - - [05/Mar/2020 02:35:59] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:41:05 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:41:05 -  * Restarting with stat
+05-Mar-20 02:43:08 - 127.0.0.1 - - [05/Mar/2020 02:43:08] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:43:08 - 127.0.0.1 - - [05/Mar/2020 02:43:08] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:44:03 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:44:03 -  * Restarting with stat
+05-Mar-20 02:44:17 - 127.0.0.1 - - [05/Mar/2020 02:44:17] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:44:17 - 127.0.0.1 - - [05/Mar/2020 02:44:17] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:44:17 - 127.0.0.1 - - [05/Mar/2020 02:44:17] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:44:17 - 127.0.0.1 - - [05/Mar/2020 02:44:17] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:44:17 - 127.0.0.1 - - [05/Mar/2020 02:44:17] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:44:17 - 127.0.0.1 - - [05/Mar/2020 02:44:17] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:44:31 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:44:31 -  * Restarting with stat
+05-Mar-20 02:44:34 - 127.0.0.1 - - [05/Mar/2020 02:44:34] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:44:34 - 127.0.0.1 - - [05/Mar/2020 02:44:34] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:44:34 - 127.0.0.1 - - [05/Mar/2020 02:44:34] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:44:34 - 127.0.0.1 - - [05/Mar/2020 02:44:34] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:44:34 - 127.0.0.1 - - [05/Mar/2020 02:44:34] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:44:34 - 127.0.0.1 - - [05/Mar/2020 02:44:34] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:46:20 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:46:20 -  * Restarting with stat
+05-Mar-20 02:46:25 - 127.0.0.1 - - [05/Mar/2020 02:46:25] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:46:25 - 127.0.0.1 - - [05/Mar/2020 02:46:25] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:46:25 - 127.0.0.1 - - [05/Mar/2020 02:46:25] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:46:25 - 127.0.0.1 - - [05/Mar/2020 02:46:25] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:46:25 - 127.0.0.1 - - [05/Mar/2020 02:46:25] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:46:25 - 127.0.0.1 - - [05/Mar/2020 02:46:25] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:47:15 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:47:15 -  * Restarting with stat
+05-Mar-20 02:47:32 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:47:32 -  * Restarting with stat
+05-Mar-20 02:47:39 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:47:39 -  * Restarting with stat
+05-Mar-20 02:47:50 - 127.0.0.1 - - [05/Mar/2020 02:47:50] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:47:50 - 127.0.0.1 - - [05/Mar/2020 02:47:50] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:47:50 - 127.0.0.1 - - [05/Mar/2020 02:47:50] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:47:50 - 127.0.0.1 - - [05/Mar/2020 02:47:50] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:47:50 - 127.0.0.1 - - [05/Mar/2020 02:47:50] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:47:50 - 127.0.0.1 - - [05/Mar/2020 02:47:50] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:48:31 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:48:31 -  * Restarting with stat
+05-Mar-20 02:48:35 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:48:35 -  * Restarting with stat
+05-Mar-20 02:48:46 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:48:47 -  * Restarting with stat
+05-Mar-20 02:48:52 - 127.0.0.1 - - [05/Mar/2020 02:48:52] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:48:52 - 127.0.0.1 - - [05/Mar/2020 02:48:52] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:48:52 - 127.0.0.1 - - [05/Mar/2020 02:48:52] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:48:52 - 127.0.0.1 - - [05/Mar/2020 02:48:52] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:48:52 - 127.0.0.1 - - [05/Mar/2020 02:48:52] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:48:52 - 127.0.0.1 - - [05/Mar/2020 02:48:52] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:49:20 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:49:21 -  * Restarting with stat
+05-Mar-20 02:49:30 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:49:30 -  * Restarting with stat
+05-Mar-20 02:49:31 - 127.0.0.1 - - [05/Mar/2020 02:49:31] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:49:31 - 127.0.0.1 - - [05/Mar/2020 02:49:31] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:49:31 - 127.0.0.1 - - [05/Mar/2020 02:49:31] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:49:31 - 127.0.0.1 - - [05/Mar/2020 02:49:31] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:49:31 - 127.0.0.1 - - [05/Mar/2020 02:49:31] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:49:31 - 127.0.0.1 - - [05/Mar/2020 02:49:31] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:50:07 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:50:08 -  * Restarting with stat
+05-Mar-20 02:50:44 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:50:44 -  * Restarting with stat
+05-Mar-20 02:51:15 - 127.0.0.1 - - [05/Mar/2020 02:51:15] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:51:15 - 127.0.0.1 - - [05/Mar/2020 02:51:15] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:51:15 - 127.0.0.1 - - [05/Mar/2020 02:51:15] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:51:15 - 127.0.0.1 - - [05/Mar/2020 02:51:15] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:51:15 - 127.0.0.1 - - [05/Mar/2020 02:51:15] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:51:15 - 127.0.0.1 - - [05/Mar/2020 02:51:15] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:51:41 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:51:42 - 127.0.0.1 - - [05/Mar/2020 02:51:42] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:51:42 - 127.0.0.1 - - [05/Mar/2020 02:51:42] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:51:42 - 127.0.0.1 - - [05/Mar/2020 02:51:42] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:51:42 - 127.0.0.1 - - [05/Mar/2020 02:51:42] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:51:42 - 127.0.0.1 - - [05/Mar/2020 02:51:42] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:51:43 - 127.0.0.1 - - [05/Mar/2020 02:51:43] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:51:50 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:51:51 - 127.0.0.1 - - [05/Mar/2020 02:51:51] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:51:51 - 127.0.0.1 - - [05/Mar/2020 02:51:51] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:51:51 - 127.0.0.1 - - [05/Mar/2020 02:51:51] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:51:51 - 127.0.0.1 - - [05/Mar/2020 02:51:51] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:51:51 - 127.0.0.1 - - [05/Mar/2020 02:51:51] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:51:51 - 127.0.0.1 - - [05/Mar/2020 02:51:51] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:52:12 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:52:13 - 127.0.0.1 - - [05/Mar/2020 02:52:13] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:52:13 - 127.0.0.1 - - [05/Mar/2020 02:52:13] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:52:13 - 127.0.0.1 - - [05/Mar/2020 02:52:13] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:52:13 - 127.0.0.1 - - [05/Mar/2020 02:52:13] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:52:13 - 127.0.0.1 - - [05/Mar/2020 02:52:13] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:52:14 - 127.0.0.1 - - [05/Mar/2020 02:52:14] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:52:16 - 127.0.0.1 - - [05/Mar/2020 02:52:16] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:52:16 - 127.0.0.1 - - [05/Mar/2020 02:52:16] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:52:16 - 127.0.0.1 - - [05/Mar/2020 02:52:16] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:52:16 - 127.0.0.1 - - [05/Mar/2020 02:52:16] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:52:16 - 127.0.0.1 - - [05/Mar/2020 02:52:16] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:52:16 - 127.0.0.1 - - [05/Mar/2020 02:52:16] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:54:10 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:54:14 - 127.0.0.1 - - [05/Mar/2020 02:54:14] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:54:15 - 127.0.0.1 - - [05/Mar/2020 02:54:15] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:54:15 - 127.0.0.1 - - [05/Mar/2020 02:54:15] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:54:15 - 127.0.0.1 - - [05/Mar/2020 02:54:15] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:54:15 - 127.0.0.1 - - [05/Mar/2020 02:54:15] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:54:15 - 127.0.0.1 - - [05/Mar/2020 02:54:15] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:54:41 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:54:43 - 127.0.0.1 - - [05/Mar/2020 02:54:43] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:54:43 - 127.0.0.1 - - [05/Mar/2020 02:54:43] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:54:43 - 127.0.0.1 - - [05/Mar/2020 02:54:43] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:54:43 - 127.0.0.1 - - [05/Mar/2020 02:54:43] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:54:43 - 127.0.0.1 - - [05/Mar/2020 02:54:43] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:54:43 - 127.0.0.1 - - [05/Mar/2020 02:54:43] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:54:54 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:54:55 - 127.0.0.1 - - [05/Mar/2020 02:54:55] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:54:55 - 127.0.0.1 - - [05/Mar/2020 02:54:55] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:55:35 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:55:40 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:55:41 - 127.0.0.1 - - [05/Mar/2020 02:55:41] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:55:41 - 127.0.0.1 - - [05/Mar/2020 02:55:41] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:56:28 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:56:29 - 127.0.0.1 - - [05/Mar/2020 02:56:29] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:56:29 - 127.0.0.1 - - [05/Mar/2020 02:56:29] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:56:46 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:56:48 - 127.0.0.1 - - [05/Mar/2020 02:56:48] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:56:48 - 127.0.0.1 - - [05/Mar/2020 02:56:48] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:56:49 - 127.0.0.1 - - [05/Mar/2020 02:56:49] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:56:49 - 127.0.0.1 - - [05/Mar/2020 02:56:49] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:56:49 - 127.0.0.1 - - [05/Mar/2020 02:56:49] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:56:49 - 127.0.0.1 - - [05/Mar/2020 02:56:49] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:57:02 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:57:04 - 127.0.0.1 - - [05/Mar/2020 02:57:04] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:57:04 - 127.0.0.1 - - [05/Mar/2020 02:57:04] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:57:04 - 127.0.0.1 - - [05/Mar/2020 02:57:04] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:57:04 - 127.0.0.1 - - [05/Mar/2020 02:57:04] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:57:04 - 127.0.0.1 - - [05/Mar/2020 02:57:04] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:57:04 - 127.0.0.1 - - [05/Mar/2020 02:57:04] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:57:17 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:57:19 - 127.0.0.1 - - [05/Mar/2020 02:57:19] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:57:19 - 127.0.0.1 - - [05/Mar/2020 02:57:19] "GET /admin HTTP/1.1" 500 -
+05-Mar-20 02:57:19 - 127.0.0.1 - - [05/Mar/2020 02:57:19] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+05-Mar-20 02:57:19 - 127.0.0.1 - - [05/Mar/2020 02:57:19] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05-Mar-20 02:57:19 - 127.0.0.1 - - [05/Mar/2020 02:57:19] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05-Mar-20 02:57:19 - 127.0.0.1 - - [05/Mar/2020 02:57:19] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05-Mar-20 02:57:55 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:57:56 - 127.0.0.1 - - [05/Mar/2020 02:57:56] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:57:56 - 127.0.0.1 - - [05/Mar/2020 02:57:56] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:58:21 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:58:44 - 127.0.0.1 - - [05/Mar/2020 02:58:44] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:58:45 - 127.0.0.1 - - [05/Mar/2020 02:58:45] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:59:21 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:59:34 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 02:59:38 - 127.0.0.1 - - [05/Mar/2020 02:59:38] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 02:59:38 - 127.0.0.1 - - [05/Mar/2020 02:59:38] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 02:59:52 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 03:00:02 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 03:00:12 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 03:00:14 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 03:00:20 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+05-Mar-20 03:00:21 - 127.0.0.1 - - [05/Mar/2020 03:00:21] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 03:00:21 - 127.0.0.1 - - [05/Mar/2020 03:00:21] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 03:02:02 - 127.0.0.1 - - [05/Mar/2020 03:02:02] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 03:02:02 - 127.0.0.1 - - [05/Mar/2020 03:02:02] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 03:03:54 - 127.0.0.1 - - [05/Mar/2020 03:03:54] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 03:03:54 - 127.0.0.1 - - [05/Mar/2020 03:03:54] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 03:06:19 - 127.0.0.1 - - [05/Mar/2020 03:06:19] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 03:06:19 - 127.0.0.1 - - [05/Mar/2020 03:06:19] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 03:06:31 - 127.0.0.1 - - [05/Mar/2020 03:06:31] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 03:06:31 - 127.0.0.1 - - [05/Mar/2020 03:06:31] "GET /admin HTTP/1.1" 200 -
+05-Mar-20 03:07:09 - 127.0.0.1 - - [05/Mar/2020 03:07:09] "GET /ListPersons HTTP/1.1" 200 -
+05-Mar-20 03:07:09 - 127.0.0.1 - - [05/Mar/2020 03:07:09] "GET /admin HTTP/1.1" 200 -

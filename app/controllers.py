@@ -86,7 +86,7 @@ def device_event():
 @app.route("/ManageDevice", methods=['POST'])
 def manage_device():
 
-    # parse http request body
+    # parse http request body 
     data = request.json
     person_id= data['personid']
     device_id= data['deviceid']
