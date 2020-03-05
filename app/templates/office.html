@@ -176,8 +176,13 @@
             <span class="close">&times;</span>
             <p2 id="p1">For Desk Number </p2>
             <p2 id="p2">1</p2><br><br>
-            <label for="username">Enter User Name:</label>
-            <input type="text" id="usernameS" name="username"><br><br>
+            <label for="username">Select User:</label>
+            <select id="usernameS">
+              {% for person in persons %}
+              <option value={{person}}>{{person}}</option>
+              {% endfor %}
+            </select>
+            <br>    <br>   
             <input type="submit" value="Submit" onclick="getInfo()">
             <br>            <br>
         </div>
@@ -267,7 +272,7 @@
        </div>
     <script>
 
-      
+
 
         document.getElementById("D1").innerHTML = "John";
         document.getElementById("D2").innerHTML = "Jane";
