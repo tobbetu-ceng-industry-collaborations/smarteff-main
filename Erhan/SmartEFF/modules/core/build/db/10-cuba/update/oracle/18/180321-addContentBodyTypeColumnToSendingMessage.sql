@@ -1,1 +1,0 @@
-alter table SYS_SENDING_MESSAGE add BODY_CONTENT_TYPE varchar2(50)^

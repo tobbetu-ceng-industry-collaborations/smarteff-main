@@ -1,4 +1,0 @@
-drop index IDX_BPM_PROC_MODEL_UNIQ_NAME if exists;
-create unique index IDX_BPM_PROC_MODEL_UNIQ_NAME on BPM_PROC_MODEL (NAME, DELETE_TS);
-drop index IDX_BPM_STENCIL_SET_UNIQ_NAME if exists;
-create unique index IDX_BPM_STENCIL_SET_UNIQ_NAME on BPM_STENCIL_SET (NAME, DELETE_TS);

@@ -1,1 +1,0 @@
-alter table SYS_FOLDER  add column CODE varchar(200);

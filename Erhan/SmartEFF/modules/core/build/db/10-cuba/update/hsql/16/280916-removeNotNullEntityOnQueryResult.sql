@@ -1,1 +1,0 @@
-alter table SYS_QUERY_RESULT alter column ENTITY_ID SET NULL^

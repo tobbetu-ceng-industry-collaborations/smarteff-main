@@ -1,2 +1,0 @@
-alter table SYS_CATEGORY_ATTR add DESCRIPTION varchar2(1000)^
-alter table SYS_CATEGORY_ATTR add LOCALE_DESCRIPTIONS varchar2(4000)^

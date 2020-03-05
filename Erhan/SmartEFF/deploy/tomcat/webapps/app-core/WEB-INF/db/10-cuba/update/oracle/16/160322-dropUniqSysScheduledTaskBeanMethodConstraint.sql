@@ -1,1 +1,0 @@
-drop index IDX_SYS_SCH_TAS_UNI_BEA_MET^

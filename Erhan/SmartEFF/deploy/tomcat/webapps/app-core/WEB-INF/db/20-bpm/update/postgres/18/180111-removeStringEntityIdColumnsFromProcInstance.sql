@@ -1,1 +1,0 @@
-alter table BPM_PROC_INSTANCE drop column if exists STRING_ENTITY_ID cascade ;
