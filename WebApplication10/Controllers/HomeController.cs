@@ -4,12 +4,19 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication10.Controllers
+namespace WebApplication11.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(string name)
+        {
+            ViewBag.Name = name;
             return View();
         }
 
