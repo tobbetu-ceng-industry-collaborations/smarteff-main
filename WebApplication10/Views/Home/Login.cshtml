@@ -1,0 +1,521 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<style>
+    td.dot {
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .Edit, .Details {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .Edit, .Details {
+        border-radius: 8px;
+    }
+    .Details {
+        background-color: #99ccff;
+    }
+
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal2 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .modal2-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .modal-header {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+    }
+
+    .modal-body {
+        padding: 2px 16px;
+    }
+
+    .modal-footer {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+    }
+
+    .modal2-header {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+    }
+
+    .modal2-body {
+        padding: 2px 16px;
+    }
+
+    .modal2-footer {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+    }
+    .modal2-button2 {
+        background-color: #555555;
+    }
+
+    .modal-body-button {
+        background-color: #555555;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css" />
+
+
+<meta charset=utf-8 />
+
+<h2>Devices</h2>
+<table style="width:100%" bordercolor="Grey" id="table">
+    <thead>
+        <tr>
+
+            <th>Devices</th>
+            <th>Status</th>
+            <th>Automation</th>
+            <th>Edit / Delete</th>
+
+
+        </tr>
+    </thead>
+
+
+</table>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Edit</h2>
+        </div>
+        <div class="modal-body">
+            <p><span style="color:darkolivegreen;font-weight:bold">Suspend the automation</span></p>
+            <input type="radio" id="1hours" name="hours" value="1hours">
+            <label for="male">1hours</label><br>
+            <input type="radio" id="3hours" name="hours" value="3hours">
+            <label for="female">3hours</label><br>
+            <input type="radio" id="6hours" name="hours" value="6hours">
+            <label for="other">6hours</label><br>
+            <input type="radio" id="24hours" name="hours" value="24hours">
+            <label for="other">24hours</label><br>
+            <input id="button" type="button" value="save" />
+            <br><br>
+        </div>
+
+    </div>
+
+</div>
+<div id="myModal2" class="modal2">
+
+    <!-- Modal content -->
+    <div class="modal2-content">
+        <div class="modal2-header">
+            <span class="close">&times;</span>
+            <h2>Edit</h2>
+        </div>
+        <div class="modal2-body">
+            <p><span style="color:darkolivegreen;font-weight:bold">Automation on</span></p>
+            <input type="radio" id="automationOn" name="Automation" value="Yes">
+            <label for="auto">Yes</label><br>
+            <input id="button2" type="button" value="save" />
+
+        </div>
+        <br>
+    </div>
+
+</div>
+
+@section scripts
+    {
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.1/datatables.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+        var editor;
+        var tarih;//degisen tarih bilgisini tutar
+        var data;//post edilecek json için
+        var radioValue;//ertelencek saat bilgisi tutar
+        var machineid;//tablodan secilen cihazin idsi
+
+        $(document).ready(function () {
+            var id = parseInt( @ViewBag.Name);
+         //   alert(id);
+
+              var table = $('#table').DataTable(
+                {
+ 
+                    ajax: {
+                        "url": "https://www.json-generator.com/api/json/get/bTTGvGqRiW?indent=2",
+                        "type": "GET",
+                        "datatype": "json",
+                        "dataSrc": "devices"
+                    },
+
+                    aoColumns: [
+
+                        { mData: 'name' },
+                        { mData: 'isOn' },
+                        { mData: 'automation.suspended' },
+                        { defaultContent: '<input type="button" class="Edit" value="Edit"/><input type="button" class="Details" value="Details"/>' }
+
+
+                    ],
+
+                      "rowCallback": function (row, data, index) {
+                  
+                                      if ( data.isOn.toString() === 'true' )
+                                        {        
+                                          $('td:eq(1)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="green" />');
+                                         }
+                                          if ( data.isOn.toString() === 'false' )
+                                        {        
+                                          $('td:eq(1)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="red" />');
+                          }
+
+
+                                      if ( data.automation.suspended.toString() === 'true' )
+                                        {        
+                                          $('td:eq(2)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="green" />');
+                                         }
+                                          if ( data.automation.suspended.toString() === 'false' )
+                                        {        
+                                          $('td:eq(2)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="red" />');
+                                        }
+
+                      }
+
+
+
+                });
+
+            $('#table tbody').on('click', '.Edit', function () {
+
+                var data = table.row($(this).parents('tr')).data();
+                var d = data.automation.suspended; var t = 'true';
+                if (d.toString() === 'true') {
+                    modal.style.display = "block";
+                }
+                else if (data.automation.suspended.toString() === 'false') {
+                    modal2.style.display = "block";
+                }
+                machineid = data.id;
+
+
+            });
+
+
+
+            span.onclick = function () {
+
+                modal.style.display = "none";
+                modal2.style.display = "none";
+            }
+            span2.onclick = function () {
+                modal2.style.display = "none";
+
+            }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+
+                } if (event.target == modal2) {
+                    modal2.style.display = "none";
+
+                }
+            }
+            var yesNo;
+
+            button2.onclick = function (event) {
+
+                yesNo = $("input[name='Automation']:checked").val();
+                
+
+
+                if (yesNo == 'Yes') {
+
+                    alert("status changed");
+
+                    //suspend false yapma durumu
+                    //format:  {
+                    //“personid”:”1”,
+                    //“deviceid”:”1”
+                    //}
+                    var degistir = {
+                                        personid: id, deviceid:machineid
+                                    };
+
+
+                    var stringData = JSON.stringify(degistir); //olusturulan datanin jsona donusturulmesi
+
+                    //post islemi
+                    /*  $.ajax({
+                        type: "POST",
+                        url: "",
+                        data: stringData,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: OnSucces,
+                        error: OnError
+                    });  */
+                    function OnSucces(response) {
+                        if (response == 1) {
+                            alert('Category Updated Successfully <!!!');
+                            reset();
+                        }
+                        else {
+                            alert(response);
+                        }
+                    }
+                    function OnError(response) {
+                        alert(response);
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+                span2.onclick();
+
+
+            }
+
+            button.onclick = function (event) {
+
+                //suspend true yapma
+                radioValue = $("input[name='hours']:checked").val();//degistirilmek istenen id
+               //  alert("radio: " + radioValue);
+
+                $.ajax({
+                    url: 'https://api.myjson.com/bins/1cltpq',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (result) {
+                        
+                        var i, x = "", tr = '';
+                        for (i in result.devices) {
+
+                            var deger = '';
+
+                            if (result.devices[i].id == machineid) {
+
+
+                                n = new Date(); //get current date
+                                var month = n.getMonth() + 1;
+                                var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                                month = monthArr[month];
+                                var day = n.getDate();
+                                var hour = n.getHours();
+                                var year = n.getFullYear();
+                                var min = n.getMinutes();
+
+                                var pos = radioValue.search("h");
+                                pos = radioValue.slice(0, pos);
+
+
+                                hour = +hour + +pos;
+
+                                var count;
+                                if (hour >= Number(24)) {//saat 24 satti gectiyse bir sonraki gune gecilir
+                                    count = 1;
+                                    hour = Number(hour) - Number(24);
+
+                                }
+                                if (count == 1) {
+
+                                    day = +day + +1;
+                                    //bir sonraki aya gecme durumu kontrolu
+                                    if (Number(month) % Number(2) == 1) {//tek ay 31 gun
+                                        if (Number(day) > 31) {
+                                            day = 1; month = +month + +1;
+                                            month = monthArr[month];
+                                        }
+                                    }
+
+                                    if (Number(month) % Number(2) == 0) {//cift ay 30 gun
+                                        if (month == 8) {//agustos olma durumu
+
+                                            if (Number(day) > 31) {
+                                                day = 1; month = +month + +1;
+                                                month = monthArr[month];
+                                            }
+
+                                        } else if (Number(day) > 30) {
+                                            day = 1; month = +month + +1;
+                                            month = monthArr[month];
+                                        }
+                                    }
+                                }
+                                if (month > 12) {//bir sonraki yila gecme kontrolu
+
+                                    year = +year + +1;
+                                    month = 1;
+                                    month = monthArr[month];
+
+                                }
+
+                                //format : 15 January 20:00pm 2020
+                                var amPm;
+                                if (hour < 12) {
+                                    amPm = "a.m.";
+                                }
+                                else {
+                                    amPm = "p.m";
+                                }
+                                tarih = day + " " + month + " " + hour + ":" + min + amPm + " " + year;// degisen tarih
+                                alert("extended to :" + tarih);
+
+
+                                //format:{
+                                //“personid”:”1”,
+                                //“deviceid”:”1”,
+                                //“until”:”2020-01-29-10-30-00”
+                                //}
+                                data = {
+                                    personid: id, deviceid: machineid,until:tarih
+                                };
+                                
+
+                            }
+                        }
+
+
+
+                    }
+                });
+
+                var stringData = JSON.stringify(data); //olusturulan datanin jsona donusturulmesi
+
+                //post islemi
+               /* $.ajax({
+                    type: "POST",
+                    url: "",
+                    data: stringData,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: OnSucces,
+                    error: OnError
+                });*/
+                function OnSucces(response) {
+                    if (response == 1) {
+                        alert('Category Updated Successfully <!!!');
+                        reset();
+                    }
+                    else {
+                        alert(response);
+                    }
+                }
+                function OnError(response) {
+                    alert(response);
+                }
+            }
+
+
+
+        });
+
+    </script>
+}
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

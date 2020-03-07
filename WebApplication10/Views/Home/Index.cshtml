@@ -1,31 +1,137 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    Layout = null;
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        <h2><span style="color:darkolivegreen;font-weight:bold">Select User</span></h2>
+        <div class="container">
+            <label for="uname"><span style="color:darkolivegreen;font-weight:bold"><b>Username</b></span></label>
+            <select name="İsim" id="name">
+                <option value="">Select User</option>
+
+            </select>
+            <br>
+            <label for="psw"><span style="color:darkolivegreen;font-weight:bold"><b>Password</b></span></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            @Html.Hidden("Name", "", new { @id = "Name" })
+
+
+            <button type="submit">Login</button>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+
+        </div>
+
+
+    }
+</body>
+</html>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var id;
+
+
+        $("#name").change(function () {
+            // var id = $(this).find('option:selected').attr('id');
+            //
+
+            id = $(this).val(); // alert(id);
+            $("#Name").val(id);
+        });
+        $.ajax({
+            url: 'https://api.myjson.com/bins/14dj1q',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                var i, x = "";
+                for (i in result.people) {
+                    x = result.people[i].name;
+                    //x += result.people[i].id + "<br>";
+                    $("#name").append("<option value='" + result.people[i].id + "'>" + result.people[i].name + "</option>");
+                }
+
+
+
+
+            }
+        });
+
+
+    });
+
+
+</script>
