@@ -22,7 +22,7 @@ After running the commands, you should be able to see the running demo on localh
 
 The default local server should be reachable on your machine via [127.0.0.1:5000](http://127.0.0.1:5000/log).
 
-The server should also be reachable inside the university network via [0.0.0.0:5000](http://0.0.0.0:5000/admin)
+The server should also be reachable inside the university network via [10.5.147.198:5000](http://10.5.147.198:5000/admin)
 
 For more details, you can check out the logs of the application.
 
