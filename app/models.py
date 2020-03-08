@@ -70,7 +70,7 @@ class ScheduledShutdown(db.Model):
     device_name = db.Column(db.String(128),nullable=False)
     shutdown_time = db.Column(db.DateTime, nullable=False)
 
-    def __init__(self, device_id, shutdown_time, device_name):
+    def __init__(self, person_id, device_id, device_name, shutdown_time):
         self.person_id = person_id
         self.device_id = device_id
         self.device_name = device_name

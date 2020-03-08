@@ -27,7 +27,7 @@ found = []
 for line in lines:
     arguments = line.split()
     if (arguments != []):
-        if (arguments[2] == 'S'):
+        if (arguments[2] == 'S' or arguments[2] == 'S+'):
             found.append(arguments[0])
 
 # Kill matching scheduled-shutdown processes

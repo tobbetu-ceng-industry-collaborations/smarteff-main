@@ -3,7 +3,7 @@ from app import db
 
 from app.models import *
 
-# import jsonify to make form conversions easy
+# import jsonify to quickly handle form conversions
 from flask import jsonify
 
 # import request to fetch the information about events
@@ -12,6 +12,9 @@ from flask import request
 import logging
 
 from datetime import datetime
+from datetime import timedelta
+
+import os
 
 # logger setup
 logger = logging.getLogger('my-logger')
@@ -39,15 +42,54 @@ def person_event():
         person.is_inside = 0;
         logging.warning('[person_event]A person(id=%s) has left!', str(person_id))
 
-        # TODO
-        # (1) check person's devices
-        # (2) check assigned persons
-        # (3) check simulation/normal mode, fire necessary shutdowns accordingly
 
-    # write changes to DB
-    db.session.add(person)
-    db.session.commit()
+    for device in person.devices:
 
+        # check if there is any suspension for the device
+        select_statement = db.select([suspension_request]).where(db.and_(suspension_request.c.person_id==person.person_id, suspension_request.c.device_id==device.device_id))
+        query = db.session.execute(select_statement)
+
+        # result
+        query = query.first()
+
+        # continue if there is any suspension
+        if( query != None):
+        	continue
+
+        # check if there is any other person assigned to the device
+        select_statement = db.select([person_device]).where(person_device.c.device_id==device.device_id)
+        query = db.session.execute(select_statement)
+
+        # persons assigned will be listed in this list
+        assigned_persons = []
+        
+        for res in query:
+            assigned_persons.append(res.person_id)
+
+        # check if there is any other person is inside
+        found = False
+        for pers in assigned_persons:
+            person = Person.query.get_or_404(pers)
+            if( person.is_inside == 1):
+                found = True
+
+        # shutdown will happen in 10 minutes
+        shutdown_delay = 600
+        date = datetime.now() + timedelta(seconds=shutdown_delay)
+
+        # found==false means that there are no person inside assigned to the device
+        if( found == False ):
+            # insert suspension to table
+            scheduled_shutdown = ScheduledShutdown(person.person_id, device.device_id, device.device_name, date)
+            db.session.add(scheduled_shutdown)
+            db.session.commit()
+
+            # schedule shutdown
+            os.system("python3 app/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
+
+            # TODO
+            # (1) send notification to user
+            
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
 
