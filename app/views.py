@@ -18,7 +18,7 @@ def log():
 def admin():
 
 	# get person list as json
-    response = requests.get("http://0.0.0.0:5000/ListPersons")
+    response = requests.get("https://smarteff.herokuapp.com/ListPersons")
     response = response.text
     loaded = json.loads(response)
 
