@@ -198,11 +198,11 @@
     <!-- Modal content -->
     <div class="modal2-content">
         <div class="modal2-header">
-            <span class="close">&times;</span>
+            <span2 class="close">&times;</span2>
             <h2>Edit</h2>
         </div>
         <div class="modal2-body">
-            <p><span style="color:darkolivegreen;font-weight:bold">Automation on</span></p>
+            <p><span2 style="color:darkolivegreen;font-weight:bold">Automation on</span2></p>
             <input type="radio" id="automationOn" name="Automation" value="Yes">
             <label for="auto">Yes</label><br>
             <input id="button2" type="button" value="save" />
@@ -298,7 +298,9 @@
 
             });
 
-
+            //setInterval( function () {
+            //  table.ajax.reload( null, false ); // user paging is not reset on reload
+            //}, 30000 );
 
             span.onclick = function () {
 
@@ -336,7 +338,7 @@
                     //“personid”:”1”,
                     //“deviceid”:”1”
                     //}
-                    alert(id + " " + machineid);
+               //     alert(id + " " + machineid);
                     var degistir = {
                                         "personid": id, "deviceid":machineid
                                     };
@@ -347,12 +349,13 @@
                  $.ajax({
                 type: "POST",
                 url: "https://smarteff.herokuapp.com/EnableAutomation",
-                data: stringData,
-                success: function () { window.alert("Automation is on!!"); this.data(row).draw(); },
+                     data: stringData,
+                     success: function () { window.alert("Automation is on!!"); $('#table').DataTable().ajax.reload(); span2.onclick(); },
                 dataType: "json",
                 contentType: "application/json"
                  });
 
+                span2.onclick();
 
                 }
 
@@ -457,8 +460,8 @@
 
                                 //  2020-01-03-10-20-11\
                                 tarih = year + "-" + month + "-" + day + "-" + hour + "-"+min + "-" + sec;
-                               var tarih2 = day + " " + month + " " + year+ + " " + hour + ":" + min + amPm ;// degisen tarih
-                               alert("extended to :" + tarih);
+                               var tarih2 =" "+ day + " " + month + " " + year + " hour: " + hour + ":" + min+" " + amPm ;// degisen tarih
+                           //   alert("extended to :" + tarih);
 
 
                                 //format:{
@@ -469,6 +472,22 @@
 
                               //  alert("id:" + id + " " + tarih + " " + machineid);
 
+                                                         var data2 = {
+                                    "personid": id, "deviceid": machineid, "until":tarih
+                };
+              //  alert("tarih: "+tarih);
+
+                var stringData2 = JSON.stringify(data2); //olusturulan datanin jsona donusturulmesi
+              //  SuspendAutomation
+
+                $.ajax({
+                type: "POST",
+                url: "https://smarteff.herokuapp.com/SuspendAutomation",
+                data: stringData2,
+                success: function () { window.alert("Suspended until :"+tarih2); $('#table').DataTable().ajax.reload(); },
+                dataType: "json",
+                contentType: "application/json"
+                 });
 
 
                             }
@@ -478,23 +497,9 @@
 
                     }
                 });
-                         var data2 = {
-                                    "personid": id, "deviceid": machineid, "until":tarih
-                                     };
-                var stringData2 = JSON.stringify(data2); //olusturulan datanin jsona donusturulmesi
-              //  SuspendAutomation
-
-                $.ajax({
-                type: "POST",
-                url: "https://smarteff.herokuapp.com/SuspendAutomation",
-                data: stringData2,
-                success: function () { window.alert("Suspended until :"+tarih2); },
-                dataType: "json",
-                contentType: "application/json"
-                 });
 
 
-
+                span.onclick();
 
   
             }
