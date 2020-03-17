@@ -1,0 +1,1 @@
+curl  -H "Content-Type: application/json" -X POST -d "{\"personid\":\"$1\", \"event\": \"entry\"}" https://smarteff.herokuapp.com/HandlePersonEvent

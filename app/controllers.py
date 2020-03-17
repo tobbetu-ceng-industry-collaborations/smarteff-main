@@ -73,8 +73,8 @@ def person_event():
             if( person.is_inside == 1):
                 found = True
 
-        # shutdown will happen in 10 minutes
-        shutdown_delay = 600
+        # shutdown will happen in 5 minutes
+        shutdown_delay = 300
         date = datetime.now() + timedelta(seconds=shutdown_delay)
 
         # found==false means that there are no person inside assigned to the device

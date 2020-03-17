@@ -1,0 +1,1 @@
+curl -d "{\"personid\":\"$1\", \"deviceid\":\"$2\", \"action\":\"turnon\"}" -H "Content-Type: application/json" -X POST https://smarteff.herokuapp.com/ManageDevice

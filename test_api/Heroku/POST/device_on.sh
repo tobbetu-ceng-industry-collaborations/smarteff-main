@@ -1,0 +1,1 @@
+curl  -H "Content-Type: application/json" -X POST -d "{\"deviceid\":\"$1\", \"event\": \"turnon\"}" https://smarteff.herokuapp.com/HandleDeviceEvent

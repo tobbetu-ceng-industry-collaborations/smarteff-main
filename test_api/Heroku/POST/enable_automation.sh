@@ -1,0 +1,1 @@
+curl -d "{\"deviceid\":\"$2\", \"personid\":\"$1\"}" -H "Content-Type: application/json" -X POST https://smarteff.herokuapp.com/EnableAutomation
