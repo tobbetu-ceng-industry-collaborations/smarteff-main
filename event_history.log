@@ -8,3 +8,11 @@
 08-Mar-20 18:57:46 - 127.0.0.1 - - [08/Mar/2020 18:57:46] "GET / HTTP/1.1" 404 -
 08-Mar-20 18:58:35 - 10.5.43.144 - - [08/Mar/2020 18:58:35] "GET /log HTTP/1.1" 200 -
 08-Mar-20 18:58:35 - 10.5.43.144 - - [08/Mar/2020 18:58:35] "GET /favicon.ico HTTP/1.1" 404 -
+17-Mar-20 20:36:15 - [person_event]A person(id=1) has left!
+17-Mar-20 20:36:15 - 127.0.0.1 - - [17/Mar/2020 20:36:15] "POST /HandlePersonEvent HTTP/1.1" 200 -
+17-Mar-20 20:36:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+17-Mar-20 20:36:28 -  * Restarting with stat
+17-Mar-20 20:36:30 - [person_event]A person(id=1) has left!
+17-Mar-20 20:36:30 - 127.0.0.1 - - [17/Mar/2020 20:36:30] "POST /HandlePersonEvent HTTP/1.1" 200 -
+17-Mar-20 20:52:08 - 127.0.0.1 - - [17/Mar/2020 20:52:08] "GET / HTTP/1.1" 404 -
+17-Mar-20 20:52:10 - 127.0.0.1 - - [17/Mar/2020 20:52:10] "GET /log HTTP/1.1" 200 -

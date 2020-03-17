@@ -74,7 +74,7 @@ def person_event():
                 found = True
 
         # shutdown will happen in 5 minutes
-        shutdown_delay = 300
+        shutdown_delay = 15
         date = datetime.now() + timedelta(seconds=shutdown_delay)
 
         # found==false means that there are no person inside assigned to the device
