@@ -16,3 +16,13 @@
 17-Mar-20 20:36:30 - 127.0.0.1 - - [17/Mar/2020 20:36:30] "POST /HandlePersonEvent HTTP/1.1" 200 -
 17-Mar-20 20:52:08 - 127.0.0.1 - - [17/Mar/2020 20:52:08] "GET / HTTP/1.1" 404 -
 17-Mar-20 20:52:10 - 127.0.0.1 - - [17/Mar/2020 20:52:10] "GET /log HTTP/1.1" 200 -
+17-Mar-20 21:33:07 - 127.0.0.1 - - [17/Mar/2020 21:33:07] "GET / HTTP/1.1" 404 -
+17-Mar-20 21:33:10 - 127.0.0.1 - - [17/Mar/2020 21:33:10] "GET /log HTTP/1.1" 200 -
+17-Mar-20 21:33:30 - [person_event]A person(id=1) has left!
+17-Mar-20 21:33:30 - 127.0.0.1 - - [17/Mar/2020 21:33:30] "POST /HandlePersonEvent HTTP/1.1" 200 -
+17-Mar-20 21:34:31 - [person_event]A person(id=1) has left!
+17-Mar-20 21:34:31 - 127.0.0.1 - - [17/Mar/2020 21:34:31] "POST /HandlePersonEvent HTTP/1.1" 200 -
+17-Mar-20 21:34:47 - [device_event]A device(id=1) has turned off!
+17-Mar-20 21:34:47 - 127.0.0.1 - - [17/Mar/2020 21:34:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+17-Mar-20 21:34:47 - [device_event]A device(id=7) has turned off!
+17-Mar-20 21:34:47 - 127.0.0.1 - - [17/Mar/2020 21:34:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
