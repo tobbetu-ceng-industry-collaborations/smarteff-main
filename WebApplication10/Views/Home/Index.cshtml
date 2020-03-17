@@ -100,7 +100,6 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
-
     $(document).ready(function () {
         var id;
 
@@ -113,7 +112,7 @@
             $("#Name").val(id);
         });
         $.ajax({
-            url: 'https://api.myjson.com/bins/14dj1q',
+            url: 'https://smarteff.herokuapp.com/ListPersons',
             type: 'GET',
             dataType: 'json',
             success: function (result) {
@@ -130,8 +129,20 @@
             }
         });
 
+// var settings = {
+//  "url": "https://smarteff.herokuapp.com/ListPersons",
+//  "method": "GET",
+//  "timeout": 0,
+//};
 
-    });
+//$.ajax(settings).done(function (response) {
+//    console.log(response);
+//    alert(response+"success");
+//});
+
+
+
+   });
 
 
 </script>
