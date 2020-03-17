@@ -24,14 +24,16 @@
         margin: 4px 2px;
         cursor: pointer;
     }
+
     .Edit, .Details {
         border-radius: 8px;
     }
+
     .Details {
         background-color: #99ccff;
     }
 
-    
+
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -132,6 +134,7 @@
         background-color: #5cb85c;
         color: white;
     }
+
     .modal2-button2 {
         background-color: #555555;
     }
@@ -235,9 +238,9 @@
 
               var table = $('#table').DataTable(
                 {
- 
+
                     ajax: {
-                        "url": "https://www.json-generator.com/api/json/get/bTTGvGqRiW?indent=2",
+                        "url": "https://smarteff.herokuapp.com/ListDevices/"+id,
                         "type": "GET",
                         "datatype": "json",
                         "dataSrc": "devices"
@@ -247,30 +250,30 @@
 
                         { mData: 'name' },
                         { mData: 'isOn' },
-                        { mData: 'automation.suspended' },
+                        { mData: 'automation.suspend' },
                         { defaultContent: '<input type="button" class="Edit" value="Edit"/><input type="button" class="Details" value="Details"/>' }
 
 
                     ],
 
                       "rowCallback": function (row, data, index) {
-                  
-                                      if ( data.isOn.toString() === 'true' )
-                                        {        
+
+                                      if ( data.isOn.toString() === "1" )
+                                        {
                                           $('td:eq(1)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="green" />');
                                          }
-                                          if ( data.isOn.toString() === 'false' )
-                                        {        
+                                          if ( data.isOn.toString() === "0" )
+                                        {
                                           $('td:eq(1)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="red" />');
                           }
 
 
-                                      if ( data.automation.suspended.toString() === 'true' )
-                                        {        
+                                      if ( data.automation.suspend.toString() === 'False' )
+                                        {
                                           $('td:eq(2)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="green" />');
                                          }
-                                          if ( data.automation.suspended.toString() === 'false' )
-                                        {        
+                                          if ( data.automation.suspend.toString() === 'True' )
+                                        {
                                           $('td:eq(2)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="red" />');
                                         }
 
@@ -283,15 +286,15 @@
             $('#table tbody').on('click', '.Edit', function () {
 
                 var data = table.row($(this).parents('tr')).data();
-                var d = data.automation.suspended; var t = 'true';
-                if (d.toString() === 'true') {
+                var d = data.automation.suspend; var t = 'true';
+                if (d.toString() === 'False') {
                     modal.style.display = "block";
                 }
-                else if (data.automation.suspended.toString() === 'false') {
+                else if (data.automation.suspend.toString() === 'True') {
                     modal2.style.display = "block";
                 }
                 machineid = data.id;
-
+               // alert(data.automation.suspended);
 
             });
 
@@ -321,47 +324,35 @@
             button2.onclick = function (event) {
 
                 yesNo = $("input[name='Automation']:checked").val();
-                
+
 
 
                 if (yesNo == 'Yes') {
 
-                    alert("status changed");
+                //    alert("status changed");
 
                     //suspend false yapma durumu
                     //format:  {
                     //“personid”:”1”,
                     //“deviceid”:”1”
                     //}
+                    alert(id + " " + machineid);
                     var degistir = {
-                                        personid: id, deviceid:machineid
+                                        "personid": id, "deviceid":machineid
                                     };
 
 
                     var stringData = JSON.stringify(degistir); //olusturulan datanin jsona donusturulmesi
 
-                    //post islemi
-                    /*  $.ajax({
-                        type: "POST",
-                        url: "",
-                        data: stringData,
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        success: OnSucces,
-                        error: OnError
-                    });  */
-                    function OnSucces(response) {
-                        if (response == 1) {
-                            alert('Category Updated Successfully <!!!');
-                            reset();
-                        }
-                        else {
-                            alert(response);
-                        }
-                    }
-                    function OnError(response) {
-                        alert(response);
-                    }
+                 $.ajax({
+                type: "POST",
+                url: "https://smarteff.herokuapp.com/EnableAutomation",
+                data: stringData,
+                success: function () { window.alert("Automation is on!!"); this.data(row).draw(); },
+                dataType: "json",
+                contentType: "application/json"
+                 });
+
 
                 }
 
@@ -384,14 +375,14 @@
 
                 //suspend true yapma
                 radioValue = $("input[name='hours']:checked").val();//degistirilmek istenen id
-               //  alert("radio: " + radioValue);
+                // alert("radio: " + radioValue);
 
                 $.ajax({
-                    url: 'https://api.myjson.com/bins/1cltpq',
+                    url: 'https://smarteff.herokuapp.com/ListDevices/'+id,
                     type: 'GET',
                     dataType: 'json',
                     success: function (result) {
-                        
+
                         var i, x = "", tr = '';
                         for (i in result.devices) {
 
@@ -403,11 +394,12 @@
                                 n = new Date(); //get current date
                                 var month = n.getMonth() + 1;
                                 var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-                                month = monthArr[month];
+                               // month = monthArr[month];
                                 var day = n.getDate();
                                 var hour = n.getHours();
                                 var year = n.getFullYear();
                                 var min = n.getMinutes();
+                                var sec = n.getSeconds();
 
                                 var pos = radioValue.search("h");
                                 pos = radioValue.slice(0, pos);
@@ -428,7 +420,7 @@
                                     if (Number(month) % Number(2) == 1) {//tek ay 31 gun
                                         if (Number(day) > 31) {
                                             day = 1; month = +month + +1;
-                                            month = monthArr[month];
+                                         //   month = monthArr[month];
                                         }
                                     }
 
@@ -437,12 +429,12 @@
 
                                             if (Number(day) > 31) {
                                                 day = 1; month = +month + +1;
-                                                month = monthArr[month];
+                                            //    month = monthArr[month];
                                             }
 
                                         } else if (Number(day) > 30) {
                                             day = 1; month = +month + +1;
-                                            month = monthArr[month];
+                                        //    month = monthArr[month];
                                         }
                                     }
                                 }
@@ -450,7 +442,7 @@
 
                                     year = +year + +1;
                                     month = 1;
-                                    month = monthArr[month];
+                                 //   month = monthArr[month];
 
                                 }
 
@@ -462,8 +454,11 @@
                                 else {
                                     amPm = "p.m";
                                 }
-                                tarih = day + " " + month + " " + hour + ":" + min + amPm + " " + year;// degisen tarih
-                                alert("extended to :" + tarih);
+
+                                //  2020-01-03-10-20-11\
+                                tarih = year + "-" + month + "-" + day + "-" + hour + "-"+min + "-" + sec;
+                               var tarih2 = day + " " + month + " " + year+ + " " + hour + ":" + min + amPm ;// degisen tarih
+                               alert("extended to :" + tarih);
 
 
                                 //format:{
@@ -471,10 +466,10 @@
                                 //“deviceid”:”1”,
                                 //“until”:”2020-01-29-10-30-00”
                                 //}
-                                data = {
-                                    personid: id, deviceid: machineid,until:tarih
-                                };
-                                
+
+                              //  alert("id:" + id + " " + tarih + " " + machineid);
+
+
 
                             }
                         }
@@ -483,31 +478,25 @@
 
                     }
                 });
+                         var data2 = {
+                                    "personid": id, "deviceid": machineid, "until":tarih
+                                     };
+                var stringData2 = JSON.stringify(data2); //olusturulan datanin jsona donusturulmesi
+              //  SuspendAutomation
 
-                var stringData = JSON.stringify(data); //olusturulan datanin jsona donusturulmesi
+                $.ajax({
+                type: "POST",
+                url: "https://smarteff.herokuapp.com/SuspendAutomation",
+                data: stringData2,
+                success: function () { window.alert("Suspended until :"+tarih2); },
+                dataType: "json",
+                contentType: "application/json"
+                 });
 
-                //post islemi
-               /* $.ajax({
-                    type: "POST",
-                    url: "",
-                    data: stringData,
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    success: OnSucces,
-                    error: OnError
-                });*/
-                function OnSucces(response) {
-                    if (response == 1) {
-                        alert('Category Updated Successfully <!!!');
-                        reset();
-                    }
-                    else {
-                        alert(response);
-                    }
-                }
-                function OnError(response) {
-                    alert(response);
-                }
+
+
+
+  
             }
 
 
