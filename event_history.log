@@ -267,3 +267,50 @@
 18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /HandleDeviceEvent HTTP/1.1" 200 -
 18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
 18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 16:39:11 - [person_event]A person(id=1) has left!
+18-Mar-20 16:39:11 - 127.0.0.1 - - [18/Mar/2020 16:39:11] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:39:13 - [person_event]A person(id=2) has left!
+18-Mar-20 16:39:13 - 127.0.0.1 - - [18/Mar/2020 16:39:13] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:39:42 - 127.0.0.1 - - [18/Mar/2020 16:39:42] "GET / HTTP/1.1" 404 -
+18-Mar-20 16:39:42 - 127.0.0.1 - - [18/Mar/2020 16:39:42] "GET /favicon.ico HTTP/1.1" 404 -
+18-Mar-20 16:40:15 - 127.0.0.1 - - [18/Mar/2020 16:40:15] "GET /RequestSuspScheduledShutdown/D1 HTTP/1.1" 405 -
+18-Mar-20 16:41:12 - [device_event]A device(id=1) has turned off!
+18-Mar-20 16:41:12 - 127.0.0.1 - - [18/Mar/2020 16:41:12] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:12 - 127.0.0.1 - - [18/Mar/2020 16:41:12] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 16:41:13 - [device_event]A device(id=2) has turned off!
+18-Mar-20 16:41:13 - 127.0.0.1 - - [18/Mar/2020 16:41:13] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:13 - [device_event]A device(id=7) has turned off!
+18-Mar-20 16:41:13 - 127.0.0.1 - - [18/Mar/2020 16:41:13] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:13 - 127.0.0.1 - - [18/Mar/2020 16:41:13] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 16:41:13 - 127.0.0.1 - - [18/Mar/2020 16:41:13] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 16:41:28 - [person_event]A person(id=1) has entered!
+18-Mar-20 16:41:28 - 127.0.0.1 - - [18/Mar/2020 16:41:28] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:29 - [person_event]A person(id=2) has entered!
+18-Mar-20 16:41:29 - 127.0.0.1 - - [18/Mar/2020 16:41:29] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:33 - [person_event]A person(id=1) has left!
+18-Mar-20 16:41:33 - 127.0.0.1 - - [18/Mar/2020 16:41:33] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:34 - [person_event]A person(id=2) has left!
+18-Mar-20 16:41:34 - 127.0.0.1 - - [18/Mar/2020 16:41:34] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:41:42 - 127.0.0.1 - - [18/Mar/2020 16:41:42] "POST /RemoveScheduledShutdown/D1 HTTP/1.1" 500 -
+18-Mar-20 16:42:10 - 127.0.0.1 - - [18/Mar/2020 16:42:10] "POST /RequestSuspScheduledShutdown/D1 HTTP/1.1" 200 -
+18-Mar-20 16:43:34 - [device_event]A device(id=2) has turned off!
+18-Mar-20 16:43:34 - 127.0.0.1 - - [18/Mar/2020 16:43:34] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:43:34 - [device_event]A device(id=7) has turned off!
+18-Mar-20 16:43:34 - 127.0.0.1 - - [18/Mar/2020 16:43:34] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:43:34 - 127.0.0.1 - - [18/Mar/2020 16:43:34] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 16:43:34 - 127.0.0.1 - - [18/Mar/2020 16:43:34] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 16:44:12 - [person_event]A person(id=1) has entered!
+18-Mar-20 16:44:12 - 127.0.0.1 - - [18/Mar/2020 16:44:12] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:44:14 - [person_event]A person(id=2) has entered!
+18-Mar-20 16:44:14 - 127.0.0.1 - - [18/Mar/2020 16:44:14] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:44:16 - [person_event]A person(id=1) has left!
+18-Mar-20 16:44:16 - 127.0.0.1 - - [18/Mar/2020 16:44:16] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:44:17 - [person_event]A person(id=2) has left!
+18-Mar-20 16:44:17 - 127.0.0.1 - - [18/Mar/2020 16:44:17] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 16:44:24 - 127.0.0.1 - - [18/Mar/2020 16:44:24] "POST /RequestSuspScheduledShutdown/D1 HTTP/1.1" 200 -
+18-Mar-20 16:46:18 - [device_event]A device(id=7) has turned off!
+18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:46:18 - [device_event]A device(id=2) has turned off!
+18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -

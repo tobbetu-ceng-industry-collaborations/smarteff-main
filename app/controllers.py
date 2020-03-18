@@ -79,7 +79,7 @@ def person_event():
                     found = True
 
             # shutdown will happen in 2 minutes
-            shutdown_delay = 30
+            shutdown_delay = 120
             date = datetime.now() + timedelta(seconds=shutdown_delay)
 
             # found==false means that there are no person inside assigned to the device
@@ -258,6 +258,25 @@ def remove_shutdown(sched_id):
     # get scheduled shutdown entry
     scheduled_entry = ScheduledShutdown.query.filter(ScheduledShutdown.shutdown_id==sched_id).first()
 
+    # remove entry
+    db.session.delete(scheduled_entry)
+    db.session.commit()
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
+# endpoint to request suspension of a shutdown
+@app.route("/RequestSuspScheduledShutdown/<dev_name>", methods=['POST'])
+def request_susp_shutdown(dev_name):
+
+    # get scheduled shutdown entry
+    scheduled_entry = ScheduledShutdown.query.filter(ScheduledShutdown.device_name==dev_name).first()
+
+    # terminate background process
+    os.system("python3 app/de_schedule.py " + str(scheduled_entry.shutdown_id))
+    
     # remove entry
     db.session.delete(scheduled_entry)
     db.session.commit()
