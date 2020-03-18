@@ -26,3 +26,5 @@
 17-Mar-20 21:34:47 - 127.0.0.1 - - [17/Mar/2020 21:34:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
 17-Mar-20 21:34:47 - [device_event]A device(id=7) has turned off!
 17-Mar-20 21:34:47 - 127.0.0.1 - - [17/Mar/2020 21:34:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 01:31:39 - 127.0.0.1 - - [18/Mar/2020 01:31:39] "GET / HTTP/1.1" 404 -
+18-Mar-20 01:31:52 - 127.0.0.1 - - [18/Mar/2020 01:31:52] "GET /admin HTTP/1.1" 200 -

@@ -24,7 +24,7 @@ def schedule(device_id, until_suspension):
     # enter queue
     s.enter(until_suspension, 1, device_off, argument=(device_id,))
     
-    #execute queue
+    # execute queue
     s.run()
 
 # fetch scheduled shutdown ID   

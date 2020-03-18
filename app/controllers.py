@@ -245,7 +245,21 @@ def enable_automation():
 
     return resp, 200
     
+# endpoint to clear former shutdown entries
+@app.route("/RemoveScheduledShutdown/<sched_id>", methods=['POST'])
+def remove_shutdown(sched_id):
 
+    # get scheduled shutdown entry
+    scheduled_entry = ScheduledShutdown.query.filter(ScheduledShutdown.shutdown_id==sched_id).first()
+
+    # remove entry
+    db.session.delete(scheduled_entry)
+    db.session.commit()
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
 
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
 
