@@ -79,6 +79,19 @@
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
+    .modal4 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
     /* Modal Content */
     .modal-content {
@@ -91,7 +104,7 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     }
 
-    .modal2-content ,.modal3-content {
+    .modal2-content ,.modal3-content, .modal4-content {
         position: relative;
         background-color: #fefefe;
         margin: auto;
@@ -116,13 +129,13 @@
             cursor: pointer;
         }
 
-    .modal-header , modal3-header{
+    .modal-header , .modal3-header,.modal4-header{
         padding: 2px 16px;
         background-color: #5cb85c;
         color: white;
     }
 
-    .modal-body, .modal3-body {
+    .modal-body, .modal3-body , .modal4-body {
         padding: 2px 16px;
     }
 
@@ -132,13 +145,13 @@
         color: white;
     }
 
-    .modal2-header , .modal3-header {
+    .modal2-header , .modal3-header , .modal4-header {
         padding: 2px 16px;
         background-color: #5cb85c;
         color: white;
     }
 
-    .modal2-body, .modal3-body {
+    .modal2-body, .modal3-body, .modal4-body {
         padding: 2px 16px;
     }
 
@@ -276,6 +289,31 @@
 
 </div>
 
+<div id="myModal4" class="modal4">
+
+    <!-- Modal content -->
+    <div class="modal4-content">
+        <div class="modal4-header">
+            <span4 class="close">&times;</span4>
+            <h2></h2>
+
+        </div>
+        <div class="modal4-body">
+
+            <table style="width:100%" bordercolor="Grey" id="DetailsTable">
+                <tr>
+                    <th><span4 style="color:darkolivegreen;font-weight:bold">Details</span4></th>
+                    <th> </th>
+                </tr>
+            </table>
+
+
+        </div>
+
+    </div>
+
+</div>
+
 <p><input id="ListScheduled" type="button" value="List Schedule Shutdowns" /></p>
 
 @section scripts
@@ -290,10 +328,13 @@
         var modal = document.getElementById("myModal");
         var modal2 = document.getElementById("myModal2");
         var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
 
         var span = document.getElementsByClassName("close")[0];
         var span2 = document.getElementsByClassName("close")[1];
-        var span3=document.getElementsByClassName("close")[2];
+        var span3 = document.getElementsByClassName("close")[2];
+        var span4 = document.getElementsByClassName("close")[3];
+
         var editor;
         var tarih;//degisen tarih bilgisini tutar
         var data;//post edilecek json için
@@ -344,7 +385,7 @@
                                          }
                                           if ( data.automation.suspend.toString() === 'True' )
                                         {
-                                              $('td:eq(2)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="red" />'+'<p>' + data.automation.expiration+'</p>');
+                                              $('td:eq(2)', row).html('<svg height="100" width="100"><circle cx="50" cy="50" r="10" fill="red" />');
                                               
                                         }
 
@@ -356,11 +397,20 @@
 
             $('#table tbody').on('click', '.Details', function () {
                 var data = table.row($(this).parents('tr')).data();
-                if (data.automation.suspend.toString() === 'True') { 
-                var d = data.automation.expiration;
-                alert(d);
-            }
+                var exp;
+                var durum = 'false';
+                if (data.automation.suspend === '1') { durum = 'true'; }
+                //alert(data.name + "-" + data.automation.suspend); // DetailsTable
+                var dn = 'Device ID : '; var on = 'Device isOn- isOff status : '; exp = 'Device expiration status : ';
+                var trHTML='';
+                trHTML += '<tr><td>' + dn + '</td><td>' + data.name + '</td> </tr>';
+                trHTML += '<tr><td>' + on + '</td><td>' + durum + '</td> </tr>';
+                if (data.automation.suspend.toString() === 'True') { //expiration
+                   trHTML += '<tr><td>' + exp + '</td><td>' + data.automation.expiration + '</td> </tr>';
 
+                }
+                $('#DetailsTable').append(trHTML);
+                modal4.style.display = "block";
             });
 
             $('#table tbody').on('click', '.Edit', function () {
@@ -418,6 +468,19 @@
                 modal3.style.display = "none";
 
             }
+
+            span4.onclick = function () {
+                
+                var Parent = document.getElementById("DetailsTable");
+    
+                for(var i = Parent.rows.length - 1; i > 0; i--)
+                {
+                    Parent.deleteRow(i);
+                }
+
+                modal4.style.display = "none";
+
+            }
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
                 if (event.target == modal) {
@@ -425,6 +488,21 @@
 
                 } if (event.target == modal2) {
                     modal2.style.display = "none";
+
+                }
+                if (event.target == modal4) {
+
+                var Parent = document.getElementById("DetailsTable");
+    
+                for(var i = Parent.rows.length - 1; i > 0; i--)
+                {
+                    Parent.deleteRow(i);
+                }
+                    modal4.style.display = "none";
+
+                }
+                if (event.target == modal3) {
+                    modal3.style.display = "none";
 
                 }
             }
