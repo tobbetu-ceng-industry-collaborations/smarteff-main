@@ -9,20 +9,23 @@ import os
 s = sched.scheduler(time.time, time.sleep)
 
 # request a device to be turned off with its given id
-def request_device_off(dev_id):
+def request_device_off(dev_id, shut_id):
 	os.system(("bash test_api/Heroku/POST/request_device_off.sh " +  str(dev_id)).format())
 
 # turn device off with its given id
-def device_off(dev_id):
+def device_off(dev_id, shut_id):
 
-	# make call from test_api
+	# make call from test_api - turn device off
 	os.system(("bash test_api/Heroku/POST/device_off.sh " +  str(dev_id)).format())
 
+	# make call from test_api - remove shutdown entry
+	os.system(("bash test_api/Heroku/POST/remove_shutdown.sh " +  str(shut_id)).format())
+
 # general scheduler
-def schedule(device_id, until_suspension):
+def schedule(device_id, until_suspension, shut_id):
 
     # enter queue
-    s.enter(until_suspension, 1, device_off, argument=(device_id,))
+    s.enter(until_suspension, 1, device_off, argument=(device_id, shut_id,))
     
     # execute queue
     s.run()
@@ -37,4 +40,4 @@ deviceID =  int(sys.argv[2])
 until_suspension =  int(sys.argv[3])
 
 # schedule shutdown event
-schedule(deviceID, until_suspension)
+schedule(deviceID, until_suspension, scheduledShutdownID)

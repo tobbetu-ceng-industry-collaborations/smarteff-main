@@ -38,58 +38,64 @@ def person_event():
     if event == 'entry':
         person.is_inside = 1;
         logging.warning('[person_event]A person(id=%s) has entered!', str(person_id))
+        db.session.commit()
     elif event == 'exit':
         person.is_inside = 0;
         logging.warning('[person_event]A person(id=%s) has left!', str(person_id))
+        db.session.commit()
 
 
-    for device in person.devices:
+        for device in person.devices:
 
-        # check if there is any suspension for the device
-        select_statement = db.select([suspension_request]).where(db.and_(suspension_request.c.person_id==person.person_id, suspension_request.c.device_id==device.device_id))
-        query = db.session.execute(select_statement)
+            # check if there is any suspension for the device
+            select_statement = db.select([suspension_request]).where(db.and_(suspension_request.c.person_id==person.person_id, suspension_request.c.device_id==device.device_id))
+            query = db.session.execute(select_statement)
 
-        # result
-        query = query.first()
+            # result
+            query = query.first()
 
-        # continue if there is any suspension
-        if( query != None):
-        	continue
+            # continue if there is any suspension
+            if( query != None):
+                continue
 
-        # check if there is any other person assigned to the device
-        select_statement = db.select([person_device]).where(person_device.c.device_id==device.device_id)
-        query = db.session.execute(select_statement)
+            # check if there is any other person assigned to the device
+            select_statement = db.select([person_device]).where(person_device.c.device_id==device.device_id)
+            query = db.session.execute(select_statement)
 
-        # persons assigned will be listed in this list
-        assigned_persons = []
-        
-        for res in query:
-            assigned_persons.append(res.person_id)
-
-        # check if there is any other person is inside
-        found = False
-        for pers in assigned_persons:
-            person = Person.query.get_or_404(pers)
-            if( person.is_inside == 1):
-                found = True
-
-        # shutdown will happen in 5 minutes
-        shutdown_delay = 15
-        date = datetime.now() + timedelta(seconds=shutdown_delay)
-
-        # found==false means that there are no person inside assigned to the device
-        if( found == False ):
-            # insert suspension to table
-            scheduled_shutdown = ScheduledShutdown(person.person_id, device.device_id, device.device_name, date)
-            db.session.add(scheduled_shutdown)
-            db.session.commit()
-
-            # schedule shutdown
-            os.system("python3 app/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
-
-            # TODO
-            # (1) send notification to user
+            # persons assigned will be listed in this list
+            assigned_persons = []
             
+            for res in query:
+                assigned_persons.append(res.person_id)
+
+            print("Dev:" + str(device.device_id))
+            print(assigned_persons)
+
+            # check if there is any other person is inside
+            found = False
+            for pers in assigned_persons:
+                person2 = Person.query.get_or_404(pers)
+                if( person2.is_inside == 1):
+                    found = True
+
+            # shutdown will happen in 2 minutes
+            shutdown_delay = 30
+            date = datetime.now() + timedelta(seconds=shutdown_delay)
+
+            # found==false means that there are no person inside assigned to the device
+            if( found == False ):
+                print("Dev:" + str(device.device_id))	
+                # insert scheduled shutdown to table
+                scheduled_shutdown = ScheduledShutdown(person.person_id, device.device_id, device.device_name, date)
+                db.session.add(scheduled_shutdown)
+                db.session.commit()
+
+                # schedule shutdown
+                os.system("python3 app/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
+
+                # TODO
+                # (1) send notification to user
+                
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
 

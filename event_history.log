@@ -34,3 +34,236 @@
 18-Mar-20 14:25:13 - 127.0.0.1 - - [18/Mar/2020 14:25:13] "POST /RemoveScheduledShutdown/"1" HTTP/1.1" 500 -
 18-Mar-20 14:27:20 - 127.0.0.1 - - [18/Mar/2020 14:27:20] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
 18-Mar-20 14:28:29 - 127.0.0.1 - - [18/Mar/2020 14:28:29] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 14:54:47 - [person_event]A person(id=1) has left!
+18-Mar-20 14:54:47 - 127.0.0.1 - - [18/Mar/2020 14:54:47] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:54:48 - [person_event]A person(id=2) has left!
+18-Mar-20 14:54:49 - 127.0.0.1 - - [18/Mar/2020 14:54:49] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:56:47 - [device_event]A device(id=1) has turned off!
+18-Mar-20 14:56:47 - 127.0.0.1 - - [18/Mar/2020 14:56:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 14:56:48 - 127.0.0.1 - - [18/Mar/2020 14:56:48] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 14:56:49 - [device_event]A device(id=7) has turned off!
+18-Mar-20 14:56:49 - 127.0.0.1 - - [18/Mar/2020 14:56:49] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 14:56:49 - 127.0.0.1 - - [18/Mar/2020 14:56:49] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 14:57:09 - [person_event]A person(id=1) has entered!
+18-Mar-20 14:57:09 - 127.0.0.1 - - [18/Mar/2020 14:57:09] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:57:10 - [person_event]A person(id=2) has entered!
+18-Mar-20 14:57:10 - 127.0.0.1 - - [18/Mar/2020 14:57:10] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:57:12 - [person_event]A person(id=1) has left!
+18-Mar-20 14:57:12 - 127.0.0.1 - - [18/Mar/2020 14:57:12] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:57:13 - [person_event]A person(id=2) has entered!
+18-Mar-20 14:57:13 - 127.0.0.1 - - [18/Mar/2020 14:57:13] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:57:17 - [person_event]A person(id=2) has left!
+18-Mar-20 14:57:17 - 127.0.0.1 - - [18/Mar/2020 14:57:17] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 14:59:12 - [device_event]A device(id=7) has turned off!
+18-Mar-20 14:59:12 - 127.0.0.1 - - [18/Mar/2020 14:59:12] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 14:59:12 - 127.0.0.1 - - [18/Mar/2020 14:59:12] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 14:59:12 - [device_event]A device(id=1) has turned off!
+18-Mar-20 14:59:12 - 127.0.0.1 - - [18/Mar/2020 14:59:12] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 14:59:12 - 127.0.0.1 - - [18/Mar/2020 14:59:12] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 14:59:18 - [device_event]A device(id=7) has turned off!
+18-Mar-20 14:59:18 - 127.0.0.1 - - [18/Mar/2020 14:59:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 14:59:18 - 127.0.0.1 - - [18/Mar/2020 14:59:18] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:04:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:04:07 -  * Restarting with stat
+18-Mar-20 15:04:17 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:04:17 - 127.0.0.1 - - [18/Mar/2020 15:04:17] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:04:19 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:04:19 - 127.0.0.1 - - [18/Mar/2020 15:04:19] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:04:21 - [person_event]A person(id=1) has left!
+18-Mar-20 15:04:21 - 127.0.0.1 - - [18/Mar/2020 15:04:21] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:04:24 - [person_event]A person(id=2) has left!
+18-Mar-20 15:04:24 - 127.0.0.1 - - [18/Mar/2020 15:04:24] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:06:21 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:06:21 - 127.0.0.1 - - [18/Mar/2020 15:06:21] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:06:21 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:06:21 - 127.0.0.1 - - [18/Mar/2020 15:06:21] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:06:22 - 127.0.0.1 - - [18/Mar/2020 15:06:22] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:06:22 - 127.0.0.1 - - [18/Mar/2020 15:06:22] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:06:24 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:06:24 - 127.0.0.1 - - [18/Mar/2020 15:06:24] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:06:24 - 127.0.0.1 - - [18/Mar/2020 15:06:24] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:07:02 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:07:02 -  * Restarting with stat
+18-Mar-20 15:10:36 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:10:36 -  * Restarting with stat
+18-Mar-20 15:10:54 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:10:54 -  * Restarting with stat
+18-Mar-20 15:11:16 - [person_event]A person(id=1) has left!
+18-Mar-20 15:11:21 - 127.0.0.1 - - [18/Mar/2020 15:11:21] "POST /HandlePersonEvent HTTP/1.1" 500 -
+18-Mar-20 15:11:22 - [person_event]A person(id=1) has left!
+18-Mar-20 15:11:27 - 127.0.0.1 - - [18/Mar/2020 15:11:27] "POST /HandlePersonEvent HTTP/1.1" 500 -
+18-Mar-20 15:11:39 - [person_event]A person(id=1) has left!
+18-Mar-20 15:11:39 - 127.0.0.1 - - [18/Mar/2020 15:11:39] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:11:40 - [person_event]A person(id=2) has left!
+18-Mar-20 15:11:40 - 127.0.0.1 - - [18/Mar/2020 15:11:40] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:13:39 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:13:39 - 127.0.0.1 - - [18/Mar/2020 15:13:39] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:13:39 - 127.0.0.1 - - [18/Mar/2020 15:13:39] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:13:40 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:13:40 - 127.0.0.1 - - [18/Mar/2020 15:13:40] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:13:40 - 127.0.0.1 - - [18/Mar/2020 15:13:40] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:13:46 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:13:46 - 127.0.0.1 - - [18/Mar/2020 15:13:46] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:13:49 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:13:49 - 127.0.0.1 - - [18/Mar/2020 15:13:49] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:13:51 - [person_event]A person(id=1) has left!
+18-Mar-20 15:13:51 - 127.0.0.1 - - [18/Mar/2020 15:13:51] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:13:52 - [person_event]A person(id=2) has left!
+18-Mar-20 15:13:52 - 127.0.0.1 - - [18/Mar/2020 15:13:52] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:15:15 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:15:15 -  * Restarting with stat
+18-Mar-20 15:19:14 - [person_event]A person(id=1) has left!
+18-Mar-20 15:19:18 - 127.0.0.1 - - [18/Mar/2020 15:19:18] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:19:31 - [person_event]A person(id=2) has left!
+18-Mar-20 15:19:31 - 127.0.0.1 - - [18/Mar/2020 15:19:31] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:21:18 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:21:18 - 127.0.0.1 - - [18/Mar/2020 15:21:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:21:18 - 127.0.0.1 - - [18/Mar/2020 15:21:18] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:21:31 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:21:31 - 127.0.0.1 - - [18/Mar/2020 15:21:31] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:21:31 - 127.0.0.1 - - [18/Mar/2020 15:21:31] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:21:53 - [person_event]A person(id=1) has left!
+18-Mar-20 15:21:53 - 127.0.0.1 - - [18/Mar/2020 15:21:53] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:21:54 - [person_event]A person(id=2) has left!
+18-Mar-20 15:21:54 - 127.0.0.1 - - [18/Mar/2020 15:21:54] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:23:53 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:23:53 - 127.0.0.1 - - [18/Mar/2020 15:23:53] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:23:53 - 127.0.0.1 - - [18/Mar/2020 15:23:53] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:23:54 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:23:54 - 127.0.0.1 - - [18/Mar/2020 15:23:54] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:23:54 - 127.0.0.1 - - [18/Mar/2020 15:23:54] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:24:04 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:24:04 - 127.0.0.1 - - [18/Mar/2020 15:24:04] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:05 - [person_event]A person(id=2) has left!
+18-Mar-20 15:24:05 - 127.0.0.1 - - [18/Mar/2020 15:24:05] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:13 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:24:13 - 127.0.0.1 - - [18/Mar/2020 15:24:13] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:16 - [person_event]A person(id=1) has left!
+18-Mar-20 15:24:16 - 127.0.0.1 - - [18/Mar/2020 15:24:16] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:18 - [person_event]A person(id=2) has left!
+18-Mar-20 15:24:18 - 127.0.0.1 - - [18/Mar/2020 15:24:18] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:44 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:24:44 - 127.0.0.1 - - [18/Mar/2020 15:24:44] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:49 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:24:49 - 127.0.0.1 - - [18/Mar/2020 15:24:49] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:52 - [person_event]A person(id=1) has left!
+18-Mar-20 15:24:52 - 127.0.0.1 - - [18/Mar/2020 15:24:52] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:24:53 - [person_event]A person(id=2) has left!
+18-Mar-20 15:24:54 - 127.0.0.1 - - [18/Mar/2020 15:24:54] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:26:05 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:26:05 - 127.0.0.1 - - [18/Mar/2020 15:26:05] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:26:05 - 127.0.0.1 - - [18/Mar/2020 15:26:05] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:26:16 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:26:16 - 127.0.0.1 - - [18/Mar/2020 15:26:16] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:26:16 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:26:16 - 127.0.0.1 - - [18/Mar/2020 15:26:16] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:26:16 - 127.0.0.1 - - [18/Mar/2020 15:26:16] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:26:16 - 127.0.0.1 - - [18/Mar/2020 15:26:16] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:26:18 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:26:18 - 127.0.0.1 - - [18/Mar/2020 15:26:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:26:18 - 127.0.0.1 - - [18/Mar/2020 15:26:18] "POST /RemoveScheduledShutdown/4 HTTP/1.1" 500 -
+18-Mar-20 15:33:16 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:33:16 -  * Restarting with stat
+18-Mar-20 15:33:22 - [person_event]A person(id=1) has left!
+18-Mar-20 15:33:22 - 127.0.0.1 - - [18/Mar/2020 15:33:22] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:33:24 - [person_event]A person(id=2) has left!
+18-Mar-20 15:33:24 - 127.0.0.1 - - [18/Mar/2020 15:33:24] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:33:53 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:33:53 - 127.0.0.1 - - [18/Mar/2020 15:33:53] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:33:53 - 127.0.0.1 - - [18/Mar/2020 15:33:53] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:33:54 - [device_event]A device(id=2) has turned off!
+18-Mar-20 15:33:54 - 127.0.0.1 - - [18/Mar/2020 15:33:54] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:33:54 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:33:54 - 127.0.0.1 - - [18/Mar/2020 15:33:54] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:33:54 - 127.0.0.1 - - [18/Mar/2020 15:33:54] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:33:54 - 127.0.0.1 - - [18/Mar/2020 15:33:54] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:34:11 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:34:11 - 127.0.0.1 - - [18/Mar/2020 15:34:11] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:12 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:34:12 - 127.0.0.1 - - [18/Mar/2020 15:34:12] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:21 - [person_event]A person(id=1) has left!
+18-Mar-20 15:34:21 - 127.0.0.1 - - [18/Mar/2020 15:34:21] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:22 - [person_event]A person(id=2) has left!
+18-Mar-20 15:34:22 - 127.0.0.1 - - [18/Mar/2020 15:34:22] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:51 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:34:51 - 127.0.0.1 - - [18/Mar/2020 15:34:51] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:51 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:34:51 - 127.0.0.1 - - [18/Mar/2020 15:34:51] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:51 - 127.0.0.1 - - [18/Mar/2020 15:34:51] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:34:51 - 127.0.0.1 - - [18/Mar/2020 15:34:51] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:34:52 - [device_event]A device(id=2) has turned off!
+18-Mar-20 15:34:52 - 127.0.0.1 - - [18/Mar/2020 15:34:52] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:52 - 127.0.0.1 - - [18/Mar/2020 15:34:52] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:34:52 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:34:52 - 127.0.0.1 - - [18/Mar/2020 15:34:52] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:34:52 - 127.0.0.1 - - [18/Mar/2020 15:34:52] "POST /RemoveScheduledShutdown/4 HTTP/1.1" 200 -
+18-Mar-20 15:36:44 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:36:44 -  * Restarting with stat
+18-Mar-20 15:36:49 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:36:49 - 127.0.0.1 - - [18/Mar/2020 15:36:49] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:36:51 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:36:51 - 127.0.0.1 - - [18/Mar/2020 15:36:51] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:36:53 - [person_event]A person(id=1) has left!
+18-Mar-20 15:36:53 - 127.0.0.1 - - [18/Mar/2020 15:36:53] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:37:05 - [person_event]A person(id=2) has left!
+18-Mar-20 15:37:05 - 127.0.0.1 - - [18/Mar/2020 15:37:05] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:37:24 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:37:24 - 127.0.0.1 - - [18/Mar/2020 15:37:24] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:37:24 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:37:24 - 127.0.0.1 - - [18/Mar/2020 15:37:24] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:37:24 - 127.0.0.1 - - [18/Mar/2020 15:37:24] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:37:24 - 127.0.0.1 - - [18/Mar/2020 15:37:24] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:37:35 - [device_event]A device(id=2) has turned off!
+18-Mar-20 15:37:35 - 127.0.0.1 - - [18/Mar/2020 15:37:35] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:37:35 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:37:35 - 127.0.0.1 - - [18/Mar/2020 15:37:35] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:37:35 - 127.0.0.1 - - [18/Mar/2020 15:37:35] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:37:35 - 127.0.0.1 - - [18/Mar/2020 15:37:35] "POST /RemoveScheduledShutdown/4 HTTP/1.1" 200 -
+18-Mar-20 15:38:06 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:38:06 - 127.0.0.1 - - [18/Mar/2020 15:38:06] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:38:34 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:38:34 -  * Restarting with stat
+18-Mar-20 15:38:40 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:38:40 - 127.0.0.1 - - [18/Mar/2020 15:38:40] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:38:45 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:38:45 - 127.0.0.1 - - [18/Mar/2020 15:38:45] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:38:53 - [person_event]A person(id=1) has left!
+18-Mar-20 15:38:53 - 127.0.0.1 - - [18/Mar/2020 15:38:53] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:39:21 - [person_event]A person(id=2) has left!
+18-Mar-20 15:39:21 - 127.0.0.1 - - [18/Mar/2020 15:39:21] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:39:23 - [device_event]A device(id=1) has turned off!
+18-Mar-20 15:39:23 - 127.0.0.1 - - [18/Mar/2020 15:39:23] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:39:23 - 127.0.0.1 - - [18/Mar/2020 15:39:23] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:39:51 - [device_event]A device(id=2) has turned off!
+18-Mar-20 15:39:51 - 127.0.0.1 - - [18/Mar/2020 15:39:51] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:39:51 - 127.0.0.1 - - [18/Mar/2020 15:39:51] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+18-Mar-20 15:39:51 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:39:51 - 127.0.0.1 - - [18/Mar/2020 15:39:51] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:39:51 - 127.0.0.1 - - [18/Mar/2020 15:39:51] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+18-Mar-20 15:40:02 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-01-03-10-20-11!
+18-Mar-20 15:40:02 - 127.0.0.1 - - [18/Mar/2020 15:40:02] "POST /SuspendAutomation HTTP/1.1" 200 -
+18-Mar-20 15:40:07 - [person_event]A person(id=1) has entered!
+18-Mar-20 15:40:07 - 127.0.0.1 - - [18/Mar/2020 15:40:07] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:40:08 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:40:08 - 127.0.0.1 - - [18/Mar/2020 15:40:08] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:40:12 - [person_event]A person(id=1) has left!
+18-Mar-20 15:40:12 - 127.0.0.1 - - [18/Mar/2020 15:40:12] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:40:13 - [person_event]A person(id=2) has left!
+18-Mar-20 15:40:13 - 127.0.0.1 - - [18/Mar/2020 15:40:13] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:40:43 - [device_event]A device(id=2) has turned off!
+18-Mar-20 15:40:43 - 127.0.0.1 - - [18/Mar/2020 15:40:43] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:40:43 - 127.0.0.1 - - [18/Mar/2020 15:40:43] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:41:03 - [person_event]A person(id=2) has entered!
+18-Mar-20 15:41:03 - 127.0.0.1 - - [18/Mar/2020 15:41:03] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:41:29 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+18-Mar-20 15:41:29 -  * Restarting with stat
+18-Mar-20 15:41:38 - [person_event]A person(id=1) has left!
+18-Mar-20 15:41:38 - 127.0.0.1 - - [18/Mar/2020 15:41:38] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:41:39 - [person_event]A person(id=2) has left!
+18-Mar-20 15:41:39 - 127.0.0.1 - - [18/Mar/2020 15:41:39] "POST /HandlePersonEvent HTTP/1.1" 200 -
+18-Mar-20 15:42:09 - [device_event]A device(id=2) has turned off!
+18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:42:09 - [device_event]A device(id=7) has turned off!
+18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+18-Mar-20 15:42:09 - 127.0.0.1 - - [18/Mar/2020 15:42:09] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
