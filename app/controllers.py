@@ -369,3 +369,31 @@ def list_scheduled_shutdowns(person_id):
 
     # return json
     return jsonify({'scheduledShutdowns': shutdown_devices})
+
+# endpoint to list person-device pairs
+@app.route("/ListPersonDeviceAssignment", methods=['GET'])
+def list_person_device():
+
+    # get all persons
+    persons = Person.query.all()
+
+    # final variable to return
+    person_dev_final = {}
+
+    # find personel device of every person
+    for person in persons:
+        person_dev_final[person.person_id] = -1
+        for device in person.devices:
+            found = 0
+            for person2 in persons:
+                for device2 in person2.devices:
+                    if (person.person_id == person2.person_id):
+                        continue
+                    else:
+                        if(device2.device_id == device.device_id):
+                            found = 1
+            if(found == 0):
+                person_dev_final[person.person_id] = device.device_id
+
+    # return result as dictionary
+    return jsonify(person_dev_final)

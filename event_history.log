@@ -314,3 +314,298 @@
 18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /HandleDeviceEvent HTTP/1.1" 200 -
 18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
 18-Mar-20 16:46:18 - 127.0.0.1 - - [18/Mar/2020 16:46:18] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+24-Mar-20 00:43:01 - 127.0.0.1 - - [24/Mar/2020 00:43:01] "GET / HTTP/1.1" 404 -
+24-Mar-20 00:43:02 - 127.0.0.1 - - [24/Mar/2020 00:43:02] "GET /favicon.ico HTTP/1.1" 404 -
+24-Mar-20 00:43:09 - 127.0.0.1 - - [24/Mar/2020 00:43:09] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 00:43:09 - 127.0.0.1 - - [24/Mar/2020 00:43:09] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 00:43:09 - 127.0.0.1 - - [24/Mar/2020 00:43:09] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 00:43:09 - 127.0.0.1 - - [24/Mar/2020 00:43:09] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 00:43:10 - 127.0.0.1 - - [24/Mar/2020 00:43:10] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:43:10 - 127.0.0.1 - - [24/Mar/2020 00:43:10] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:43:23 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 00:43:23 -  * Restarting with stat
+24-Mar-20 00:43:24 - 127.0.0.1 - - [24/Mar/2020 00:43:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 00:43:24 - 127.0.0.1 - - [24/Mar/2020 00:43:24] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 00:43:24 - 127.0.0.1 - - [24/Mar/2020 00:43:24] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 00:43:24 - 127.0.0.1 - - [24/Mar/2020 00:43:24] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 00:43:24 - 127.0.0.1 - - [24/Mar/2020 00:43:24] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:43:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 00:43:42 -  * Restarting with stat
+24-Mar-20 00:43:43 - 127.0.0.1 - - [24/Mar/2020 00:43:43] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 00:43:43 - 127.0.0.1 - - [24/Mar/2020 00:43:43] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 00:43:43 - 127.0.0.1 - - [24/Mar/2020 00:43:43] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 00:43:43 - 127.0.0.1 - - [24/Mar/2020 00:43:43] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 00:43:43 - 127.0.0.1 - - [24/Mar/2020 00:43:43] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:43:44 - 127.0.0.1 - - [24/Mar/2020 00:43:44] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 00:43:44 - 127.0.0.1 - - [24/Mar/2020 00:43:44] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 00:43:44 - 127.0.0.1 - - [24/Mar/2020 00:43:44] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 00:43:44 - 127.0.0.1 - - [24/Mar/2020 00:43:44] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 00:43:45 - 127.0.0.1 - - [24/Mar/2020 00:43:45] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:43:58 - 127.0.0.1 - - [24/Mar/2020 00:43:58] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 00:43:58 - 127.0.0.1 - - [24/Mar/2020 00:43:58] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 00:43:58 - 127.0.0.1 - - [24/Mar/2020 00:43:58] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 00:43:58 - 127.0.0.1 - - [24/Mar/2020 00:43:58] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 00:43:58 - 127.0.0.1 - - [24/Mar/2020 00:43:58] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:44:09 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 00:44:09 -  * Restarting with stat
+24-Mar-20 00:44:12 - 127.0.0.1 - - [24/Mar/2020 00:44:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 00:45:29 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 00:45:29 -  * Restarting with stat
+24-Mar-20 00:45:39 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 00:45:39 -  * Restarting with stat
+24-Mar-20 00:45:40 - 127.0.0.1 - - [24/Mar/2020 00:45:40] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 00:45:40 - 127.0.0.1 - - [24/Mar/2020 00:45:40] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 00:45:40 - 127.0.0.1 - - [24/Mar/2020 00:45:40] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 00:45:40 - 127.0.0.1 - - [24/Mar/2020 00:45:40] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 00:45:40 - 127.0.0.1 - - [24/Mar/2020 00:45:40] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 00:57:27 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 00:57:27 -  * Restarting with stat
+24-Mar-20 01:00:58 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:00:58 -  * Restarting with stat
+24-Mar-20 01:02:37 - 127.0.0.1 - - [24/Mar/2020 01:02:37] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:07:52 - 127.0.0.1 - - [24/Mar/2020 01:07:52] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:08:14 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:08:14 -  * Restarting with stat
+24-Mar-20 01:08:16 - 127.0.0.1 - - [24/Mar/2020 01:08:16] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:10:23 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:10:23 -  * Restarting with stat
+24-Mar-20 01:10:27 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:10:27 -  * Restarting with stat
+24-Mar-20 01:10:29 - 127.0.0.1 - - [24/Mar/2020 01:10:29] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:11:02 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:11:02 -  * Restarting with stat
+24-Mar-20 01:11:26 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:11:26 -  * Restarting with stat
+24-Mar-20 01:11:27 - 127.0.0.1 - - [24/Mar/2020 01:11:27] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:11:27 - 127.0.0.1 - - [24/Mar/2020 01:11:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:11:27 - 127.0.0.1 - - [24/Mar/2020 01:11:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:11:27 - 127.0.0.1 - - [24/Mar/2020 01:11:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:11:27 - 127.0.0.1 - - [24/Mar/2020 01:11:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:11:33 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:11:33 -  * Restarting with stat
+24-Mar-20 01:11:35 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:11:35 -  * Restarting with stat
+24-Mar-20 01:11:36 - 127.0.0.1 - - [24/Mar/2020 01:11:36] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:14:27 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:14:27 -  * Restarting with stat
+24-Mar-20 01:14:34 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:14:34 -  * Restarting with stat
+24-Mar-20 01:14:39 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:14:39 -  * Restarting with stat
+24-Mar-20 01:14:46 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:14:46 -  * Restarting with stat
+24-Mar-20 01:14:56 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:14:57 -  * Restarting with stat
+24-Mar-20 01:15:26 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:15:27 -  * Restarting with stat
+24-Mar-20 01:15:31 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:15:31 -  * Restarting with stat
+24-Mar-20 01:15:33 - 127.0.0.1 - - [24/Mar/2020 01:15:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:15:33 - 127.0.0.1 - - [24/Mar/2020 01:15:33] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:15:33 - 127.0.0.1 - - [24/Mar/2020 01:15:33] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:15:33 - 127.0.0.1 - - [24/Mar/2020 01:15:33] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:15:33 - 127.0.0.1 - - [24/Mar/2020 01:15:33] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:16:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:16:28 -  * Restarting with stat
+24-Mar-20 01:22:51 - 127.0.0.1 - - [24/Mar/2020 01:22:51] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:22:51 - 127.0.0.1 - - [24/Mar/2020 01:22:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:22:51 - 127.0.0.1 - - [24/Mar/2020 01:22:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:22:51 - 127.0.0.1 - - [24/Mar/2020 01:22:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:22:51 - 127.0.0.1 - - [24/Mar/2020 01:22:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:23:27 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:23:27 -  * Restarting with stat
+24-Mar-20 01:23:45 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:23:45 -  * Restarting with stat
+24-Mar-20 01:23:51 - 127.0.0.1 - - [24/Mar/2020 01:23:51] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:23:51 - 127.0.0.1 - - [24/Mar/2020 01:23:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:23:51 - 127.0.0.1 - - [24/Mar/2020 01:23:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:23:51 - 127.0.0.1 - - [24/Mar/2020 01:23:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:23:51 - 127.0.0.1 - - [24/Mar/2020 01:23:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:24:15 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:24:15 -  * Restarting with stat
+24-Mar-20 01:24:18 - 127.0.0.1 - - [24/Mar/2020 01:24:18] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:24:18 - 127.0.0.1 - - [24/Mar/2020 01:24:18] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:24:18 - 127.0.0.1 - - [24/Mar/2020 01:24:18] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:24:18 - 127.0.0.1 - - [24/Mar/2020 01:24:18] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:24:18 - 127.0.0.1 - - [24/Mar/2020 01:24:18] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:24:25 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:24:26 -  * Restarting with stat
+24-Mar-20 01:24:27 - 127.0.0.1 - - [24/Mar/2020 01:24:27] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:24:27 - 127.0.0.1 - - [24/Mar/2020 01:24:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:24:27 - 127.0.0.1 - - [24/Mar/2020 01:24:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:24:27 - 127.0.0.1 - - [24/Mar/2020 01:24:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:24:27 - 127.0.0.1 - - [24/Mar/2020 01:24:27] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:24:33 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:24:33 -  * Restarting with stat
+24-Mar-20 01:28:40 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:28:41 -  * Restarting with stat
+24-Mar-20 01:31:12 - 127.0.0.1 - - [24/Mar/2020 01:31:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:31:49 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:31:49 -  * Restarting with stat
+24-Mar-20 01:31:50 - 127.0.0.1 - - [24/Mar/2020 01:31:50] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:31:50 - 127.0.0.1 - - [24/Mar/2020 01:31:50] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:31:50 - 127.0.0.1 - - [24/Mar/2020 01:31:50] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:31:50 - 127.0.0.1 - - [24/Mar/2020 01:31:50] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:31:51 - 127.0.0.1 - - [24/Mar/2020 01:31:51] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:32:01 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:32:01 -  * Restarting with stat
+24-Mar-20 01:32:02 - 127.0.0.1 - - [24/Mar/2020 01:32:02] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:32:02 - 127.0.0.1 - - [24/Mar/2020 01:32:02] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:32:02 - 127.0.0.1 - - [24/Mar/2020 01:32:02] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:32:02 - 127.0.0.1 - - [24/Mar/2020 01:32:02] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:32:02 - 127.0.0.1 - - [24/Mar/2020 01:32:02] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:32:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:32:28 -  * Restarting with stat
+24-Mar-20 01:32:56 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:32:56 -  * Restarting with stat
+24-Mar-20 01:33:00 - 127.0.0.1 - - [24/Mar/2020 01:33:00] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:33:00 - 127.0.0.1 - - [24/Mar/2020 01:33:00] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:33:00 - 127.0.0.1 - - [24/Mar/2020 01:33:00] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:33:00 - 127.0.0.1 - - [24/Mar/2020 01:33:00] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:33:00 - 127.0.0.1 - - [24/Mar/2020 01:33:00] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:34:22 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:34:22 -  * Restarting with stat
+24-Mar-20 01:35:20 - 127.0.0.1 - - [24/Mar/2020 01:35:20] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:39:13 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:39:13 -  * Restarting with stat
+24-Mar-20 01:39:19 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:39:19 -  * Restarting with stat
+24-Mar-20 01:39:21 - 127.0.0.1 - - [24/Mar/2020 01:39:21] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:41:22 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:41:22 -  * Restarting with stat
+24-Mar-20 01:41:23 - 127.0.0.1 - - [24/Mar/2020 01:41:23] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:41:40 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:41:40 -  * Restarting with stat
+24-Mar-20 01:41:40 - 127.0.0.1 - - [24/Mar/2020 01:41:40] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:41:50 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:41:51 -  * Restarting with stat
+24-Mar-20 01:41:52 - 127.0.0.1 - - [24/Mar/2020 01:41:52] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:41:52 - 127.0.0.1 - - [24/Mar/2020 01:41:52] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:41:52 - 127.0.0.1 - - [24/Mar/2020 01:41:52] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:41:52 - 127.0.0.1 - - [24/Mar/2020 01:41:52] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:41:52 - 127.0.0.1 - - [24/Mar/2020 01:41:52] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:41:56 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:41:56 -  * Restarting with stat
+24-Mar-20 01:41:57 - 127.0.0.1 - - [24/Mar/2020 01:41:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:41:57 - 127.0.0.1 - - [24/Mar/2020 01:41:57] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:41:57 - 127.0.0.1 - - [24/Mar/2020 01:41:57] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:41:57 - 127.0.0.1 - - [24/Mar/2020 01:41:57] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:41:57 - 127.0.0.1 - - [24/Mar/2020 01:41:57] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:42:03 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:42:03 -  * Restarting with stat
+24-Mar-20 01:42:04 - 127.0.0.1 - - [24/Mar/2020 01:42:04] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:42:16 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:42:16 -  * Restarting with stat
+24-Mar-20 01:42:17 - 127.0.0.1 - - [24/Mar/2020 01:42:17] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:42:59 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:42:59 -  * Restarting with stat
+24-Mar-20 01:43:18 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:43:18 -  * Restarting with stat
+24-Mar-20 01:43:31 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:43:31 -  * Restarting with stat
+24-Mar-20 01:43:34 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:43:34 -  * Restarting with stat
+24-Mar-20 01:43:36 - 127.0.0.1 - - [24/Mar/2020 01:43:36] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:43:36 - 127.0.0.1 - - [24/Mar/2020 01:43:36] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:43:36 - 127.0.0.1 - - [24/Mar/2020 01:43:36] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:43:36 - 127.0.0.1 - - [24/Mar/2020 01:43:36] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:43:36 - 127.0.0.1 - - [24/Mar/2020 01:43:36] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:44:11 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:44:11 -  * Restarting with stat
+24-Mar-20 01:44:12 - 127.0.0.1 - - [24/Mar/2020 01:44:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:44:12 - 127.0.0.1 - - [24/Mar/2020 01:44:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:44:12 - 127.0.0.1 - - [24/Mar/2020 01:44:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:44:12 - 127.0.0.1 - - [24/Mar/2020 01:44:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:44:12 - 127.0.0.1 - - [24/Mar/2020 01:44:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:44:37 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:44:37 -  * Restarting with stat
+24-Mar-20 01:44:41 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:44:41 -  * Restarting with stat
+24-Mar-20 01:44:43 - 127.0.0.1 - - [24/Mar/2020 01:44:43] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:45:54 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:45:54 -  * Restarting with stat
+24-Mar-20 01:45:55 - 127.0.0.1 - - [24/Mar/2020 01:45:55] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:46:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:46:07 -  * Restarting with stat
+24-Mar-20 01:46:08 - 127.0.0.1 - - [24/Mar/2020 01:46:08] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:46:53 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:46:53 -  * Restarting with stat
+24-Mar-20 01:46:54 - 127.0.0.1 - - [24/Mar/2020 01:46:54] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:47:21 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:47:21 -  * Restarting with stat
+24-Mar-20 01:47:24 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:47:24 -  * Restarting with stat
+24-Mar-20 01:47:25 - 127.0.0.1 - - [24/Mar/2020 01:47:25] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:47:48 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:47:48 -  * Restarting with stat
+24-Mar-20 01:47:49 - 127.0.0.1 - - [24/Mar/2020 01:47:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:48:41 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:48:41 -  * Restarting with stat
+24-Mar-20 01:49:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:49:07 -  * Restarting with stat
+24-Mar-20 01:49:09 - 127.0.0.1 - - [24/Mar/2020 01:49:09] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:49:21 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:49:21 -  * Restarting with stat
+24-Mar-20 01:49:22 - 127.0.0.1 - - [24/Mar/2020 01:49:22] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:49:31 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:49:31 -  * Restarting with stat
+24-Mar-20 01:49:31 - 127.0.0.1 - - [24/Mar/2020 01:49:31] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:50:10 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:50:10 -  * Restarting with stat
+24-Mar-20 01:50:14 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:50:14 -  * Restarting with stat
+24-Mar-20 01:50:15 - 127.0.0.1 - - [24/Mar/2020 01:50:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 01:50:15 - 127.0.0.1 - - [24/Mar/2020 01:50:15] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 01:50:15 - 127.0.0.1 - - [24/Mar/2020 01:50:15] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 01:50:15 - 127.0.0.1 - - [24/Mar/2020 01:50:15] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 01:50:15 - 127.0.0.1 - - [24/Mar/2020 01:50:15] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 01:50:22 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:50:23 -  * Restarting with stat
+24-Mar-20 01:50:23 - 127.0.0.1 - - [24/Mar/2020 01:50:23] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:51:30 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:51:30 -  * Restarting with stat
+24-Mar-20 01:51:48 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:51:48 -  * Restarting with stat
+24-Mar-20 01:51:57 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:51:57 -  * Restarting with stat
+24-Mar-20 01:52:30 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:52:30 -  * Restarting with stat
+24-Mar-20 01:52:36 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:52:36 -  * Restarting with stat
+24-Mar-20 01:52:37 - 127.0.0.1 - - [24/Mar/2020 01:52:37] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 01:54:33 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 01:54:33 -  * Restarting with stat
+24-Mar-20 01:57:03 - 127.0.0.1 - - [24/Mar/2020 01:57:03] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:01:44 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:01:44 -  * Restarting with stat
+24-Mar-20 02:06:12 - 127.0.0.1 - - [24/Mar/2020 02:06:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 500 -
+24-Mar-20 02:06:12 - 127.0.0.1 - - [24/Mar/2020 02:06:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+24-Mar-20 02:06:12 - 127.0.0.1 - - [24/Mar/2020 02:06:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+24-Mar-20 02:06:12 - 127.0.0.1 - - [24/Mar/2020 02:06:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+24-Mar-20 02:06:12 - 127.0.0.1 - - [24/Mar/2020 02:06:12] "GET /ListPersonDeviceAssignment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+24-Mar-20 02:06:26 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:06:26 -  * Restarting with stat
+24-Mar-20 02:06:28 - 127.0.0.1 - - [24/Mar/2020 02:06:28] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:08:47 - 127.0.0.1 - - [24/Mar/2020 02:08:47] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:09:33 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:09:34 -  * Restarting with stat
+24-Mar-20 02:09:48 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:09:48 -  * Restarting with stat
+24-Mar-20 02:09:54 - 127.0.0.1 - - [24/Mar/2020 02:09:54] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:10:32 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:10:32 -  * Restarting with stat
+24-Mar-20 02:10:32 - 127.0.0.1 - - [24/Mar/2020 02:10:32] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:11:20 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:11:20 -  * Restarting with stat
+24-Mar-20 02:11:32 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:11:32 -  * Restarting with stat
+24-Mar-20 02:11:34 - 127.0.0.1 - - [24/Mar/2020 02:11:34] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:12:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:12:07 -  * Restarting with stat
+24-Mar-20 02:12:08 - 127.0.0.1 - - [24/Mar/2020 02:12:08] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:12:15 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:12:16 -  * Restarting with stat
+24-Mar-20 02:12:17 - 127.0.0.1 - - [24/Mar/2020 02:12:17] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+24-Mar-20 02:12:25 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+24-Mar-20 02:12:25 -  * Restarting with stat
+24-Mar-20 02:12:26 - 127.0.0.1 - - [24/Mar/2020 02:12:26] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
