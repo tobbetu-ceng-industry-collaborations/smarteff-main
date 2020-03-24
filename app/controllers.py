@@ -380,9 +380,9 @@ def list_person_device():
     # final variable to return
     person_dev_final = {}
 
-    # find personel device of every person
+    # find personal device of every person
     for person in persons:
-        person_dev_final[person.person_id] = -1
+        person_dev_final[person.person_name] = ""
         for device in person.devices:
             found = 0
             for person2 in persons:
@@ -393,7 +393,9 @@ def list_person_device():
                         if(device2.device_id == device.device_id):
                             found = 1
             if(found == 0):
-                person_dev_final[person.person_id] = device.device_id
+                tempRes = "D" + str(device.device_id)
+                person_dev_final[person.person_name] = tempRes
+
 
     # return result as dictionary
     return jsonify(person_dev_final)

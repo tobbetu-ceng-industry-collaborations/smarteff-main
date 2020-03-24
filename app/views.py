@@ -22,6 +22,14 @@ def admin():
     response = response.text
     loaded = json.loads(response)
 
+    # get person-device assignment as json
+    response2 = requests.get("https://smarteff.herokuapp.com/ListPersonDeviceAssignment")
+    response2 = response2.text
+    devices_temp = json.loads(response2)
+    
+    # reverse dictionary
+    devices = {v: k for k, v in devices_temp.items()}
+
     # person array to redirect
     persons = []
 
@@ -29,5 +37,5 @@ def admin():
     for person in loaded['people']:
         persons.append(person['name'])
 
-    return render_template("office.html", persons=persons)
+    return render_template("office.html", persons=persons, devices=devices)
 
