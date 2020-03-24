@@ -399,3 +399,19 @@ def list_person_device():
 
     # return result as dictionary
     return jsonify(person_dev_final)
+
+# endpoint to list device status
+@app.route("/ListDeviceStatus", methods=['GET'])
+def list_device_status():
+
+    # get all devices
+    devices = Device.query.all()
+
+    device_status = {}
+
+    for device in devices:
+        temp_id = "D" + str(device.device_id)
+        device_status[temp_id] = device.is_on
+
+    # return result as dictionary
+    return jsonify(device_status)

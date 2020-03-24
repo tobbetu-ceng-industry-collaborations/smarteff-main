@@ -14,6 +14,13 @@
             border-radius: 50%;
             display: inline-block;
           }
+          .dotRed {
+            height: 18px;
+            width: 18px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+          }
           .overlay{
             opacity:5;
             position:fixed;
@@ -206,7 +213,11 @@
                       {{devices["D1"]}}
                       
                       </div>
+                      {% if device_status["D1"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                     </div>
                     <div class ="overlay6" style="position: relative;">
                       <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(2)">
@@ -215,12 +226,20 @@
                       <div id="D2"; style="font-weight:bold">
                       {{devices["D2"]}}
                       </div>
+                      {% if device_status["D2"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                     </div>
                   </div>
                   <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D7
                   </div>
+                      {% if device_status["D7"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                 </div>
                 <div class="overlay4" style="position: relative;">
                   <div style="width: 50%;height: 50%">
@@ -231,7 +250,11 @@
                       <div id="D5"; style="font-weight:bold">
                       {{devices["D5"]}}
                       </div>
+                      {% if device_status["D5"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                     </div>
                     <div class="overlay8" style="position: relative;">
                       <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(6)">
@@ -240,7 +263,11 @@
                       <div id="D6"; style="font-weight:bold">
                       {{devices["D6"]}}
                       </div>
+                      {% if device_status["D6"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                     </div>
 
                     <div class="overlay9" style="position: relative;">
@@ -250,7 +277,11 @@
                       <div id="D3"; style="font-weight:bold">
                       {{devices["D3"]}}
                       </div>
+                      {% if device_status["D3"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                    </div>
                    <div class="overlay10" style="position: relative;">
                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(4)">
@@ -259,17 +290,29 @@
                       <div id="D4"; style="font-weight:bold">
                       {{devices["D4"]}}
                       </div>
+                      {% if device_status["D4"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                    </div>
                  </div>
                   <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D9
                   </div>  
+                      {% if device_status["D9"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
                </div>
              </div>
               <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D8
               </div>  
+                      {% if device_status["D8"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      {% else %}
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      {% endif %}
            </div>
          </div>
        </div>
