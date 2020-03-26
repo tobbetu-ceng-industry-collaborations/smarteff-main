@@ -68,9 +68,6 @@ def person_event():
             for res in query:
                 assigned_persons.append(res.person_id)
 
-            print("Dev:" + str(device.device_id))
-            print(assigned_persons)
-
             # check if there is any other person is inside
             found = False
             for pers in assigned_persons:
@@ -79,23 +76,28 @@ def person_event():
                     found = True
 
             # shutdown will happen in 2 minutes
-            shutdown_delay = 120
+            shutdown_delay = 300
             date = datetime.now() + timedelta(seconds=shutdown_delay)
 
             # found==false means that there are no person inside assigned to the device
             if( found == False ):
-                print("Dev:" + str(device.device_id))	
+
                 # insert scheduled shutdown to table
                 scheduled_shutdown = ScheduledShutdown(person.person_id, device.device_id, device.device_name, date)
                 db.session.add(scheduled_shutdown)
                 db.session.commit()
 
+                token = person.android_token
+
                 # schedule shutdown
                 os.system("python3 app/utils/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
-
-                # TODO
-                # (1) send notification to user
                 
+                if (device.device_type == 'Desk' and (token is not None) and person.should_receive_notifications == 1):
+                    
+                    # notify user
+                    os.system("python3 app/notification/notify.py " + str(device.device_id) + " " + str(date) + " " + token + "&")
+
+         
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
 

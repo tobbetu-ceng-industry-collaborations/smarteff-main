@@ -6,16 +6,16 @@ from firebase_admin import credentials
 
 import sys
 
-def send_to_token():
+def send_to_token(device_id, date, token):
 
     # Tests user's token
-    registration_token = "cZvz6ae1XBM:APA91bFd0ReIxpz281IRDCL7pYdFZdx_0SQF6_dYfm13OgnE-f6hIlwh2FlKtu2F2170BVBlDJMsRmworTzZJQ4wP-YQo9_R10cI9swZtFFLf5l-8scj4nqpD1XIUXW91U9bGzK3xec6"
+    registration_token = token
 
     # Prepare message
     message = messaging.Message(
         data={
-            'device_id': '850',
-            'date': '2:45',
+            'device_id': device_id,
+            'date': date,
         },
         token=registration_token,
     )
@@ -30,6 +30,13 @@ def send_to_token():
 cred = credentials.Certificate("app/notification/smarteff-e4fef-firebase-adminsdk-3y2fw-b0a6f2de74_1.json")
 firebase_admin.initialize_app(cred)
 
+# read data from cmd args
 device_id = str(sys.argv[1])
-date = str(sys.argv[2])
-send_to_token()
+date = str(sys.argv[3])
+token = str(sys.argv[4])
+date = date[0:8]
+
+print(token)
+
+send_to_token(device_id, date, token)
+exit()
