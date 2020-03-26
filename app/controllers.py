@@ -91,7 +91,7 @@ def person_event():
                 db.session.commit()
 
                 # schedule shutdown
-                os.system("python3 app/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
+                os.system("python3 app/utils/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
 
                 # TODO
                 # (1) send notification to user
@@ -151,6 +151,7 @@ def manage_device():
 
         # TODO
         # (1) redirect to component #6
+        # python3 manage_device.py <son_of id> <channel> <on/off>
 
         logging.warning('[request_event]A person(id=%s) has requested a device(id=%s) to be turned on!', str(person_id), str(device_id))
 
@@ -192,15 +193,21 @@ def suspend_automation():
     minute = int(dates[4])
     second = int(dates[5])
 
-    # TODO
-    # (1) remove previous suspensions of the device since they are meaningless from now on.
-    # (2) check format of the parsed date. (until) 
+    # resolve dates
+    now = datetime.now()
+    susp_time = datetime(year, month, day, hour, minute, second)
+
+    # resolve suspension in terms of seconds
+    diff_time = int((susp_time - now).total_seconds())
 
     # insert suspension to table
-    values = [person_id, device_id, datetime.now(), datetime(year, month, day, hour, minute, second)]
+    values = [person_id, device_id, now, susp_time]
     insert_statement = suspension_request.insert().values(values)
     db.session.execute(insert_statement)
     db.session.commit()
+
+    # invoke cleaner
+    os.system("python3 app/utils/track_suspension.py " + str(person_id) + " " + str(device_id) + " " + str(diff_time) + "&")    
 
     logging.warning('[automation_event]A person(id=%s) has requested a suspension for the automation of device(id=%s) until %s!', str(person_id), str(device_id), until)
 
@@ -242,8 +249,10 @@ def enable_automation():
     # write changes
     db.session.add(device)
     db.session.commit()    	
-
-
+    
+    # remove former enable request
+    os.system("python3 app/utils/de_track.py " + str(person_id) + " " + str(device_id))
+        
     logging.warning('[automation_event]A person(id=%s) has enabled automation of device(id=%s)', str(person_id), str(device_id))
 
     # prepare the response --> assuming everything is OK
@@ -275,7 +284,7 @@ def request_susp_shutdown(dev_name):
     scheduled_entry = ScheduledShutdown.query.filter(ScheduledShutdown.device_name==dev_name).first()
 
     # terminate background process
-    os.system("python3 app/de_schedule.py " + str(scheduled_entry.shutdown_id))
+    os.system("python3 app/utils/de_schedule.py " + str(scheduled_entry.shutdown_id))
     
     # remove entry
     db.session.delete(scheduled_entry)

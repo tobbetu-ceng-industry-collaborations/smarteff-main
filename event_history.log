@@ -1,0 +1,41 @@
+26-Mar-20 11:01:21 - 127.0.0.1 - - [26/Mar/2020 11:01:21] "GET / HTTP/1.1" 404 -
+26-Mar-20 11:01:21 - 127.0.0.1 - - [26/Mar/2020 11:01:21] "GET /favicon.ico HTTP/1.1" 404 -
+26-Mar-20 11:01:48 - 127.0.0.1 - - [26/Mar/2020 11:01:48] "POST /SuspendAutomation HTTP/1.1" 404 -
+26-Mar-20 11:01:55 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:01:55 - 127.0.0.1 - - [26/Mar/2020 11:01:55] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:01:55 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-01-03-10-20-11!
+26-Mar-20 11:01:55 - 127.0.0.1 - - [26/Mar/2020 11:01:55] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:05:10 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:05:10 - 127.0.0.1 - - [26/Mar/2020 11:05:10] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:05:10 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-5-11!
+26-Mar-20 11:05:10 - 127.0.0.1 - - [26/Mar/2020 11:05:10] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:05:50 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+26-Mar-20 11:05:50 -  * Restarting with stat
+26-Mar-20 11:06:17 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-5-11!
+26-Mar-20 11:06:17 - 127.0.0.1 - - [26/Mar/2020 11:06:17] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:06:17 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:06:17 - 127.0.0.1 - - [26/Mar/2020 11:06:17] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:07:11 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-10-11!
+26-Mar-20 11:07:11 - 127.0.0.1 - - [26/Mar/2020 11:07:11] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:10:10 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:10:10 - 127.0.0.1 - - [26/Mar/2020 11:10:10] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:22:47 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-25-11!
+26-Mar-20 11:22:47 - 127.0.0.1 - - [26/Mar/2020 11:22:47] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:23:14 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:23:14 - 127.0.0.1 - - [26/Mar/2020 11:23:14] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:23:48 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-27-11!
+26-Mar-20 11:23:48 - 127.0.0.1 - - [26/Mar/2020 11:23:48] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:25:32 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+26-Mar-20 11:25:32 -  * Restarting with stat
+26-Mar-20 11:25:37 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+26-Mar-20 11:25:37 -  * Restarting with stat
+26-Mar-20 11:27:11 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:27:11 - 127.0.0.1 - - [26/Mar/2020 11:27:11] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:27:34 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-29-00!
+26-Mar-20 11:27:34 - 127.0.0.1 - - [26/Mar/2020 11:27:34] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:27:42 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:27:42 - 127.0.0.1 - - [26/Mar/2020 11:27:42] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:28:03 - [automation_event]A person(id=1) has requested a suspension for the automation of device(id=1) until 2020-03-26-11-29-30!
+26-Mar-20 11:28:03 - 127.0.0.1 - - [26/Mar/2020 11:28:03] "POST /SuspendAutomation HTTP/1.1" 200 -
+26-Mar-20 11:29:29 - [automation_event]A person(id=1) has enabled automation of device(id=1)
+26-Mar-20 11:29:29 - 127.0.0.1 - - [26/Mar/2020 11:29:29] "POST /EnableAutomation HTTP/1.1" 200 -
