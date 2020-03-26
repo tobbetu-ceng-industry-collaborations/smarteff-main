@@ -39,3 +39,5 @@
 26-Mar-20 11:28:03 - 127.0.0.1 - - [26/Mar/2020 11:28:03] "POST /SuspendAutomation HTTP/1.1" 200 -
 26-Mar-20 11:29:29 - [automation_event]A person(id=1) has enabled automation of device(id=1)
 26-Mar-20 11:29:29 - 127.0.0.1 - - [26/Mar/2020 11:29:29] "POST /EnableAutomation HTTP/1.1" 200 -
+26-Mar-20 11:57:17 - 127.0.0.1 - - [26/Mar/2020 11:57:17] "GET / HTTP/1.1" 404 -
+26-Mar-20 11:57:31 - 127.0.0.1 - - [26/Mar/2020 11:57:31] "GET /admin HTTP/1.1" 200 -
