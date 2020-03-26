@@ -25,6 +25,7 @@ class Person(db.Model):
     person_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     person_name = db.Column(db.String(128),nullable=False)
     is_inside = db.Column(db.Integer, nullable=False)
+    android_token = db.Column(db.String(128),nullable=True)
     should_receive_notifications = db.Column(db.Integer,nullable=False)
 
     devices = db.relationship('Device', secondary=person_device, backref=db.backref('assigned_persons', lazy='dynamic'))
@@ -46,6 +47,9 @@ class Device(db.Model):
 
     device_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     device_name = db.Column(db.String(128),nullable=False)
+    device_type = db.Column(db.String(128),nullable=False)
+    sonoff_link = db.Column(db.String(128),nullable=True)
+    sonoff_channel = db.Column(db.Integer, nullable=True)
     is_on = db.Column(db.Integer, nullable=False)
 
     suspensions = db.relationship('Person', secondary=suspension_request, backref=db.backref('suspension_requests', lazy='dynamic'))
@@ -57,7 +61,7 @@ class Device(db.Model):
    # Serialize json object
     @property
     def serialize(self):
-        return {'id':self.device_id,'name':self.device_name,'isOn':self.is_on,'automation':''}
+        return {'id':self.device_id,'name':self.device_name,'type':self.device_type,'isOn':self.is_on,'automation':''}
 
 # Define scheduled shutdown model
 class ScheduledShutdown(db.Model):
