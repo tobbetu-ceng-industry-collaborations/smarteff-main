@@ -105,7 +105,7 @@ def person_event():
 
 # endpoint to handle person events
 @app.route("/HandlePersonEventSim", methods=['POST'])
-def person_event():
+def person_event_sim():
 
     # parse http request body
     data = request.json
@@ -323,6 +323,8 @@ def enable_automation():
     resp = jsonify({'success':True})
 
     return resp, 200
+
+# -----------------------UTILITY ENDPOINTS---------------------------- 
     
 # endpoint to clear former shutdown entries
 @app.route("/RemoveScheduledShutdown/<sched_id>", methods=['POST'])
@@ -361,7 +363,7 @@ def request_susp_shutdown(dev_name):
 
 # endpoint to create new Person
 @app.route("/CreateNewPerson/<name>", methods=['GET', 'POST'])
-def add_user(name):
+def create_person(name):
 
     # read new Person's information
     username = name
@@ -373,6 +375,35 @@ def add_user(name):
 
     # record into DB
     db.session.add(new_person)
+    db.session.commit()
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
+# endpoint to change assignment of a person-device
+@app.route("/ChangeAssignment/<name1>/<name2>", methods=['GET', 'POST'])
+def swap_person(name1, name2):
+
+    # fetch persons
+    person1 = Person.query.filter(Person.person_name == name1).first()
+    person2 = Person.query.filter(Person.person_name == name2).first()
+
+    # devices to be swapped
+    devs = person1.devices
+
+    # remove person1's entries
+    to_be_deleted = person_device.delete().where(person_device.c.person_id==person1.person_id )
+    db.session.execute(to_be_deleted)
+
+    # insert new entries for swapped person
+    for dev in devs:
+        values = [person2.person_id, dev.device_id]
+        insert_statement = person_device.insert().values(values)
+        db.session.execute(insert_statement)
+
+    # record into DB
     db.session.commit()
 
     # prepare the response --> assuming everything is OK
