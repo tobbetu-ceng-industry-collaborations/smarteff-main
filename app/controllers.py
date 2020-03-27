@@ -75,7 +75,7 @@ def person_event():
                 if( person2.is_inside == 1):
                     found = True
 
-            # shutdown will happen in 2 minutes
+            # shutdown will happen in 5 minutes
             shutdown_delay = 300
             date = datetime.now() + timedelta(seconds=shutdown_delay)
 
@@ -98,6 +98,68 @@ def person_event():
                     os.system("python3 app/notification/notify.py " + str(device.device_id) + " " + str(date) + " " + token + "&")
 
          
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
+# endpoint to handle person events
+@app.route("/HandlePersonEventSim", methods=['POST'])
+def person_event():
+
+    # parse http request body
+    data = request.json
+    person_id= data['personid']
+    event = data['event']
+
+    # get person or throw 404
+    person = Person.query.get_or_404(person_id)
+
+    # change is_inside status according to event
+    if event == 'entry':
+        person.is_inside = 1;
+        logging.warning('[person_event]A person(id=%s) has entered!', str(person_id))
+        db.session.commit()
+    elif event == 'exit':
+        person.is_inside = 0;
+        logging.warning('[person_event]A person(id=%s) has left!', str(person_id))
+        db.session.commit()
+
+
+        for device in person.devices:
+
+            # check if there is any other person assigned to the device
+            select_statement = db.select([person_device]).where(person_device.c.device_id==device.device_id)
+            query = db.session.execute(select_statement)
+
+            # persons assigned will be listed in this list
+            assigned_persons = []
+            
+            for res in query:
+                assigned_persons.append(res.person_id)
+
+            # check if there is any other person is inside
+            found = False
+            for pers in assigned_persons:
+                person2 = Person.query.get_or_404(pers)
+                if( person2.is_inside == 1):
+                    found = True
+
+            # shutdown will happen in 15 seconds
+            shutdown_delay = 15
+            date = datetime.now() + timedelta(seconds=shutdown_delay)
+
+            # found==false means that there are no person inside assigned to the device
+            if( found == False ):
+
+                # insert scheduled shutdown to table
+                scheduled_shutdown = ScheduledShutdown(person.person_id, device.device_id, device.device_name, date)
+                db.session.add(scheduled_shutdown)
+                db.session.commit()
+
+                # schedule shutdown
+                os.system("python3 app/utils/schedule.py " + str(scheduled_shutdown.shutdown_id) + " " + str(device.device_id) + " " + str(shutdown_delay) + "&" )
+                
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
 
