@@ -217,91 +217,22 @@
                         
               <div style="overflow-x:auto;">
                 <table>
-                    <tr>
-                      <th>Person Name</th>
-                      <th>Is Inside</th>
-                      <th>Assigned Device</th>
-                    </tr>
-                    <tr>
-                      <td>John</td>
-                      <td>Yes</td>
-                      <td>D1</td>
-                    </tr>
-                    <tr>
-                      <td>Jane</td>
-                      <td>Yes</td>
-                      <td>D2</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Jane</td>
-                      <td>Yes</td>
-                      <td>D2</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Jane</td>
-                      <td>Yes</td>
-                      <td>D2</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
-                    <tr>
-                      <td>Ali</td>
-                      <td>No</td>
-                      <td>D3</td>
-                    </tr>
+                      <tr>
+                        <th>Person Name</th>
+                        <th>Is Inside</th>
+                        <th>Assigned Device</th>
+                      </tr>
+                    {% for person in loaded['people'] %}
+                      <tr>
+                        <td>{{person.name}}</td>
+                        {% if person.is_inside == 1 %}
+                        <td>Yes</td>
+                        {% else %}
+                        <td>No</td>
+                        {% endif %}
+                        <td>{{person.devices}}</td>
+                     </tr>
+                    {% endfor %}
 
                 </table>
               </div>

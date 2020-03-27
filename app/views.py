@@ -42,5 +42,5 @@ def admin():
     for person in loaded['people']:
         persons.append(person['name'])
 
-    return render_template("office.html", persons=persons, devices=devices, device_status=device_status)
+    return render_template("office.html", persons=persons, devices=devices, device_status=device_status, loaded=loaded)
 

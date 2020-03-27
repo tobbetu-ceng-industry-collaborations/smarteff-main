@@ -38,7 +38,11 @@ class Person(db.Model):
    # Serialize json object
     @property
     def serialize(self):
-        return {'id':self.person_id,'name': self.person_name}
+        devices_self = ""
+        for device in self.devices:
+            devices_self = devices_self + "D" + str(device.device_id) + " "
+
+        return {'id':self.person_id,'name': self.person_name,'is_inside':self.is_inside,'devices':devices_self }
 
 # Define device model
 class Device(db.Model):

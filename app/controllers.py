@@ -297,6 +297,27 @@ def request_susp_shutdown(dev_name):
 
     return resp, 200
 
+# endpoint to create new Person
+@app.route("/CreateNewPerson/<name>", methods=['GET', 'POST'])
+def add_user(name):
+
+    # read new Person's information
+    username = name
+    is_inside = 0
+    should_receive_notifications = 0
+
+    # create Person object
+    new_person = Person(person_name=username, is_inside=is_inside, should_receive_notifications = should_receive_notifications)
+
+    # record into DB
+    db.session.add(new_person)
+    db.session.commit()
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
 
 
