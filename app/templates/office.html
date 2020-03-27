@@ -37,7 +37,7 @@
             height:170%;
             z-index:1000;
             border: 4px solid;
-            margin-left: 40%;
+            margin-left: 65%;
             margin-top: 5%;
 
           }
@@ -172,6 +172,19 @@
             font-size: 2em;
             text-align: center;
           }
+          table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+          }
+
+          th, td {
+            text-align: left;
+            padding: 8px;
+          }
+
+          tr:nth-child(even){background-color: #f2f2f2}
 
         </style>
       </head>
@@ -183,7 +196,7 @@
             <span class="close">&times;</span>
             <p2 id="p1">For Desk Number </p2>
             <p2 id="p2">1</p2><br><br>
-            <label for="username">Select User:</label>
+            <label for="username">Assign a User:</label>
             <select id="usernameS">
               {% for person in persons %}
               <option value={{person}}>{{person}}</option>
@@ -196,16 +209,46 @@
 
     </div>
 
-    </div>
+
+        <div style="width:500px;height:727px;border:4px solid #000;margin-left: 3%; margin-top: 2.9%;">
+          Create Persons
+
+          <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                  <th>Person Name</th>
+                  <th>Is Inside</th>
+                  <th>Assigned Device</th>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Yes</td>
+                  <td>D1</td>
+                </tr>
+                <tr>
+                  <td>Jane</td>
+                  <td>Yes</td>
+                  <td>D2</td>
+                </tr>
+                <tr>
+                  <td>Ali</td>
+                  <td>No</td>
+                  <td>D3</td>
+                </tr>
+            </table>
+          </div>
+        </div>
+
         <div class="overlay">
           <div style="width: 50%; height: 50%;">
             <div class="overlay2" style="position: relative;">
+
               <div style="width: 50%;height: 50%">
                 <div class="overlay3" style="position: relative;">
                   <div style="width: 50%;height: 50%">
                     <div class ="overlay5" style="position: relative;"> 
                       <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(1)">
-                      <div style="font-weight:bold; text-align:rigt;position: absolute; bottom:0; right: :0">D1
+                      <div style="font-weight:bold; text-align:rigt;position: absolute; bottom:0; right: :0">D1 - Desk
 
                       </div>
                       <div id="D1"; style="font-weight:bold">
@@ -221,7 +264,7 @@
                     </div>
                     <div class ="overlay6" style="position: relative;">
                       <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(2)">
-                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D2
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D2 - Desk
                       </div>
                       <div id="D2"; style="font-weight:bold">
                       {{devices["D2"]}}
@@ -233,7 +276,7 @@
                       {% endif %}
                     </div>
                   </div>
-                  <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D7
+                  <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D7 - Lamp
                   </div>
                       {% if device_status["D7"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
@@ -245,7 +288,7 @@
                   <div style="width: 50%;height: 50%">
                     <div class="overlay7" style="position: relative;">
                       <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(5)">
-                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D5
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D5 - Desk
                       </div>
                       <div id="D5"; style="font-weight:bold">
                       {{devices["D5"]}}
@@ -258,7 +301,7 @@
                     </div>
                     <div class="overlay8" style="position: relative;">
                       <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(6)">
-                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D6
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D6 - Desk
                       </div>
                       <div id="D6"; style="font-weight:bold">
                       {{devices["D6"]}}
@@ -272,7 +315,7 @@
 
                     <div class="overlay9" style="position: relative;">
                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(3)"> 
-                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D3
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D3 - Desk
                       </div>
                       <div id="D3"; style="font-weight:bold">
                       {{devices["D3"]}}
@@ -285,7 +328,7 @@
                    </div>
                    <div class="overlay10" style="position: relative;">
                      <img src="https://www.pngitem.com/pimgs/m/36-367738_customer-service-desk-icon-hd-png-download.png" width="40" height="50" onclick="popup(4)">
-                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D4
+                      <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D4 - Desk
                       </div>
                       <div id="D4"; style="font-weight:bold">
                       {{devices["D4"]}}
@@ -297,7 +340,7 @@
                       {% endif %}
                    </div>
                  </div>
-                  <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D9
+                  <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D9 - Lamp
                   </div>  
                       {% if device_status["D9"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
@@ -306,7 +349,7 @@
                       {% endif %}
                </div>
              </div>
-              <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D8
+              <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D8 - Air Conditioner
               </div>  
                       {% if device_status["D8"] == 1 %}
                       <span class="dot" style="position: absolute; bottom:0; right:0"></span>
