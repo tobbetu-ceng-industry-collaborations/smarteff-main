@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style type="text/css">
+
           .dot {
             height: 18px;
             width: 18px;
@@ -28,7 +29,6 @@
             height:100%;
             top:0px;
             left:0px;
-            z-index:1000;
             border: 8px solid;
           }
           .overlay2{
@@ -184,37 +184,87 @@
             padding: 8px;
           }
 
+          /* The popup form - hidden by default */
+          .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+          }
+
+          /* Add styles to the form container */
+          .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+          }
+
+          /* Full-width input fields */
+          .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+          }
+
+          /* When the inputs get focus, do something */
+          .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+          }
+
+          /* Set a style for the submit/login button */
+          .form-container .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+          }
+
+          /* Add a red background color to the cancel button */
+          .form-container .cancel {
+            background-color: red;
+          }
+
+          /* Add some hover effects to buttons */
+          .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+          }
+
           tr:nth-child(even){background-color: #f2f2f2}
 
         </style>
       </head>
       <body>
-  <div id="myModal" class="modal">
 
-        <!-- Modal content Pop-upýn kendisi-->
-        <div class="modal-content" style="width: 15% ; margin-top:15.0%;margin-left: 40%;text-align:center;">
-            <span class="close">&times;</span>
-            <p2 id="p1">For Desk Number </p2>
-            <p2 id="p2">1</p2><br><br>
-            <label for="username">Assign a User:</label>
-            <select id="usernameS">
-              {% for person in persons %}
-              <option value={{person}}>{{person}}</option>
-              {% endfor %}
-            </select>
-            <br><br>   
-            <input type="submit" value="Submit" onclick="getInfo()">
-            <br><br>
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+            <h1>Available Event Logs</h1>
+
+            <button type="submit" class="btn">Select</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
         </div>
 
-    </div>
+
+        <div style="width:500px;height:727px;border:4px solid #000;margin-left: 3%; margin-top: 2.9%;text-align: center; position: relative;">
+
+          <div style="z-index: 2;" >
+          <button style="width:490px;height:60px;" >
+          <span onclick="openForm()" >Load Event Log</span>
+          </button>
+          </div>
 
 
-        <div style="width:500px;height:727px;border:4px solid #000;margin-left: 3%; margin-top: 2.9%;text-align: center;">
-          <h3>Event Log</h3>
-
-
-                        
+          <hr style="margin-top: 0px;">
+          <h3 style="margin-bottom: 10px;margin-top: -10px;">Event Log</h3>                        
               <div style="overflow-x:auto;">
                 <table>
                       <tr>
@@ -236,6 +286,10 @@
 
                 </table>
               </div>
+
+              <button style ="width:490px; height:60px; position:absolute; right:0; bottom:0;">
+                Playback Event
+              </button>
 
           </div>
         <div class="overlay">
@@ -360,50 +414,15 @@
        </div>
     <script>
 
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
 
-        
-        // Get the modal
-        var modal = document.getElementById("myModal");
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
 
-        // Get the button that opens the modal
-        var btn = document.getElementsByClassName("desk");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        var temp = "";
-
-        // When the user clicks the button, open the modal
-        function popup(number) {
-            modal.style.display = "block";
-            var deskName = "D" + number;
-            temp = deskName;
-            
-
-            document.getElementById("p2").innerHTML = number;
-        }
-        //önemli!!!
-        //Bilgiler girilip submite týklayýnca yazýlanlarý ceken metod
-        function getInfo() {
-            var username = document.getElementById("usernameS").value; //back-ende 
-            var myElement = document.getElementById(temp);
-            myElement.innerHTML = username;
-            modal.style.display = "none";
-
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-                
-            }
-        }
+      openForm()
     </script>
     
 </body>
