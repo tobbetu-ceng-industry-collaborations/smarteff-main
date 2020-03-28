@@ -87,3 +87,20 @@
 28-Mar-20 14:00:55 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
 28-Mar-20 14:00:55 -  * Restarting with stat
 28-Mar-20 14:00:58 - 127.0.0.1 - - [28/Mar/2020 14:00:58] "POST /SaveEvent/log1 HTTP/1.1" 200 -
+28-Mar-20 14:05:04 - 127.0.0.1 - - [28/Mar/2020 14:05:04] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 14:05:04 - 127.0.0.1 - - [28/Mar/2020 14:05:04] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 14:05:04 - 127.0.0.1 - - [28/Mar/2020 14:05:04] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 14:05:04 - 127.0.0.1 - - [28/Mar/2020 14:05:04] "GET /simulate HTTP/1.1" 200 -
+28-Mar-20 14:05:44 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 14:06:56 - 127.0.0.1 - - [28/Mar/2020 14:06:56] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 14:06:56 - 127.0.0.1 - - [28/Mar/2020 14:06:56] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 14:06:56 - 127.0.0.1 - - [28/Mar/2020 14:06:56] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 14:06:56 - 127.0.0.1 - - [28/Mar/2020 14:06:56] "GET /simulate HTTP/1.1" 200 -
+28-Mar-20 14:17:12 - 127.0.0.1 - - [28/Mar/2020 14:17:12] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 14:17:12 - 127.0.0.1 - - [28/Mar/2020 14:17:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 14:17:12 - 127.0.0.1 - - [28/Mar/2020 14:17:12] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 14:17:13 - 127.0.0.1 - - [28/Mar/2020 14:17:13] "GET /simulate HTTP/1.1" 200 -
+28-Mar-20 14:17:27 - 127.0.0.1 - - [28/Mar/2020 14:17:27] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 14:17:27 - 127.0.0.1 - - [28/Mar/2020 14:17:27] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 14:17:27 - 127.0.0.1 - - [28/Mar/2020 14:17:27] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 14:17:27 - 127.0.0.1 - - [28/Mar/2020 14:17:27] "GET /simulate HTTP/1.1" 200 -
