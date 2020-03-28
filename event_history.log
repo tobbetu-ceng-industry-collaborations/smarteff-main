@@ -2,3 +2,88 @@
 28-Mar-20 01:30:36 - 127.0.0.1 - - [28/Mar/2020 01:30:36] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
 28-Mar-20 01:30:36 - 127.0.0.1 - - [28/Mar/2020 01:30:36] "GET /ListDeviceStatus HTTP/1.1" 200 -
 28-Mar-20 01:30:36 - 127.0.0.1 - - [28/Mar/2020 01:30:36] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 12:46:54 - 127.0.0.1 - - [28/Mar/2020 12:46:54] "GET / HTTP/1.1" 500 -
+28-Mar-20 12:46:54 - 127.0.0.1 - - [28/Mar/2020 12:46:54] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+28-Mar-20 12:46:54 - 127.0.0.1 - - [28/Mar/2020 12:46:54] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+28-Mar-20 12:46:54 - 127.0.0.1 - - [28/Mar/2020 12:46:54] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+28-Mar-20 12:46:54 - 127.0.0.1 - - [28/Mar/2020 12:46:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 12:47:18 - 127.0.0.1 - - [28/Mar/2020 12:47:18] "GET / HTTP/1.1" 404 -
+28-Mar-20 12:47:21 - 127.0.0.1 - - [28/Mar/2020 12:47:21] "GET /admin HTTP/1.1" 404 -
+28-Mar-20 12:47:24 - 127.0.0.1 - - [28/Mar/2020 12:47:24] "GET /admin HTTP/1.1" 404 -
+28-Mar-20 12:47:28 - 127.0.0.1 - - [28/Mar/2020 12:47:28] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 12:47:28 - 127.0.0.1 - - [28/Mar/2020 12:47:28] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 12:47:28 - 127.0.0.1 - - [28/Mar/2020 12:47:28] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 12:47:28 - 127.0.0.1 - - [28/Mar/2020 12:47:28] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:50:14 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:50:14 -  * Restarting with stat
+28-Mar-20 13:50:26 - 127.0.0.1 - - [28/Mar/2020 13:50:26] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:50:26 - 127.0.0.1 - - [28/Mar/2020 13:50:26] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:50:26 - 127.0.0.1 - - [28/Mar/2020 13:50:26] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:50:27 - 127.0.0.1 - - [28/Mar/2020 13:50:27] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:51:08 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:51:08 -  * Restarting with stat
+28-Mar-20 13:51:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:51:42 -  * Restarting with stat
+28-Mar-20 13:51:58 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:51:58 -  * Restarting with stat
+28-Mar-20 13:52:15 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:52:15 -  * Restarting with stat
+28-Mar-20 13:52:36 - 127.0.0.1 - - [28/Mar/2020 13:52:36] "GET /CreateNewPerson/Temp HTTP/1.1" 200 -
+28-Mar-20 13:52:38 - 127.0.0.1 - - [28/Mar/2020 13:52:38] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:52:38 - 127.0.0.1 - - [28/Mar/2020 13:52:38] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:52:38 - 127.0.0.1 - - [28/Mar/2020 13:52:38] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:52:38 - 127.0.0.1 - - [28/Mar/2020 13:52:38] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:52:55 - 127.0.0.1 - - [28/Mar/2020 13:52:55] "GET /ChangeAssignment/Fatma/Temp HTTP/1.1" 200 -
+28-Mar-20 13:52:57 - 127.0.0.1 - - [28/Mar/2020 13:52:57] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:52:57 - 127.0.0.1 - - [28/Mar/2020 13:52:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:52:57 - 127.0.0.1 - - [28/Mar/2020 13:52:57] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:52:57 - 127.0.0.1 - - [28/Mar/2020 13:52:57] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:53:20 - 127.0.0.1 - - [28/Mar/2020 13:53:20] "GET /ChangeAssignment/Temp/Fatma HTTP/1.1" 200 -
+28-Mar-20 13:53:22 - 127.0.0.1 - - [28/Mar/2020 13:53:22] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:53:22 - 127.0.0.1 - - [28/Mar/2020 13:53:22] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:53:22 - 127.0.0.1 - - [28/Mar/2020 13:53:22] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:53:22 - 127.0.0.1 - - [28/Mar/2020 13:53:22] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:53:32 - 127.0.0.1 - - [28/Mar/2020 13:53:32] "GET /ChangeAssignment/Fatma/Ayse HTTP/1.1" 500 -
+28-Mar-20 13:53:32 - 127.0.0.1 - - [28/Mar/2020 13:53:32] "GET /ChangeAssignment/Fatma/Ayse?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+28-Mar-20 13:53:32 - 127.0.0.1 - - [28/Mar/2020 13:53:32] "GET /ChangeAssignment/Fatma/Ayse?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+28-Mar-20 13:53:32 - 127.0.0.1 - - [28/Mar/2020 13:53:32] "GET /ChangeAssignment/Fatma/Ayse?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+28-Mar-20 13:53:32 - 127.0.0.1 - - [28/Mar/2020 13:53:32] "GET /ChangeAssignment/Fatma/Ayse?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 13:53:32 - 127.0.0.1 - - [28/Mar/2020 13:53:32] "GET /ChangeAssignment/Fatma/Ayse?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 13:53:56 - 127.0.0.1 - - [28/Mar/2020 13:53:56] "GET /ChangeAssignment/Fatma/Ayşe HTTP/1.1" 200 -
+28-Mar-20 13:54:00 - 127.0.0.1 - - [28/Mar/2020 13:54:00] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:54:00 - 127.0.0.1 - - [28/Mar/2020 13:54:00] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:54:00 - 127.0.0.1 - - [28/Mar/2020 13:54:00] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:54:00 - 127.0.0.1 - - [28/Mar/2020 13:54:00] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:54:08 - 127.0.0.1 - - [28/Mar/2020 13:54:08] "GET /ChangeAssignment/Ayşe/Fatma HTTP/1.1" 200 -
+28-Mar-20 13:54:13 - 127.0.0.1 - - [28/Mar/2020 13:54:13] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:54:13 - 127.0.0.1 - - [28/Mar/2020 13:54:13] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:54:13 - 127.0.0.1 - - [28/Mar/2020 13:54:13] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:54:13 - 127.0.0.1 - - [28/Mar/2020 13:54:13] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:54:51 - 127.0.0.1 - - [28/Mar/2020 13:54:51] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 13:54:51 - 127.0.0.1 - - [28/Mar/2020 13:54:51] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 13:54:51 - 127.0.0.1 - - [28/Mar/2020 13:54:51] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 13:54:51 - 127.0.0.1 - - [28/Mar/2020 13:54:51] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 13:56:14 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:56:14 -  * Restarting with stat
+28-Mar-20 13:56:53 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:56:53 -  * Restarting with stat
+28-Mar-20 13:56:56 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:56:56 -  * Restarting with stat
+28-Mar-20 13:57:02 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:57:02 -  * Restarting with stat
+28-Mar-20 13:57:16 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:57:16 -  * Restarting with stat
+28-Mar-20 13:57:36 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:57:36 -  * Restarting with stat
+28-Mar-20 13:57:41 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:57:41 -  * Restarting with stat
+28-Mar-20 13:59:22 - 127.0.0.1 - - [28/Mar/2020 13:59:22] "POST /SaveEvent/log1 HTTP/1.1" 500 -
+28-Mar-20 13:59:55 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 13:59:55 -  * Restarting with stat
+28-Mar-20 13:59:58 - 127.0.0.1 - - [28/Mar/2020 13:59:58] "POST /SaveEvent/log1 HTTP/1.1" 500 -
+28-Mar-20 14:00:28 - 127.0.0.1 - - [28/Mar/2020 14:00:28] "POST /SaveEvent/log1 HTTP/1.1" 500 -
+28-Mar-20 14:00:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 14:00:42 -  * Restarting with stat
+28-Mar-20 14:00:55 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 14:00:55 -  * Restarting with stat
+28-Mar-20 14:00:58 - 127.0.0.1 - - [28/Mar/2020 14:00:58] "POST /SaveEvent/log1 HTTP/1.1" 200 -

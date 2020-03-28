@@ -16,6 +16,8 @@ from datetime import timedelta
 
 import os
 
+import json
+
 # logger setup
 logger = logging.getLogger('my-logger')
 logger.propagate = False
@@ -284,6 +286,8 @@ def suspend_automation():
 # endpoint to enable automation for a defined person
 @app.route("/EnableAutomation", methods=['POST'])
 def enable_automation():
+
+    data = request.json
 	
 	# parse http request body
     data = request.json
@@ -392,9 +396,14 @@ def swap_person(name1, name2):
 
     # devices to be swapped
     devs = person1.devices
+    devs2 = person2.devices
 
     # remove person1's entries
     to_be_deleted = person_device.delete().where(person_device.c.person_id==person1.person_id )
+    db.session.execute(to_be_deleted)
+
+    # remove person2's entries
+    to_be_deleted = person_device.delete().where(person_device.c.person_id==person2.person_id )
     db.session.execute(to_be_deleted)
 
     # insert new entries for swapped person
@@ -403,8 +412,29 @@ def swap_person(name1, name2):
         insert_statement = person_device.insert().values(values)
         db.session.execute(insert_statement)
 
+    # insert new entries for swapped person
+    for dev in devs2:
+        values = [person1.person_id, dev.device_id]
+        insert_statement = person_device.insert().values(values)
+        db.session.execute(insert_statement)
+
     # record into DB
     db.session.commit()
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200
+
+# endpoint to save pre-built event file under server
+@app.route("/SaveEvent/<log_name>", methods=['GET', 'POST'])
+def save_event(log_name):
+    
+    data = request.json
+
+    # save file
+    with open('app/saved_events/' + str(log_name) + '.json', 'w') as outfile:
+        json.dump(data, outfile)
 
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
