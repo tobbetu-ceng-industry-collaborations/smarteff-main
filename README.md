@@ -36,6 +36,12 @@ For more details, you can check out the logs of the application.
 
 [Server Logs](https://smarteff.herokuapp.com/log)
 
+[Simulation Page](https://smarteff.herokuapp.com/simulate)
+
+[Device Manager](https://smarteff.herokuapp.com/ManageDevices)
+
+[Device Status](https://smarteff.herokuapp.com/ShowDeviceStatus)
+
 ### Team
 
 [Deniz Güner](https://github.com/dguner)
