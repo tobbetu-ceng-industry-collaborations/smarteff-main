@@ -14,9 +14,12 @@ import logging
 from datetime import datetime
 from datetime import timedelta
 
+from flask import render_template
+
 import os
 
 import json
+import sonoff
 
 # logger setup
 logger = logging.getLogger('my-logger')
@@ -440,6 +443,44 @@ def save_event(log_name):
     resp = jsonify({'success':True})
 
     return resp, 200
+
+# endpoint to request a device turn on/off
+@app.route('/turnOperation/<switch_id>/<int:channel>/<turn>')
+def sendRequest(turn, switch_id, channel):
+    s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
+    devices = s.get_devices()
+    for i in range(len(devices)):
+        if devices:
+            # We found a device, lets turn something on
+            device_id = devices[i]['deviceid']
+            if device_id == switch_id:      
+                s.switch(turn, switch_id, channel)
+    return render_template("ingdog.html", sayfabasligi="SWITCHES",devicelist=devices,deviceid=1)
+
+# endpoint to return device status
+@app.route('/returnDeviceStatus/<switch_id>')
+def device_stats(switch_id):
+    array = []  
+    counter=0
+    counter2=1
+    s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
+    devices = s.get_devices()
+    for i in range(len(devices)):
+        if devices:
+            device_id = devices[i]['deviceid']
+            if device_id == switch_id:      
+                one=devices[i]['params']['switches'][1]['switch']
+                zero=devices[i]['params']['switches'][0]['switch']
+                if one == "off":
+                    counter=0
+                else:
+                    counter=1
+                if zero == "off":
+                    counter2=0
+                else:
+                    counter2=1
+                array.append({"channel-0":counter2,"channel-1":counter})
+    return jsonify(array[0])
 
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
 

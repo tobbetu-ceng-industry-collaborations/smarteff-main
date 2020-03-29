@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="12">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ kablolubaglanti }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+
+  border: 1px solid black;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+ tr:nth-child(even) {background-color: #f2f2f2;} 
+div.a {font-family: verdana;}
+div.b {font-family: 'times new roman';}
+#div1, #div2 {font-size-adjust: 0;}
+</style>
+</head>
+<body>
+
+
+{% block content %}
+	{% for c in devicelist%}
+{% if c['deviceid'] == '1000250948' %}
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-1 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+  
+</table>
+
+<p>
+</p>
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-2 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+</table>
+
+	{% endif %}
+
+	{% if c['deviceid'] == '100024ffdd' %}
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-3 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+</table>
+
+<p>
+</p>
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-4 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+</table>
+
+
+	{% endif %}
+
+	{% if c['deviceid'] == '100024ff1a' %}
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-5 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+</table>
+
+<p>
+</p>
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-6 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+</table>
+
+	{% endif %}
+
+	{% if c['deviceid'] == '1000250893' %}
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-7 :</td>
+    <td>Lamp</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+</table>
+
+<p></p>
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-8 :</td>
+    <td>Air Conditioner</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+</table>
+
+
+	{% endif %}
+
+	
+<p>
+</p>
+	{% endfor %}
+{% endblock %}
+   
+</body>
+</html>

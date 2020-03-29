@@ -1,0 +1,319 @@
+28-Mar-20 20:59:16 - 127.0.0.1 - - [28/Mar/2020 20:59:16] "GET / HTTP/1.1" 404 -
+28-Mar-20 20:59:16 - 127.0.0.1 - - [28/Mar/2020 20:59:16] "GET /favicon.ico HTTP/1.1" 404 -
+28-Mar-20 20:59:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 20:59:27 - Grace period activated!
+28-Mar-20 20:59:27 - 127.0.0.1 - - [28/Mar/2020 20:59:27] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 20:59:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 20:59:49 - Grace period activated!
+28-Mar-20 20:59:49 - 127.0.0.1 - - [28/Mar/2020 20:59:49] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:00:08 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:00:08 -  * Restarting with stat
+28-Mar-20 21:01:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:01:26 - Grace period activated!
+28-Mar-20 21:01:26 - 127.0.0.1 - - [28/Mar/2020 21:01:26] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:02:58 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:03:03 - Grace period activated!
+28-Mar-20 21:03:03 - 127.0.0.1 - - [28/Mar/2020 21:03:03] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:03:57 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 21:03:57 -  * Restarting with stat
+28-Mar-20 21:04:35 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:04:40 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:04:40 -  * Restarting with stat
+28-Mar-20 21:04:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:04:47 - Grace period activated!
+28-Mar-20 21:04:47 - 127.0.0.1 - - [28/Mar/2020 21:04:47] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:04:53 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:04:54 -  * Restarting with stat
+28-Mar-20 21:05:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:05:09 - Grace period activated!
+28-Mar-20 21:05:09 - 127.0.0.1 - - [28/Mar/2020 21:05:09] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:06:15 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:06:20 - Grace period activated!
+28-Mar-20 21:06:20 - 127.0.0.1 - - [28/Mar/2020 21:06:20] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:07:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:07:09 - Grace period activated!
+28-Mar-20 21:07:09 - 127.0.0.1 - - [28/Mar/2020 21:07:09] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:07:47 - [person_event]A person(id=1) has entered!
+28-Mar-20 21:07:47 - 127.0.0.1 - - [28/Mar/2020 21:07:47] "POST /HandlePersonEvent HTTP/1.1" 200 -
+28-Mar-20 21:08:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:08:46 - Grace period activated!
+28-Mar-20 21:08:46 - 127.0.0.1 - - [28/Mar/2020 21:08:46] "GET /deviceManager HTTP/1.1" 200 -
+28-Mar-20 21:09:17 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:09:17 -  * Restarting with stat
+28-Mar-20 21:09:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:09:29 - Grace period activated!
+28-Mar-20 21:09:29 - 127.0.0.1 - - [28/Mar/2020 21:09:29] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:11:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:11:07 - Grace period activated!
+28-Mar-20 21:11:07 - 127.0.0.1 - - [28/Mar/2020 21:11:07] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:12:19 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 21:12:19 -  * Restarting with stat
+28-Mar-20 21:12:29 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:12:29 -  * Restarting with stat
+28-Mar-20 21:12:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:12:44 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:12:44 -  * Restarting with stat
+28-Mar-20 21:12:47 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:12:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:12:52 - Grace period activated!
+28-Mar-20 21:12:52 - 127.0.0.1 - - [28/Mar/2020 21:12:52] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:12:56 - Grace period activated!
+28-Mar-20 21:12:56 - 127.0.0.1 - - [28/Mar/2020 21:12:56] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:14:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:14:33 - Grace period activated!
+28-Mar-20 21:14:33 - 127.0.0.1 - - [28/Mar/2020 21:14:33] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:15:19 - 127.0.0.1 - - [28/Mar/2020 21:15:19] "GET / HTTP/1.1" 404 -
+28-Mar-20 21:15:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:15:29 - Grace period activated!
+28-Mar-20 21:15:29 - 127.0.0.1 - - [28/Mar/2020 21:15:29] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:16:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:16:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:16:06 - Grace period activated!
+28-Mar-20 21:16:06 - 127.0.0.1 - - [28/Mar/2020 21:16:06] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:16:10 - Grace period activated!
+28-Mar-20 21:16:10 - 127.0.0.1 - - [28/Mar/2020 21:16:10] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:16:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:16:23 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:16:23 -  * Restarting with stat
+28-Mar-20 21:16:25 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:16:30 - Grace period activated!
+28-Mar-20 21:16:30 - 127.0.0.1 - - [28/Mar/2020 21:16:30] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:16:36 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:16:36 -  * Restarting with stat
+28-Mar-20 21:16:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:16:49 - Grace period activated!
+28-Mar-20 21:16:49 - 127.0.0.1 - - [28/Mar/2020 21:16:49] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:16:54 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:16:54 -  * Restarting with stat
+28-Mar-20 21:17:00 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:17:05 - Grace period activated!
+28-Mar-20 21:17:05 - 127.0.0.1 - - [28/Mar/2020 21:17:05] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:17:17 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:17:17 -  * Restarting with stat
+28-Mar-20 21:17:19 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:17:25 - Grace period activated!
+28-Mar-20 21:17:25 - 127.0.0.1 - - [28/Mar/2020 21:17:25] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:17:33 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:17:33 -  * Restarting with stat
+28-Mar-20 21:17:37 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:17:42 - Grace period activated!
+28-Mar-20 21:17:42 - 127.0.0.1 - - [28/Mar/2020 21:17:42] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:17:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:17:47 - Grace period activated!
+28-Mar-20 21:17:47 - 127.0.0.1 - - [28/Mar/2020 21:17:47] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:17:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:18:01 - Grace period activated!
+28-Mar-20 21:18:01 - 127.0.0.1 - - [28/Mar/2020 21:18:01] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:18:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:18:19 - Grace period activated!
+28-Mar-20 21:18:19 - 127.0.0.1 - - [28/Mar/2020 21:18:19] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:18:33 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:18:38 - Grace period activated!
+28-Mar-20 21:18:38 - 127.0.0.1 - - [28/Mar/2020 21:18:38] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:18:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:18:57 - Grace period activated!
+28-Mar-20 21:18:57 - 127.0.0.1 - - [28/Mar/2020 21:18:57] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:19:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:19:16 - Grace period activated!
+28-Mar-20 21:19:16 - 127.0.0.1 - - [28/Mar/2020 21:19:16] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:19:17 -  * Detected change in '/home/erhan/smarteff-main/app/views.py', reloading
+28-Mar-20 21:19:17 -  * Restarting with stat
+28-Mar-20 21:19:18 - 127.0.0.1 - - [28/Mar/2020 21:19:18] "GET /Main HTTP/1.1" 404 -
+28-Mar-20 21:19:28 - 127.0.0.1 - - [28/Mar/2020 21:19:28] "GET /getStatus HTTP/1.1" 404 -
+28-Mar-20 21:19:31 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+28-Mar-20 21:19:31 -  * Restarting with stat
+28-Mar-20 21:19:52 - 127.0.0.1 - - [28/Mar/2020 21:19:52] "GET /Main HTTP/1.1" 500 -
+28-Mar-20 21:19:52 - 127.0.0.1 - - [28/Mar/2020 21:19:52] "GET /Main?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+28-Mar-20 21:19:52 - 127.0.0.1 - - [28/Mar/2020 21:19:52] "GET /Main?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+28-Mar-20 21:19:52 - 127.0.0.1 - - [28/Mar/2020 21:19:52] "GET /Main?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+28-Mar-20 21:19:52 - 127.0.0.1 - - [28/Mar/2020 21:19:52] "GET /Main?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 21:19:52 - 127.0.0.1 - - [28/Mar/2020 21:19:52] "GET /Main?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 21:20:14 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+28-Mar-20 21:20:14 -  * Restarting with stat
+28-Mar-20 21:20:59 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 21:20:59 -  * Restarting with stat
+28-Mar-20 21:21:09 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+28-Mar-20 21:21:09 -  * Restarting with stat
+28-Mar-20 21:21:21 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 21:21:21 -  * Restarting with stat
+28-Mar-20 21:21:30 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 21:21:30 -  * Restarting with stat
+28-Mar-20 21:21:35 - 127.0.0.1 - - [28/Mar/2020 21:21:35] "GET /Main HTTP/1.1" 500 -
+28-Mar-20 21:21:35 - 127.0.0.1 - - [28/Mar/2020 21:21:35] "GET /Main?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+28-Mar-20 21:21:35 - 127.0.0.1 - - [28/Mar/2020 21:21:35] "GET /Main?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+28-Mar-20 21:21:35 - 127.0.0.1 - - [28/Mar/2020 21:21:35] "GET /Main?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+28-Mar-20 21:21:35 - 127.0.0.1 - - [28/Mar/2020 21:21:35] "GET /Main?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 21:21:47 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:21:53 - Grace period activated!
+28-Mar-20 21:21:53 - 127.0.0.1 - - [28/Mar/2020 21:21:53] "GET /Main HTTP/1.1" 500 -
+28-Mar-20 21:21:53 - 127.0.0.1 - - [28/Mar/2020 21:21:53] "GET /Main?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+28-Mar-20 21:21:53 - 127.0.0.1 - - [28/Mar/2020 21:21:53] "GET /Main?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+28-Mar-20 21:21:53 - 127.0.0.1 - - [28/Mar/2020 21:21:53] "GET /Main?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+28-Mar-20 21:21:53 - 127.0.0.1 - - [28/Mar/2020 21:21:53] "GET /Main?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 21:24:17 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+28-Mar-20 21:24:18 -  * Restarting with stat
+28-Mar-20 21:24:25 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:25:02 - Grace period activated!
+28-Mar-20 21:25:02 - 127.0.0.1 - - [28/Mar/2020 21:25:02] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:26:00 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+28-Mar-20 21:26:00 -  * Restarting with stat
+28-Mar-20 21:26:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:26:16 - Grace period activated!
+28-Mar-20 21:26:16 - 127.0.0.1 - - [28/Mar/2020 21:26:16] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:26:20 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+28-Mar-20 21:26:21 -  * Restarting with stat
+28-Mar-20 21:38:08 - 127.0.0.1 - - [28/Mar/2020 21:38:08] "GET / HTTP/1.1" 404 -
+28-Mar-20 21:38:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:38:20 - Grace period activated!
+28-Mar-20 21:38:20 - 127.0.0.1 - - [28/Mar/2020 21:38:20] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:41:06 - 127.0.0.1 - - [28/Mar/2020 21:41:06] "GET / HTTP/1.1" 404 -
+28-Mar-20 21:41:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:41:16 - 127.0.0.1 - - [28/Mar/2020 21:41:16] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:41:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:41:37 - 127.0.0.1 - - [28/Mar/2020 21:41:37] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:41:57 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:42:04 - 127.0.0.1 - - [28/Mar/2020 21:42:04] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:42:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:42:22 - 127.0.0.1 - - [28/Mar/2020 21:42:22] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:42:37 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:42:44 - 127.0.0.1 - - [28/Mar/2020 21:42:44] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:42:59 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:43:04 - 127.0.0.1 - - [28/Mar/2020 21:43:04] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 21:43:04 - 127.0.0.1 - - [28/Mar/2020 21:43:04] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 21:43:04 - 127.0.0.1 - - [28/Mar/2020 21:43:04] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 21:43:04 - 127.0.0.1 - - [28/Mar/2020 21:43:04] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 21:43:06 - 127.0.0.1 - - [28/Mar/2020 21:43:06] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:43:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:43:17 - 127.0.0.1 - - [28/Mar/2020 21:43:17] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:43:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:43:28 - 127.0.0.1 - - [28/Mar/2020 21:43:28] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:45:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:45:08 - 127.0.0.1 - - [28/Mar/2020 21:45:08] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:45:35 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:45:42 - 127.0.0.1 - - [28/Mar/2020 21:45:42] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:46:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:46:48 - 127.0.0.1 - - [28/Mar/2020 21:46:48] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:46:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:47:03 - 127.0.0.1 - - [28/Mar/2020 21:47:03] "GET /turnOperation/1000250948/0/on HTTP/1.1" 500 -
+28-Mar-20 21:47:03 - 127.0.0.1 - - [28/Mar/2020 21:47:03] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+28-Mar-20 21:47:03 - 127.0.0.1 - - [28/Mar/2020 21:47:03] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+28-Mar-20 21:47:03 - 127.0.0.1 - - [28/Mar/2020 21:47:03] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+28-Mar-20 21:47:04 - 127.0.0.1 - - [28/Mar/2020 21:47:04] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 21:47:04 - 127.0.0.1 - - [28/Mar/2020 21:47:04] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+28-Mar-20 21:47:33 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+28-Mar-20 21:47:34 -  * Restarting with stat
+28-Mar-20 21:47:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:47:46 - 127.0.0.1 - - [28/Mar/2020 21:47:46] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:47:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:48:06 - 127.0.0.1 - - [28/Mar/2020 21:48:06] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:49:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:49:41 - 127.0.0.1 - - [28/Mar/2020 21:49:41] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 21:49:41 - 127.0.0.1 - - [28/Mar/2020 21:49:41] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 21:49:41 - 127.0.0.1 - - [28/Mar/2020 21:49:41] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 21:49:41 - 127.0.0.1 - - [28/Mar/2020 21:49:41] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 21:49:51 - 127.0.0.1 - - [28/Mar/2020 21:49:51] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:51:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:51:35 - 127.0.0.1 - - [28/Mar/2020 21:51:35] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:53:07 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:53:18 - 127.0.0.1 - - [28/Mar/2020 21:53:18] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:54:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:55:02 - 127.0.0.1 - - [28/Mar/2020 21:55:02] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:56:09 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:56:16 - 127.0.0.1 - - [28/Mar/2020 21:56:16] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:56:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:56:35 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:56:36 - 127.0.0.1 - - [28/Mar/2020 21:56:36] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:56:45 - 127.0.0.1 - - [28/Mar/2020 21:56:45] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:56:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:56:58 - 127.0.0.1 - - [28/Mar/2020 21:56:58] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:57:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:57:20 - 127.0.0.1 - - [28/Mar/2020 21:57:20] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:57:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:57:41 - 127.0.0.1 - - [28/Mar/2020 21:57:41] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:57:48 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:57:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:57:56 - 127.0.0.1 - - [28/Mar/2020 21:57:56] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 21:58:05 - 127.0.0.1 - - [28/Mar/2020 21:58:05] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:58:19 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:58:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:58:35 - 127.0.0.1 - - [28/Mar/2020 21:58:35] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 21:58:38 - 127.0.0.1 - - [28/Mar/2020 21:58:38] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:59:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:59:12 - 127.0.0.1 - - [28/Mar/2020 21:59:12] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:59:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:59:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 21:59:45 - 127.0.0.1 - - [28/Mar/2020 21:59:45] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 21:59:53 - 127.0.0.1 - - [28/Mar/2020 21:59:53] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 22:00:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:00:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:00:14 - 127.0.0.1 - - [28/Mar/2020 22:00:14] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 22:00:23 - 127.0.0.1 - - [28/Mar/2020 22:00:23] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 22:00:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:00:37 - 127.0.0.1 - - [28/Mar/2020 22:00:37] "GET /getStatus HTTP/1.1" 200 -
+28-Mar-20 22:01:22 - 127.0.0.1 - - [28/Mar/2020 22:01:22] "GET / HTTP/1.1" 404 -
+28-Mar-20 22:01:24 - 127.0.0.1 - - [28/Mar/2020 22:01:24] "GET /ListPersons HTTP/1.1" 200 -
+28-Mar-20 22:01:24 - 127.0.0.1 - - [28/Mar/2020 22:01:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+28-Mar-20 22:01:24 - 127.0.0.1 - - [28/Mar/2020 22:01:24] "GET /ListDeviceStatus HTTP/1.1" 200 -
+28-Mar-20 22:01:25 - 127.0.0.1 - - [28/Mar/2020 22:01:25] "GET /admin HTTP/1.1" 200 -
+28-Mar-20 22:01:26 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:01:33 - 127.0.0.1 - - [28/Mar/2020 22:01:33] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 22:01:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:02:06 - 127.0.0.1 - - [28/Mar/2020 22:02:06] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 22:03:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:03:13 - 127.0.0.1 - - [28/Mar/2020 22:03:13] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 22:03:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:03:50 - 127.0.0.1 - - [28/Mar/2020 22:03:50] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 22:04:46 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:04:54 - 127.0.0.1 - - [28/Mar/2020 22:04:54] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 22:05:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:05:34 - 127.0.0.1 - - [28/Mar/2020 22:05:34] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 22:06:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:06:37 - 127.0.0.1 - - [28/Mar/2020 22:06:37] "GET /Main HTTP/1.1" 200 -
+28-Mar-20 22:07:07 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:07:25 - 127.0.0.1 - - [28/Mar/2020 22:07:25] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+28-Mar-20 22:08:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+28-Mar-20 22:08:31 - 127.0.0.1 - - [28/Mar/2020 22:08:31] "GET /Main HTTP/1.1" 200 -
+29-Mar-20 10:53:57 - 127.0.0.1 - - [29/Mar/2020 10:53:57] "GET / HTTP/1.1" 404 -
+29-Mar-20 10:54:18 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 10:54:43 - 127.0.0.1 - - [29/Mar/2020 10:54:43] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 10:56:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 10:56:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 10:56:37 - 127.0.0.1 - - [29/Mar/2020 10:56:37] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 10:56:46 - 127.0.0.1 - - [29/Mar/2020 10:56:46] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 10:58:01 - 127.0.0.1 - - [29/Mar/2020 10:58:01] "GET /getStatus HTTP/1.1" 404 -
+29-Mar-20 10:58:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 10:58:44 - 127.0.0.1 - - [29/Mar/2020 10:58:44] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 10:59:03 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 10:59:22 - 127.0.0.1 - - [29/Mar/2020 10:59:22] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 10:59:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 10:59:56 - 127.0.0.1 - - [29/Mar/2020 10:59:56] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 11:00:16 - 127.0.0.1 - - [29/Mar/2020 11:00:16] "GET /ShowDeviceStatus HTTP/1.1" 500 -
+29-Mar-20 11:00:16 - 127.0.0.1 - - [29/Mar/2020 11:00:16] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+29-Mar-20 11:00:16 - 127.0.0.1 - - [29/Mar/2020 11:00:16] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+29-Mar-20 11:00:16 - 127.0.0.1 - - [29/Mar/2020 11:00:16] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+29-Mar-20 11:00:16 - 127.0.0.1 - - [29/Mar/2020 11:00:16] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+29-Mar-20 11:00:18 - 127.0.0.1 - - [29/Mar/2020 11:00:18] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+29-Mar-20 11:02:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:02:10 - 127.0.0.1 - - [29/Mar/2020 11:02:10] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 11:02:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:02:30 - 127.0.0.1 - - [29/Mar/2020 11:02:30] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 11:02:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:02:49 - 127.0.0.1 - - [29/Mar/2020 11:02:49] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 11:03:03 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:03:06 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:03:09 - 127.0.0.1 - - [29/Mar/2020 11:03:09] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 11:03:12 - 127.0.0.1 - - [29/Mar/2020 11:03:12] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 11:04:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:04:17 - 127.0.0.1 - - [29/Mar/2020 11:04:17] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 11:05:36 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:05:41 - 127.0.0.1 - - [29/Mar/2020 11:05:41] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 11:07:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:07:21 - 127.0.0.1 - - [29/Mar/2020 11:07:21] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 11:08:53 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:08:59 - 127.0.0.1 - - [29/Mar/2020 11:08:59] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 11:10:31 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:10:36 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:10:36 - 127.0.0.1 - - [29/Mar/2020 11:10:36] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 11:10:44 - 127.0.0.1 - - [29/Mar/2020 11:10:44] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 11:10:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 11:11:00 - 127.0.0.1 - - [29/Mar/2020 11:11:00] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -

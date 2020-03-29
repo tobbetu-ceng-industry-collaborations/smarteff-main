@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="90">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ sayfabasligi }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+
+  border: 1px solid black;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+ tr:nth-child(even) {background-color: #f2f2f2;} 
+
+div.a {font-family: verdana;}
+div.b {font-family: 'times new roman';}
+#div1, #div2 {font-size-adjust: 0;}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button {
+  border-radius: 50%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+  background-color: white;
+  border: 2px solid green;
+  color: green;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+{% block content %}
+	{% for c in devicelist%}
+
+	{% if c['deviceid'] == '1000250948' %}
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-1 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="onFunction('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="offFunction('{{c['deviceid']}}')" class="button button1">OFF</button></td>
+  </tr>
+</table>
+
+<p></p>
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-2 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="on2Function('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="off2Function('{{c['deviceid']}}')" class="button button1">OFF</button>	</td>
+  </tr>
+</table>
+
+	{% endif %}
+
+	{% if c['deviceid'] == '100024ffdd' %}
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-3 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="onFunction('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="offFunction('{{c['deviceid']}}')" class="button button1">OFF</button></td>
+  </tr>
+</table>
+
+<p></p>
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-4 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="on2Function('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="off2Function('{{c['deviceid']}}')" class="button button1">OFF</button>	</td>
+  </tr>
+</table>
+
+
+	{% endif %}
+
+	{% if c['deviceid'] == '100024ff1a' %}
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-5 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="onFunction('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="offFunction('{{c['deviceid']}}')" class="button button1">OFF</button></td>
+  </tr>
+</table>
+
+<p></p>
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-6 :</td>
+    <td>Desk</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="on2Function('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="off2Function('{{c['deviceid']}}')" class="button button1">OFF</button>	</td>
+  </tr>
+</table>
+
+	{% endif %}
+
+	{% if c['deviceid'] == '1000250893' %}
+
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-7 :</td>
+    <td>Lamp</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][0]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="onFunction('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="offFunction('{{c['deviceid']}}')" class="button button1">OFF</button></td>
+  </tr>
+</table>
+
+<p></p>
+<table style="width:85%">
+  <tr>
+    <td width="50%">Device-8 :</td>
+    <td>Air Conditioner</td>
+  </tr>
+  <tr>
+    <td width="50%">Status :</td>
+    <td>{{c['params']['switches'][1]['switch']}}</td>
+  </tr>
+
+  <tr>
+    <td width="50%">Turn On/Off :</td>
+<td><button onclick="on2Function('{{c['deviceid']}}')" class="button button1">ON</button>  	<button onclick="off2Function('{{c['deviceid']}}')" class="button button1">OFF</button>	</td>
+  </tr>
+</table>
+
+
+	{% endif %}
+
+
+
+
+
+
+<div id="div1">
+<var id="no">{{c['deviceid']}}</var>
+<var id="channel0">{{c['params']['switches'][0]['outlet']}}</var>
+<var id="channel1">{{c['params']['switches'][1]['outlet']}}</var>
+</div>
+
+
+<script>
+function onFunction(obj) {
+
+var deviceID =document.getElementById("no").innerHTML; 
+var forzero =document.getElementById("channel0").innerHTML ;
+var forone =document.getElementById("channel1").innerHTML ;
+
+
+  location.replace("http://127.0.0.1:5000/turnOperation/"+obj+"/"+0+"/"+"on")
+}
+</script>
+<script>
+function offFunction(obj) {
+
+var deviceID =document.getElementById("no").innerHTML 
+var forzero =document.getElementById("channel0").innerHTML ;
+var forone =document.getElementById("channel1").innerHTML ;
+  location.replace("http://127.0.0.1:5000/turnOperation/"+obj+"/"+0+"/"+"off")
+}
+</script>
+<script>
+function on2Function(obj) {
+
+
+var deviceID =document.getElementById("no").innerHTML 
+var forzero =document.getElementById("channel0").innerHTML ;
+var forone =document.getElementById("channel1").innerHTML ;
+
+console.log(obj);
+  location.replace("http://127.0.0.1:5000/turnOperation/"+obj+"/"+1+"/"+"on")
+}
+</script>
+<script>
+function off2Function(obj) {
+
+console.log(obj);
+var deviceID =document.getElementById("no").innerHTML 
+var forzero =document.getElementById("channel0").innerHTML ;
+var forone =document.getElementById("channel1").innerHTML ;
+  location.replace("http://127.0.0.1:5000/turnOperation/"+obj+"/"+1+"/"+"off")
+}
+</script>
+	
+<p>
+</p>
+	{% endfor %}
+{% endblock %}
+   
+</body>
+</html>

@@ -2,6 +2,7 @@ from app import app
 from flask import render_template
 import requests
 import json
+import sonoff
 
 # show current event log under the route /log
 @app.route("/log", methods=['POST','GET'])
@@ -75,3 +76,16 @@ def simulate():
 
     return render_template("simulation.html", persons=persons, devices=devices, device_status=device_status, loaded=loaded)
 
+# device manager view
+@app.route('/ManageDevices')
+def manage_devices():
+    s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
+    devices = s.get_devices()
+    return render_template("ingdog.html", sayfabasligi="Main Page",devicelist=devices,deviceid=1)
+
+# show current device status
+@app.route('/ShowDeviceStatus')
+def dev_status():
+    s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
+    devices = s.get_devices()
+    return render_template("never.html", kablolubaglanti="Monitoring",devicelist=devices,deviceid=1)     
