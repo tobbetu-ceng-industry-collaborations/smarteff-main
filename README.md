@@ -32,8 +32,6 @@ For more details, you can check out the logs of the application.
 
 [Admin Page](https://smarteff.herokuapp.com/admin)
 
-[Person List](https://smarteff.herokuapp.com/ListPersons)
-
 [Server Logs](https://smarteff.herokuapp.com/log)
 
 [Simulation Page](https://smarteff.herokuapp.com/simulate)

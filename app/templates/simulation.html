@@ -188,22 +188,22 @@
           .form-popup {
             display: none;
             position: fixed;
-            bottom: 0;
-            right: 15px;
+            margin-bottom: 20%;
+            margin-left: 39%;
             border: 3px solid #f1f1f1;
             z-index: 9;
           }
 
           /* Add styles to the form container */
           .form-container {
-            max-width: 300px;
+            max-width: 400px;
             padding: 10px;
             background-color: white;
           }
 
           /* Full-width input fields */
           .form-container input[type=text], .form-container input[type=password] {
-            width: 100%;
+            width: 50%;
             padding: 15px;
             margin: 5px 0 22px 0;
             border: none;
@@ -237,6 +237,10 @@
           .form-container .btn:hover, .open-button:hover {
             opacity: 1;
           }
+          .selected {
+            background-color: brown;
+            color: #FFF;
+          }
 
           tr:nth-child(even){background-color: #f2f2f2}
 
@@ -245,9 +249,19 @@
       <body>
 
         <div class="form-popup" id="myForm">
-          <form class="form-container">
+          <form class="form-container" style="text-align: center;">
             <h1>Available Event Logs</h1>
-
+            <table id="table">
+              <tr>
+              <td>Event Log-1</td>
+              </tr>
+              <tr>
+              <td>Event Log-2</td>
+              </tr>
+              <tr>
+              <td>Event Log-3</td>
+              </tr>
+            </table>
             <button type="submit" class="btn">Select</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>
@@ -255,12 +269,6 @@
 
 
         <div style="width:500px;height:727px;border:4px solid #000;margin-left: 3%; margin-top: 2.9%;text-align: center; position: relative;">
-
-          <div style="z-index: 2;" >
-          <button style="width:490px;height:60px;" >
-          <span onclick="openForm()" >Load Event Log</span>
-          </button>
-          </div>
 
 
           <hr style="margin-top: 0px;">
@@ -422,7 +430,21 @@
         document.getElementById("myForm").style.display = "none";
       }
 
-      openForm()
+      $(document).ready(function(){
+         setTimeout(function(){
+            openForm();
+         },2000); // 5000 to load it after 5 seconds from page load
+      });
+
+      $("#table tr").click(function(){
+         $(this).addClass('selected').siblings().removeClass('selected');    
+         var value=$(this).find('td:first').html();
+
+      });
+
+      $('.btn').on('click', function(e){
+          //alert($("#table tr.selected td:first").html());
+      });
     </script>
     
 </body>
