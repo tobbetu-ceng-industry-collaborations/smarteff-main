@@ -317,3 +317,774 @@
 29-Mar-20 11:10:44 - 127.0.0.1 - - [29/Mar/2020 11:10:44] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
 29-Mar-20 11:10:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
 29-Mar-20 11:11:00 - 127.0.0.1 - - [29/Mar/2020 11:11:00] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+29-Mar-20 21:56:16 - 127.0.0.1 - - [29/Mar/2020 21:56:16] "GET / HTTP/1.1" 404 -
+29-Mar-20 21:56:49 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:57:08 - 127.0.0.1 - - [29/Mar/2020 21:57:08] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:57:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:57:27 - 127.0.0.1 - - [29/Mar/2020 21:57:27] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:57:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:57:46 - 127.0.0.1 - - [29/Mar/2020 21:57:46] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:57:58 - 127.0.0.1 - - [29/Mar/2020 21:57:58] "POST /ManageDevice HTTP/1.1" 404 -
+29-Mar-20 21:58:00 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:58:04 - 127.0.0.1 - - [29/Mar/2020 21:58:04] "POST /ManageDevice HTTP/1.1" 500 -
+29-Mar-20 21:58:06 - 127.0.0.1 - - [29/Mar/2020 21:58:06] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:58:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:58:25 - 127.0.0.1 - - [29/Mar/2020 21:58:25] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:58:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 21:58:28 -  * Restarting with stat
+29-Mar-20 21:58:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:58:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:58:44 - 127.0.0.1 - - [29/Mar/2020 21:58:44] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:58:50 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 21:58:50 - 127.0.0.1 - - [29/Mar/2020 21:58:50] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 21:58:58 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:59:03 - 127.0.0.1 - - [29/Mar/2020 21:59:03] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:59:15 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:59:20 - 127.0.0.1 - - [29/Mar/2020 21:59:20] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:59:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:59:39 - 127.0.0.1 - - [29/Mar/2020 21:59:39] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 21:59:54 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 21:59:59 - 127.0.0.1 - - [29/Mar/2020 21:59:59] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:00:06 - [person_event]A person(id=1) has left!
+29-Mar-20 22:00:06 - 127.0.0.1 - - [29/Mar/2020 22:00:06] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Mar-20 22:00:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:00:18 - 127.0.0.1 - - [29/Mar/2020 22:00:18] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:00:32 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:00:38 - 127.0.0.1 - - [29/Mar/2020 22:00:38] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:00:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:00:57 - 127.0.0.1 - - [29/Mar/2020 22:00:57] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:01:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:01:16 - 127.0.0.1 - - [29/Mar/2020 22:01:16] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:01:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:01:36 - 127.0.0.1 - - [29/Mar/2020 22:01:36] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:01:56 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:01:56 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:02:10 - 127.0.0.1 - - [29/Mar/2020 22:02:10] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:02:10 - 127.0.0.1 - - [29/Mar/2020 22:02:10] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:02:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:02:38 - 127.0.0.1 - - [29/Mar/2020 22:02:38] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:02:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:02:57 - 127.0.0.1 - - [29/Mar/2020 22:02:57] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:03:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:03:17 - 127.0.0.1 - - [29/Mar/2020 22:03:17] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:03:31 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:03:37 - 127.0.0.1 - - [29/Mar/2020 22:03:37] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:03:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:03:47 - 127.0.0.1 - - [29/Mar/2020 22:03:47] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:03:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:03:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:03:57 - 127.0.0.1 - - [29/Mar/2020 22:03:57] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:04:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:04:11 - 127.0.0.1 - - [29/Mar/2020 22:04:11] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:04:18 - 127.0.0.1 - - [29/Mar/2020 22:04:18] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:04:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:04:30 - 127.0.0.1 - - [29/Mar/2020 22:04:30] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:04:43 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:04:49 - 127.0.0.1 - - [29/Mar/2020 22:04:49] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:05:03 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:05:06 - 127.0.0.1 - - [29/Mar/2020 22:05:06] "POST /ManageDevice HTTP/1.1" 404 -
+29-Mar-20 22:05:06 - 127.0.0.1 - - [29/Mar/2020 22:05:06] "POST /ManageDevice HTTP/1.1" 404 -
+29-Mar-20 22:05:06 - [device_event]A device(id=7) has turned off!
+29-Mar-20 22:05:06 - [device_event]A device(id=1) has turned off!
+29-Mar-20 22:05:06 - 127.0.0.1 - - [29/Mar/2020 22:05:06] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Mar-20 22:05:06 - 127.0.0.1 - - [29/Mar/2020 22:05:06] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Mar-20 22:05:06 - 127.0.0.1 - - [29/Mar/2020 22:05:06] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+29-Mar-20 22:05:06 - 127.0.0.1 - - [29/Mar/2020 22:05:06] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+29-Mar-20 22:05:08 - 127.0.0.1 - - [29/Mar/2020 22:05:08] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:05:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:05:28 - 127.0.0.1 - - [29/Mar/2020 22:05:28] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:05:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:05:43 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:05:47 - 127.0.0.1 - - [29/Mar/2020 22:05:47] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:05:50 - 127.0.0.1 - - [29/Mar/2020 22:05:50] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:06:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:06:06 - 127.0.0.1 - - [29/Mar/2020 22:06:06] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:06:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:06:26 - 127.0.0.1 - - [29/Mar/2020 22:06:26] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:06:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:06:45 - 127.0.0.1 - - [29/Mar/2020 22:06:45] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:07:07 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:21 - 127.0.0.1 - - [29/Mar/2020 22:07:21] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:07:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:27 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:07:27 -  * Restarting with stat
+29-Mar-20 22:07:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:35 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:40 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:07:40 -  * Restarting with stat
+29-Mar-20 22:07:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:48 - 127.0.0.1 - - [29/Mar/2020 22:07:48] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:07:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:07:53 - 127.0.0.1 - - [29/Mar/2020 22:07:53] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+29-Mar-20 22:07:56 - 127.0.0.1 - - [29/Mar/2020 22:07:56] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:08:09 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:08:15 - 127.0.0.1 - - [29/Mar/2020 22:08:15] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:08:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:08:35 - 127.0.0.1 - - [29/Mar/2020 22:08:35] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:08:49 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:08:54 - 127.0.0.1 - - [29/Mar/2020 22:08:54] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:09:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:09:14 - 127.0.0.1 - - [29/Mar/2020 22:09:14] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:09:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:09:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:09:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:09:33 - 127.0.0.1 - - [29/Mar/2020 22:09:33] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:09:41 - 127.0.0.1 - - [29/Mar/2020 22:09:41] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+29-Mar-20 22:09:47 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:09:49 - 127.0.0.1 - - [29/Mar/2020 22:09:49] "POST /ManageDevice HTTP/1.1" 500 -
+29-Mar-20 22:09:52 - 127.0.0.1 - - [29/Mar/2020 22:09:52] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:10:06 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:10:12 - 127.0.0.1 - - [29/Mar/2020 22:10:12] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:10:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:10:24 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 22:10:24 - 127.0.0.1 - - [29/Mar/2020 22:10:24] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:10:25 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:10:31 - 127.0.0.1 - - [29/Mar/2020 22:10:31] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:10:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:10:50 - 127.0.0.1 - - [29/Mar/2020 22:10:50] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:11:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:11:10 - 127.0.0.1 - - [29/Mar/2020 22:11:10] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:11:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:11:15 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:11:18 - 127.0.0.1 - - [29/Mar/2020 22:11:18] "GET /turnOperation/1000250948/0/off HTTP/1.1" 200 -
+29-Mar-20 22:11:21 - 127.0.0.1 - - [29/Mar/2020 22:11:21] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:11:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:11:39 - 127.0.0.1 - - [29/Mar/2020 22:11:39] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:11:53 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:11:59 - 127.0.0.1 - - [29/Mar/2020 22:11:59] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:12:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:12:35 - 127.0.0.1 - - [29/Mar/2020 22:12:35] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:12:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:12:42 -  * Restarting with stat
+29-Mar-20 22:12:49 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:13:02 - 127.0.0.1 - - [29/Mar/2020 22:13:02] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:13:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:13:22 - 127.0.0.1 - - [29/Mar/2020 22:13:22] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:13:36 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:13:42 - 127.0.0.1 - - [29/Mar/2020 22:13:42] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:13:56 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:14:01 - 127.0.0.1 - - [29/Mar/2020 22:14:01] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:14:15 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:14:21 - 127.0.0.1 - - [29/Mar/2020 22:14:21] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:14:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:14:40 - 127.0.0.1 - - [29/Mar/2020 22:14:40] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:14:54 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:14:59 - 127.0.0.1 - - [29/Mar/2020 22:14:59] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:15:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:15:19 - 127.0.0.1 - - [29/Mar/2020 22:15:19] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:15:33 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:15:38 - 127.0.0.1 - - [29/Mar/2020 22:15:38] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:15:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:15:58 - 127.0.0.1 - - [29/Mar/2020 22:15:58] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:16:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:16:17 - 127.0.0.1 - - [29/Mar/2020 22:16:17] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:16:31 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:16:37 - 127.0.0.1 - - [29/Mar/2020 22:16:37] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:16:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:16:56 - 127.0.0.1 - - [29/Mar/2020 22:16:56] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:16:58 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:16:58 -  * Restarting with stat
+29-Mar-20 22:17:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:17:16 - 127.0.0.1 - - [29/Mar/2020 22:17:16] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:17:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:17:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:17:43 - 127.0.0.1 - - [29/Mar/2020 22:17:43] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:17:49 - 127.0.0.1 - - [29/Mar/2020 22:17:49] "POST /ManageDevice HTTP/1.1" 500 -
+29-Mar-20 22:17:57 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:18:11 - 127.0.0.1 - - [29/Mar/2020 22:18:11] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:18:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:18:30 - 127.0.0.1 - - [29/Mar/2020 22:18:30] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:18:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:18:50 - 127.0.0.1 - - [29/Mar/2020 22:18:50] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:19:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:19:10 - 127.0.0.1 - - [29/Mar/2020 22:19:10] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:19:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:19:29 - 127.0.0.1 - - [29/Mar/2020 22:19:29] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:19:32 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:19:32 -  * Restarting with stat
+29-Mar-20 22:19:43 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:19:48 - 127.0.0.1 - - [29/Mar/2020 22:19:48] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:20:02 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:20:08 - 127.0.0.1 - - [29/Mar/2020 22:20:08] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:20:10 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:20:10 -  * Restarting with stat
+29-Mar-20 22:20:15 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:20:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:20:23 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 22:20:23 - 127.0.0.1 - - [29/Mar/2020 22:20:23] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:20:27 - 127.0.0.1 - - [29/Mar/2020 22:20:27] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:20:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:20:47 - 127.0.0.1 - - [29/Mar/2020 22:20:47] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:20:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:20:58 - 127.0.0.1 - - [29/Mar/2020 22:20:58] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:21:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:21:17 - 127.0.0.1 - - [29/Mar/2020 22:21:17] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:21:31 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:21:36 - 127.0.0.1 - - [29/Mar/2020 22:21:36] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:21:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:21:56 - 127.0.0.1 - - [29/Mar/2020 22:21:56] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:22:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:22:15 - 127.0.0.1 - - [29/Mar/2020 22:22:15] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:22:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:22:34 - 127.0.0.1 - - [29/Mar/2020 22:22:34] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:22:56 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:23:10 - 127.0.0.1 - - [29/Mar/2020 22:23:10] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:23:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:23:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:23:37 - 127.0.0.1 - - [29/Mar/2020 22:23:37] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:23:48 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 22:23:48 - 127.0.0.1 - - [29/Mar/2020 22:23:48] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:23:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:23:56 - 127.0.0.1 - - [29/Mar/2020 22:23:56] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:24:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:24:16 - 127.0.0.1 - - [29/Mar/2020 22:24:16] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:24:23 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:24:23 -  * Restarting with stat
+29-Mar-20 22:24:26 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:24:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:24:34 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 22:24:34 - 127.0.0.1 - - [29/Mar/2020 22:24:34] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:24:35 - 127.0.0.1 - - [29/Mar/2020 22:24:35] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:24:49 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:24:55 - 127.0.0.1 - - [29/Mar/2020 22:24:54] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:25:09 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:10 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:25:10 -  * Restarting with stat
+29-Mar-20 22:25:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:17 - 127.0.0.1 - - [29/Mar/2020 22:25:17] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:25:24 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 22:25:24 - 127.0.0.1 - - [29/Mar/2020 22:25:24] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:25:31 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:33 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:36 - 127.0.0.1 - - [29/Mar/2020 22:25:36] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:25:39 - 127.0.0.1 - - [29/Mar/2020 22:25:39] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:25:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:54 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:25:58 - 127.0.0.1 - - [29/Mar/2020 22:25:58] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:25:59 - 127.0.0.1 - - [29/Mar/2020 22:25:59] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:26:03 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:26:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:26:17 - 127.0.0.1 - - [29/Mar/2020 22:26:17] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:26:19 - 127.0.0.1 - - [29/Mar/2020 22:26:19] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:26:25 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:26:31 - 127.0.0.1 - - [29/Mar/2020 22:26:31] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:26:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:26:46 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:26:50 - 127.0.0.1 - - [29/Mar/2020 22:26:50] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:26:52 - 127.0.0.1 - - [29/Mar/2020 22:26:52] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:27:00 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:27:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:27:11 - 127.0.0.1 - - [29/Mar/2020 22:27:11] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:27:15 - 127.0.0.1 - - [29/Mar/2020 22:27:15] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:27:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:27:26 - 127.0.0.1 - - [29/Mar/2020 22:27:26] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:27:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:27:35 - 127.0.0.1 - - [29/Mar/2020 22:27:35] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:27:48 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:27:54 - 127.0.0.1 - - [29/Mar/2020 22:27:54] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:28:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:28:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:28:30 - 127.0.0.1 - - [29/Mar/2020 22:28:30] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:28:31 - 127.0.0.1 - - [29/Mar/2020 22:28:31] "POST /ManageDevice HTTP/1.1" 500 -
+29-Mar-20 22:28:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:28:47 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:28:55 - 127.0.0.1 - - [29/Mar/2020 22:28:55] "POST /ManageDevice HTTP/1.1" 500 -
+29-Mar-20 22:29:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:29:04 - 127.0.0.1 - - [29/Mar/2020 22:29:04] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:29:09 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+29-Mar-20 22:29:09 - 127.0.0.1 - - [29/Mar/2020 22:29:09] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:29:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:29:21 - 127.0.0.1 - - [29/Mar/2020 22:29:21] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:29:54 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:29:54 -  * Restarting with stat
+29-Mar-20 22:30:04 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:30:04 -  * Restarting with stat
+29-Mar-20 22:30:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:30:07 -  * Restarting with stat
+29-Mar-20 22:30:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:30:16 - 127.0.0.1 - - [29/Mar/2020 22:30:16] "POST /ManageDevice HTTP/1.1" 500 -
+29-Mar-20 22:30:24 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:30:25 -  * Restarting with stat
+29-Mar-20 22:30:42 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:30:42 -  * Restarting with stat
+29-Mar-20 22:30:53 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:30:59 - 127.0.0.1 - - [29/Mar/2020 22:30:59] "GET /turnOperation/1000250948/0/on HTTP/1.1" 500 -
+29-Mar-20 22:30:59 - 127.0.0.1 - - [29/Mar/2020 22:30:59] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+29-Mar-20 22:30:59 - 127.0.0.1 - - [29/Mar/2020 22:30:59] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+29-Mar-20 22:30:59 - 127.0.0.1 - - [29/Mar/2020 22:30:59] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+29-Mar-20 22:30:59 - 127.0.0.1 - - [29/Mar/2020 22:30:59] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+29-Mar-20 22:30:59 - 127.0.0.1 - - [29/Mar/2020 22:30:59] "GET /turnOperation/1000250948/0/on?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+29-Mar-20 22:31:02 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:31:02 -  * Restarting with stat
+29-Mar-20 22:31:15 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:31:15 -  * Restarting with stat
+29-Mar-20 22:31:58 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:31:58 -  * Restarting with stat
+29-Mar-20 22:32:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:32:02 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:32:07 -  * Restarting with stat
+29-Mar-20 22:32:09 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:32:11 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 22:32:14 -  * Restarting with stat
+29-Mar-20 22:32:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:32:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:32:32 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+29-Mar-20 22:32:32 - 127.0.0.1 - - [29/Mar/2020 22:32:32] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:32:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:32:46 - 127.0.0.1 - - [29/Mar/2020 22:32:46] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:32:55 - 127.0.0.1 - - [29/Mar/2020 22:32:55] "GET /DeviceSattus HTTP/1.1" 404 -
+29-Mar-20 22:33:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:33:06 - 127.0.0.1 - - [29/Mar/2020 22:33:06] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:33:15 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:33:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:33:32 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 22:33:32 - 127.0.0.1 - - [29/Mar/2020 22:33:32] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:33:42 - 127.0.0.1 - - [29/Mar/2020 22:33:42] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:33:47 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:33:53 - 127.0.0.1 - - [29/Mar/2020 22:33:53] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:34:06 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:34:13 - 127.0.0.1 - - [29/Mar/2020 22:34:13] "GET /ManageDevices, HTTP/1.1" 404 -
+29-Mar-20 22:34:17 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:34:20 - 127.0.0.1 - - [29/Mar/2020 22:34:20] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 22:34:23 - 127.0.0.1 - - [29/Mar/2020 22:34:23] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:35:32 - 127.0.0.1 - - [29/Mar/2020 22:35:32] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+29-Mar-20 22:35:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:35:48 - 127.0.0.1 - - [29/Mar/2020 22:35:48] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:37:06 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:37:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:37:22 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+29-Mar-20 22:37:22 - 127.0.0.1 - - [29/Mar/2020 22:37:22] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 22:37:25 - 127.0.0.1 - - [29/Mar/2020 22:37:25] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:38:01 - [person_event]A person(id=1) has left!
+29-Mar-20 22:38:01 - 127.0.0.1 - - [29/Mar/2020 22:38:01] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Mar-20 22:39:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:39:19 - 127.0.0.1 - - [29/Mar/2020 22:39:19] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:40:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:41:05 - 127.0.0.1 - - [29/Mar/2020 22:41:05] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:42:36 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:42:42 - 127.0.0.1 - - [29/Mar/2020 22:42:42] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:43:01 - 127.0.0.1 - - [29/Mar/2020 22:43:01] "POST /ManageDevice HTTP/1.1" 404 -
+29-Mar-20 22:43:01 - [device_event]A device(id=1) has turned off!
+29-Mar-20 22:43:01 - 127.0.0.1 - - [29/Mar/2020 22:43:01] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Mar-20 22:43:01 - 127.0.0.1 - - [29/Mar/2020 22:43:01] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+29-Mar-20 22:44:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:44:36 - 127.0.0.1 - - [29/Mar/2020 22:44:36] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:46:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:46:22 - 127.0.0.1 - - [29/Mar/2020 22:46:22] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:47:53 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:47:59 - 127.0.0.1 - - [29/Mar/2020 22:47:59] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:49:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:49:53 - 127.0.0.1 - - [29/Mar/2020 22:49:53] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:51:25 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:51:39 - 127.0.0.1 - - [29/Mar/2020 22:51:39] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:53:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:53:16 - 127.0.0.1 - - [29/Mar/2020 22:53:16] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:54:57 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:55:10 - 127.0.0.1 - - [29/Mar/2020 22:55:10] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:56:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:56:56 - 127.0.0.1 - - [29/Mar/2020 22:56:56] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 22:58:27 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 22:58:33 - 127.0.0.1 - - [29/Mar/2020 22:58:33] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:00:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:00:27 - 127.0.0.1 - - [29/Mar/2020 23:00:27] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:01:59 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:02:13 - 127.0.0.1 - - [29/Mar/2020 23:02:13] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:03:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:03:51 - 127.0.0.1 - - [29/Mar/2020 23:03:51] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:05:31 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:05:44 - 127.0.0.1 - - [29/Mar/2020 23:05:44] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:07:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:07:30 - 127.0.0.1 - - [29/Mar/2020 23:07:30] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:09:02 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:09:07 - 127.0.0.1 - - [29/Mar/2020 23:09:07] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:10:47 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:11:01 - 127.0.0.1 - - [29/Mar/2020 23:11:01] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:12:33 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:12:47 - 127.0.0.1 - - [29/Mar/2020 23:12:47] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:14:19 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:14:24 - 127.0.0.1 - - [29/Mar/2020 23:14:24] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:16:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:16:18 - 127.0.0.1 - - [29/Mar/2020 23:16:18] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:17:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:18:03 - 127.0.0.1 - - [29/Mar/2020 23:18:03] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:19:35 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:19:41 - 127.0.0.1 - - [29/Mar/2020 23:19:41] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:21:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:21:35 - 127.0.0.1 - - [29/Mar/2020 23:21:35] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:23:07 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:23:21 - 127.0.0.1 - - [29/Mar/2020 23:23:21] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:24:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:24:58 - 127.0.0.1 - - [29/Mar/2020 23:24:58] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:26:38 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:26:52 - 127.0.0.1 - - [29/Mar/2020 23:26:52] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:28:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:28:37 - 127.0.0.1 - - [29/Mar/2020 23:28:37] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:30:09 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:30:15 - 127.0.0.1 - - [29/Mar/2020 23:30:15] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:31:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:32:09 - 127.0.0.1 - - [29/Mar/2020 23:32:09] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:33:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:33:54 - 127.0.0.1 - - [29/Mar/2020 23:33:54] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:35:26 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:35:32 - 127.0.0.1 - - [29/Mar/2020 23:35:32] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:37:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:37:25 - 127.0.0.1 - - [29/Mar/2020 23:37:25] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:38:57 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:39:11 - 127.0.0.1 - - [29/Mar/2020 23:39:11] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:40:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:40:48 - 127.0.0.1 - - [29/Mar/2020 23:40:48] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:42:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:42:42 - 127.0.0.1 - - [29/Mar/2020 23:42:42] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:44:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:44:28 - 127.0.0.1 - - [29/Mar/2020 23:44:28] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:45:59 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:46:05 - 127.0.0.1 - - [29/Mar/2020 23:46:05] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:47:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:47:58 - 127.0.0.1 - - [29/Mar/2020 23:47:58] "GET /ManageDevices HTTP/1.1" 200 -
+29-Mar-20 23:49:07 - 127.0.0.1 - - [29/Mar/2020 23:49:07] "GET /turnOperation/1000250893/0/on HTTP/1.1" 200 -
+29-Mar-20 23:49:17 - 127.0.0.1 - - [29/Mar/2020 23:49:17] "GET /turnOperation/1000250893/0/on HTTP/1.1" 200 -
+29-Mar-20 23:50:40 - 127.0.0.1 - - [29/Mar/2020 23:50:40] "GET /turnOperation/1000250893/0/off HTTP/1.1" 200 -
+29-Mar-20 23:51:08 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:51:08 -  * Restarting with stat
+29-Mar-20 23:51:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:51:23 - [person_event]A person(id=1) has left!
+29-Mar-20 23:51:23 - 127.0.0.1 - - [29/Mar/2020 23:51:23] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Mar-20 23:51:33 - 127.0.0.1 - - [29/Mar/2020 23:51:33] "POST /ManageDevice HTTP/1.1" 404 -
+29-Mar-20 23:51:33 - [device_event]A device(id=1) has turned off!
+29-Mar-20 23:51:33 - 127.0.0.1 - - [29/Mar/2020 23:51:33] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Mar-20 23:51:33 - 127.0.0.1 - - [29/Mar/2020 23:51:33] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+29-Mar-20 23:51:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:51:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:52:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:52:06 - 127.0.0.1 - - [29/Mar/2020 23:52:06] "GET /turnOperation/1000250893/0/off HTTP/1.1" 200 -
+29-Mar-20 23:52:10 - 127.0.0.1 - - [29/Mar/2020 23:52:10] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:52:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:52:29 - [person_event]A person(id=1) has left!
+29-Mar-20 23:52:29 - 127.0.0.1 - - [29/Mar/2020 23:52:29] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Mar-20 23:52:29 - 127.0.0.1 - - [29/Mar/2020 23:52:29] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:52:39 - 127.0.0.1 - - [29/Mar/2020 23:52:39] "POST /ManageDevice HTTP/1.1" 404 -
+29-Mar-20 23:52:39 - [device_event]A device(id=1) has turned off!
+29-Mar-20 23:52:39 - 127.0.0.1 - - [29/Mar/2020 23:52:39] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Mar-20 23:52:39 - 127.0.0.1 - - [29/Mar/2020 23:52:39] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+29-Mar-20 23:52:43 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:52:49 - 127.0.0.1 - - [29/Mar/2020 23:52:49] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:53:07 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:53:07 -  * Restarting with stat
+29-Mar-20 23:53:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:53:26 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:53:32 - 127.0.0.1 - - [29/Mar/2020 23:53:32] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:53:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:53:52 - 127.0.0.1 - - [29/Mar/2020 23:53:52] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:54:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:54:11 - 127.0.0.1 - - [29/Mar/2020 23:54:11] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:54:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:54:29 - 127.0.0.1 - - [29/Mar/2020 23:54:29] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:54:43 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:54:48 - 127.0.0.1 - - [29/Mar/2020 23:54:48] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:54:51 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+29-Mar-20 23:54:51 - 127.0.0.1 - - [29/Mar/2020 23:54:51] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 23:55:02 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:55:07 - 127.0.0.1 - - [29/Mar/2020 23:55:07] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:55:09 - [person_event]A person(id=1) has left!
+29-Mar-20 23:55:09 - 127.0.0.1 - - [29/Mar/2020 23:55:09] "POST /HandlePersonEvent HTTP/1.1" 200 -
+29-Mar-20 23:55:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:55:22 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+29-Mar-20 23:55:22 - 127.0.0.1 - - [29/Mar/2020 23:55:22] "POST /ManageDevice HTTP/1.1" 200 -
+29-Mar-20 23:55:22 - [device_event]A device(id=1) has turned off!
+29-Mar-20 23:55:22 - 127.0.0.1 - - [29/Mar/2020 23:55:22] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+29-Mar-20 23:55:22 - 127.0.0.1 - - [29/Mar/2020 23:55:22] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+29-Mar-20 23:55:26 - 127.0.0.1 - - [29/Mar/2020 23:55:26] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:55:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:55:45 - 127.0.0.1 - - [29/Mar/2020 23:55:45] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:55:59 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:56:04 - 127.0.0.1 - - [29/Mar/2020 23:56:04] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:56:18 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:56:31 - 127.0.0.1 - - [29/Mar/2020 23:56:31] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:56:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:56:50 - 127.0.0.1 - - [29/Mar/2020 23:56:50] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:57:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:57:09 - 127.0.0.1 - - [29/Mar/2020 23:57:09] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:57:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:57:28 - 127.0.0.1 - - [29/Mar/2020 23:57:28] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:57:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:57:48 - 127.0.0.1 - - [29/Mar/2020 23:57:48] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:58:02 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:58:07 - 127.0.0.1 - - [29/Mar/2020 23:58:07] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:58:08 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:58:08 -  * Restarting with stat
+29-Mar-20 23:58:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:58:25 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:58:25 -  * Restarting with stat
+29-Mar-20 23:58:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:58:33 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:58:42 -  * Restarting with stat
+29-Mar-20 23:58:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:58:51 - 127.0.0.1 - - [29/Mar/2020 23:58:51] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:58:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:58:56 - 127.0.0.1 - - [29/Mar/2020 23:58:56] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+29-Mar-20 23:59:10 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:59:14 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:59:14 -  * Restarting with stat
+29-Mar-20 23:59:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:59:18 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+29-Mar-20 23:59:22 -  * Restarting with stat
+29-Mar-20 23:59:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:59:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:59:35 - 127.0.0.1 - - [29/Mar/2020 23:59:35] "GET /ShowDeviceStatus HTTP/1.1" 500 -
+29-Mar-20 23:59:36 - 127.0.0.1 - - [29/Mar/2020 23:59:36] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+29-Mar-20 23:59:36 - 127.0.0.1 - - [29/Mar/2020 23:59:36] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+29-Mar-20 23:59:36 - 127.0.0.1 - - [29/Mar/2020 23:59:36] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+29-Mar-20 23:59:36 - 127.0.0.1 - - [29/Mar/2020 23:59:36] "GET /ShowDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+29-Mar-20 23:59:37 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+29-Mar-20 23:59:42 - 127.0.0.1 - - [29/Mar/2020 23:59:42] "GET /ReadDeviceStatus HTTP/1.1" 500 -
+29-Mar-20 23:59:42 - 127.0.0.1 - - [29/Mar/2020 23:59:42] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+29-Mar-20 23:59:42 - 127.0.0.1 - - [29/Mar/2020 23:59:42] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+29-Mar-20 23:59:42 - 127.0.0.1 - - [29/Mar/2020 23:59:42] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+29-Mar-20 23:59:42 - 127.0.0.1 - - [29/Mar/2020 23:59:42] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+29-Mar-20 23:59:42 - 127.0.0.1 - - [29/Mar/2020 23:59:42] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:00:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:00:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:00:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:00:57 - 127.0.0.1 - - [30/Mar/2020 00:00:57] "GET /ReadDeviceStatus HTTP/1.1" 500 -
+30-Mar-20 00:00:57 - 127.0.0.1 - - [30/Mar/2020 00:00:57] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:00:57 - 127.0.0.1 - - [30/Mar/2020 00:00:57] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:00:57 - 127.0.0.1 - - [30/Mar/2020 00:00:57] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:00:57 - 127.0.0.1 - - [30/Mar/2020 00:00:57] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:01:22 - 127.0.0.1 - - [30/Mar/2020 00:01:22] "GET /ReadDeviceStatus HTTP/1.1" 500 -
+30-Mar-20 00:01:22 - 127.0.0.1 - - [30/Mar/2020 00:01:22] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:01:22 - 127.0.0.1 - - [30/Mar/2020 00:01:22] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:01:22 - 127.0.0.1 - - [30/Mar/2020 00:01:22] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:01:22 - 127.0.0.1 - - [30/Mar/2020 00:01:22] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:01:24 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+30-Mar-20 00:01:24 -  * Restarting with stat
+30-Mar-20 00:01:26 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:01:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:01:30 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:01:44 - 127.0.0.1 - - [30/Mar/2020 00:01:44] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:02:20 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:02:20 -  * Restarting with stat
+30-Mar-20 00:02:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:02:39 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:02:39 -  * Restarting with stat
+30-Mar-20 00:02:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:02:47 - 127.0.0.1 - - [30/Mar/2020 00:02:47] "GET /ReadDeviceStatus HTTP/1.1" 500 -
+30-Mar-20 00:02:47 - 127.0.0.1 - - [30/Mar/2020 00:02:47] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:02:47 - 127.0.0.1 - - [30/Mar/2020 00:02:47] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:02:47 - 127.0.0.1 - - [30/Mar/2020 00:02:47] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:02:47 - 127.0.0.1 - - [30/Mar/2020 00:02:47] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:04:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:04:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:06:09 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:06:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:06:14 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:06:19 - 127.0.0.1 - - [30/Mar/2020 00:06:19] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:06:29 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:06:29 -  * Restarting with stat
+30-Mar-20 00:07:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:18 - 127.0.0.1 - - [30/Mar/2020 00:07:18] "GET /ReadDeviceStatus HTTP/1.1" 500 -
+30-Mar-20 00:07:18 - 127.0.0.1 - - [30/Mar/2020 00:07:18] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:07:18 - 127.0.0.1 - - [30/Mar/2020 00:07:18] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:07:18 - 127.0.0.1 - - [30/Mar/2020 00:07:18] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:07:18 - 127.0.0.1 - - [30/Mar/2020 00:07:18] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:07:34 - 127.0.0.1 - - [30/Mar/2020 00:07:34] "GET /ReadDeviceStatus HTTP/1.1" 500 -
+30-Mar-20 00:07:34 - 127.0.0.1 - - [30/Mar/2020 00:07:34] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:07:34 - 127.0.0.1 - - [30/Mar/2020 00:07:34] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:07:34 - 127.0.0.1 - - [30/Mar/2020 00:07:34] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:07:34 - 127.0.0.1 - - [30/Mar/2020 00:07:34] "GET /ReadDeviceStatus?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:07:36 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:07:36 -  * Restarting with stat
+30-Mar-20 00:07:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:42 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:49 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:49 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:07:54 - 127.0.0.1 - - [30/Mar/2020 00:07:54] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:09:35 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:09:35 -  * Restarting with stat
+30-Mar-20 00:09:46 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:10:01 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:10:06 - 127.0.0.1 - - [30/Mar/2020 00:10:06] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:11:31 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:11:31 -  * Restarting with stat
+30-Mar-20 00:11:33 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:11:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:11:45 - 127.0.0.1 - - [30/Mar/2020 00:11:45] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:12:11 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:12:11 -  * Restarting with stat
+30-Mar-20 00:12:13 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:12:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:12:33 - 127.0.0.1 - - [30/Mar/2020 00:12:33] "GET /ReadDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:19:31 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:19:31 -  * Restarting with stat
+30-Mar-20 00:19:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:20:02 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:22:34 - 127.0.0.1 - - [30/Mar/2020 00:22:34] "GET /admin HTTP/1.1" 500 -
+30-Mar-20 00:22:34 - 127.0.0.1 - - [30/Mar/2020 00:22:34] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:22:34 - 127.0.0.1 - - [30/Mar/2020 00:22:34] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:22:34 - 127.0.0.1 - - [30/Mar/2020 00:22:34] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:22:34 - 127.0.0.1 - - [30/Mar/2020 00:22:34] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:22:34 - 127.0.0.1 - - [30/Mar/2020 00:22:34] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:23:16 - 127.0.0.1 - - [30/Mar/2020 00:23:16] "GET /admin HTTP/1.1" 500 -
+30-Mar-20 00:23:16 - 127.0.0.1 - - [30/Mar/2020 00:23:16] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+30-Mar-20 00:23:16 - 127.0.0.1 - - [30/Mar/2020 00:23:16] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+30-Mar-20 00:23:16 - 127.0.0.1 - - [30/Mar/2020 00:23:16] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+30-Mar-20 00:23:16 - 127.0.0.1 - - [30/Mar/2020 00:23:16] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+30-Mar-20 00:23:26 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:23:26 -  * Restarting with stat
+30-Mar-20 00:23:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:23:35 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:23:40 - 127.0.0.1 - - [30/Mar/2020 00:23:40] "GET /ListPersons HTTP/1.1" 200 -
+30-Mar-20 00:23:40 - 127.0.0.1 - - [30/Mar/2020 00:23:40] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+30-Mar-20 00:23:40 - 127.0.0.1 - - [30/Mar/2020 00:23:40] "GET /ListDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:23:40 - 127.0.0.1 - - [30/Mar/2020 00:23:40] "GET /admin HTTP/1.1" 200 -
+30-Mar-20 00:24:03 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:24:03 -  * Restarting with stat
+30-Mar-20 00:24:05 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:24:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:26:10 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:26:10 -  * Restarting with stat
+30-Mar-20 00:26:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:26:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:26:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:26:41 -  * Detected change in '/home/erhan/smarteff-main/app/__init__.py', reloading
+30-Mar-20 00:26:42 -  * Restarting with stat
+30-Mar-20 00:26:44 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListPersons HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /admin HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListPersons HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /admin HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListPersons HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:26:49 - 127.0.0.1 - - [30/Mar/2020 00:26:49] "GET /admin HTTP/1.1" 200 -
+30-Mar-20 00:27:02 - 127.0.0.1 - - [30/Mar/2020 00:27:02] "GET /ListPersons HTTP/1.1" 200 -
+30-Mar-20 00:27:02 - 127.0.0.1 - - [30/Mar/2020 00:27:02] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+30-Mar-20 00:27:02 - 127.0.0.1 - - [30/Mar/2020 00:27:02] "GET /ListDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:27:02 - 127.0.0.1 - - [30/Mar/2020 00:27:02] "GET /admin HTTP/1.1" 200 -
+30-Mar-20 00:27:36 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:27:41 - 127.0.0.1 - - [30/Mar/2020 00:27:41] "GET /ManageDevices HTTP/1.1" 200 -
+30-Mar-20 00:27:53 - 127.0.0.1 - - [30/Mar/2020 00:27:53] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+30-Mar-20 00:27:58 - 127.0.0.1 - - [30/Mar/2020 00:27:58] "GET /turnOperation/1000250948/1/on HTTP/1.1" 200 -
+30-Mar-20 00:28:01 - 127.0.0.1 - - [30/Mar/2020 00:28:01] "GET /turnOperation/100024ffdd/0/on HTTP/1.1" 200 -
+30-Mar-20 00:28:06 - 127.0.0.1 - - [30/Mar/2020 00:28:06] "GET /turnOperation/100024ffdd/1/on HTTP/1.1" 200 -
+30-Mar-20 00:28:14 - 127.0.0.1 - - [30/Mar/2020 00:28:14] "GET /turnOperation/100024ff1a/0/on HTTP/1.1" 200 -
+30-Mar-20 00:28:20 - 127.0.0.1 - - [30/Mar/2020 00:28:20] "GET /turnOperation/100024ff1a/1/on HTTP/1.1" 200 -
+30-Mar-20 00:28:25 - 127.0.0.1 - - [30/Mar/2020 00:28:25] "GET /turnOperation/1000250893/0/on HTTP/1.1" 200 -
+30-Mar-20 00:28:32 - 127.0.0.1 - - [30/Mar/2020 00:28:32] "GET /turnOperation/1000250893/1/on HTTP/1.1" 200 -
+30-Mar-20 00:29:08 - [person_event]A person(id=1) has left!
+30-Mar-20 00:29:08 - 127.0.0.1 - - [30/Mar/2020 00:29:08] "POST /HandlePersonEvent HTTP/1.1" 200 -
+30-Mar-20 00:29:11 - [person_event]A person(id=2) has left!
+30-Mar-20 00:29:11 - 127.0.0.1 - - [30/Mar/2020 00:29:11] "POST /HandlePersonEvent HTTP/1.1" 200 -
+30-Mar-20 00:29:20 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+30-Mar-20 00:29:20 - 127.0.0.1 - - [30/Mar/2020 00:29:20] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:29:20 - [device_event]A device(id=1) has turned off!
+30-Mar-20 00:29:20 - 127.0.0.1 - - [30/Mar/2020 00:29:20] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:29:20 - 127.0.0.1 - - [30/Mar/2020 00:29:20] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+30-Mar-20 00:29:23 - [request_event]A person(id=1) has requested a device(id=7) to be turned off!
+30-Mar-20 00:29:23 - 127.0.0.1 - - [30/Mar/2020 00:29:23] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:29:23 - [device_event]A device(id=7) has turned off!
+30-Mar-20 00:29:23 - 127.0.0.1 - - [30/Mar/2020 00:29:23] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:29:23 - 127.0.0.1 - - [30/Mar/2020 00:29:23] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+30-Mar-20 00:29:23 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+30-Mar-20 00:29:23 - 127.0.0.1 - - [30/Mar/2020 00:29:23] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:29:23 - [device_event]A device(id=2) has turned off!
+30-Mar-20 00:29:23 - 127.0.0.1 - - [30/Mar/2020 00:29:23] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:29:23 - 127.0.0.1 - - [30/Mar/2020 00:29:23] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+30-Mar-20 00:30:05 - 127.0.0.1 - - [30/Mar/2020 00:30:05] "GET /turnOperation/1000250893/1/on HTTP/1.1" 200 -
+30-Mar-20 00:31:18 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+30-Mar-20 00:31:18 -  * Restarting with stat
+30-Mar-20 00:31:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:31:53 - 127.0.0.1 - - [30/Mar/2020 00:31:53] "GET /turnOperation/1000250893/1/on HTTP/1.1" 200 -
+30-Mar-20 00:31:53 - 127.0.0.1 - - [30/Mar/2020 00:31:53] "GET /turnOperation/1000250893/0/on HTTP/1.1" 200 -
+30-Mar-20 00:31:57 - 127.0.0.1 - - [30/Mar/2020 00:31:57] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+30-Mar-20 00:32:02 - 127.0.0.1 - - [30/Mar/2020 00:32:02] "GET /turnOperation/1000250948/1/on HTTP/1.1" 200 -
+30-Mar-20 00:32:10 - 127.0.0.1 - - [30/Mar/2020 00:32:10] "GET /turnOperation/1000250893/0/off HTTP/1.1" 200 -
+30-Mar-20 00:32:30 - 127.0.0.1 - - [30/Mar/2020 00:32:30] "GET /turnOperation/1000250893/0/on HTTP/1.1" 200 -
+30-Mar-20 00:33:25 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:33:39 - 127.0.0.1 - - [30/Mar/2020 00:33:39] "GET /ManageDevices HTTP/1.1" 200 -
+30-Mar-20 00:33:55 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+30-Mar-20 00:33:55 -  * Restarting with stat
+30-Mar-20 00:33:56 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:34:02 - [person_event]A person(id=1) has left!
+30-Mar-20 00:34:02 - 127.0.0.1 - - [30/Mar/2020 00:34:02] "POST /HandlePersonEvent HTTP/1.1" 200 -
+30-Mar-20 00:34:03 - [person_event]A person(id=2) has left!
+30-Mar-20 00:34:04 - 127.0.0.1 - - [30/Mar/2020 00:34:04] "POST /HandlePersonEvent HTTP/1.1" 200 -
+30-Mar-20 00:34:37 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+30-Mar-20 00:34:37 - 127.0.0.1 - - [30/Mar/2020 00:34:37] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:34:37 - [device_event]A device(id=1) has turned off!
+30-Mar-20 00:34:37 - 127.0.0.1 - - [30/Mar/2020 00:34:37] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:34:37 - 127.0.0.1 - - [30/Mar/2020 00:34:37] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+30-Mar-20 00:34:38 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+30-Mar-20 00:34:38 - 127.0.0.1 - - [30/Mar/2020 00:34:38] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:34:38 - 127.0.0.1 - - [30/Mar/2020 00:34:38] "POST /ManageDevice HTTP/1.1" 500 -
+30-Mar-20 00:34:38 - [device_event]A device(id=2) has turned off!
+30-Mar-20 00:34:38 - 127.0.0.1 - - [30/Mar/2020 00:34:38] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:34:38 - [device_event]A device(id=7) has turned off!
+30-Mar-20 00:34:38 - 127.0.0.1 - - [30/Mar/2020 00:34:38] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:34:38 - 127.0.0.1 - - [30/Mar/2020 00:34:38] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+30-Mar-20 00:34:38 - 127.0.0.1 - - [30/Mar/2020 00:34:38] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+30-Mar-20 00:34:52 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:34:57 - 127.0.0.1 - - [30/Mar/2020 00:34:57] "GET /ManageDevices HTTP/1.1" 200 -
+30-Mar-20 00:35:08 - 127.0.0.1 - - [30/Mar/2020 00:35:08] "GET /turnOperation/1000250893/0/on HTTP/1.1" 200 -
+30-Mar-20 00:35:14 - 127.0.0.1 - - [30/Mar/2020 00:35:14] "GET /turnOperation/1000250948/1/on HTTP/1.1" 200 -
+30-Mar-20 00:35:19 - 127.0.0.1 - - [30/Mar/2020 00:35:19] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+30-Mar-20 00:36:16 - 127.0.0.1 - - [30/Mar/2020 00:36:16] "POST /SuspendAutomation HTTP/1.1" 500 -
+30-Mar-20 00:36:51 - 127.0.0.1 - - [30/Mar/2020 00:36:51] "GET /turnOperation/1000250948/0/on HTTP/1.1" 200 -
+30-Mar-20 00:37:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:37:21 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:37:35 - [automation_event]A person(id=2) has requested a suspension for the automation of device(id=2) until 2020-03-31-11-29-30!
+30-Mar-20 00:37:35 - 127.0.0.1 - - [30/Mar/2020 00:37:35] "POST /SuspendAutomation HTTP/1.1" 200 -
+30-Mar-20 00:37:59 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:38:04 - 127.0.0.1 - - [30/Mar/2020 00:38:04] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:38:18 - [person_event]A person(id=1) has left!
+30-Mar-20 00:38:18 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:38:18 - 127.0.0.1 - - [30/Mar/2020 00:38:18] "POST /HandlePersonEvent HTTP/1.1" 200 -
+30-Mar-20 00:38:21 - [person_event]A person(id=2) has left!
+30-Mar-20 00:38:21 - 127.0.0.1 - - [30/Mar/2020 00:38:21] "POST /HandlePersonEvent HTTP/1.1" 200 -
+30-Mar-20 00:38:23 - 127.0.0.1 - - [30/Mar/2020 00:38:23] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:38:37 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:38:45 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+30-Mar-20 00:38:45 - 127.0.0.1 - - [30/Mar/2020 00:38:45] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:38:45 - [device_event]A device(id=1) has turned off!
+30-Mar-20 00:38:45 - 127.0.0.1 - - [30/Mar/2020 00:38:45] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:38:45 - 127.0.0.1 - - [30/Mar/2020 00:38:45] "POST /RemoveScheduledShutdown/1 HTTP/1.1" 200 -
+30-Mar-20 00:38:48 - [request_event]A person(id=1) has requested a device(id=7) to be turned off!
+30-Mar-20 00:38:48 - 127.0.0.1 - - [30/Mar/2020 00:38:48] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:38:48 - [device_event]A device(id=7) has turned off!
+30-Mar-20 00:38:48 - 127.0.0.1 - - [30/Mar/2020 00:38:48] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+30-Mar-20 00:38:48 - 127.0.0.1 - - [30/Mar/2020 00:38:48] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+30-Mar-20 00:38:51 - 127.0.0.1 - - [30/Mar/2020 00:38:51] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:39:00 - 127.0.0.1 - - [30/Mar/2020 00:39:00] "GET /ListPersons HTTP/1.1" 200 -
+30-Mar-20 00:39:00 - 127.0.0.1 - - [30/Mar/2020 00:39:00] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+30-Mar-20 00:39:00 - 127.0.0.1 - - [30/Mar/2020 00:39:00] "GET /ListDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:39:00 - 127.0.0.1 - - [30/Mar/2020 00:39:00] "GET /admin HTTP/1.1" 200 -
+30-Mar-20 00:39:04 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:39:09 - 127.0.0.1 - - [30/Mar/2020 00:39:09] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:39:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:39:28 - 127.0.0.1 - - [30/Mar/2020 00:39:28] "GET /ShowDeviceStatus HTTP/1.1" 200 -
+30-Mar-20 00:39:40 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:39:45 - 127.0.0.1 - - [30/Mar/2020 00:39:45] "GET /ManageDevices HTTP/1.1" 200 -
+30-Mar-20 00:39:59 - 127.0.0.1 - - [30/Mar/2020 00:39:59] "GET /turnOperation/1000250948/1/off HTTP/1.1" 200 -
+30-Mar-20 00:40:02 - 127.0.0.1 - - [30/Mar/2020 00:40:02] "POST /ManageDevice HTTP/1.1" 404 -
+30-Mar-20 00:40:15 - [request_event]A person(id=1) has requested a device(id=3) to be turned off!
+30-Mar-20 00:40:15 - 127.0.0.1 - - [30/Mar/2020 00:40:15] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:40:20 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+30-Mar-20 00:40:20 - 127.0.0.1 - - [30/Mar/2020 00:40:20] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:40:23 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+30-Mar-20 00:40:23 - 127.0.0.1 - - [30/Mar/2020 00:40:23] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:40:28 - [request_event]A person(id=1) has requested a device(id=6) to be turned off!
+30-Mar-20 00:40:28 - 127.0.0.1 - - [30/Mar/2020 00:40:28] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:40:31 - [request_event]A person(id=1) has requested a device(id=8) to be turned off!
+30-Mar-20 00:40:31 - 127.0.0.1 - - [30/Mar/2020 00:40:31] "POST /ManageDevice HTTP/1.1" 200 -
+30-Mar-20 00:40:53 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+30-Mar-20 00:40:53 -  * Restarting with stat
+30-Mar-20 00:40:55 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+30-Mar-20 00:41:39 - 127.0.0.1 - - [30/Mar/2020 00:41:39] "GET /turnOperation/1000250948/1/off HTTP/1.1" 200 -
+30-Mar-20 00:43:12 - 127.0.0.1 - - [30/Mar/2020 00:43:12] "GET /turnOperation/1000250948/1/off HTTP/1.1" 200 -

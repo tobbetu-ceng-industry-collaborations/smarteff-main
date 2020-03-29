@@ -27,6 +27,8 @@ logger.propagate = False
 logging.basicConfig(filename='event_history.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.WARNING)
 logging.StreamHandler(stream=None)
 
+s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
+
 # endpoint to handle person events
 @app.route("/HandlePersonEvent", methods=['POST'])
 def person_event():
@@ -215,19 +217,30 @@ def manage_device():
     # get device or throw 404
     device = Device.query.get_or_404(device_id)
 
+    # get device sonoff id
+    device_sonoff_id = device.sonoff_link
+
+    # get device sonoff channel
+    device_channel = device.sonoff_channel
+
     # redirect and log according to action
     if action == 'turnon':
 
-        # TODO
-        # (1) redirect to component #6
-        # python3 manage_device.py <son_of id> <channel> <on/off>
+        send_request_device("on", device_sonoff_id, device_channel)
+
+        device.is_on = 1
+
+        db.session.commit()
 
         logging.warning('[request_event]A person(id=%s) has requested a device(id=%s) to be turned on!', str(person_id), str(device_id))
 
     elif action == 'turnoff':
 
-        # TODO
-        # (1) redirect to component #6
+        send_request_device("off", device_sonoff_id, device_channel)
+
+        device.is_on = 0
+
+        db.session.commit()
 
         logging.warning('[request_event]A person(id=%s) has requested a device(id=%s) to be turned off!', str(person_id), str(device_id))
 
@@ -447,7 +460,6 @@ def save_event(log_name):
 # endpoint to request a device turn on/off
 @app.route('/turnOperation/<switch_id>/<int:channel>/<turn>')
 def sendRequest(turn, switch_id, channel):
-    s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
     devices = s.get_devices()
     for i in range(len(devices)):
         if devices:
@@ -457,13 +469,26 @@ def sendRequest(turn, switch_id, channel):
                 s.switch(turn, switch_id, channel)
     return render_template("ingdog.html", sayfabasligi="SWITCHES",devicelist=devices,deviceid=1)
 
+# endpoint to request a device turn on/off
+@app.route('/turnOperation/<switch_id>/<int:channel>/<turn>')
+def send_request_device(turn, switch_id, channel):
+    devices = s.get_devices()
+    print(turn)
+    print(switch_id)
+    print(channel)
+    s.switch(str(turn), str(switch_id), int(channel))
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify({'success':True})
+
+    return resp, 200    
 # endpoint to return device status
 @app.route('/returnDeviceStatus/<switch_id>')
 def device_stats(switch_id):
     array = []  
     counter=0
     counter2=1
-    s = sonoff.Sonoff("denguner5@gmail.com","smarteff","us")
+
     devices = s.get_devices()
     for i in range(len(devices)):
         if devices:
@@ -481,6 +506,31 @@ def device_stats(switch_id):
                     counter2=1
                 array.append({"channel-0":counter2,"channel-1":counter})
     return jsonify(array[0])
+
+# return device status from device manager
+@app.route('/ReadDeviceStatus')
+def read_device_status():
+	array = []	
+	counter=0
+	strike=1
+	devices = s.get_devices()
+	for i in range(len(devices)):
+		if devices:
+			device_id = devices[i]['deviceid']
+			status=device_id			
+			one=devices[i]['params']['switches'][1]['switch']
+			zero=devices[i]['params']['switches'][0]['switch']
+			if one == "on":
+				counter=1
+			else:
+				counter=0
+			if zero == "on":
+				strike=1
+			else:
+				strike=0
+		array.append({"id":i,"device_id" : status,"channel_1":one,"channel_0":zero,"channel-0":strike,"channel-1":counter})
+	return jsonify(array)
+
 
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
 
@@ -611,3 +661,7 @@ def list_device_status():
 
     # return result as dictionary
     return jsonify(device_status)
+
+
+# -----------------------INITIALIZE DB  --------------------------- 
+
