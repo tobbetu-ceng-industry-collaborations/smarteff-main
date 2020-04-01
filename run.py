@@ -10,12 +10,28 @@ import requests
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+response = requests.get("https://smarteff.herokuapp.com/ListPersons")
+response = response.text
+loaded = json.loads(response)
+
+allUsers = []
+idSize = []
+idLer=[]
+for p in loaded['people']:
+    allUsers.append(p['name'])
+    idLer.append(p['id'])
+
+
+hash = dict(zip(allUsers,idLer))
+
+
+print(allUsers[0]+' '+allUsers[1])
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 valuee = 'Inside'
 events = []
 datetimes = []
-idSize = []
+
 user = []
 time = []
 date = []
@@ -26,33 +42,7 @@ randomTimeHour=["08","09","10","11","12","13","14","15","16","17","18"]
 randomTimeMin= ["10","20","30","40","50","00"]
 randomChoiceforId=[2,3,4,5,6,7,8,9,10,11,12,13,14]
 randomAction=""
-allUsers = ["Ahmet", "Ali", "Ayşe",
-            "Burak",
-            "Beril",
-            "Caner",
-            "Eda",
-            "Fatih",
-            "Furkan",
-            "Fulya",
-            "Damla",
-            "Deniz",
-            "Derin",
-            "Dursun",
-            "Emel",
-            "Erkan",
-            "Erdem",
-            "Mehmet",
-            "Toygar",
-            "Özlem",
-            "Serdar",
-            "Doğukan",
-            "Oğuzhan",
-            "Eren",
-            "Zafer",
-            "Osman",
-            "Gülseren", "Vildan", "Berkcan", "Cahit", "Cengiz", "Timur", "Alperen", "Melike", "Aylin", "Atakan",
-            "Mustafa", "Kemal", "Cemal", "Atilla", "Şahin", "Celal", "Necati", "Adem", "Onur", "Aydın", "Beyza",
-            "Ayhan", "Burhan", "Koray"]
+
 
 nameAndId = { i : allUsers[i] for i in range(0, len(allUsers) ) }
 
@@ -101,6 +91,8 @@ app.layout = html.Div(children=[
                  ),
     html.Button('View The Event Log', id='button1', style={'marginLeft': 550}),
     html.Button('Export the Event Log', id='button2', style={'marginLeft': 10}),
+    html.H1(dcc.Input(id='logFileId', type='text', value='Enter here name of Log File'),
+            style={'opacity': '1', 'color': 'black', 'fontSize': 15, 'display': 'inline-block'}),
     html.Div(id='output-container-button2', style={'color': 'Black', 'fontSize': 18}),
 
     html.Div(children='''
@@ -109,56 +101,12 @@ app.layout = html.Div(children=[
 
     dcc.Dropdown(id='input-box1',
                  options=[
-                     {'label': 'Ahmet', 'value': 'Ahmet'},
+                     {'label': 'John', 'value': 'John'},
+                     {'label': 'Jane', 'value': 'Jane'},
                      {'label': 'Ali', 'value': 'Ali'},
+                     {'label': 'Veli', 'value': 'Veli'},
                      {'label': 'Ayşe', 'value': 'Ayşe'},
-                     {'label': 'Burak', 'value': 'Burak'},
-                     {'label': 'Beril', 'value': 'Beril'},
-                     {'label': 'Caner', 'value': 'Caner'},
-                     {'label': 'Eda', 'value': 'Eda'},
-                     {'label': 'Fatih', 'value': 'Fatih'},
-                     {'label': 'Furkan', 'value': 'Furkan'},
-                     {'label': 'Fulya', 'value': 'Fulya'},
-                     {'label': 'Damla', 'value': 'Damla'},
-                     {'label': 'Deniz', 'value': 'Deniz'},
-                     {'label': 'Derin', 'value': 'Derin'},
-                     {'label': 'Dursun', 'value': 'Dursun'},
-                     {'label': 'Emel', 'value': 'Emel'},
-                     {'label': 'Erkan', 'value': 'Erkan'},
-                     {'label': 'Erdem', 'value': 'Erdem'},
-                     {'label': 'Mehmet', 'value': 'Mehmet'},
-                     {'label': 'Toygar', 'value': 'Toygar'},
-                     {'label': 'Özlem', 'value': 'Özlem'},
-                     {'label': 'Serdar', 'value': 'Serdar'},
-                     {'label': 'Doğukan', 'value': 'Doğukan'},
-                     {'label': 'Oğuzhan', 'value': 'Oğuzhan'},
-                     {'label': 'Eren', 'value': 'Eren'},
-                     {'label': 'Zafer', 'value': 'Zafer'},
-                     {'label': 'Osman', 'value': 'Osman'},
-                     {'label': 'Gülseren', 'value': 'Gülseren'},
-                     {'label': 'Vildan', 'value': 'Vildan'},
-                     {'label': 'Berkcan', 'value': 'Berkcan'},
-                     {'label': 'Cahit', 'value': 'Cahit'},
-                     {'label': 'Cengiz', 'value': 'Cengiz'},
-                     {'label': 'Timur', 'value': 'Timur'},
-                     {'label': 'Alperen', 'value': 'Alperen'},
-                     {'label': 'Melike', 'value': 'Melike'},
-                     {'label': 'Aylin', 'value': 'Aylin'},
-                     {'label': 'Atakan', 'value': 'Atakan'},
-                     {'label': 'Mustafa', 'value': 'Mustafa'},
-                     {'label': 'Kemal', 'value': 'Kemal'},
-                     {'label': 'Cemal', 'value': 'Cemal'},
-                     {'label': 'Atilla', 'value': 'Atilla'},
-                     {'label': 'Şahin', 'value': 'Şahin'},
-                     {'label': 'Celal', 'value': 'Celal'},
-                     {'label': 'Necati', 'value': 'Necati'},
-                     {'label': 'Adem', 'value': 'Adem'},
-                     {'label': 'Onur', 'value': 'Onur'},
-                     {'label': 'Aydın', 'value': 'Aydın'},
-                     {'label': 'Beyza', 'value': 'Beyza'},
-                     {'label': 'Ayhan', 'value': 'Ayhan'},
-                     {'label': 'Burhan', 'value': 'Burhan'},
-                     {'label': 'Koray', 'value': 'Koray'}
+                     {'label': 'Fatma', 'value': 'Fatma'}
                  ],
                  value='x',
                  style={'width': '50%'}
@@ -166,7 +114,7 @@ app.layout = html.Div(children=[
     html.Div(children='''
       
     ''', style={'color': 'black', 'fontSize': 30, 'marginLeft': 600}),
-    html.Div(id='display-options', style={'color': 'red', 'fontSize': 18, 'marginLeft': 550}),
+    html.Div(id='display-options', style={'color': 'red', 'width': '50%','fontSize': 18, 'marginLeft': 550}),
 
     html.Div(children='''
         Inside/Outside
@@ -213,11 +161,7 @@ def simulate_event(n_clicks, value):
                             outside.remove(isim)
                         inside.append(isim)
                         user.append(isim)
-
-                        randomId=randomId+1
-
-                        idSize.append(randomId)
-
+                        idSize.append(hash[isim])
                         tutDay=randomDay+dyear[2:]
                         if tutDay[1] == '-':
                             tutDay = "0" + tutDay
@@ -236,9 +180,7 @@ def simulate_event(n_clicks, value):
                             inside.remove(isim)
                         outside.append(isim)
                         user.append(isim)
-
-                        randomId = randomId + 1
-                        idSize.append(randomId)
+                        idSize.append(hash[isim])
                         tutDay = randomDay + dyear[2:]
                         if tutDay[1] == '-':
                             tutDay = "0" + tutDay
@@ -263,7 +205,7 @@ def simulate_event(n_clicks, value):
      dash.dependencies.State('input-box-time', 'value'),
      dash.dependencies.State('input-box-date', 'value')])
 def enter_event(n_clicks, value, value3, value2):
-    global randomId
+
     temp = 'Kullanıcı : "{}" çıkış yaptı. Tarih :'.format(
         value,
         n_clicks,
@@ -276,13 +218,13 @@ def enter_event(n_clicks, value, value3, value2):
             if (value in outside):
                 outside.remove(value)
             inside.append(value)
+
             # events.append(value+","+dyear+","+dtime+","+acti)
             dyear = value2
             dtime = value3
             user.append(value)
+            idSize.append(hash[value])
 
-            randomId = randomId + 1
-            idSize.append(randomId)
             date.append(dyear)
             time.append(dtime)
             action.append(acti)
@@ -313,9 +255,7 @@ def exit_event(n_clicks, value, value3, value2):
             dyear = value2
             dtime = value3
             user.append(value)
-
-            randomId = randomId + 1
-            idSize.append(randomId)
+            idSize.append(hash[value])
             date.append(dyear)
             time.append(dtime)
             action.append(act)
@@ -363,8 +303,9 @@ def update_input2(value, n_clicks):
 @app.callback(
     dash.dependencies.Output('output-container-button2', 'children'),
     [dash.dependencies.Input('button2', 'n_clicks')],
-    [dash.dependencies.State('input-box1', 'value')])
-def update_backlog(n_clicks, value):
+    [dash.dependencies.State('logFileId', 'value'),
+    dash.dependencies.State('input-box1', 'value')])
+def update_backlog(n_clicks, value2,value):
     temp = 'Kullanıcı : "{}" çıkış yaptı. Tarih :'.format(
         value,
         n_clicks,
@@ -378,7 +319,7 @@ def update_backlog(n_clicks, value):
 
 
         index=0
-
+        logFileName=value2
         data['events']=[]
         for i in user:
             data['events'].append({
@@ -391,12 +332,15 @@ def update_backlog(n_clicks, value):
             index=index+1
 
 
-        with open('data.json', 'w', encoding='utf-8') as outfile:
+        with open("data.json", 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
 
 
-        URL = "http://127.0.0.1:5000/SaveEvent"
-        r = requests.post(url=URL, data=data)
+        URL = "https://smarteff.herokuapp.com/SaveEvent/"
+        URL=URL+logFileName
+
+        headers={'Content-type': 'application/json', 'Accept':'text/plain'}
+        r = requests.post(url=URL, data=json.dumps(data),headers=headers)
 
 
 if __name__ == '__main__':
