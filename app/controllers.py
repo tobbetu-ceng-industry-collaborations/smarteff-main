@@ -15,11 +15,13 @@ from datetime import datetime
 from datetime import timedelta
 
 from flask import render_template
+from flask import redirect
 
 import os
 
 import json
 import sonoff
+
 
 # logger setup
 logger = logging.getLogger('my-logger')
@@ -382,8 +384,10 @@ def request_susp_shutdown(dev_name):
     return resp, 200
 
 # endpoint to create new Person
-@app.route("/CreateNewPerson/<name>", methods=['GET', 'POST'])
-def create_person(name):
+@app.route("/CreateNewPerson", methods=['GET', 'POST'])
+def create_person():
+
+    name = request.form['name']
 
     # read new Person's information
     username = name
@@ -397,14 +401,19 @@ def create_person(name):
     db.session.add(new_person)
     db.session.commit()
 
-    # prepare the response --> assuming everything is OK
-    resp = jsonify({'success':True})
-
-    return resp, 200
+    return redirect("http://127.0.0.1:5000/admin", code=302)
 
 # endpoint to change assignment of a person-device
-@app.route("/ChangeAssignment/<name1>/<name2>", methods=['GET', 'POST'])
-def swap_person(name1, name2):
+@app.route("/ChangeAssignment/", methods=['GET', 'POST'], strict_slashes=False)
+def swap_person():
+
+    name1 = request.form['name1']
+    name2 = request.form['name2']
+
+    name1 = name1.strip()
+    name2 = name2.strip()
+    print(name1)
+    print(name1)
 
     # fetch persons
     person1 = Person.query.filter(Person.person_name == name1).first()
@@ -437,10 +446,7 @@ def swap_person(name1, name2):
     # record into DB
     db.session.commit()
 
-    # prepare the response --> assuming everything is OK
-    resp = jsonify({'success':True})
-
-    return resp, 200
+    return redirect("http://127.0.0.1:5000/admin", code=302)
 
 # endpoint to save pre-built event file under server
 @app.route("/SaveEvent/<log_name>", methods=['GET', 'POST'])
@@ -531,7 +537,31 @@ def read_device_status():
 		array.append({"id":i,"device_id" : status,"channel_1":one,"channel_0":zero,"channel-0":strike,"channel-1":counter})
 	return jsonify(array)
 
+# endpoint to handle device events ADMIN
+@app.route("/HandleDeviceEventAdmin", methods=['POST'])
+def device_event_admin():
 
+    # parse http request body
+    data = request.form
+    device_id= data['deviceid']
+    event = data['event']
+
+    # get device or throw 404
+    device = Device.query.get_or_404(device_id)
+
+    # change is_on status according to event
+    if event == 'turnon':
+        device.is_on = 1;
+        logging.warning('[device_event]A device(id=%s) has turned on!', str(device_id))
+    elif event == 'turnoff':
+        device.is_on = 0;
+        logging.warning('[device_event]A device(id=%s) has turned off!', str(device_id))
+
+    # write changes to DB
+    db.session.add(device)
+    db.session.commit()
+
+    return redirect("http://127.0.0.1:5000/admin", code=302)
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
 
 
