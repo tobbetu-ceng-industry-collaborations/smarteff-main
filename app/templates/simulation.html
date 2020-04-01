@@ -252,16 +252,15 @@
           <form class="form-container" style="text-align: center;">
             <h1>Available Event Logs</h1>
             <table id="table">
-              <tr>
-              <td>Event Log-1</td>
-              </tr>
-              <tr>
-              <td>Event Log-2</td>
-              </tr>
-              <tr>
-              <td>Event Log-3</td>
-              </tr>
+
+                    {% for log in event_logs %}
+                      <tr>
+                        <td>{{log}}</td>
+                     </tr>
+                    {% endfor %}
+
             </table>
+            <br>
             <button type="submit" class="btn">Select</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>

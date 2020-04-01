@@ -4,6 +4,9 @@ import requests
 import json
 import sonoff
 
+from os import listdir
+from os.path import isfile, join
+
 # show current event log under the route /log
 @app.route("/log", methods=['POST','GET'])
 def log():
@@ -74,7 +77,10 @@ def simulate():
     for person in loaded['people']:
         persons.append(person['name'])
 
-    return render_template("simulation.html", persons=persons, devices=devices, device_status=device_status, loaded=loaded)
+    # read file names for saved event logs
+    event_logs = [f for f in listdir('app/saved_events') if isfile(join('app/saved_events', f))]
+
+    return render_template("simulation.html", persons=persons, devices=devices, device_status=device_status, loaded=loaded, event_logs=event_logs)
 
 # device manager view
 @app.route('/ManageDevices')
