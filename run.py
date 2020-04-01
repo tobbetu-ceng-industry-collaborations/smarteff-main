@@ -4,6 +4,10 @@ import dash_core_components as dcc
 import dash_html_components as html
 import json
 import random
+import requests
+
+
+
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -11,13 +15,16 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 valuee = 'Inside'
 events = []
 datetimes = []
+idSize = []
 user = []
 time = []
 date = []
 action = []
+randomId=4000
 randomAct=["enter","exit"]
 randomTimeHour=["08","09","10","11","12","13","14","15","16","17","18"]
 randomTimeMin= ["10","20","30","40","50","00"]
+randomChoiceforId=[2,3,4,5,6,7,8,9,10,11,12,13,14]
 randomAction=""
 allUsers = ["Ahmet", "Ali", "Ayşe",
             "Burak",
@@ -46,6 +53,12 @@ allUsers = ["Ahmet", "Ali", "Ayşe",
             "Gülseren", "Vildan", "Berkcan", "Cahit", "Cengiz", "Timur", "Alperen", "Melike", "Aylin", "Atakan",
             "Mustafa", "Kemal", "Cemal", "Atilla", "Şahin", "Celal", "Necati", "Adem", "Onur", "Aydın", "Beyza",
             "Ayhan", "Burhan", "Koray"]
+
+nameAndId = { i : allUsers[i] for i in range(0, len(allUsers) ) }
+
+
+
+
 
 inside = []
 outside = []
@@ -183,6 +196,7 @@ def simulate_event(n_clicks, value):
         value,
         n_clicks,
     )
+    global randomId
     global randomDay
     tutDay=""
     dayInt=int(randomDay)
@@ -199,6 +213,11 @@ def simulate_event(n_clicks, value):
                             outside.remove(isim)
                         inside.append(isim)
                         user.append(isim)
+
+                        randomId=randomId+1
+
+                        idSize.append(randomId)
+
                         tutDay=randomDay+dyear[2:]
                         if tutDay[1] == '-':
                             tutDay = "0" + tutDay
@@ -217,6 +236,9 @@ def simulate_event(n_clicks, value):
                             inside.remove(isim)
                         outside.append(isim)
                         user.append(isim)
+
+                        randomId = randomId + 1
+                        idSize.append(randomId)
                         tutDay = randomDay + dyear[2:]
                         if tutDay[1] == '-':
                             tutDay = "0" + tutDay
@@ -241,6 +263,7 @@ def simulate_event(n_clicks, value):
      dash.dependencies.State('input-box-time', 'value'),
      dash.dependencies.State('input-box-date', 'value')])
 def enter_event(n_clicks, value, value3, value2):
+    global randomId
     temp = 'Kullanıcı : "{}" çıkış yaptı. Tarih :'.format(
         value,
         n_clicks,
@@ -257,6 +280,9 @@ def enter_event(n_clicks, value, value3, value2):
             dyear = value2
             dtime = value3
             user.append(value)
+
+            randomId = randomId + 1
+            idSize.append(randomId)
             date.append(dyear)
             time.append(dtime)
             action.append(acti)
@@ -269,6 +295,7 @@ def enter_event(n_clicks, value, value3, value2):
      dash.dependencies.State('input-box-time', 'value'),
      dash.dependencies.State('input-box-date', 'value')])
 def exit_event(n_clicks, value, value3, value2):
+    global randomId
     temp = 'Kullanıcı : "{}" çıkış yaptı. Tarih :'.format(
         value,
         n_clicks,
@@ -286,6 +313,9 @@ def exit_event(n_clicks, value, value3, value2):
             dyear = value2
             dtime = value3
             user.append(value)
+
+            randomId = randomId + 1
+            idSize.append(randomId)
             date.append(dyear)
             time.append(dtime)
             action.append(act)
@@ -341,17 +371,19 @@ def update_backlog(n_clicks, value):
     )
     if n_clicks == 1:
         events.append(user)
+        events.append(idSize)
         events.append(date)
         events.append(time)
         events.append(action)
 
-        person_dict = {"name": user, "date": date, "time": time, "action": action}
+
         index=0
 
         data['events']=[]
         for i in user:
             data['events'].append({
                 'name': user[index],
+                'id': idSize[index],
                 'date': date[index],
                 'time': time[index],
                 'action': action[index]
@@ -361,6 +393,10 @@ def update_backlog(n_clicks, value):
 
         with open('data.json', 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
+
+
+        URL = "http://127.0.0.1:5000/SaveEvent"
+        r = requests.post(url=URL, data=data)
 
 
 if __name__ == '__main__':
