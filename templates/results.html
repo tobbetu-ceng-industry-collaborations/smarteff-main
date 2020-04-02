@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Bil495 Project</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center;font-size: 45px;color:#35363b;font-weight: 300;">Receipt Tracker</h1>
+    {% if receipts|length < 1 %}
+    <h4 style="text-align: center">No match found for your search!</h4>
+    {% else %}
+    <h2 style="text-align: center;color:#055e79">Found Receipts</h2>
+    <hr/>
+    <br>
+    <table style="height: 121px; margin-left: auto; margin-right: auto;">
+        <tr>
+            <th>Receipt Name</th>
+            <th>Total Cost</th>
+            <th>Location</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Photo</th>
+            <th>Actions</th>
+        </tr>
+        {% for receipt in receipts %}
+            <tr>
+                <td>{{ receipt.name }}</td>
+                <td>{{ receipt.total_cost }}</td>
+                <td>{{ receipt.location }}</td>
+                <td>{{ receipt.tag }}</td>
+                <td>{{ receipt.date_created.date() }}</td>
+                {% if receipt.photo_path != "" %}
+                <td>
+                	<body>
+                
+                		<img src={{receipt.photo_path}} width="75" height="75" alt="{{receipt.photo_path}}">
+                	</body>	
+                </td>
+            	
+                {% else %}
+                <td>{{ "No Photo" }}</td>
+                {% endif %}
+                <td>
+                    <a href="/delete/{{receipt.id}}">Delete</a>
+                    <br>
+                    <a href="/update/{{receipt.id}}">Edit</a>
+                    <br>
+                    <a href="/details/{{receipt.id}}">Details</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+
+</div>
+{% endblock %}

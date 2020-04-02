@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Bil495 Project</title>
+{% endblock %}
+
+{% block body %}
+<div style="text-align: center "class="content">
+
+
+    <nav style="position: left;margin-left: -511px;margin-top: -2px">
+  <ul>
+        <li>
+       <!--a href='/updateUser/{{user.user_id}}' style="line-height: 55px;color:#fff;"> User Settings </a-->
+       <a href='/{{user.user_id}}/' style="line-height: 55px;color:#fff;"> Home </a>
+    </li>
+    <!--li> 
+            <form  style="border: 0px solid #000 ; border-bottom: 0px border-right: 1px;margin-left: -20px"action="/{{user.user_id}}/" method="GET">
+        <input style="height:50px; width:100px;border-right-style: solid;margin-right: -20px;border-right-width: 0px;padding-right: 0px;padding-top: 8px;" type="image" src="/static/receipt-bank-square.png" />
+    </form>
+    </li-->
+    <li>
+       <a href='/updateUser/{{user.user_id}}' style="line-height: 55px;color:#fff;"> User Settings </a>
+       
+    </li>
+
+    <li style="margin-left: 875px;">
+      <!-- link four -->
+      <a href='/login' style="line-height: 55px;color:#fff;margin-left: 200px"> Logout </a>
+    </li>
+  </ul>
+</nav>
+    <!--h1 style="text-align: center;font-size: 45px;color:#35363b;font-weight: 300;">Receipt Tracker</h1-->
+
+    <br>
+    {% if receipts|length < 1 %}
+    <h4 style="text-align: center">There are no receipts. Create one below!</h4>
+    {% else %}
+    <h2 style="text-align: center;color:#055e79">Your Receipts</h2>
+    <hr/>
+    <br>
+    <table style="height: 121px; margin-left: auto; margin-right: auto;">
+        <tr>
+            <th>Receipt Name</th>
+            <th>Total Cost</th>
+            <th>Location</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Photo</th>
+            <th>Actions</th>
+        </tr>
+        {% for receipt in receipts %}
+            <tr>
+                <td>{{ receipt.name }}</td>
+                <td>{{ receipt.total_cost }}</td>
+                <td>{{ receipt.location }}</td>
+                <td>{{ receipt.tag }}</td>
+                <td>{{ receipt.date_created.date() }}</td>
+                {% if receipt.photo_path != "" %}
+                <td>
+                	<body>
+                
+                		<img src={{receipt.photo_path}} width="75" height="75" alt="{{receipt.photo_path}}">
+                	</body>	
+                </td>
+            	
+                {% else %}
+                <td>{{ "No Photo" }}</td>
+                {% endif %}
+                <td>
+                    <a href='/{{user.user_id}}/delete/{{receipt.id}}'>Delete</a>
+                    <br>
+                    <a href="/{{user.user_id}}/update/{{receipt.id}}">Edit</a>
+                    <br>
+                    <a href="/{{user.user_id}}/details/{{receipt.id}}">Details</a>
+                    <br>
+                    <a href="/{{user.user_id}}/share/{{receipt.id}}">Share</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    <br>
+
+    <div style = "position: absolute; left:0px; top: 75px;text-align: center; margin-left: 90px; margin-right: 90px;"">
+    <h2 style="text-align: center;color:#055e79">Create Receipts</h2>
+    <hr/>
+    <div  style="text-align: left" class="form">
+        <form enctype=multipart/form-data action="/{{user.user_id}}/" method="POST">
+        	<th>Name</th> 
+            <input style="position: absolute; right:-10px" type="text" name="name" id="name"> <br><br>
+            <th>Total Cost</th> 
+            <input style="position: absolute; right:-10px" type="text" name="total_cost" id="total_cost">  <br><br>
+            <th>Location</th>
+            <input  style="position: absolute; right:-10px"type="text" name="location" id="location">  <br><br>
+            <th>Category</th>
+            <input style="position: absolute; right:-10px" type="text" name="tag" id="tag">  <br>
+            <br>
+            <th>Photo</th> 
+            <input  type="file" name="file" id="file">  <br> <br>
+            <input style="position: absolute; right:100px" type="Submit" align="center" value="Add Receipt" style="letter-spacing: 0.1em;font-size: 12px;line-height: 20px;">
+        </form>
+    </div>
+    <br>
+    </div>
+
+    <div style = "position: absolute; right:80px; top: 75px;">
+    <h2 style="text-align: center;color:#055e79">Search Receipts</h2>
+    <hr/>
+
+     <div style="text-align: center;" class="form">
+        <form  action="/search/{{user.user_id}}" method="POST">
+                <div style="text-align: center;">
+        <input type="checkbox" name="searchBox" default= "0" id="name"  value="1" checked> Name </input>
+        <input type="checkbox" name="searchBox" default= "0" id="location"  value="2"> Location </input>
+        <input type="checkbox" name="searchBox" default= "0" id="category" value="3"> Category </input><br> <br>
+    
+    </div>
+            <input type="text" placeholder = "Type something to search" name="search" id="search"> 
+            <input  type="Submit" value="search">
+        </form>
+    </div>
+    <br>
+    <br>
+
+</div>
+{% endblock %}

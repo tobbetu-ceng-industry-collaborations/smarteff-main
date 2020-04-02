@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Receipt Tracker</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+
+	    <nav style="position: left;margin-left: -511px;margin-top: -2px">
+  <ul>
+        <li>
+       <!--a href='/updateUser/{{user.user_id}}' style="line-height: 55px;color:#fff;"> User Settings </a-->
+       <a href='/{{user.user_id}}/' style="line-height: 55px;color:#fff;"> Home </a>
+    </li>
+    <!--li> 
+            <form  style="border: 0px solid #000 ; border-bottom: 0px border-right: 1px;margin-left: -20px"action="/{{user.user_id}}/" method="GET">
+        <input style="height:50px; width:100px;border-right-style: solid;margin-right: -20px;border-right-width: 0px;padding-right: 0px;padding-top: 8px;" type="image" src="/static/receipt-bank-square.png" />
+    </form>
+    </li-->
+    <li>
+       <a href='/updateUser/{{user.user_id}}' style="line-height: 55px;color:#fff;"> User Settings </a>
+       
+    </li>
+
+    <li style="margin-left: 875px;">
+      <!-- link four -->
+      <a href='/login' style="line-height: 55px;color:#fff;margin-left: 200px"> Logout </a>
+    </li>
+  </ul>
+</nav>
+
+   <br>
+    <h2 style="text-align: center;color:#055e79">Share Your Receipt</h2>
+    <hr/>
+    <br>
+
+    <div class="form">
+        <form action="/{{user.user_id}}/" method="GET">
+            URL
+            <input style="position: absolute; right:600px" type="text" name="name" id="name" value="/{{user.user_id}}/share/{{receipt.id}}/" readonly=""><br><br> <br>
+            <input style="position: absolute; right:700px" type="submit" value="Done">
+        </form>
+    </div>
+</div>
+{% endblock %}

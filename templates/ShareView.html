@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Bil495 Project</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+
+        <nav style="position: left;margin-left: -511px;margin-top: -2px">
+  <ul>
+        <li>
+       <!--a href='/updateUser/{{user.user_id}}' style="line-height: 55px;color:#fff;"> User Settings </a-->
+       <a href='/login' style="line-height: 55px;color:#fff;"> Home </a>
+    </li>
+    <!--li> 
+            <form  style="border: 0px solid #000 ; border-bottom: 0px border-right: 1px;margin-left: -20px"action="/{{user.user_id}}/" method="GET">
+        <input style="height:50px; width:100px;border-right-style: solid;margin-right: -20px;border-right-width: 0px;padding-right: 0px;padding-top: 8px;" type="image" src="/static/receipt-bank-square.png" />
+    </form>
+    </li-->
+
+
+  </ul>
+</nav>
+    
+    
+    <br>
+    <h2 style="text-align: center;color:#055e79">Shared Receipt from {{user.username}}</h2>
+    <hr/>
+    <br>
+    
+    
+    <table>
+        <tr>
+            <th>Receipt Name</th>
+            <th>Total Cost</th>
+            <th>Location</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Photo</th>
+            
+        </tr>
+        
+            <tr>
+                <td>{{ receipt.name }}</td>
+                <td>{{ receipt.total_cost }}</td>
+                <td>{{ receipt.location }}</td>
+                <td>{{ receipt.tag }}</td>
+                <td>{{ receipt.date_created.date() }}</td>
+                <td>
+                {% if receipt.photo_path != "" %}
+                    <body>
+                
+                        <img src={{receipt.photo_path}} width="75" height="75" alt="{{receipt.photo_path}}">
+
+                    </body> 
+                {% else %}
+                <td>{{ "No Photo" }}</td>
+                {% endif %}
+                </td>
+            </tr>
+        
+    </table>
+
+    <table>
+        <tr>
+            
+
+
+        </tr>
+        
+            <tr>
+
+                <td>{{ receipt.content }}</td>
+
+        </tr>
+        
+    </table>
+
+    
+
+</div>
+{% endblock %}
