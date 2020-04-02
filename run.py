@@ -11,6 +11,7 @@ import requests
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 response = requests.get("https://smarteff.herokuapp.com/ListPersons")
+
 response = response.text
 loaded = json.loads(response)
 
