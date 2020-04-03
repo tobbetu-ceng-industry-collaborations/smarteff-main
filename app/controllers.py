@@ -463,6 +463,20 @@ def save_event(log_name):
 
     return resp, 200
 
+# endpoint to save pre-built event file under server
+@app.route("/RetrieveEvent/<log_name>", methods=['GET', 'POST'])
+def retrieve_event(log_name):
+    
+
+    # retrieve file
+    with open('app/saved_events/' + log_name) as json_file:
+        data = json.load(json_file)
+
+    # prepare the response --> assuming everything is OK
+    resp = jsonify(data)
+
+    return resp, 200
+
 # endpoint to request a device turn on/off
 @app.route('/turnOperation/<switch_id>/<int:channel>/<turn>')
 def sendRequest(turn, switch_id, channel):
