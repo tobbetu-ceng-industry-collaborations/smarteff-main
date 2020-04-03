@@ -1,1 +1,82 @@
 01-Apr-20 16:41:06 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 20:13:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 20:13:46 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 20:14:04 - 127.0.0.1 - - [01/Apr/2020 20:14:04] "GET / HTTP/1.1" 404 -
+01-Apr-20 20:14:04 - 127.0.0.1 - - [01/Apr/2020 20:14:04] "GET /ListPersons HTTP/1.1" 200 -
+01-Apr-20 20:14:04 - 127.0.0.1 - - [01/Apr/2020 20:14:04] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+01-Apr-20 20:14:04 - 127.0.0.1 - - [01/Apr/2020 20:14:04] "GET /ListDeviceStatus HTTP/1.1" 200 -
+01-Apr-20 20:14:04 - 127.0.0.1 - - [01/Apr/2020 20:14:04] "GET /simulate HTTP/1.1" 200 -
+01-Apr-20 20:14:26 - 127.0.0.1 - - [01/Apr/2020 20:14:26] "GET /ListPersons HTTP/1.1" 200 -
+01-Apr-20 20:14:26 - 127.0.0.1 - - [01/Apr/2020 20:14:26] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+01-Apr-20 20:14:26 - 127.0.0.1 - - [01/Apr/2020 20:14:26] "GET /ListDeviceStatus HTTP/1.1" 200 -
+01-Apr-20 20:14:26 - 127.0.0.1 - - [01/Apr/2020 20:14:26] "GET /simulate HTTP/1.1" 200 -
+01-Apr-20 20:14:31 - 127.0.0.1 - - [01/Apr/2020 20:14:31] "GET /ListPersons HTTP/1.1" 200 -
+01-Apr-20 20:14:31 - 127.0.0.1 - - [01/Apr/2020 20:14:31] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+01-Apr-20 20:14:31 - 127.0.0.1 - - [01/Apr/2020 20:14:31] "GET /ListDeviceStatus HTTP/1.1" 200 -
+01-Apr-20 20:14:31 - 127.0.0.1 - - [01/Apr/2020 20:14:31] "GET /simulate HTTP/1.1" 200 -
+01-Apr-20 21:18:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:18:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:18:28 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:18:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:18:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:18:48 - 127.0.0.1 - - [01/Apr/2020 21:18:48] "GET /ListPersons HTTP/1.1" 200 -
+01-Apr-20 21:18:48 - 127.0.0.1 - - [01/Apr/2020 21:18:48] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+01-Apr-20 21:18:48 - 127.0.0.1 - - [01/Apr/2020 21:18:48] "GET /ListDeviceStatus HTTP/1.1" 200 -
+01-Apr-20 21:18:48 - 127.0.0.1 - - [01/Apr/2020 21:18:48] "GET /simulate HTTP/1.1" 200 -
+01-Apr-20 21:20:43 - 127.0.0.1 - - [01/Apr/2020 21:20:43] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:20:47 - 127.0.0.1 - - [01/Apr/2020 21:20:47] "GET /ListPersons HTTP/1.1" 200 -
+01-Apr-20 21:20:47 - 127.0.0.1 - - [01/Apr/2020 21:20:47] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+01-Apr-20 21:20:47 - 127.0.0.1 - - [01/Apr/2020 21:20:47] "GET /ListDeviceStatus HTTP/1.1" 200 -
+01-Apr-20 21:20:47 - 127.0.0.1 - - [01/Apr/2020 21:20:47] "GET /simulate HTTP/1.1" 200 -
+01-Apr-20 21:22:14 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:22:14 -  * Restarting with stat
+01-Apr-20 21:22:16 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:22:16 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:22:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:22:23 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:22:28 - 127.0.0.1 - - [01/Apr/2020 21:22:28] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:24:19 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:24:19 -  * Restarting with stat
+01-Apr-20 21:24:29 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:24:47 - 127.0.0.1 - - [01/Apr/2020 21:24:47] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:25:06 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:25:06 -  * Restarting with stat
+01-Apr-20 21:25:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:25:11 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:25:12 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:25:19 - 127.0.0.1 - - [01/Apr/2020 21:25:19] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:25:32 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:25:33 -  * Restarting with stat
+01-Apr-20 21:25:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:25:40 - 127.0.0.1 - - [01/Apr/2020 21:25:40] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:27:26 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:27:26 -  * Restarting with stat
+01-Apr-20 21:27:28 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:27:34 - 127.0.0.1 - - [01/Apr/2020 21:27:34] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:28:16 - 127.0.0.1 - - [01/Apr/2020 21:28:16] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:29:13 - 127.0.0.1 - - [01/Apr/2020 21:29:13] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:30:51 - 127.0.0.1 - - [01/Apr/2020 21:30:51] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:31:47 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:31:47 -  * Restarting with stat
+01-Apr-20 21:31:57 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+01-Apr-20 21:32:16 - 127.0.0.1 - - [01/Apr/2020 21:32:16] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:32:30 - 127.0.0.1 - - [01/Apr/2020 21:32:30] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:34:56 - 127.0.0.1 - - [01/Apr/2020 21:34:56] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:36:04 - 127.0.0.1 - - [01/Apr/2020 21:36:04] "POST /SaveEvent/log3 HTTP/1.1" 400 -
+01-Apr-20 21:38:31 - 127.0.0.1 - - [01/Apr/2020 21:38:31] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:39:06 - 127.0.0.1 - - [01/Apr/2020 21:39:06] "POST /SaveEvent/log3 HTTP/1.1" 200 -
+01-Apr-20 21:39:48 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+01-Apr-20 21:39:48 -  * Restarting with stat
+01-Apr-20 21:39:59 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+03-Apr-20 13:07:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+03-Apr-20 13:07:24 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+03-Apr-20 13:07:43 - 127.0.0.1 - - [03/Apr/2020 13:07:43] "GET / HTTP/1.1" 404 -
+03-Apr-20 13:07:43 - 127.0.0.1 - - [03/Apr/2020 13:07:43] "GET /ListPersons HTTP/1.1" 200 -
+03-Apr-20 13:07:43 - 127.0.0.1 - - [03/Apr/2020 13:07:43] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+03-Apr-20 13:07:43 - 127.0.0.1 - - [03/Apr/2020 13:07:43] "GET /ListDeviceStatus HTTP/1.1" 200 -
+03-Apr-20 13:07:43 - 127.0.0.1 - - [03/Apr/2020 13:07:43] "GET /simulate HTTP/1.1" 200 -
+03-Apr-20 13:07:43 - 127.0.0.1 - - [03/Apr/2020 13:07:43] "GET /favicon.ico HTTP/1.1" 404 -
+03-Apr-20 13:08:09 - 127.0.0.1 - - [03/Apr/2020 13:08:09] "GET /ListPersons HTTP/1.1" 200 -
+03-Apr-20 13:08:09 - 127.0.0.1 - - [03/Apr/2020 13:08:09] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+03-Apr-20 13:08:09 - 127.0.0.1 - - [03/Apr/2020 13:08:09] "GET /ListDeviceStatus HTTP/1.1" 200 -
+03-Apr-20 13:08:09 - 127.0.0.1 - - [03/Apr/2020 13:08:09] "GET /simulate HTTP/1.1" 200 -

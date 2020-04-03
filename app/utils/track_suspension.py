@@ -12,7 +12,7 @@ s = sched.scheduler(time.time, time.sleep)
 def track_susp(dev_id, person_id):
 
 	# make call from test_api
-	os.system(("bash test_api/Heroku/POST/enable_automation.sh " +  str(dev_id) + " " + str(person_id)).format())
+	os.system(("bash test_api/POST/enable_automation.sh " +  str(dev_id) + " " + str(person_id)).format())
 
 # general scheduler
 def schedule(device_id, person_id, until_suspension):
