@@ -3,1087 +3,555 @@
         {
             "name": "Jane",
             "id": 2,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "exit"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "02-04-2020",
-            "time": "00:18:03",
-            "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "02-04-2020",
-            "time": "08:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "02-04-2020",
-            "time": "16:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "02-04-2020",
-            "time": "16:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "02-04-2020",
-            "time": "13:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "02-04-2020",
-            "time": "14:00:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "02-04-2020",
-            "time": "14:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "02-04-2020",
-            "time": "17:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "02-04-2020",
-            "time": "14:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "02-04-2020",
-            "time": "16:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "02-04-2020",
-            "time": "13:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "02-04-2020",
-            "time": "09:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "02-04-2020",
-            "time": "08:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "02-04-2020",
-            "time": "11:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "02-04-2020",
-            "time": "10:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "02-04-2020",
-            "time": "08:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "02-04-2020",
-            "time": "12:00:03",
-            "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "03-04-2020",
-            "time": "18:10:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "03-04-2020",
-            "time": "11:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "03-04-2020",
-            "time": "14:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "03-04-2020",
-            "time": "11:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "03-04-2020",
-            "time": "14:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "03-04-2020",
-            "time": "18:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "03-04-2020",
-            "time": "12:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "03-04-2020",
-            "time": "17:20:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "03-04-2020",
-            "time": "10:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "03-04-2020",
-            "time": "12:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "03-04-2020",
-            "time": "09:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "03-04-2020",
-            "time": "17:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "03-04-2020",
-            "time": "16:20:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "03-04-2020",
-            "time": "09:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "03-04-2020",
-            "time": "16:10:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "03-04-2020",
-            "time": "18:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "03-04-2020",
-            "time": "18:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "04-04-2020",
-            "time": "09:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "04-04-2020",
-            "time": "08:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "04-04-2020",
-            "time": "13:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "04-04-2020",
-            "time": "16:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "04-04-2020",
-            "time": "13:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "04-04-2020",
-            "time": "10:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "04-04-2020",
-            "time": "09:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "04-04-2020",
-            "time": "14:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "04-04-2020",
-            "time": "18:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "04-04-2020",
-            "time": "09:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "04-04-2020",
-            "time": "13:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "04-04-2020",
-            "time": "13:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "04-04-2020",
-            "time": "09:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "04-04-2020",
-            "time": "14:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "04-04-2020",
-            "time": "17:00:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "05-04-2020",
-            "time": "14:20:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "05-04-2020",
-            "time": "10:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "05-04-2020",
-            "time": "09:10:03",
-            "action": "enter"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "05-04-2020",
-            "time": "12:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "05-04-2020",
-            "time": "18:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "05-04-2020",
-            "time": "14:00:03",
-            "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "05-04-2020",
-            "time": "13:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "05-04-2020",
-            "time": "08:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "05-04-2020",
-            "time": "18:20:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "05-04-2020",
-            "time": "09:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "05-04-2020",
-            "time": "18:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "06-04-2020",
-            "time": "09:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "06-04-2020",
-            "time": "08:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "06-04-2020",
-            "time": "09:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "06-04-2020",
-            "time": "08:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "06-04-2020",
-            "time": "08:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "06-04-2020",
-            "time": "10:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "06-04-2020",
-            "time": "12:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "06-04-2020",
-            "time": "13:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "06-04-2020",
-            "time": "18:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "06-04-2020",
-            "time": "14:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "06-04-2020",
-            "time": "10:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "06-04-2020",
-            "time": "13:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "07-04-2020",
-            "time": "14:20:03",
-            "action": "enter"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "07-04-2020",
-            "time": "12:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "07-04-2020",
-            "time": "09:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "07-04-2020",
-            "time": "12:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "07-04-2020",
-            "time": "18:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "07-04-2020",
-            "time": "14:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "07-04-2020",
-            "time": "10:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "07-04-2020",
-            "time": "09:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "07-04-2020",
-            "time": "17:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "07-04-2020",
-            "time": "16:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
             "date": "08-04-2020",
-            "time": "16:00:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "08-04-2020",
-            "time": "09:00:03",
-            "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "08-04-2020",
-            "time": "11:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "08-04-2020",
-            "time": "17:00:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "08-04-2020",
-            "time": "10:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "08-04-2020",
-            "time": "12:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Jane",
-            "id": 2,
-            "date": "08-04-2020",
-            "time": "12:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "08-04-2020",
-            "time": "11:50:03",
+            "time": "11:30:12",
             "action": "exit"
         },
         {
             "name": "Ali",
             "id": 3,
             "date": "08-04-2020",
-            "time": "08:50:03",
+            "time": "11:00:12",
             "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "08-04-2020",
-            "time": "13:10:03",
-            "action": "exit"
         },
         {
             "name": "Ali",
             "id": 3,
             "date": "08-04-2020",
-            "time": "18:20:03",
+            "time": "12:10:12",
+            "action": "exit"
+        },
+        {
+            "name": "Fatma",
+            "id": 6,
+            "date": "08-04-2020",
+            "time": "15:20:12",
             "action": "exit"
         },
         {
             "name": "Jane",
             "id": 2,
             "date": "08-04-2020",
-            "time": "12:30:03",
+            "time": "14:00:12",
             "action": "enter"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "08-04-2020",
+            "time": "14:20:12",
+            "action": "enter"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "08-04-2020",
+            "time": "13:10:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ali",
+            "id": 3,
+            "date": "08-04-2020",
+            "time": "08:20:12",
+            "action": "enter"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "08-04-2020",
+            "time": "17:40:12",
+            "action": "exit"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "08-04-2020",
+            "time": "10:00:12",
+            "action": "enter"
+        },
+        {
+            "name": "Ali",
+            "id": 3,
+            "date": "08-04-2020",
+            "time": "17:00:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "08-04-2020",
+            "time": "12:10:12",
+            "action": "enter"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "08-04-2020",
+            "time": "18:30:12",
+            "action": "enter"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "08-04-2020",
+            "time": "15:50:12",
+            "action": "enter"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "08-04-2020",
+            "time": "10:40:12",
+            "action": "exit"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "08-04-2020",
+            "time": "16:50:12",
+            "action": "exit"
         },
         {
             "name": "Fatma",
             "id": 6,
             "date": "08-04-2020",
-            "time": "10:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "09-04-2020",
-            "time": "13:30:03",
+            "time": "13:30:12",
             "action": "enter"
         },
         {
-            "name": "Fatma",
-            "id": 6,
-            "date": "09-04-2020",
-            "time": "17:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "09-04-2020",
-            "time": "18:20:03",
+            "name": "Ali",
+            "id": 3,
+            "date": "08-04-2020",
+            "time": "10:00:12",
             "action": "enter"
         },
         {
             "name": "John",
             "id": 1,
             "date": "09-04-2020",
-            "time": "18:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "09-04-2020",
-            "time": "17:10:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "09-04-2020",
-            "time": "12:30:03",
+            "time": "11:30:12",
             "action": "enter"
         },
         {
             "name": "Jane",
             "id": 2,
             "date": "09-04-2020",
-            "time": "12:50:03",
+            "time": "17:00:12",
+            "action": "enter"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "09-04-2020",
+            "time": "18:00:12",
             "action": "exit"
         },
         {
             "name": "Ali",
             "id": 3,
             "date": "09-04-2020",
-            "time": "08:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "09-04-2020",
-            "time": "09:10:03",
+            "time": "12:50:12",
             "action": "exit"
         },
         {
-            "name": "Ayşe",
-            "id": 5,
+            "name": "John",
+            "id": 1,
             "date": "09-04-2020",
-            "time": "15:30:03",
+            "time": "14:00:12",
             "action": "exit"
         },
         {
-            "name": "Ayşe",
-            "id": 5,
+            "name": "Jane",
+            "id": 2,
             "date": "09-04-2020",
-            "time": "16:50:03",
+            "time": "17:40:12",
             "action": "enter"
         },
         {
-            "name": "Veli",
-            "id": 4,
+            "name": "John",
+            "id": 1,
             "date": "09-04-2020",
-            "time": "14:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ali",
-            "id": 3,
-            "date": "09-04-2020",
-            "time": "11:00:03",
+            "time": "11:50:12",
             "action": "enter"
         },
         {
             "name": "Fatma",
             "id": 6,
             "date": "09-04-2020",
-            "time": "09:40:03",
+            "time": "11:20:12",
+            "action": "exit"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "12:10:12",
+            "action": "exit"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "10:20:12",
+            "action": "enter"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "09-04-2020",
+            "time": "16:50:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ali",
+            "id": 3,
+            "date": "09-04-2020",
+            "time": "15:40:12",
+            "action": "enter"
+        },
+        {
+            "name": "Ali",
+            "id": 3,
+            "date": "09-04-2020",
+            "time": "14:20:12",
+            "action": "exit"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "09-04-2020",
+            "time": "18:20:12",
+            "action": "exit"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "09-04-2020",
+            "time": "14:30:12",
+            "action": "enter"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "15:40:12",
+            "action": "exit"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "13:00:12",
+            "action": "enter"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "14:00:12",
+            "action": "exit"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "18:30:12",
+            "action": "enter"
+        },
+        {
+            "name": "John",
+            "id": 1,
+            "date": "09-04-2020",
+            "time": "11:30:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "10-04-2020",
+            "time": "14:20:12",
+            "action": "exit"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "10-04-2020",
+            "time": "14:30:12",
             "action": "exit"
         },
         {
             "name": "Jane",
             "id": 2,
             "date": "10-04-2020",
-            "time": "16:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "10-04-2020",
-            "time": "16:40:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "10-04-2020",
-            "time": "16:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "10-04-2020",
-            "time": "12:10:03",
+            "time": "08:50:12",
             "action": "enter"
         },
         {
             "name": "Ali",
             "id": 3,
             "date": "10-04-2020",
-            "time": "17:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "10-04-2020",
-            "time": "10:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "10-04-2020",
-            "time": "17:10:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "10-04-2020",
-            "time": "08:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "10-04-2020",
-            "time": "16:50:03",
+            "time": "15:00:12",
             "action": "enter"
         },
         {
             "name": "Ayşe",
             "id": 5,
             "date": "10-04-2020",
-            "time": "08:30:03",
-            "action": "exit"
+            "time": "16:00:12",
+            "action": "enter"
         },
         {
             "name": "John",
             "id": 1,
             "date": "10-04-2020",
-            "time": "17:30:03",
-            "action": "exit"
+            "time": "18:30:12",
+            "action": "enter"
         },
         {
             "name": "John",
             "id": 1,
             "date": "10-04-2020",
-            "time": "18:20:03",
+            "time": "16:00:12",
+            "action": "exit"
+        },
+        {
+            "name": "Fatma",
+            "id": 6,
+            "date": "10-04-2020",
+            "time": "12:20:12",
+            "action": "enter"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "10-04-2020",
+            "time": "11:00:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ali",
+            "id": 3,
+            "date": "10-04-2020",
+            "time": "16:10:12",
+            "action": "exit"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "10-04-2020",
+            "time": "10:30:12",
             "action": "enter"
         },
         {
             "name": "Ali",
             "id": 3,
             "date": "10-04-2020",
-            "time": "15:00:03",
+            "time": "12:50:12",
             "action": "enter"
         },
         {
-            "name": "Veli",
-            "id": 4,
+            "name": "Ali",
+            "id": 3,
             "date": "10-04-2020",
-            "time": "16:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "10-04-2020",
-            "time": "14:20:03",
+            "time": "16:30:12",
             "action": "exit"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "10-04-2020",
-            "time": "09:40:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "10-04-2020",
-            "time": "14:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "10-04-2020",
-            "time": "12:10:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "10-04-2020",
-            "time": "13:10:03",
-            "action": "enter"
         },
         {
             "name": "Jane",
             "id": 2,
-            "date": "10-04-2020",
-            "time": "18:30:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "10-04-2020",
-            "time": "12:30:03",
-            "action": "enter"
-        },
-        {
-            "name": "Veli",
-            "id": 4,
-            "date": "10-04-2020",
-            "time": "18:50:03",
+            "date": "11-04-2020",
+            "time": "09:20:12",
             "action": "exit"
         },
         {
             "name": "Fatma",
             "id": 6,
             "date": "11-04-2020",
-            "time": "15:50:03",
+            "time": "12:00:12",
+            "action": "exit"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "11-04-2020",
+            "time": "12:40:12",
             "action": "enter"
         },
         {
             "name": "Jane",
             "id": 2,
             "date": "11-04-2020",
-            "time": "13:50:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "11-04-2020",
-            "time": "12:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "11-04-2020",
-            "time": "13:10:03",
-            "action": "enter"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "11-04-2020",
-            "time": "08:50:03",
-            "action": "exit"
-        },
-        {
-            "name": "Fatma",
-            "id": 6,
-            "date": "11-04-2020",
-            "time": "15:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "John",
-            "id": 1,
-            "date": "11-04-2020",
-            "time": "17:00:03",
+            "time": "13:30:12",
             "action": "exit"
         },
         {
             "name": "Veli",
             "id": 4,
             "date": "11-04-2020",
-            "time": "12:50:03",
+            "time": "08:10:12",
             "action": "enter"
         },
         {
-            "name": "Fatma",
-            "id": 6,
+            "name": "Ayşe",
+            "id": 5,
             "date": "11-04-2020",
-            "time": "10:20:03",
+            "time": "16:20:12",
+            "action": "exit"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "11-04-2020",
+            "time": "08:50:12",
+            "action": "enter"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "11-04-2020",
+            "time": "10:20:12",
             "action": "enter"
         },
         {
             "name": "Veli",
             "id": 4,
             "date": "11-04-2020",
-            "time": "18:30:03",
+            "time": "08:00:12",
             "action": "exit"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "11-04-2020",
+            "time": "17:40:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "11-04-2020",
+            "time": "12:00:12",
+            "action": "enter"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "11-04-2020",
+            "time": "16:20:12",
+            "action": "enter"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "11-04-2020",
+            "time": "11:40:12",
+            "action": "exit"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "11-04-2020",
+            "time": "14:30:12",
+            "action": "enter"
         },
         {
             "name": "John",
             "id": 1,
             "date": "11-04-2020",
-            "time": "17:40:03",
+            "time": "08:30:12",
             "action": "enter"
         },
         {
-            "name": "Ayşe",
-            "id": 5,
+            "name": "Ali",
+            "id": 3,
             "date": "11-04-2020",
-            "time": "18:50:03",
+            "time": "13:20:12",
             "action": "enter"
         },
         {
             "name": "John",
             "id": 1,
             "date": "11-04-2020",
-            "time": "14:00:03",
+            "time": "13:30:12",
             "action": "exit"
         },
         {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "11-04-2020",
-            "time": "12:20:03",
-            "action": "exit"
-        },
-        {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "11-04-2020",
-            "time": "14:50:03",
+            "name": "Fatma",
+            "id": 6,
+            "date": "12-04-2020",
+            "time": "14:30:12",
             "action": "enter"
         },
         {
-            "name": "Ayşe",
-            "id": 5,
-            "date": "11-04-2020",
-            "time": "10:00:03",
+            "name": "Jane",
+            "id": 2,
+            "date": "12-04-2020",
+            "time": "18:30:12",
             "action": "exit"
         },
         {
             "name": "John",
             "id": 1,
-            "date": "11-04-2020",
-            "time": "18:30:03",
+            "date": "12-04-2020",
+            "time": "14:40:12",
             "action": "enter"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "12-04-2020",
+            "time": "18:10:12",
+            "action": "exit"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "12-04-2020",
+            "time": "14:30:12",
+            "action": "enter"
+        },
+        {
+            "name": "Ayşe",
+            "id": 5,
+            "date": "12-04-2020",
+            "time": "13:10:12",
+            "action": "exit"
+        },
+        {
+            "name": "Fatma",
+            "id": 6,
+            "date": "12-04-2020",
+            "time": "16:50:12",
+            "action": "exit"
+        },
+        {
+            "name": "Ali",
+            "id": 3,
+            "date": "12-04-2020",
+            "time": "15:50:12",
+            "action": "exit"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "12-04-2020",
+            "time": "09:10:12",
+            "action": "enter"
+        },
+        {
+            "name": "Veli",
+            "id": 4,
+            "date": "12-04-2020",
+            "time": "15:20:12",
+            "action": "exit"
+        },
+        {
+            "name": "Jane",
+            "id": 2,
+            "date": "12-04-2020",
+            "time": "17:50:12",
+            "action": "exit"
         }
     ]
 }

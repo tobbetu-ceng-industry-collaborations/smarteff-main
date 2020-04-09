@@ -1,3 +1,4 @@
+import webbrowser
 import dash
 import datetime
 import dash_core_components as dcc
@@ -9,12 +10,14 @@ import requests
 
 
 
+
+
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 response = requests.get("https://smarteff.herokuapp.com/ListPersons")
 
 response = response.text
 loaded = json.loads(response)
-
+art=0
 allUsers = []
 idSize = []
 idLer=[]
@@ -23,10 +26,11 @@ for p in loaded['people']:
     idLer.append(p['id'])
 
 
+
 hash = dict(zip(allUsers,idLer))
 
 
-print(allUsers[0]+' '+allUsers[1])
+
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 valuee = 'Inside'
@@ -87,7 +91,7 @@ app.layout = html.Div(children=[
                      {'label': 'Show Devices Used By a User', 'value': 4},
                      {'label': 'Turn All Devices On', 'value': 5}
                  ],
-                 value='1',
+                 value='0',
                  style={'width': '50%', 'marginLeft': 300}
                  ),
     html.Button('View The Event Log', id='button1', style={'marginLeft': 550}),
@@ -95,20 +99,14 @@ app.layout = html.Div(children=[
     html.H1(dcc.Input(id='logFileId', type='text', value='Enter here name of Log File'),
             style={'opacity': '1', 'color': 'black', 'fontSize': 15, 'display': 'inline-block'}),
     html.Div(id='output-container-button2', style={'color': 'Black', 'fontSize': 18}),
+    html.Div(id='output-container-button22', style={'color': 'Black', 'fontSize': 18}),
 
     html.Div(children='''
         SELECT USER
     ''', style={'color': 'black', 'fontSize': 20}),
 
     dcc.Dropdown(id='input-box1',
-                 options=[
-                     {'label': 'John', 'value': 'John'},
-                     {'label': 'Jane', 'value': 'Jane'},
-                     {'label': 'Ali', 'value': 'Ali'},
-                     {'label': 'Veli', 'value': 'Veli'},
-                     {'label': 'Ayşe', 'value': 'Ayşe'},
-                     {'label': 'Fatma', 'value': 'Fatma'}
-                 ],
+                 options=[{'label':name, 'value':name} for name in allUsers],
                  value='x',
                  style={'width': '50%'}
                  ),
@@ -127,8 +125,9 @@ app.layout = html.Div(children=[
     ''', style={'color': 'black', 'fontSize': 30, 'marginTop': 50}),
     html.Button('Enter', id='button'),
     html.Button('Exit', id='buttonE', style={'color':'Red','marginLeft': 10}),
-    html.Div(id='output-container-button4', style={'color': 'Black', 'fontSize': 18}),
+    html.Div(id='output-container-button4', style={'color': 'Black', 'fontSize': 18, 'marginLeft:': 30}),
     html.Button('SIMULATE', id='buttonSim', style={'backgroundColor':'Black','color':'Red','marginLeft': 20,'marginTop': 15,'fontSize': 20}),
+
     html.Div(id='output-container-button', style={'color': 'Black', 'fontSize': 18}),
     html.Div(id='output-container-button3', style={'color': 'Black', 'fontSize': 18})
 
@@ -137,13 +136,38 @@ app.layout = html.Div(children=[
 
 
 @app.callback(
+    dash.dependencies.Output('output-container-button22', 'children'),
+    [dash.dependencies.Input('ozellikler', 'value')])
+
+def show_devices(value):
+    temp = ''.format(
+        value
+    )
+
+    if value == 3:
+        webbrowser.open('https://smarteff.herokuapp.com/ShowDeviceStatus', new=2)
+
+
+def turn_all_devices_on(n_clicks, value):    #deniz ile ekleme yapılacak.
+    temp = ''.format(
+        value,
+        n_clicks
+    )
+
+    if value == 5:
+        URL = "https://smarteff.herokuapp.com/ManageDevices"
+        URL = URL
+        requests.post(url=URL)
+
+
+@app.callback(
     dash.dependencies.Output('output-container-button4', 'children'),
     [dash.dependencies.Input('buttonSim', 'n_clicks')],[dash.dependencies.State('input-box1', 'value')])
 
 def simulate_event(n_clicks, value):
-    temp = 'Kullanıcı : "{}" çıkış yaptı. Tarih :'.format(
+    temp = 'SIMULATED '.format(
         value,
-        n_clicks,
+        n_clicks
     )
     global randomId
     global randomDay
@@ -160,6 +184,7 @@ def simulate_event(n_clicks, value):
                     else:
                         if isim in outside:
                             outside.remove(isim)
+
                         inside.append(isim)
                         user.append(isim)
                         idSize.append(hash[isim])
@@ -179,6 +204,7 @@ def simulate_event(n_clicks, value):
                     else:
                         if isim in inside:
                             inside.remove(isim)
+
                         outside.append(isim)
                         user.append(isim)
                         idSize.append(hash[isim])
@@ -193,6 +219,7 @@ def simulate_event(n_clicks, value):
                         action.append(randomAction)
             dayInt=dayInt+1
             randomDay = str(dayInt)
+        return temp
 
 
 
@@ -212,6 +239,7 @@ def enter_event(n_clicks, value, value3, value2):
         n_clicks,
     )
     acti = "enter"
+
     if (value != 'x'):
         if (value in inside):
             a = 2
@@ -220,7 +248,6 @@ def enter_event(n_clicks, value, value3, value2):
                 outside.remove(value)
             inside.append(value)
 
-            # events.append(value+","+dyear+","+dtime+","+acti)
             dyear = value2
             dtime = value3
             user.append(value)
@@ -245,14 +272,14 @@ def exit_event(n_clicks, value, value3, value2):
     )
 
     act = "exit"
+
     if (value != 'x'):
-        if (value in outside):
+        if value in outside:
             a = 2
         else:
             if (value in inside):
                 inside.remove(value)
             outside.append(value)
-            # events.append(value + "," + dyear + "," + dtime + "," + act)
             dyear = value2
             dtime = value3
             user.append(value)
@@ -276,21 +303,19 @@ def update_input(value, n_clicks):
 
 @app.callback(
     dash.dependencies.Output('display-options', 'children'),
-    [dash.dependencies.Input('button1', 'n_clicks')],
-    [dash.dependencies.State('ozellikler', 'value')])
-def update_input2(value, n_clicks):
+    [dash.dependencies.Input('ozellikler', 'value')])
+def update_input2(value):
     global inUsers
     global outUsers
-    for x in inside:
-        inUsers = inUsers + "," + x
 
-    for y in outside:
-        outUsers = outUsers + "," + y
+
+    inUsers = ','.join(inside)
+    outUsers = ','.join(outside)
 
     if value == 1:
-        return "Users Inside:\n" + inUsers
+        return "Users Inside:" + inUsers
     if value == 2:
-        return "Users Outside:\n" + outUsers
+        return "Users Outside:" + outUsers
     if value == 3:
         return ""
     if value == 4:
@@ -332,8 +357,8 @@ def update_backlog(n_clicks, value2,value):
             })
             index=index+1
 
-
-        with open("data.json", 'w', encoding='utf-8') as outfile:
+        logFileName2=logFileName+".json"
+        with open(logFileName2, 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
 
 
