@@ -126,11 +126,13 @@ def person_event_sim():
 
     # change is_inside status according to event
     if event == 'entry':
-        person.is_inside = 1;
+        person.is_inside = 1
+        os.system(("bash test_api/POST/request_device_on.sh " + "1" + " " + str(person.devices[0].device_id)).format())
+        person.devices[0].is_on = 1
         logging.warning('[person_event]A person(id=%s) has entered!', str(person_id))
         db.session.commit()
     elif event == 'exit':
-        person.is_inside = 0;
+        person.is_inside = 0
         logging.warning('[person_event]A person(id=%s) has left!', str(person_id))
         db.session.commit()
 
@@ -147,7 +149,7 @@ def person_event_sim():
             for res in query:
                 assigned_persons.append(res.person_id)
 
-            # check if there is any other person is inside
+            # check if there is any other person i"s inside
             found = False
             for pers in assigned_persons:
                 person2 = Person.query.get_or_404(pers)
@@ -228,7 +230,8 @@ def manage_device():
     # redirect and log according to action
     if action == 'turnon':
 
-        send_request_device("on", device_sonoff_id, device_channel)
+        if device_sonoff_id is not None:
+            send_request_device("on", device_sonoff_id, device_channel)
 
         device.is_on = 1
 
@@ -238,7 +241,8 @@ def manage_device():
 
     elif action == 'turnoff':
 
-        send_request_device("off", device_sonoff_id, device_channel)
+        if device_sonoff_id is not None:
+            send_request_device("off", device_sonoff_id, device_channel)
 
         device.is_on = 0
 

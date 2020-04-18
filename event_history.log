@@ -1,0 +1,52 @@
+04-Apr-20 00:07:48 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+04-Apr-20 00:07:48 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+04-Apr-20 00:08:05 - 127.0.0.1 - - [04/Apr/2020 00:08:05] "GET /ListPersons HTTP/1.1" 200 -
+04-Apr-20 00:08:05 - 127.0.0.1 - - [04/Apr/2020 00:08:05] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+04-Apr-20 00:08:05 - 127.0.0.1 - - [04/Apr/2020 00:08:05] "GET /ListDeviceStatus HTTP/1.1" 200 -
+04-Apr-20 00:08:05 - 127.0.0.1 - - [04/Apr/2020 00:08:05] "GET /simulate HTTP/1.1" 200 -
+04-Apr-20 02:07:43 -  * Detected change in '/home/erhan/smarteff-main/app/controllers.py', reloading
+04-Apr-20 02:07:43 -  * Restarting with stat
+04-Apr-20 02:07:53 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+05-Apr-20 03:31:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+05-Apr-20 03:31:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+05-Apr-20 03:32:30 - 127.0.0.1 - - [05/Apr/2020 03:32:30] "GET /ListDevices/1 HTTP/1.1" 200 -
+05-Apr-20 03:32:33 - [automation_event]A person(id=4) has requested a suspension for the automation of device(id=9) until 2020-04-06-11-29-30!
+05-Apr-20 03:32:33 - 127.0.0.1 - - [05/Apr/2020 03:32:33] "POST /SuspendAutomation HTTP/1.1" 200 -
+05-Apr-20 03:32:38 - 127.0.0.1 - - [05/Apr/2020 03:32:38] "GET /ListDevices/1 HTTP/1.1" 200 -
+05-Apr-20 03:32:52 - 127.0.0.1 - - [05/Apr/2020 03:32:52] "GET /ListDevices/1 HTTP/1.1" 200 -
+05-Apr-20 03:34:34 - 127.0.0.1 - - [05/Apr/2020 03:34:34] "GET /ListDevices/"1" HTTP/1.1" 404 -
+05-Apr-20 03:34:51 - 127.0.0.1 - - [05/Apr/2020 03:34:51] "GET /ListDevices/4 HTTP/1.1" 200 -
+05-Apr-20 03:38:09 - [automation_event]A person(id=4) has requested a suspension for the automation of device(id=8) until 2020-04-06-11-29-40!
+05-Apr-20 03:38:09 - 127.0.0.1 - - [05/Apr/2020 03:38:09] "POST /SuspendAutomation HTTP/1.1" 200 -
+05-Apr-20 03:38:15 - 127.0.0.1 - - [05/Apr/2020 03:38:15] "GET /ListDevices/4 HTTP/1.1" 200 -
+05-Apr-20 03:59:54 - [automation_event]A person(id=4) has enabled automation of device(id=9)
+05-Apr-20 03:59:54 - 127.0.0.1 - - [05/Apr/2020 03:59:54] "POST /EnableAutomation HTTP/1.1" 200 -
+05-Apr-20 03:59:57 - [automation_event]A person(id=4) has enabled automation of device(id=8)
+05-Apr-20 03:59:57 - 127.0.0.1 - - [05/Apr/2020 03:59:57] "POST /EnableAutomation HTTP/1.1" 200 -
+05-Apr-20 04:03:13 - [automation_event]A person(id=4) has requested a suspension for the automation of device(id=8) until 2020-01-29-10-30-00!
+05-Apr-20 04:03:13 - 127.0.0.1 - - [05/Apr/2020 04:03:13] "POST /SuspendAutomation HTTP/1.1" 200 -
+05-Apr-20 04:03:13 - 127.0.0.1 - - [05/Apr/2020 04:03:13] "POST /EnableAutomation HTTP/1.1" 404 -
+05-Apr-20 04:03:37 - [automation_event]A person(id=4) has requested a suspension for the automation of device(id=9) until 2011-01-29-22-22-22!
+05-Apr-20 04:03:37 - 127.0.0.1 - - [05/Apr/2020 04:03:37] "POST /SuspendAutomation HTTP/1.1" 200 -
+05-Apr-20 04:03:37 - 127.0.0.1 - - [05/Apr/2020 04:03:37] "POST /EnableAutomation HTTP/1.1" 404 -
+05-Apr-20 15:51:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+05-Apr-20 15:51:20 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+05-Apr-20 15:53:52 - 127.0.0.1 - - [05/Apr/2020 15:53:52] "POST /HandlePersonEventSim HTTP/1.1" 400 -
+05-Apr-20 15:54:23 - 127.0.0.1 - - [05/Apr/2020 15:54:23] "POST /HandlePersonEventSim HTTP/1.1" 400 -
+05-Apr-20 15:54:41 - 127.0.0.1 - - [05/Apr/2020 15:54:41] "POST /HandlePersonEventSim HTTP/1.1" 400 -
+05-Apr-20 15:54:58 - 127.0.0.1 - - [05/Apr/2020 15:54:58] "POST /HandlePersonEventSim HTTP/1.1" 400 -
+05-Apr-20 15:55:35 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+05-Apr-20 15:55:35 - 127.0.0.1 - - [05/Apr/2020 15:55:35] "POST /ManageDevice HTTP/1.1" 200 -
+05-Apr-20 15:55:35 - [person_event]A person(id=1) has entered!
+05-Apr-20 15:55:35 - 127.0.0.1 - - [05/Apr/2020 15:55:35] "POST /HandlePersonEventSim HTTP/1.1" 200 -
+15-Apr-20 01:51:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+15-Apr-20 01:51:34 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+15-Apr-20 01:51:53 - [person_event]A person(id=1) has left!
+15-Apr-20 01:51:53 - 127.0.0.1 - - [15/Apr/2020 01:51:53] "POST /HandlePersonEvent HTTP/1.1" 200 -
+15-Apr-20 01:52:12 - 127.0.0.1 - - [15/Apr/2020 01:52:12] "POST /ManageDevice HTTP/1.1" 404 -
+15-Apr-20 01:52:25 - 127.0.0.1 - - [15/Apr/2020 01:52:25] "POST /ManageDevice HTTP/1.1" 500 -
+15-Apr-20 01:53:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+15-Apr-20 01:53:14 - 127.0.0.1 - - [15/Apr/2020 01:53:14] "GET /ManageDevices HTTP/1.1" 200 -
+15-Apr-20 01:53:14 - 127.0.0.1 - - [15/Apr/2020 01:53:14] "GET /favicon.ico HTTP/1.1" 404 -
+17-Apr-20 19:11:48 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+17-Apr-20 19:11:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
