@@ -1,3 +1,5 @@
+import os
+import sqlite3
 import webbrowser
 import dash
 import datetime
@@ -29,6 +31,25 @@ for p in loaded['people']:
 
 hash = dict(zip(allUsers,idLer))
 
+
+deneme=[]
+conn = sqlite3.connect('smarteff.db')
+cur = conn.cursor()
+cur.execute("SELECT * FROM person_device")
+rows = cur.fetchall()
+for row in rows:
+    deneme.append(row)
+
+kullanici=[]
+deviceOfKullanici=[]
+
+
+atama=""
+deneme.sort()
+for num, x in enumerate(deneme):
+    for bum, y in enumerate(x):
+        atama=atama+": "+str(y)
+    atama=atama+os.linesep
 
 
 
@@ -87,8 +108,8 @@ app.layout = html.Div(children=[
                  options=[
                      {'label': 'Show Users Inside', 'value': 1},
                      {'label': 'Show Users Outside', 'value': 2},
-                     {'label': 'Show Devices in Use', 'value': 3},
-                     {'label': 'Show Devices Used By a User', 'value': 4},
+                     {'label': 'Show Device Status', 'value': 3},
+                     {'label': 'Show Devices Used By Users', 'value': 4},
                      {'label': 'Turn All Devices On', 'value': 5}
                  ],
                  value='0',
@@ -100,6 +121,7 @@ app.layout = html.Div(children=[
             style={'opacity': '1', 'color': 'black', 'fontSize': 15, 'display': 'inline-block'}),
     html.Div(id='output-container-button2', style={'color': 'Black', 'fontSize': 18}),
     html.Div(id='output-container-button22', style={'color': 'Black', 'fontSize': 18}),
+    html.Div(id='output-container-button222', style={'color': 'Black', 'fontSize': 18}),
 
     html.Div(children='''
         SELECT USER
@@ -133,6 +155,19 @@ app.layout = html.Div(children=[
 
 ]
     , style={'marginBottom': 50, 'marginTop': 25, 'marginLeft': 100})
+
+
+@app.callback(
+    dash.dependencies.Output('output-container-button222', 'children'),
+    [dash.dependencies.Input('ozellikler', 'value')])
+
+def show_devices(value):
+    global deneme
+    temp=deneme
+
+    if value == 4:
+        return temp
+
 
 
 @app.callback(
