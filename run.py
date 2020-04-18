@@ -190,7 +190,7 @@ def turn_all_devices_on(n_clicks, value):    #deniz ile ekleme yapılacak.
     )
 
     if value == 5:
-        URL = http://127.0.0.1:5000/TurnOnAllDevices
+        URL = "http://127.0.0.1:5000/TurnOnAllDevices"
         URL = URL
         requests.post(url=URL)
 
