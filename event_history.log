@@ -50,3 +50,876 @@
 15-Apr-20 01:53:14 - 127.0.0.1 - - [15/Apr/2020 01:53:14] "GET /favicon.ico HTTP/1.1" 404 -
 17-Apr-20 19:11:48 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
 17-Apr-20 19:11:50 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:01:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:01:41 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:01:46 - 127.0.0.1 - - [19/Apr/2020 02:01:46] "GET / HTTP/1.1" 404 -
+19-Apr-20 02:01:46 - 127.0.0.1 - - [19/Apr/2020 02:01:46] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:01:46 - 127.0.0.1 - - [19/Apr/2020 02:01:46] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:01:46 - 127.0.0.1 - - [19/Apr/2020 02:01:46] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:01:46 - 127.0.0.1 - - [19/Apr/2020 02:01:46] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:01:53 - 127.0.0.1 - - [19/Apr/2020 02:01:53] "GET /RetrieveEvent/eventlog.json HTTP/1.1" 200 -
+19-Apr-20 02:02:00 - [request_event]A person(id=1) has requested a device(id=2) to be turned on!
+19-Apr-20 02:02:00 - 127.0.0.1 - - [19/Apr/2020 02:02:00] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:00 - [person_event]A person(id=2) has entered!
+19-Apr-20 02:02:00 - 127.0.0.1 - - [19/Apr/2020 02:02:00] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:00 - 127.0.0.1 - - [19/Apr/2020 02:02:00] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:00 - 127.0.0.1 - - [19/Apr/2020 02:02:00] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:00 - 127.0.0.1 - - [19/Apr/2020 02:02:00] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:00 - 127.0.0.1 - - [19/Apr/2020 02:02:00] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:08 - [request_event]A person(id=1) has requested a device(id=3) to be turned on!
+19-Apr-20 02:02:08 - 127.0.0.1 - - [19/Apr/2020 02:02:08] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:08 - [person_event]A person(id=3) has entered!
+19-Apr-20 02:02:08 - 127.0.0.1 - - [19/Apr/2020 02:02:08] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:08 - 127.0.0.1 - - [19/Apr/2020 02:02:08] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:08 - 127.0.0.1 - - [19/Apr/2020 02:02:08] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:08 - 127.0.0.1 - - [19/Apr/2020 02:02:08] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:08 - 127.0.0.1 - - [19/Apr/2020 02:02:08] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:17 - [request_event]A person(id=1) has requested a device(id=5) to be turned on!
+19-Apr-20 02:02:17 - 127.0.0.1 - - [19/Apr/2020 02:02:17] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:17 - [person_event]A person(id=5) has entered!
+19-Apr-20 02:02:17 - 127.0.0.1 - - [19/Apr/2020 02:02:17] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:17 - 127.0.0.1 - - [19/Apr/2020 02:02:17] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:17 - 127.0.0.1 - - [19/Apr/2020 02:02:17] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:17 - 127.0.0.1 - - [19/Apr/2020 02:02:17] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:17 - 127.0.0.1 - - [19/Apr/2020 02:02:17] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:24 - [person_event]A person(id=5) has left!
+19-Apr-20 02:02:25 - 127.0.0.1 - - [19/Apr/2020 02:02:25] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:25 - 127.0.0.1 - - [19/Apr/2020 02:02:25] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:25 - 127.0.0.1 - - [19/Apr/2020 02:02:25] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:25 - 127.0.0.1 - - [19/Apr/2020 02:02:25] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:25 - 127.0.0.1 - - [19/Apr/2020 02:02:25] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:28 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+19-Apr-20 02:02:28 - 127.0.0.1 - - [19/Apr/2020 02:02:28] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:28 - [device_event]A device(id=5) has turned off!
+19-Apr-20 02:02:28 - 127.0.0.1 - - [19/Apr/2020 02:02:28] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:02:28 - 127.0.0.1 - - [19/Apr/2020 02:02:28] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:02:35 - [request_event]A person(id=1) has requested a device(id=6) to be turned on!
+19-Apr-20 02:02:35 - 127.0.0.1 - - [19/Apr/2020 02:02:35] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:35 - [person_event]A person(id=6) has entered!
+19-Apr-20 02:02:35 - 127.0.0.1 - - [19/Apr/2020 02:02:35] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:35 - 127.0.0.1 - - [19/Apr/2020 02:02:35] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:35 - 127.0.0.1 - - [19/Apr/2020 02:02:35] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:35 - 127.0.0.1 - - [19/Apr/2020 02:02:35] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:35 - 127.0.0.1 - - [19/Apr/2020 02:02:35] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:45 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+19-Apr-20 02:02:45 - 127.0.0.1 - - [19/Apr/2020 02:02:45] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:45 - [person_event]A person(id=1) has entered!
+19-Apr-20 02:02:45 - 127.0.0.1 - - [19/Apr/2020 02:02:45] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:45 - 127.0.0.1 - - [19/Apr/2020 02:02:45] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:45 - 127.0.0.1 - - [19/Apr/2020 02:02:45] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:45 - 127.0.0.1 - - [19/Apr/2020 02:02:45] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:45 - 127.0.0.1 - - [19/Apr/2020 02:02:45] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:52 - [person_event]A person(id=1) has left!
+19-Apr-20 02:02:52 - 127.0.0.1 - - [19/Apr/2020 02:02:52] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:02:52 - 127.0.0.1 - - [19/Apr/2020 02:02:52] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:02:52 - 127.0.0.1 - - [19/Apr/2020 02:02:52] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:02:52 - 127.0.0.1 - - [19/Apr/2020 02:02:52] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:02:52 - 127.0.0.1 - - [19/Apr/2020 02:02:52] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:02:55 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+19-Apr-20 02:02:55 - 127.0.0.1 - - [19/Apr/2020 02:02:55] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:02:56 - [device_event]A device(id=1) has turned off!
+19-Apr-20 02:02:56 - 127.0.0.1 - - [19/Apr/2020 02:02:56] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:02:56 - 127.0.0.1 - - [19/Apr/2020 02:02:56] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:03:01 - [person_event]A person(id=2) has left!
+19-Apr-20 02:03:01 - 127.0.0.1 - - [19/Apr/2020 02:03:01] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:03:01 - 127.0.0.1 - - [19/Apr/2020 02:03:01] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:03:01 - 127.0.0.1 - - [19/Apr/2020 02:03:01] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:03:01 - 127.0.0.1 - - [19/Apr/2020 02:03:01] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:03:01 - 127.0.0.1 - - [19/Apr/2020 02:03:01] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:03:05 - [request_event]A person(id=1) has requested a device(id=7) to be turned off!
+19-Apr-20 02:03:05 - 127.0.0.1 - - [19/Apr/2020 02:03:05] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:03:05 - [device_event]A device(id=7) has turned off!
+19-Apr-20 02:03:05 - 127.0.0.1 - - [19/Apr/2020 02:03:05] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:03:05 - 127.0.0.1 - - [19/Apr/2020 02:03:05] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 02:03:05 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+19-Apr-20 02:03:05 - 127.0.0.1 - - [19/Apr/2020 02:03:05] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:03:05 - [device_event]A device(id=2) has turned off!
+19-Apr-20 02:03:05 - 127.0.0.1 - - [19/Apr/2020 02:03:05] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:03:05 - 127.0.0.1 - - [19/Apr/2020 02:03:05] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:03:10 - [person_event]A person(id=4) has left!
+19-Apr-20 02:03:10 - 127.0.0.1 - - [19/Apr/2020 02:03:10] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:03:10 - 127.0.0.1 - - [19/Apr/2020 02:03:10] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:03:10 - 127.0.0.1 - - [19/Apr/2020 02:03:10] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:03:10 - 127.0.0.1 - - [19/Apr/2020 02:03:10] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:03:10 - 127.0.0.1 - - [19/Apr/2020 02:03:10] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:03:14 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+19-Apr-20 02:03:14 - 127.0.0.1 - - [19/Apr/2020 02:03:14] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:03:14 - [device_event]A device(id=4) has turned off!
+19-Apr-20 02:03:14 - 127.0.0.1 - - [19/Apr/2020 02:03:14] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:03:14 - 127.0.0.1 - - [19/Apr/2020 02:03:14] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:04:07 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:04:08 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:04:12 - 127.0.0.1 - - [19/Apr/2020 02:04:12] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:12 - 127.0.0.1 - - [19/Apr/2020 02:04:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:12 - 127.0.0.1 - - [19/Apr/2020 02:04:12] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:12 - 127.0.0.1 - - [19/Apr/2020 02:04:12] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:16 - 127.0.0.1 - - [19/Apr/2020 02:04:16] "GET /RetrieveEvent/eventlog.json HTTP/1.1" 200 -
+19-Apr-20 02:04:30 - 127.0.0.1 - - [19/Apr/2020 02:04:30] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:30 - 127.0.0.1 - - [19/Apr/2020 02:04:30] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:30 - 127.0.0.1 - - [19/Apr/2020 02:04:30] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:30 - 127.0.0.1 - - [19/Apr/2020 02:04:30] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:31 - [request_event]A person(id=1) has requested a device(id=3) to be turned on!
+19-Apr-20 02:04:31 - 127.0.0.1 - - [19/Apr/2020 02:04:31] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:04:31 - [person_event]A person(id=3) has entered!
+19-Apr-20 02:04:31 - 127.0.0.1 - - [19/Apr/2020 02:04:31] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:04:31 - 127.0.0.1 - - [19/Apr/2020 02:04:31] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:32 - 127.0.0.1 - - [19/Apr/2020 02:04:32] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:32 - 127.0.0.1 - - [19/Apr/2020 02:04:32] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:32 - 127.0.0.1 - - [19/Apr/2020 02:04:32] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:33 - 127.0.0.1 - - [19/Apr/2020 02:04:33] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:04:33 - [person_event]A person(id=2) has entered!
+19-Apr-20 02:04:33 - 127.0.0.1 - - [19/Apr/2020 02:04:33] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:04:33 - 127.0.0.1 - - [19/Apr/2020 02:04:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:33 - 127.0.0.1 - - [19/Apr/2020 02:04:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:33 - 127.0.0.1 - - [19/Apr/2020 02:04:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:33 - 127.0.0.1 - - [19/Apr/2020 02:04:33] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:39 - 127.0.0.1 - - [19/Apr/2020 02:04:39] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:39 - 127.0.0.1 - - [19/Apr/2020 02:04:39] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:39 - 127.0.0.1 - - [19/Apr/2020 02:04:39] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:39 - 127.0.0.1 - - [19/Apr/2020 02:04:39] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:45 - 127.0.0.1 - - [19/Apr/2020 02:04:45] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:04:45 - [person_event]A person(id=5) has entered!
+19-Apr-20 02:04:46 - 127.0.0.1 - - [19/Apr/2020 02:04:46] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:04:46 - 127.0.0.1 - - [19/Apr/2020 02:04:46] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:46 - 127.0.0.1 - - [19/Apr/2020 02:04:46] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:46 - 127.0.0.1 - - [19/Apr/2020 02:04:46] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:46 - 127.0.0.1 - - [19/Apr/2020 02:04:46] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - [person_event]A person(id=5) has left!
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:48 - 127.0.0.1 - - [19/Apr/2020 02:04:48] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:52 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+19-Apr-20 02:04:52 - 127.0.0.1 - - [19/Apr/2020 02:04:52] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:04:52 - [device_event]A device(id=5) has turned off!
+19-Apr-20 02:04:52 - 127.0.0.1 - - [19/Apr/2020 02:04:52] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:04:52 - 127.0.0.1 - - [19/Apr/2020 02:04:52] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:04:57 - 127.0.0.1 - - [19/Apr/2020 02:04:57] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:57 - 127.0.0.1 - - [19/Apr/2020 02:04:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:57 - 127.0.0.1 - - [19/Apr/2020 02:04:57] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:57 - 127.0.0.1 - - [19/Apr/2020 02:04:57] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:04:59 - [request_event]A person(id=1) has requested a device(id=6) to be turned on!
+19-Apr-20 02:04:59 - 127.0.0.1 - - [19/Apr/2020 02:04:59] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:04:59 - [person_event]A person(id=6) has entered!
+19-Apr-20 02:04:59 - 127.0.0.1 - - [19/Apr/2020 02:04:59] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:04:59 - 127.0.0.1 - - [19/Apr/2020 02:04:59] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:04:59 - 127.0.0.1 - - [19/Apr/2020 02:04:59] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:04:59 - 127.0.0.1 - - [19/Apr/2020 02:04:59] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:04:59 - 127.0.0.1 - - [19/Apr/2020 02:04:59] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:06 - 127.0.0.1 - - [19/Apr/2020 02:05:06] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:06 - 127.0.0.1 - - [19/Apr/2020 02:05:06] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:06 - 127.0.0.1 - - [19/Apr/2020 02:05:06] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:06 - 127.0.0.1 - - [19/Apr/2020 02:05:06] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:14 - 127.0.0.1 - - [19/Apr/2020 02:05:14] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:05:14 - [person_event]A person(id=1) has entered!
+19-Apr-20 02:05:14 - 127.0.0.1 - - [19/Apr/2020 02:05:14] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:05:14 - 127.0.0.1 - - [19/Apr/2020 02:05:14] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:14 - 127.0.0.1 - - [19/Apr/2020 02:05:14] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:14 - 127.0.0.1 - - [19/Apr/2020 02:05:14] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:14 - 127.0.0.1 - - [19/Apr/2020 02:05:14] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - [person_event]A person(id=1) has left!
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:15 - 127.0.0.1 - - [19/Apr/2020 02:05:15] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:19 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+19-Apr-20 02:05:19 - 127.0.0.1 - - [19/Apr/2020 02:05:19] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:05:19 - [device_event]A device(id=1) has turned off!
+19-Apr-20 02:05:19 - 127.0.0.1 - - [19/Apr/2020 02:05:19] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:05:19 - 127.0.0.1 - - [19/Apr/2020 02:05:19] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - [person_event]A person(id=2) has left!
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:24 - 127.0.0.1 - - [19/Apr/2020 02:05:24] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:29 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+19-Apr-20 02:05:29 - 127.0.0.1 - - [19/Apr/2020 02:05:29] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:05:29 - 127.0.0.1 - - [19/Apr/2020 02:05:29] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:05:29 - [device_event]A device(id=2) has turned off!
+19-Apr-20 02:05:29 - 127.0.0.1 - - [19/Apr/2020 02:05:29] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:05:29 - [device_event]A device(id=7) has turned off!
+19-Apr-20 02:05:29 - 127.0.0.1 - - [19/Apr/2020 02:05:29] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:05:29 - 127.0.0.1 - - [19/Apr/2020 02:05:29] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:05:29 - 127.0.0.1 - - [19/Apr/2020 02:05:29] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - [person_event]A person(id=4) has left!
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:33 - 127.0.0.1 - - [19/Apr/2020 02:05:33] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:37 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+19-Apr-20 02:05:37 - 127.0.0.1 - - [19/Apr/2020 02:05:37] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 02:05:37 - [device_event]A device(id=4) has turned off!
+19-Apr-20 02:05:37 - 127.0.0.1 - - [19/Apr/2020 02:05:37] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:05:37 - 127.0.0.1 - - [19/Apr/2020 02:05:37] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:05:42 - 127.0.0.1 - - [19/Apr/2020 02:05:42] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:42 - 127.0.0.1 - - [19/Apr/2020 02:05:42] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:42 - 127.0.0.1 - - [19/Apr/2020 02:05:42] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:42 - 127.0.0.1 - - [19/Apr/2020 02:05:42] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:49 - 127.0.0.1 - - [19/Apr/2020 02:05:49] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:05:49 - [person_event]A person(id=2) has entered!
+19-Apr-20 02:05:49 - 127.0.0.1 - - [19/Apr/2020 02:05:49] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:05:49 - 127.0.0.1 - - [19/Apr/2020 02:05:49] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:49 - 127.0.0.1 - - [19/Apr/2020 02:05:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:49 - 127.0.0.1 - - [19/Apr/2020 02:05:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:49 - 127.0.0.1 - - [19/Apr/2020 02:05:49] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:51 - 127.0.0.1 - - [19/Apr/2020 02:05:51] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:51 - 127.0.0.1 - - [19/Apr/2020 02:05:51] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:51 - 127.0.0.1 - - [19/Apr/2020 02:05:51] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:51 - 127.0.0.1 - - [19/Apr/2020 02:05:51] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:54 - 127.0.0.1 - - [19/Apr/2020 02:05:54] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:05:54 - 127.0.0.1 - - [19/Apr/2020 02:05:54] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:05:54 - 127.0.0.1 - - [19/Apr/2020 02:05:54] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:05:54 - 127.0.0.1 - - [19/Apr/2020 02:05:54] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:05:58 - 127.0.0.1 - - [19/Apr/2020 02:05:58] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:05:58 - [person_event]A person(id=5) has entered!
+19-Apr-20 02:05:58 - 127.0.0.1 - - [19/Apr/2020 02:05:58] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:09:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:09:51 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 02:09:58 - 127.0.0.1 - - [19/Apr/2020 02:09:58] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:09:58 - 127.0.0.1 - - [19/Apr/2020 02:09:58] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:09:58 - 127.0.0.1 - - [19/Apr/2020 02:09:58] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:09:58 - 127.0.0.1 - - [19/Apr/2020 02:09:58] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:10:17 - 127.0.0.1 - - [19/Apr/2020 02:10:17] "GET /RetrieveEvent/eventlog.json HTTP/1.1" 200 -
+19-Apr-20 02:10:22 - 127.0.0.1 - - [19/Apr/2020 02:10:22] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:10:22 - [person_event]A person(id=2) has entered!
+19-Apr-20 02:10:22 - 127.0.0.1 - - [19/Apr/2020 02:10:22] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:10:22 - 127.0.0.1 - - [19/Apr/2020 02:10:22] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:10:22 - 127.0.0.1 - - [19/Apr/2020 02:10:22] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:10:22 - 127.0.0.1 - - [19/Apr/2020 02:10:22] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:10:22 - 127.0.0.1 - - [19/Apr/2020 02:10:22] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:10:30 - 127.0.0.1 - - [19/Apr/2020 02:10:30] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:10:30 - [person_event]A person(id=3) has entered!
+19-Apr-20 02:10:30 - 127.0.0.1 - - [19/Apr/2020 02:10:30] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:10:30 - 127.0.0.1 - - [19/Apr/2020 02:10:30] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:10:30 - 127.0.0.1 - - [19/Apr/2020 02:10:30] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:10:30 - 127.0.0.1 - - [19/Apr/2020 02:10:30] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:10:30 - 127.0.0.1 - - [19/Apr/2020 02:10:30] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:10:39 - 127.0.0.1 - - [19/Apr/2020 02:10:39] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:10:39 - [person_event]A person(id=5) has entered!
+19-Apr-20 02:10:39 - 127.0.0.1 - - [19/Apr/2020 02:10:39] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:10:39 - 127.0.0.1 - - [19/Apr/2020 02:10:39] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:10:39 - 127.0.0.1 - - [19/Apr/2020 02:10:39] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:10:39 - 127.0.0.1 - - [19/Apr/2020 02:10:39] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:10:39 - 127.0.0.1 - - [19/Apr/2020 02:10:39] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:10:48 - [person_event]A person(id=5) has left!
+19-Apr-20 02:10:48 - 127.0.0.1 - - [19/Apr/2020 02:10:48] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:10:48 - 127.0.0.1 - - [19/Apr/2020 02:10:48] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:10:48 - 127.0.0.1 - - [19/Apr/2020 02:10:48] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:10:48 - 127.0.0.1 - - [19/Apr/2020 02:10:48] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:10:48 - 127.0.0.1 - - [19/Apr/2020 02:10:48] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:10:50 - 127.0.0.1 - - [19/Apr/2020 02:10:50] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:10:50 - [device_event]A device(id=5) has turned off!
+19-Apr-20 02:10:50 - 127.0.0.1 - - [19/Apr/2020 02:10:50] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:10:50 - 127.0.0.1 - - [19/Apr/2020 02:10:50] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:10:57 - 127.0.0.1 - - [19/Apr/2020 02:10:57] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:10:57 - [person_event]A person(id=6) has entered!
+19-Apr-20 02:10:57 - 127.0.0.1 - - [19/Apr/2020 02:10:57] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:10:57 - 127.0.0.1 - - [19/Apr/2020 02:10:57] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:10:57 - 127.0.0.1 - - [19/Apr/2020 02:10:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:10:57 - 127.0.0.1 - - [19/Apr/2020 02:10:57] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:10:57 - 127.0.0.1 - - [19/Apr/2020 02:10:57] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:11:06 - 127.0.0.1 - - [19/Apr/2020 02:11:06] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:11:06 - [person_event]A person(id=1) has entered!
+19-Apr-20 02:11:06 - 127.0.0.1 - - [19/Apr/2020 02:11:06] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:11:06 - 127.0.0.1 - - [19/Apr/2020 02:11:06] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:11:06 - 127.0.0.1 - - [19/Apr/2020 02:11:06] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:11:06 - 127.0.0.1 - - [19/Apr/2020 02:11:06] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:11:06 - 127.0.0.1 - - [19/Apr/2020 02:11:06] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:11:15 - [person_event]A person(id=1) has left!
+19-Apr-20 02:11:15 - 127.0.0.1 - - [19/Apr/2020 02:11:15] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:11:15 - 127.0.0.1 - - [19/Apr/2020 02:11:15] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:11:15 - 127.0.0.1 - - [19/Apr/2020 02:11:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:11:15 - 127.0.0.1 - - [19/Apr/2020 02:11:15] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:11:15 - 127.0.0.1 - - [19/Apr/2020 02:11:15] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:11:17 - 127.0.0.1 - - [19/Apr/2020 02:11:17] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:11:17 - [device_event]A device(id=1) has turned off!
+19-Apr-20 02:11:17 - 127.0.0.1 - - [19/Apr/2020 02:11:17] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:11:17 - 127.0.0.1 - - [19/Apr/2020 02:11:17] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:11:24 - [person_event]A person(id=2) has left!
+19-Apr-20 02:11:24 - 127.0.0.1 - - [19/Apr/2020 02:11:24] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:11:24 - 127.0.0.1 - - [19/Apr/2020 02:11:24] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:11:24 - 127.0.0.1 - - [19/Apr/2020 02:11:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:11:24 - 127.0.0.1 - - [19/Apr/2020 02:11:24] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:11:24 - 127.0.0.1 - - [19/Apr/2020 02:11:24] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:11:26 - 127.0.0.1 - - [19/Apr/2020 02:11:26] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:11:26 - 127.0.0.1 - - [19/Apr/2020 02:11:26] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:11:26 - [device_event]A device(id=2) has turned off!
+19-Apr-20 02:11:26 - 127.0.0.1 - - [19/Apr/2020 02:11:26] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:11:26 - [device_event]A device(id=7) has turned off!
+19-Apr-20 02:11:26 - 127.0.0.1 - - [19/Apr/2020 02:11:26] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:11:26 - 127.0.0.1 - - [19/Apr/2020 02:11:26] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 02:11:26 - 127.0.0.1 - - [19/Apr/2020 02:11:26] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 02:11:33 - [person_event]A person(id=4) has left!
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 02:11:33 - 127.0.0.1 - - [19/Apr/2020 02:11:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 02:11:34 - 127.0.0.1 - - [19/Apr/2020 02:11:34] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 02:11:34 - 127.0.0.1 - - [19/Apr/2020 02:11:34] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 02:11:35 - 127.0.0.1 - - [19/Apr/2020 02:11:35] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 02:11:35 - [device_event]A device(id=4) has turned off!
+19-Apr-20 02:11:35 - 127.0.0.1 - - [19/Apr/2020 02:11:35] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 02:11:35 - 127.0.0.1 - - [19/Apr/2020 02:11:35] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:20:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 04:20:22 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 04:20:27 - 127.0.0.1 - - [19/Apr/2020 04:20:27] "GET / HTTP/1.1" 404 -
+19-Apr-20 04:20:29 - 127.0.0.1 - - [19/Apr/2020 04:20:29] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:20:29 - 127.0.0.1 - - [19/Apr/2020 04:20:29] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:20:29 - 127.0.0.1 - - [19/Apr/2020 04:20:29] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:20:29 - 127.0.0.1 - - [19/Apr/2020 04:20:29] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:20:35 - 127.0.0.1 - - [19/Apr/2020 04:20:35] "GET /RetrieveEvent/eventlog.json HTTP/1.1" 200 -
+19-Apr-20 04:20:46 - 127.0.0.1 - - [19/Apr/2020 04:20:46] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:20:46 - [person_event]A person(id=2) has entered!
+19-Apr-20 04:20:46 - 127.0.0.1 - - [19/Apr/2020 04:20:46] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:20:46 - 127.0.0.1 - - [19/Apr/2020 04:20:46] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:20:46 - 127.0.0.1 - - [19/Apr/2020 04:20:46] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:20:46 - 127.0.0.1 - - [19/Apr/2020 04:20:46] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:20:46 - 127.0.0.1 - - [19/Apr/2020 04:20:46] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:20:48 - 127.0.0.1 - - [19/Apr/2020 04:20:48] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:20:48 - 127.0.0.1 - - [19/Apr/2020 04:20:48] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:20:48 - 127.0.0.1 - - [19/Apr/2020 04:20:48] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:20:48 - 127.0.0.1 - - [19/Apr/2020 04:20:48] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:20:49 - [request_event]A person(id=1) has requested a device(id=3) to be turned on!
+19-Apr-20 04:20:49 - 127.0.0.1 - - [19/Apr/2020 04:20:49] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:20:49 - [person_event]A person(id=3) has entered!
+19-Apr-20 04:20:49 - 127.0.0.1 - - [19/Apr/2020 04:20:49] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:20:49 - 127.0.0.1 - - [19/Apr/2020 04:20:49] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:20:49 - 127.0.0.1 - - [19/Apr/2020 04:20:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:20:49 - 127.0.0.1 - - [19/Apr/2020 04:20:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:20:49 - 127.0.0.1 - - [19/Apr/2020 04:20:49] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:20:57 - 127.0.0.1 - - [19/Apr/2020 04:20:57] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:20:57 - 127.0.0.1 - - [19/Apr/2020 04:20:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:20:57 - 127.0.0.1 - - [19/Apr/2020 04:20:57] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:20:57 - 127.0.0.1 - - [19/Apr/2020 04:20:57] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:03 - 127.0.0.1 - - [19/Apr/2020 04:21:03] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:21:03 - [person_event]A person(id=5) has entered!
+19-Apr-20 04:21:03 - 127.0.0.1 - - [19/Apr/2020 04:21:03] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:03 - 127.0.0.1 - - [19/Apr/2020 04:21:03] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:03 - 127.0.0.1 - - [19/Apr/2020 04:21:03] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:03 - 127.0.0.1 - - [19/Apr/2020 04:21:03] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:03 - 127.0.0.1 - - [19/Apr/2020 04:21:03] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - [person_event]A person(id=5) has left!
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:06 - 127.0.0.1 - - [19/Apr/2020 04:21:06] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:09 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+19-Apr-20 04:21:09 - 127.0.0.1 - - [19/Apr/2020 04:21:09] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:21:09 - [device_event]A device(id=5) has turned off!
+19-Apr-20 04:21:09 - 127.0.0.1 - - [19/Apr/2020 04:21:09] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:21:09 - 127.0.0.1 - - [19/Apr/2020 04:21:09] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:21:15 - 127.0.0.1 - - [19/Apr/2020 04:21:15] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:15 - 127.0.0.1 - - [19/Apr/2020 04:21:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:15 - 127.0.0.1 - - [19/Apr/2020 04:21:15] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:15 - 127.0.0.1 - - [19/Apr/2020 04:21:15] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:16 - [request_event]A person(id=1) has requested a device(id=6) to be turned on!
+19-Apr-20 04:21:16 - 127.0.0.1 - - [19/Apr/2020 04:21:16] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:21:16 - [person_event]A person(id=6) has entered!
+19-Apr-20 04:21:16 - 127.0.0.1 - - [19/Apr/2020 04:21:16] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:16 - 127.0.0.1 - - [19/Apr/2020 04:21:16] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:16 - 127.0.0.1 - - [19/Apr/2020 04:21:16] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:16 - 127.0.0.1 - - [19/Apr/2020 04:21:16] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:16 - 127.0.0.1 - - [19/Apr/2020 04:21:16] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:24 - 127.0.0.1 - - [19/Apr/2020 04:21:24] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:24 - 127.0.0.1 - - [19/Apr/2020 04:21:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:24 - 127.0.0.1 - - [19/Apr/2020 04:21:24] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:24 - 127.0.0.1 - - [19/Apr/2020 04:21:24] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:30 - 127.0.0.1 - - [19/Apr/2020 04:21:30] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:21:30 - [person_event]A person(id=1) has entered!
+19-Apr-20 04:21:30 - 127.0.0.1 - - [19/Apr/2020 04:21:30] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:30 - 127.0.0.1 - - [19/Apr/2020 04:21:30] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:30 - 127.0.0.1 - - [19/Apr/2020 04:21:30] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:30 - 127.0.0.1 - - [19/Apr/2020 04:21:30] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:30 - 127.0.0.1 - - [19/Apr/2020 04:21:30] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - [person_event]A person(id=1) has left!
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:33 - 127.0.0.1 - - [19/Apr/2020 04:21:33] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:36 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+19-Apr-20 04:21:36 - 127.0.0.1 - - [19/Apr/2020 04:21:36] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:21:36 - [device_event]A device(id=1) has turned off!
+19-Apr-20 04:21:36 - 127.0.0.1 - - [19/Apr/2020 04:21:36] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:21:36 - 127.0.0.1 - - [19/Apr/2020 04:21:36] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - [person_event]A person(id=2) has left!
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:42 - 127.0.0.1 - - [19/Apr/2020 04:21:42] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:45 - [request_event]A person(id=1) has requested a device(id=7) to be turned off!
+19-Apr-20 04:21:45 - 127.0.0.1 - - [19/Apr/2020 04:21:45] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:21:45 - [device_event]A device(id=7) has turned off!
+19-Apr-20 04:21:45 - 127.0.0.1 - - [19/Apr/2020 04:21:45] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:21:45 - 127.0.0.1 - - [19/Apr/2020 04:21:45] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 04:21:45 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+19-Apr-20 04:21:45 - 127.0.0.1 - - [19/Apr/2020 04:21:45] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:21:45 - [device_event]A device(id=2) has turned off!
+19-Apr-20 04:21:45 - 127.0.0.1 - - [19/Apr/2020 04:21:45] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:21:46 - 127.0.0.1 - - [19/Apr/2020 04:21:46] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - [person_event]A person(id=4) has left!
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:21:51 - 127.0.0.1 - - [19/Apr/2020 04:21:51] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:21:54 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+19-Apr-20 04:21:54 - 127.0.0.1 - - [19/Apr/2020 04:21:54] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:21:55 - [device_event]A device(id=4) has turned off!
+19-Apr-20 04:21:55 - 127.0.0.1 - - [19/Apr/2020 04:21:55] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:21:55 - 127.0.0.1 - - [19/Apr/2020 04:21:55] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:22:00 - 127.0.0.1 - - [19/Apr/2020 04:22:00] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:00 - 127.0.0.1 - - [19/Apr/2020 04:22:00] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:00 - 127.0.0.1 - - [19/Apr/2020 04:22:00] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:00 - 127.0.0.1 - - [19/Apr/2020 04:22:00] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:06 - 127.0.0.1 - - [19/Apr/2020 04:22:06] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:22:06 - [person_event]A person(id=2) has entered!
+19-Apr-20 04:22:06 - 127.0.0.1 - - [19/Apr/2020 04:22:06] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:07 - 127.0.0.1 - - [19/Apr/2020 04:22:07] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:07 - 127.0.0.1 - - [19/Apr/2020 04:22:07] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:07 - 127.0.0.1 - - [19/Apr/2020 04:22:07] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:07 - 127.0.0.1 - - [19/Apr/2020 04:22:07] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:09 - 127.0.0.1 - - [19/Apr/2020 04:22:09] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:09 - 127.0.0.1 - - [19/Apr/2020 04:22:09] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:09 - 127.0.0.1 - - [19/Apr/2020 04:22:09] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:09 - 127.0.0.1 - - [19/Apr/2020 04:22:09] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:15 - 127.0.0.1 - - [19/Apr/2020 04:22:15] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:22:16 - [person_event]A person(id=5) has entered!
+19-Apr-20 04:22:16 - 127.0.0.1 - - [19/Apr/2020 04:22:16] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:16 - 127.0.0.1 - - [19/Apr/2020 04:22:16] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:16 - 127.0.0.1 - - [19/Apr/2020 04:22:16] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:16 - 127.0.0.1 - - [19/Apr/2020 04:22:16] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:16 - 127.0.0.1 - - [19/Apr/2020 04:22:16] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - [person_event]A person(id=5) has left!
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:18 - 127.0.0.1 - - [19/Apr/2020 04:22:18] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:22 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+19-Apr-20 04:22:22 - 127.0.0.1 - - [19/Apr/2020 04:22:22] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:22:22 - [device_event]A device(id=5) has turned off!
+19-Apr-20 04:22:22 - 127.0.0.1 - - [19/Apr/2020 04:22:22] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:22:22 - 127.0.0.1 - - [19/Apr/2020 04:22:22] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - [person_event]A person(id=6) has left!
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:27 - 127.0.0.1 - - [19/Apr/2020 04:22:27] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:31 - [request_event]A person(id=1) has requested a device(id=6) to be turned off!
+19-Apr-20 04:22:31 - 127.0.0.1 - - [19/Apr/2020 04:22:31] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:22:31 - [device_event]A device(id=6) has turned off!
+19-Apr-20 04:22:31 - 127.0.0.1 - - [19/Apr/2020 04:22:31] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:22:31 - 127.0.0.1 - - [19/Apr/2020 04:22:31] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:22:36 - 127.0.0.1 - - [19/Apr/2020 04:22:36] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:36 - 127.0.0.1 - - [19/Apr/2020 04:22:36] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:36 - 127.0.0.1 - - [19/Apr/2020 04:22:36] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:36 - 127.0.0.1 - - [19/Apr/2020 04:22:36] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:43 - 127.0.0.1 - - [19/Apr/2020 04:22:43] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:22:43 - [person_event]A person(id=1) has entered!
+19-Apr-20 04:22:43 - 127.0.0.1 - - [19/Apr/2020 04:22:43] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:43 - 127.0.0.1 - - [19/Apr/2020 04:22:43] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:43 - 127.0.0.1 - - [19/Apr/2020 04:22:43] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:43 - 127.0.0.1 - - [19/Apr/2020 04:22:43] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:43 - 127.0.0.1 - - [19/Apr/2020 04:22:43] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - [person_event]A person(id=1) has left!
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:45 - 127.0.0.1 - - [19/Apr/2020 04:22:45] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:49 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+19-Apr-20 04:22:49 - 127.0.0.1 - - [19/Apr/2020 04:22:49] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:22:49 - [device_event]A device(id=1) has turned off!
+19-Apr-20 04:22:49 - 127.0.0.1 - - [19/Apr/2020 04:22:49] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:22:49 - 127.0.0.1 - - [19/Apr/2020 04:22:49] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - [person_event]A person(id=3) has left!
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:22:54 - 127.0.0.1 - - [19/Apr/2020 04:22:54] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:22:56 - [request_event]A person(id=1) has requested a device(id=9) to be turned off!
+19-Apr-20 04:22:56 - 127.0.0.1 - - [19/Apr/2020 04:22:56] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:22:56 - [device_event]A device(id=9) has turned off!
+19-Apr-20 04:22:56 - 127.0.0.1 - - [19/Apr/2020 04:22:56] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:22:56 - 127.0.0.1 - - [19/Apr/2020 04:22:56] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 04:22:58 - [request_event]A person(id=1) has requested a device(id=3) to be turned off!
+19-Apr-20 04:22:58 - 127.0.0.1 - - [19/Apr/2020 04:22:58] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:22:58 - [device_event]A device(id=3) has turned off!
+19-Apr-20 04:22:58 - 127.0.0.1 - - [19/Apr/2020 04:22:58] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:22:58 - 127.0.0.1 - - [19/Apr/2020 04:22:58] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:23:03 - 127.0.0.1 - - [19/Apr/2020 04:23:03] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:03 - 127.0.0.1 - - [19/Apr/2020 04:23:03] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:03 - 127.0.0.1 - - [19/Apr/2020 04:23:03] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:03 - 127.0.0.1 - - [19/Apr/2020 04:23:03] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:10 - 127.0.0.1 - - [19/Apr/2020 04:23:10] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:23:10 - [person_event]A person(id=5) has entered!
+19-Apr-20 04:23:10 - 127.0.0.1 - - [19/Apr/2020 04:23:10] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:10 - 127.0.0.1 - - [19/Apr/2020 04:23:10] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:10 - 127.0.0.1 - - [19/Apr/2020 04:23:10] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:10 - 127.0.0.1 - - [19/Apr/2020 04:23:10] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:10 - 127.0.0.1 - - [19/Apr/2020 04:23:10] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:12 - 127.0.0.1 - - [19/Apr/2020 04:23:12] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:12 - 127.0.0.1 - - [19/Apr/2020 04:23:12] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:12 - 127.0.0.1 - - [19/Apr/2020 04:23:12] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:12 - 127.0.0.1 - - [19/Apr/2020 04:23:12] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:19 - 127.0.0.1 - - [19/Apr/2020 04:23:19] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:23:19 - [person_event]A person(id=6) has entered!
+19-Apr-20 04:23:19 - 127.0.0.1 - - [19/Apr/2020 04:23:19] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:19 - 127.0.0.1 - - [19/Apr/2020 04:23:19] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:19 - 127.0.0.1 - - [19/Apr/2020 04:23:19] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:19 - 127.0.0.1 - - [19/Apr/2020 04:23:19] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:19 - 127.0.0.1 - - [19/Apr/2020 04:23:19] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:21 - 127.0.0.1 - - [19/Apr/2020 04:23:21] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:21 - 127.0.0.1 - - [19/Apr/2020 04:23:21] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:21 - 127.0.0.1 - - [19/Apr/2020 04:23:21] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:21 - 127.0.0.1 - - [19/Apr/2020 04:23:21] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:28 - 127.0.0.1 - - [19/Apr/2020 04:23:28] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:23:28 - [person_event]A person(id=4) has entered!
+19-Apr-20 04:23:28 - 127.0.0.1 - - [19/Apr/2020 04:23:28] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:28 - 127.0.0.1 - - [19/Apr/2020 04:23:28] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:28 - 127.0.0.1 - - [19/Apr/2020 04:23:28] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:28 - 127.0.0.1 - - [19/Apr/2020 04:23:28] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:28 - 127.0.0.1 - - [19/Apr/2020 04:23:28] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - [person_event]A person(id=6) has left!
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:30 - 127.0.0.1 - - [19/Apr/2020 04:23:30] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:34 - [request_event]A person(id=1) has requested a device(id=6) to be turned off!
+19-Apr-20 04:23:34 - 127.0.0.1 - - [19/Apr/2020 04:23:34] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:23:34 - [device_event]A device(id=6) has turned off!
+19-Apr-20 04:23:34 - 127.0.0.1 - - [19/Apr/2020 04:23:34] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:23:34 - 127.0.0.1 - - [19/Apr/2020 04:23:34] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - [person_event]A person(id=5) has left!
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:39 - 127.0.0.1 - - [19/Apr/2020 04:23:39] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:43 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+19-Apr-20 04:23:43 - 127.0.0.1 - - [19/Apr/2020 04:23:43] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:23:43 - [device_event]A device(id=5) has turned off!
+19-Apr-20 04:23:43 - 127.0.0.1 - - [19/Apr/2020 04:23:43] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:23:43 - 127.0.0.1 - - [19/Apr/2020 04:23:43] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:23:48 - 127.0.0.1 - - [19/Apr/2020 04:23:48] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:48 - 127.0.0.1 - - [19/Apr/2020 04:23:48] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:48 - 127.0.0.1 - - [19/Apr/2020 04:23:48] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:48 - 127.0.0.1 - - [19/Apr/2020 04:23:48] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:55 - 127.0.0.1 - - [19/Apr/2020 04:23:55] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:23:55 - [person_event]A person(id=1) has entered!
+19-Apr-20 04:23:55 - 127.0.0.1 - - [19/Apr/2020 04:23:55] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:55 - 127.0.0.1 - - [19/Apr/2020 04:23:55] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:55 - 127.0.0.1 - - [19/Apr/2020 04:23:55] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:55 - 127.0.0.1 - - [19/Apr/2020 04:23:55] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:55 - 127.0.0.1 - - [19/Apr/2020 04:23:55] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - [person_event]A person(id=4) has left!
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:23:57 - 127.0.0.1 - - [19/Apr/2020 04:23:57] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:23:59 - [request_event]A person(id=1) has requested a device(id=9) to be turned off!
+19-Apr-20 04:23:59 - 127.0.0.1 - - [19/Apr/2020 04:23:59] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:23:59 - [device_event]A device(id=9) has turned off!
+19-Apr-20 04:23:59 - 127.0.0.1 - - [19/Apr/2020 04:23:59] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:23:59 - 127.0.0.1 - - [19/Apr/2020 04:23:59] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 04:24:01 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+19-Apr-20 04:24:01 - 127.0.0.1 - - [19/Apr/2020 04:24:01] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:24:01 - [device_event]A device(id=4) has turned off!
+19-Apr-20 04:24:01 - 127.0.0.1 - - [19/Apr/2020 04:24:01] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:24:01 - 127.0.0.1 - - [19/Apr/2020 04:24:01] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - [person_event]A person(id=2) has left!
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:06 - 127.0.0.1 - - [19/Apr/2020 04:24:06] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:10 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+19-Apr-20 04:24:10 - 127.0.0.1 - - [19/Apr/2020 04:24:10] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:24:10 - [device_event]A device(id=2) has turned off!
+19-Apr-20 04:24:10 - 127.0.0.1 - - [19/Apr/2020 04:24:10] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:24:10 - 127.0.0.1 - - [19/Apr/2020 04:24:10] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:24:15 - 127.0.0.1 - - [19/Apr/2020 04:24:15] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:15 - 127.0.0.1 - - [19/Apr/2020 04:24:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:15 - 127.0.0.1 - - [19/Apr/2020 04:24:15] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:15 - 127.0.0.1 - - [19/Apr/2020 04:24:15] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:22 - 127.0.0.1 - - [19/Apr/2020 04:24:22] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:24:22 - [person_event]A person(id=4) has entered!
+19-Apr-20 04:24:22 - 127.0.0.1 - - [19/Apr/2020 04:24:22] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:24:22 - 127.0.0.1 - - [19/Apr/2020 04:24:22] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:22 - 127.0.0.1 - - [19/Apr/2020 04:24:22] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:22 - 127.0.0.1 - - [19/Apr/2020 04:24:22] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:22 - 127.0.0.1 - - [19/Apr/2020 04:24:22] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:24 - 127.0.0.1 - - [19/Apr/2020 04:24:24] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:24 - 127.0.0.1 - - [19/Apr/2020 04:24:24] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:24 - 127.0.0.1 - - [19/Apr/2020 04:24:24] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:24 - 127.0.0.1 - - [19/Apr/2020 04:24:24] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:31 - 127.0.0.1 - - [19/Apr/2020 04:24:31] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:24:31 - [person_event]A person(id=3) has entered!
+19-Apr-20 04:24:31 - 127.0.0.1 - - [19/Apr/2020 04:24:31] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:24:31 - 127.0.0.1 - - [19/Apr/2020 04:24:31] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:31 - 127.0.0.1 - - [19/Apr/2020 04:24:31] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:31 - 127.0.0.1 - - [19/Apr/2020 04:24:31] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:31 - 127.0.0.1 - - [19/Apr/2020 04:24:31] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - [person_event]A person(id=4) has left!
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:33 - 127.0.0.1 - - [19/Apr/2020 04:24:33] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:37 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+19-Apr-20 04:24:37 - 127.0.0.1 - - [19/Apr/2020 04:24:37] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:24:37 - [device_event]A device(id=4) has turned off!
+19-Apr-20 04:24:37 - 127.0.0.1 - - [19/Apr/2020 04:24:37] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:24:37 - 127.0.0.1 - - [19/Apr/2020 04:24:37] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:24:42 - 127.0.0.1 - - [19/Apr/2020 04:24:42] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:42 - 127.0.0.1 - - [19/Apr/2020 04:24:42] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:42 - 127.0.0.1 - - [19/Apr/2020 04:24:42] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:42 - 127.0.0.1 - - [19/Apr/2020 04:24:42] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:24:49 - 127.0.0.1 - - [19/Apr/2020 04:24:49] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:24:49 - [person_event]A person(id=5) has entered!
+19-Apr-20 04:24:49 - 127.0.0.1 - - [19/Apr/2020 04:24:49] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:24:49 - 127.0.0.1 - - [19/Apr/2020 04:24:49] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:24:49 - 127.0.0.1 - - [19/Apr/2020 04:24:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:24:49 - 127.0.0.1 - - [19/Apr/2020 04:24:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:24:49 - 127.0.0.1 - - [19/Apr/2020 04:24:49] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:28:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 04:28:39 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 04:29:12 - 127.0.0.1 - - [19/Apr/2020 04:29:12] "GET /TurnOnAllDevices HTTP/1.1" 200 -
+19-Apr-20 04:29:18 - 127.0.0.1 - - [19/Apr/2020 04:29:18] "GET /TurnOnAllDevices HTTP/1.1" 200 -
+19-Apr-20 04:29:28 - 127.0.0.1 - - [19/Apr/2020 04:29:28] "GET /TurnOffAllDevices HTTP/1.1" 200 -
+19-Apr-20 04:29:30 - 127.0.0.1 - - [19/Apr/2020 04:29:30] "GET /TurnOnAllDevices HTTP/1.1" 200 -
+19-Apr-20 04:29:45 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 04:29:46 - found new region: >>> as <<< (you should change api_region option to this value in configuration.yaml)
+19-Apr-20 04:29:50 - 127.0.0.1 - - [19/Apr/2020 04:29:50] "GET / HTTP/1.1" 404 -
+19-Apr-20 04:30:24 - 127.0.0.1 - - [19/Apr/2020 04:30:24] "GET /TurnOnAllDevices HTTP/1.1" 200 -
+19-Apr-20 04:30:34 - 127.0.0.1 - - [19/Apr/2020 04:30:34] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:30:34 - 127.0.0.1 - - [19/Apr/2020 04:30:34] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:30:34 - 127.0.0.1 - - [19/Apr/2020 04:30:34] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:30:34 - 127.0.0.1 - - [19/Apr/2020 04:30:34] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:30:37 - 127.0.0.1 - - [19/Apr/2020 04:30:37] "GET /RetrieveEvent/eventlog.json HTTP/1.1" 200 -
+19-Apr-20 04:30:42 - [request_event]A person(id=1) has requested a device(id=2) to be turned on!
+19-Apr-20 04:30:42 - 127.0.0.1 - - [19/Apr/2020 04:30:42] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:30:42 - [person_event]A person(id=2) has entered!
+19-Apr-20 04:30:42 - 127.0.0.1 - - [19/Apr/2020 04:30:42] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:30:42 - 127.0.0.1 - - [19/Apr/2020 04:30:42] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:30:42 - 127.0.0.1 - - [19/Apr/2020 04:30:42] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:30:42 - 127.0.0.1 - - [19/Apr/2020 04:30:42] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:30:42 - 127.0.0.1 - - [19/Apr/2020 04:30:42] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:30:49 - 127.0.0.1 - - [19/Apr/2020 04:30:49] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:30:49 - 127.0.0.1 - - [19/Apr/2020 04:30:49] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:30:49 - 127.0.0.1 - - [19/Apr/2020 04:30:49] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:30:49 - 127.0.0.1 - - [19/Apr/2020 04:30:49] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:30:53 - [request_event]A person(id=1) has requested a device(id=3) to be turned on!
+19-Apr-20 04:30:53 - 127.0.0.1 - - [19/Apr/2020 04:30:53] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:30:53 - [person_event]A person(id=3) has entered!
+19-Apr-20 04:30:53 - 127.0.0.1 - - [19/Apr/2020 04:30:53] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:30:53 - 127.0.0.1 - - [19/Apr/2020 04:30:53] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:30:53 - 127.0.0.1 - - [19/Apr/2020 04:30:53] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:30:53 - 127.0.0.1 - - [19/Apr/2020 04:30:53] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:30:53 - 127.0.0.1 - - [19/Apr/2020 04:30:53] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:30:58 - 127.0.0.1 - - [19/Apr/2020 04:30:58] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:30:58 - 127.0.0.1 - - [19/Apr/2020 04:30:58] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:30:58 - 127.0.0.1 - - [19/Apr/2020 04:30:58] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:30:58 - 127.0.0.1 - - [19/Apr/2020 04:30:58] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:00 - [request_event]A person(id=1) has requested a device(id=5) to be turned on!
+19-Apr-20 04:31:00 - 127.0.0.1 - - [19/Apr/2020 04:31:00] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:00 - [person_event]A person(id=5) has entered!
+19-Apr-20 04:31:00 - 127.0.0.1 - - [19/Apr/2020 04:31:00] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:00 - 127.0.0.1 - - [19/Apr/2020 04:31:00] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:00 - 127.0.0.1 - - [19/Apr/2020 04:31:00] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:00 - 127.0.0.1 - - [19/Apr/2020 04:31:00] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:00 - 127.0.0.1 - - [19/Apr/2020 04:31:00] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - [person_event]A person(id=5) has left!
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:07 - 127.0.0.1 - - [19/Apr/2020 04:31:07] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:11 - [request_event]A person(id=1) has requested a device(id=5) to be turned off!
+19-Apr-20 04:31:11 - 127.0.0.1 - - [19/Apr/2020 04:31:11] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:11 - [device_event]A device(id=5) has turned off!
+19-Apr-20 04:31:11 - 127.0.0.1 - - [19/Apr/2020 04:31:11] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:31:11 - 127.0.0.1 - - [19/Apr/2020 04:31:11] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:31:16 - 127.0.0.1 - - [19/Apr/2020 04:31:16] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:16 - 127.0.0.1 - - [19/Apr/2020 04:31:16] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:16 - 127.0.0.1 - - [19/Apr/2020 04:31:16] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:16 - 127.0.0.1 - - [19/Apr/2020 04:31:16] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:18 - [request_event]A person(id=1) has requested a device(id=6) to be turned on!
+19-Apr-20 04:31:18 - 127.0.0.1 - - [19/Apr/2020 04:31:18] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:18 - [person_event]A person(id=6) has entered!
+19-Apr-20 04:31:18 - 127.0.0.1 - - [19/Apr/2020 04:31:18] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:18 - 127.0.0.1 - - [19/Apr/2020 04:31:18] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:18 - 127.0.0.1 - - [19/Apr/2020 04:31:18] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:18 - 127.0.0.1 - - [19/Apr/2020 04:31:18] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:18 - 127.0.0.1 - - [19/Apr/2020 04:31:18] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:25 - 127.0.0.1 - - [19/Apr/2020 04:31:25] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:25 - 127.0.0.1 - - [19/Apr/2020 04:31:25] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:25 - 127.0.0.1 - - [19/Apr/2020 04:31:25] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:25 - 127.0.0.1 - - [19/Apr/2020 04:31:25] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:27 - [request_event]A person(id=1) has requested a device(id=1) to be turned on!
+19-Apr-20 04:31:27 - 127.0.0.1 - - [19/Apr/2020 04:31:27] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:27 - [person_event]A person(id=1) has entered!
+19-Apr-20 04:31:27 - 127.0.0.1 - - [19/Apr/2020 04:31:27] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:27 - 127.0.0.1 - - [19/Apr/2020 04:31:27] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:27 - 127.0.0.1 - - [19/Apr/2020 04:31:27] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:27 - 127.0.0.1 - - [19/Apr/2020 04:31:27] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:27 - 127.0.0.1 - - [19/Apr/2020 04:31:27] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - [person_event]A person(id=1) has left!
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:34 - 127.0.0.1 - - [19/Apr/2020 04:31:34] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:38 - [request_event]A person(id=1) has requested a device(id=1) to be turned off!
+19-Apr-20 04:31:38 - 127.0.0.1 - - [19/Apr/2020 04:31:38] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:38 - [device_event]A device(id=1) has turned off!
+19-Apr-20 04:31:38 - 127.0.0.1 - - [19/Apr/2020 04:31:38] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:31:38 - 127.0.0.1 - - [19/Apr/2020 04:31:38] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - [person_event]A person(id=2) has left!
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:43 - 127.0.0.1 - - [19/Apr/2020 04:31:43] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:47 - [request_event]A person(id=1) has requested a device(id=2) to be turned off!
+19-Apr-20 04:31:47 - 127.0.0.1 - - [19/Apr/2020 04:31:47] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:47 - [device_event]A device(id=2) has turned off!
+19-Apr-20 04:31:47 - 127.0.0.1 - - [19/Apr/2020 04:31:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:31:47 - 127.0.0.1 - - [19/Apr/2020 04:31:47] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:31:47 - [request_event]A person(id=1) has requested a device(id=7) to be turned off!
+19-Apr-20 04:31:47 - 127.0.0.1 - - [19/Apr/2020 04:31:47] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:47 - [device_event]A device(id=7) has turned off!
+19-Apr-20 04:31:47 - 127.0.0.1 - - [19/Apr/2020 04:31:47] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:31:47 - 127.0.0.1 - - [19/Apr/2020 04:31:47] "POST /RemoveScheduledShutdown/3 HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - [person_event]A person(id=4) has left!
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:31:52 - 127.0.0.1 - - [19/Apr/2020 04:31:52] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:31:56 - [request_event]A person(id=1) has requested a device(id=4) to be turned off!
+19-Apr-20 04:31:56 - 127.0.0.1 - - [19/Apr/2020 04:31:56] "POST /ManageDevice HTTP/1.1" 200 -
+19-Apr-20 04:31:56 - [device_event]A device(id=4) has turned off!
+19-Apr-20 04:31:56 - 127.0.0.1 - - [19/Apr/2020 04:31:56] "POST /HandleDeviceEvent HTTP/1.1" 200 -
+19-Apr-20 04:31:56 - 127.0.0.1 - - [19/Apr/2020 04:31:56] "POST /RemoveScheduledShutdown/2 HTTP/1.1" 200 -
+19-Apr-20 04:32:01 - 127.0.0.1 - - [19/Apr/2020 04:32:01] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:32:01 - 127.0.0.1 - - [19/Apr/2020 04:32:01] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:32:01 - 127.0.0.1 - - [19/Apr/2020 04:32:01] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:32:01 - 127.0.0.1 - - [19/Apr/2020 04:32:01] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:32:08 - 127.0.0.1 - - [19/Apr/2020 04:32:08] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:32:08 - [person_event]A person(id=2) has entered!
+19-Apr-20 04:32:08 - 127.0.0.1 - - [19/Apr/2020 04:32:08] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:32:08 - 127.0.0.1 - - [19/Apr/2020 04:32:08] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:32:08 - 127.0.0.1 - - [19/Apr/2020 04:32:08] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:32:08 - 127.0.0.1 - - [19/Apr/2020 04:32:08] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:32:08 - 127.0.0.1 - - [19/Apr/2020 04:32:08] "POST /simulate HTTP/1.1" 200 -
+19-Apr-20 04:32:10 - 127.0.0.1 - - [19/Apr/2020 04:32:10] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:32:10 - 127.0.0.1 - - [19/Apr/2020 04:32:10] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:32:10 - 127.0.0.1 - - [19/Apr/2020 04:32:10] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:32:10 - 127.0.0.1 - - [19/Apr/2020 04:32:10] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:32:15 - 127.0.0.1 - - [19/Apr/2020 04:32:15] "GET /ListPersons HTTP/1.1" 200 -
+19-Apr-20 04:32:15 - 127.0.0.1 - - [19/Apr/2020 04:32:15] "GET /ListPersonDeviceAssignment HTTP/1.1" 200 -
+19-Apr-20 04:32:15 - 127.0.0.1 - - [19/Apr/2020 04:32:15] "GET /ListDeviceStatus HTTP/1.1" 200 -
+19-Apr-20 04:32:15 - 127.0.0.1 - - [19/Apr/2020 04:32:15] "GET /simulate HTTP/1.1" 200 -
+19-Apr-20 04:32:17 - 127.0.0.1 - - [19/Apr/2020 04:32:17] "POST /ManageDevice HTTP/1.1" 500 -
+19-Apr-20 04:32:17 - [person_event]A person(id=5) has entered!
+19-Apr-20 04:32:17 - 127.0.0.1 - - [19/Apr/2020 04:32:17] "POST /HandlePersonEventSim HTTP/1.1" 307 -
+19-Apr-20 04:32:43 - 127.0.0.1 - - [19/Apr/2020 04:32:43] "GET /TurnOffAllDevices HTTP/1.1" 200 -

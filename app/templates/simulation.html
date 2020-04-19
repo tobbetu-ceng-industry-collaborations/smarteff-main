@@ -7,7 +7,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style type="text/css">
-
+        #Progress {
+            width: 100%;
+            background-color: red;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+            background-color: whiteSmoke;
+            position: relative;
+            display: block;
+        }
+        
+        #Bar {
+            background-image: -moz-linear-gradient( 135deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -moz-linear-gradient( top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -moz-linear-gradient( left, #09c, #f44);
+            width: 20%;
+            height: 30px;
+            background-color: black;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+        }
+        
           .dot {
             height: 18px;
             width: 18px;
@@ -22,15 +40,16 @@
             border-radius: 50%;
             display: inline-block;
           }
-          .overlay{
-            opacity:5;
-            position:fixed;
-            width:100%;
-            height:100%;
-            top:0px;
-            left:0px;
+        .overlay {
+            float: right;
+            opacity: 5;
+            position: fixed;
+            width: 108%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
             border: 8px solid;
-          }
+        }
           .overlay2{
             opacity:1;
             width:120%;
@@ -184,6 +203,12 @@
             padding: 8px;
           }
 
+          span {
+            color: white;
+            font-weight: bold;
+            font-size: 0.79em;
+          }
+
           /* The popup form - hidden by default */
           .form-popup {
             display: block;
@@ -267,7 +292,7 @@
 
 
 
-        <div class="overlay">
+        <div class="overlay" id="ajaxfc">
           <div style="width: 50%; height: 50%;">
             <div class="overlay2" style="position: relative;">
 
@@ -285,9 +310,9 @@
                       
                       </div>
                       {% if device_status["D1"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                     </div>
                     <div class ="overlay6" style="position: relative;">
@@ -298,18 +323,18 @@
                       {{devices["D2"]}}
                       </div>
                       {% if device_status["D2"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                     </div>
                   </div>
                   <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D7 - Lamp
                   </div>
                       {% if device_status["D7"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                 </div>
                 <div class="overlay4" style="position: relative;">
@@ -322,9 +347,9 @@
                       {{devices["D5"]}}
                       </div>
                       {% if device_status["D5"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                     </div>
                     <div class="overlay8" style="position: relative;">
@@ -335,9 +360,9 @@
                       {{devices["D6"]}}
                       </div>
                       {% if device_status["D6"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                     </div>
 
@@ -349,9 +374,9 @@
                       {{devices["D3"]}}
                       </div>
                       {% if device_status["D3"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                    </div>
                    <div class="overlay10" style="position: relative;">
@@ -362,27 +387,27 @@
                       {{devices["D4"]}}
                       </div>
                       {% if device_status["D4"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                    </div>
                  </div>
                   <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D9 - Lamp
                   </div>  
                       {% if device_status["D9"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
                </div>
              </div>
               <div style="font-weight:bold; text-align:left;position: absolute; bottom:0; left: :0">D8 - Air Conditioner
               </div>  
                       {% if device_status["D8"] == 1 %}
-                      <span class="dot" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dot" style="position: absolute; bottom:0; right:0">ON</span>
                       {% else %}
-                      <span class="dotRed" style="position: absolute; bottom:0; right:0"></span>
+                      <span class="dotRed" style="position: absolute; bottom:0; right:0">OFF</span>
                       {% endif %}
            </div>
          </div>
@@ -402,10 +427,17 @@
 
                 </table>
               </div>
+        <div id="Progress">
 
-              <button style ="width:390px; height:60px; position:absolute; right:0; bottom:0;" id="PlayBackEvent">
-                Playback Event
-              </button>
+            <div id="Bar"></div>
+        </div>
+        <p id="deneme"></p>
+        <h id="deneme2">
+            </h1>
+            <p id="deneme3"></p>
+            <button style="width:390px; height:60px; position:absolute; right:0; bottom:0;" id="PlayBackEvent">
+                Start Simulation
+            </button>
 
           </div>
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.1/datatables.min.js"></script>
@@ -413,6 +445,18 @@
         <script type="text/javascript" src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
     <script>
+        var bar = 0;
+        var myVar;
+        var styler;
+        var startTime = (new Date()).getTime();
+
+        function myFunction() {
+            myVar = setTimeout(alertFunc, 3000);
+        }
+
+        function alertFunc() {
+
+        }
 
         var json = {};
 
@@ -472,19 +516,115 @@
           document.getElementById("myForm").style.display = "none";
       }
 
-      PlayBackEvent.onclick = function (event) {
-          
-          document.getElementById("myForm").style.display = "none";
+PlayBackEvent.onclick = async function(event) {
 
-          var d = dtable.row(':eq(0)').data(); //en ustteki kisi bilgisi
+                document.getElementById("myForm").style.display = "none";
+                var d;
 
-          dtable.row( ':eq(0)'  ).remove().draw();
+                var k;
+                for (k = 0; k < json["events"]["length"]; k++) {
 
-          $( dtable.row(':eq(0)').nodes() ).addClass( 'highlight' );
+                    d = dtable.row(':eq(0)').data(); //en ustteki kisi bilgisi
 
+                    dtable.row(':eq(0)').remove().draw();
 
-          alert(d.name+" is "+d.action);
-      }
+                    $(dtable.row(':eq(0)').nodes()).addClass('highlight');
+
+                    var personlist = json;
+                    myFunction();
+                    //setTimeout( 3000);	
+                    var i;
+                    var text = "";
+                    var loaded = false;
+                    var time = 3000;
+                    if (d["action"] == 'enter') {
+                        post2('http://127.0.0.1:5000/HandlePersonEventSim', {
+                            "personid": d["id"],
+                            "event": 'entry'
+                        });
+                    } else {
+                        post2('http://127.0.0.1:5000/HandlePersonEventSim', {
+                            "personid": d["id"],
+                            "event": 'exit'
+                        });
+                    }
+                    var url = "http://127.0.0.1:5000/simulate";
+                    if (url.indexOf('?') > -1) {
+                        url += '&{{device_status["D1"]}}=9999'
+                    } else {
+                        url += '?device_status["D1"]=9999'
+                    }
+
+                    //setTimeout( 3000);	
+
+                    if (d.action == 'exit')
+                        tempAlert(d.name + " has left", 9000);
+                    else
+                        tempAlert(d.name + " has come into office", 9000);
+                    await sleep(9000);
+                    progressBar();
+
+                    $("#ajaxfc").load("http://127.0.0.1:5000/simulate" + " #ajaxfc", function() {
+                        var endTime = (new Date()).getTime();
+                        var millisecondsLoading = endTime - startTime; // + 100;
+
+                    });
+
+                } //for
+            } //buttonhandle
+        function tempAlert(msg, duration) {
+            // var styler = document.createElement("div");
+            styler = document.getElementById("deneme2");
+            styler.setAttribute("style", "  font-family: Lucida Console, Courier, monospace;   font-style: italic; font-size:2vw; width:auto;height:auto;top:70%;left:60%;color:black text shadow:5px 5px 10px blue;  text-decoration:underline overline wavy blue;");
+            document.getElementById("deneme2").innerHTML = msg;
+            // styler.innerHTML = "<h>"+msg+"</h1>";
+            setTimeout(duration);
+            /* setTimeout(function()
+             {  styler.parentNode.removeChild(styler);
+             },duration);*/
+
+            // document.body.appendChild(styler);
+        }
+
+        function callTimeout(stringd, intd) {
+            setTimeout(function() {
+                alert(stringd);
+            }, intd)
+        }
+        async function progressBar() {
+
+            if (bar == 0) {
+                bar = 1;
+                var elem = document.getElementById("Bar");
+                var width = 1;
+                var idt = setInterval(frame, 88);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(idt);
+                        bar = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                    }
+                }
+            }
+        }
+
+        function customAlert(msg, duration) {
+            console.log("custo");
+            var styler = document.createElement("div");
+            styler.setAttribute("class", "Bar");
+            styler.innerHTML = "<h1>" + msg + "</h1>";
+            setTimeout(function() {
+                styler.parentNode.removeChild(styler);
+            }, duration);
+            document.body.appendChild(styler);
+        }
+
+        function caller(string1, number) {
+            customAlert(string1, number);
+        }
 
       function selectForm() {
 
@@ -501,6 +641,53 @@
          loadjson();
 
       });
+
+	 function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function demo() {
+            //  console.log('Taking a break...');
+            //  await sleep(3000);
+            for (let i = 0; i < 5; i++) {
+                if (i === 3)
+                    await sleep(3000);
+                console.log(i);
+            }
+        }
+
+        function post2(path, params) {
+            var xhr = new XMLHttpRequest();
+            var url = path;
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+
+            };
+            var data = JSON.stringify(params);
+            xhr.send(data);
+        }
+
+        function post(path, params, method = 'post') {
+
+            const form = document.createElement('form');
+            form.method = method;
+            form.action = path;
+
+            for (const key in params) {
+                if (params.hasOwnProperty(key)) {
+                    const hiddenField = document.createElement('input');
+                    hiddenField.type = 'hidden';
+                    hiddenField.name = key;
+                    hiddenField.value = params[key];
+
+                    form.appendChild(hiddenField);
+                }
+            }
+
+            document.body.appendChild(form);
+            form.submit();
+        }
 
 
     </script>

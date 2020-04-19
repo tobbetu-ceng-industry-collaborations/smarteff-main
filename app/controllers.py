@@ -21,6 +21,8 @@ import os
 
 import json
 import sonoff
+import time
+import requests
 
 
 # logger setup
@@ -127,8 +129,8 @@ def person_event_sim():
     # change is_inside status according to event
     if event == 'entry':
         person.is_inside = 1
-        os.system(("bash test_api/POST/request_device_on.sh " + "1" + " " + str(person.devices[0].device_id)).format())
         person.devices[0].is_on = 1
+        os.system(("bash test_api/POST/request_device_on.sh " + "1" + " " + str(person.devices[0].device_id)).format())
         logging.warning('[person_event]A person(id=%s) has entered!', str(person_id))
         db.session.commit()
     elif event == 'exit':
@@ -157,7 +159,7 @@ def person_event_sim():
                     found = True
 
             # shutdown will happen in 15 seconds
-            shutdown_delay = 15
+            shutdown_delay = 2
             date = datetime.now() + timedelta(seconds=shutdown_delay)
 
             # found==false means that there are no person inside assigned to the device
@@ -174,7 +176,8 @@ def person_event_sim():
     # prepare the response --> assuming everything is OK
     resp = jsonify({'success':True})
 
-    return resp, 200
+#    return resp, 200
+    return redirect("http://127.0.0.1:5000/simulate", code=307)    
 
 # endpoint to handle device events
 @app.route("/HandleDeviceEvent", methods=['POST'])
@@ -231,6 +234,9 @@ def manage_device():
     if action == 'turnon':
 
         if device_sonoff_id is not None:
+            print("device_sonoff_id")
+            print(device_sonoff_id)
+            print(device_channel)
             send_request_device("on", device_sonoff_id, device_channel)
 
         device.is_on = 1
@@ -242,6 +248,9 @@ def manage_device():
     elif action == 'turnoff':
 
         if device_sonoff_id is not None:
+            print("device_sonoff_id")
+            print(device_sonoff_id)
+            print(device_channel)
             send_request_device("off", device_sonoff_id, device_channel)
 
         device.is_on = 0
@@ -710,6 +719,42 @@ def list_device_status():
     # return result as dictionary
     return jsonify(device_status)
 
+# endpoint to turn all devices on
+@app.route("/TurnOnAllDevices")
+def all_devices_on():
+    number=1
+    devices = s.get_devices()
+    url = "http://127.0.0.1:5000/ManageDevice"
+    headers ={'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
+    for i in range(len(devices)):
+        if devices:
+            device_id = devices[i]['deviceid']
+            s.switch("on", str(device_id), int(0))
+            time.sleep(1)
+            s.switch("on", str(device_id), int(1))
+            number+=1
+           # payload ="{\"deviceid\": number, \"event\": \"turnon\"}"#"{\"personid\":\"device_id\", \"deviceid\":\"1\", \"action\":\"turnon\"}"
+            #r2 = requests.post(url, data=payload, headers=headers)
+    resp = jsonify({'success':True})
+    return render_template("allDevices.html", sayfabasligi="ALL DEVICES",action="ON")
+
+# endpoint to turn all devices off
+@app.route("/TurnOffAllDevices")
+def all_devices_off():
+    number=1
+    devices = s.get_devices()
+    url = "http://127.0.0.1:5000/HandleDeviceEvent"
+    headers = {"Content-Type": "application/json"}
+    for i in range(len(devices)):
+        if devices:
+            device_id = devices[i]['deviceid']
+            s.switch("off", str(device_id), int(0))
+            time.sleep(1)
+            number+=1
+            s.switch("off", str(device_id), int(1))
+    resp = jsonify({'success':True})
+#    return resp, 200
+    return render_template("allDevices.html", sayfabasligi="ALL DEVICES",action="OFF")
 
 # -----------------------INITIALIZE DB  --------------------------- 
 

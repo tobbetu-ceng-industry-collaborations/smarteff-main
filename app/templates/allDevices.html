@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+    
+    .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    .button:hover {
+        background-color: #3e8e41
+    }
+    
+    .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    
+    .button2 {
+        background-color: black;
+        color: red;
+        border: 2px solid #FF0000;
+    }
+    
+    .button2:hover {
+        background-color: #FF0000;
+        color: black;
+    }
+    
+    .button2:hover {
+        background-color: #FF0000
+    }
+    
+    .button2:active {
+        background-color: #FF0000;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    
+    .button {
+        border-radius: 50%;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        transition-duration: 0.4s;
+        background-color: white;
+        border: 2px solid green;
+        color: green;
+        padding: 15px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .button3 {
+        border-radius: 50%;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        transition-duration: 0.4s;
+        background-color: white;
+        border: 2px solid black;
+        color: red;
+        padding: 15px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .middle {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h1 {
+        font-size: 5em;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    {%if action == "OFF" %}
+    <h1 class="middle">All devices are </h1>
+    <h1 class="middle" style="color:red;">{{ action }}</h1>
+    <button type="button" onclick="a('{{ action }}')" class="button button1 middle">TURN ON ALL DEVICES</button>
+    {% else %}
+    <h1 class="middle">All devices are </h1>
+    <h1 style="color:green;" class="middle">{{ action }}</h1>
+    <button type="button" onclick="a('{{ action }}')" class="button2 button3 middle">TURN OFF ALL DEVICES</button>
+    {% endif %}
+    <script>
+        function a(obj) {
+
+            if (obj == "ON")
+                location.replace("http://127.0.0.1:5000/TurnOffAllDevices")
+            else
+                location.replace("http://127.0.0.1:5000/TurnOnAllDevices")
+
+            obj = "SEX";
+        }
+    </script>
+
+</body>
+
+</html>
