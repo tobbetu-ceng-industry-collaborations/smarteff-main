@@ -254,16 +254,16 @@
 
     </div>
 
-<form id="toPost" action="http://127.0.0.1:5000/ChangeAssignment" method="POST">
+<form id="toPost" action="https://smarteff.herokuapp.com/ChangeAssignment" method="POST">
   <input id="name1" type="hidden" name="name1" value={{userBefore}}>
   <input id="name2" type="hidden" name="name2" value={{userAfter}}>
 </form>
 
-<form id="toPost2" action="http://127.0.0.1:5000/CreateNewPerson" method="POST">
+<form id="toPost2" action="https://smarteff.herokuapp.com/CreateNewPerson" method="POST">
   <input id="name" type="hidden" name="name" value={{userN}}>
 </form>
 
-<form id="toPost3" action="http://127.0.0.1:5000/HandleDeviceEventAdmin" method="POST">
+<form id="toPost3" action="https://smarteff.herokuapp.com/HandleDeviceEventAdmin" method="POST">
   <input id="deviceid" type="hidden" name="deviceid" value={{devID}}>
   <input id="event" type="hidden" name="event" value={{event}}>
 </form>
@@ -474,7 +474,7 @@
             var nameUser = userNameIn.value;
             userN = nameUser;
             myModal2.style.display = "none";
-            postToURL2("http://127.0.0.1:5000/CreateNewPerson");
+            postToURL2("https://smarteff.herokuapp.com/CreateNewPerson");
         }
 
         //önemli!!!
@@ -486,7 +486,7 @@
             myElement.innerHTML = username;
             userBefore = usernameBefore;
             userAfter = username;
-            postToURL("http://127.0.0.1:5000/ChangeAssignment");
+            postToURL("https://smarteff.herokuapp.com/ChangeAssignment");
         }
         function changeDeviceStatus() {
             var radios = document.getElementsByName('status');
@@ -507,7 +507,7 @@
             devID = ID;
 
             myModal3.style.display = "None";
-            postToURL3("http://127.0.0.1:5000/HandleDeviceEventAdmin");
+            postToURL3("https://smarteff.herokuapp.com/HandleDeviceEventAdmin");
         }
         function postToURL(a){
             document.getElementById("toPost").action     = a;

@@ -177,7 +177,7 @@ def person_event_sim():
     resp = jsonify({'success':True})
 
 #    return resp, 200
-    return redirect("http://127.0.0.1:5000/simulate", code=307)    
+    return redirect("https://smarteff.herokuapp.com/simulate", code=307)    
 
 # endpoint to handle device events
 @app.route("/HandleDeviceEvent", methods=['POST'])
@@ -414,7 +414,7 @@ def create_person():
     db.session.add(new_person)
     db.session.commit()
 
-    return redirect("http://127.0.0.1:5000/admin", code=302)
+    return redirect("https://smarteff.herokuapp.com/admin", code=302)
 
 # endpoint to change assignment of a person-device
 @app.route("/ChangeAssignment/", methods=['GET', 'POST'], strict_slashes=False)
@@ -459,7 +459,7 @@ def swap_person():
     # record into DB
     db.session.commit()
 
-    return redirect("http://127.0.0.1:5000/admin", code=302)
+    return redirect("https://smarteff.herokuapp.com/admin", code=302)
 
 # endpoint to save pre-built event file under server
 @app.route("/SaveEvent/<log_name>", methods=['GET', 'POST'])
@@ -588,7 +588,7 @@ def device_event_admin():
     db.session.add(device)
     db.session.commit()
 
-    return redirect("http://127.0.0.1:5000/admin", code=302)
+    return redirect("https://smarteff.herokuapp.com/admin", code=302)
 # -----------------------GET REQUEST ENDPOINTS---------------------------- 
 
 
@@ -724,7 +724,7 @@ def list_device_status():
 def all_devices_on():
     number=1
     devices = s.get_devices()
-    url = "http://127.0.0.1:5000/ManageDevice"
+    url = "https://smarteff.herokuapp.com/ManageDevice"
     headers ={'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
     for i in range(len(devices)):
         if devices:
@@ -743,7 +743,7 @@ def all_devices_on():
 def all_devices_off():
     number=1
     devices = s.get_devices()
-    url = "http://127.0.0.1:5000/HandleDeviceEvent"
+    url = "https://smarteff.herokuapp.com/HandleDeviceEvent"
     headers = {"Content-Type": "application/json"}
     for i in range(len(devices)):
         if devices:

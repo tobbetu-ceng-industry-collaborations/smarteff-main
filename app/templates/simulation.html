@@ -538,17 +538,17 @@ PlayBackEvent.onclick = async function(event) {
                     var loaded = false;
                     var time = 3000;
                     if (d["action"] == 'enter') {
-                        post2('http://127.0.0.1:5000/HandlePersonEventSim', {
+                        post2('https://smarteff.herokuapp.com/HandlePersonEventSim', {
                             "personid": d["id"],
                             "event": 'entry'
                         });
                     } else {
-                        post2('http://127.0.0.1:5000/HandlePersonEventSim', {
+                        post2('https://smarteff.herokuapp.com/HandlePersonEventSim', {
                             "personid": d["id"],
                             "event": 'exit'
                         });
                     }
-                    var url = "http://127.0.0.1:5000/simulate";
+                    var url = "https://smarteff.herokuapp.com/simulate";
                     if (url.indexOf('?') > -1) {
                         url += '&{{device_status["D1"]}}=9999'
                     } else {
@@ -564,7 +564,7 @@ PlayBackEvent.onclick = async function(event) {
                     await sleep(9000);
                     progressBar();
 
-                    $("#ajaxfc").load("http://127.0.0.1:5000/simulate" + " #ajaxfc", function() {
+                    $("#ajaxfc").load("https://smarteff.herokuapp.com/simulate" + " #ajaxfc", function() {
                         var endTime = (new Date()).getTime();
                         var millisecondsLoading = endTime - startTime; // + 100;
 

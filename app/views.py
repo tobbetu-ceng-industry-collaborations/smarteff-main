@@ -22,12 +22,12 @@ def log():
 def admin():
 
 	# get person list as json
-    response = requests.get("http://127.0.0.1:5000/ListPersons")
+    response = requests.get("https://smarteff.herokuapp.com/ListPersons")
     response = response.text
     loaded = json.loads(response)
 
     # get person-device assignment as json
-    response2 = requests.get("http://127.0.0.1:5000/ListPersonDeviceAssignment")
+    response2 = requests.get("https://smarteff.herokuapp.com/ListPersonDeviceAssignment")
     response2 = response2.text
     devices_temp = json.loads(response2)
 
@@ -35,7 +35,7 @@ def admin():
     devices = {v: k for k, v in devices_temp.items()}
 
     # get device status as json
-    response3 = requests.get("http://127.0.0.1:5000/ListDeviceStatus")
+    response3 = requests.get("https://smarteff.herokuapp.com/ListDeviceStatus")
     response3 = response3.text
     device_status = json.loads(response3)
 
@@ -53,12 +53,12 @@ def admin():
 def simulate():
 
     # get person list as json
-    response = requests.get("http://127.0.0.1:5000/ListPersons")
+    response = requests.get("https://smarteff.herokuapp.com/ListPersons")
     response = response.text
     loaded = json.loads(response)
 
     # get person-device assignment as json
-    response2 = requests.get("http://127.0.0.1:5000/ListPersonDeviceAssignment")
+    response2 = requests.get("https://smarteff.herokuapp.com/ListPersonDeviceAssignment")
     response2 = response2.text
     devices_temp = json.loads(response2)
 
@@ -66,7 +66,7 @@ def simulate():
     devices = {v: k for k, v in devices_temp.items()}
 
     # get device status as json
-    response3 = requests.get("http://127.0.0.1:5000/ListDeviceStatus")
+    response3 = requests.get("https://smarteff.herokuapp.com/ListDeviceStatus")
     response3 = response3.text
     device_status = json.loads(response3)
 
