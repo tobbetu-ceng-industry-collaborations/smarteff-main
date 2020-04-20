@@ -21,7 +21,7 @@ for idx, val in enumerate(tut,start=1):
 
 hash = dict(zip(tut, enum))
 
-print(hash)
+
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 colors = {
@@ -37,6 +37,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background'],'display': 
             'color': colors['text']
         }
     ),
+
     html.Div(children='''
             Select event
         ''', style={'color': 'black', 'fontSize': 20, 'display': 'inline-block'}),
@@ -61,6 +62,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background'],'display': 
             style={'opacity': '1', 'color': 'black', 'fontSize': 15, 'marginLeft': 500}),
 
     html.Div(id='output-of-buttons', children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
+    html.Div(id='output-of-buttons2', children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
+    html.Div(id='output-of-buttons3', children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500})
 
 
 
@@ -95,7 +98,7 @@ def show_selection(value):
 @app.callback(
     dash.dependencies.Output('output-of-selection2', 'children'),
     [dash.dependencies.Input('input-box1', 'value')])
-def show_selection(value):
+def show_selection2(value):
 
     temp = '  "{}" '.format(
         value
@@ -116,7 +119,7 @@ def show_selection(value):
 @app.callback(
     dash.dependencies.Output('output-of-selection3', 'children'),
     [dash.dependencies.Input('input-box1', 'value')])
-def show_selection(value):
+def show_selection3(value):
 
     temp = '  "{}" '.format(
         value
@@ -135,7 +138,7 @@ def show_selection(value):
 
 
 @app.callback(
-    dash.dependencies.Output('output-of-selection_dump', 'children'),
+    dash.dependencies.Output('output-of-buttons2', 'children'),
     [dash.dependencies.Input('button2', 'n_clicks')],
     [dash.dependencies.State('input-box-event', 'value')])
 def insert_after(n_clicks, value):
@@ -147,6 +150,7 @@ def insert_after(n_clicks, value):
     )
     if value=='Enter the event here: (with format ID,Event,Time)':
         a=2
+        return " "
     else:
         tut.insert(indexOfevent,value)
         data['events'] = []
@@ -163,10 +167,10 @@ def insert_after(n_clicks, value):
         namejson = "edited_data.json"
         with open(namejson, 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
-
+        return "Insertion Completed"
 
 @app.callback(
-    dash.dependencies.Output('output-of-selection_dump2', 'children'),
+    dash.dependencies.Output('output-of-buttons3', 'children'),
     [dash.dependencies.Input('button3', 'n_clicks')],
     [dash.dependencies.State('input-box-event', 'value')])
 def insert_before(n_clicks, value):
@@ -178,6 +182,7 @@ def insert_before(n_clicks, value):
     )
     if value=='Enter the event here: (with format ID,Event,Time)':
         a=2
+        return " "
     else:
         tut.insert(indexOfevent-1,value)
         data['events'] = []
@@ -194,7 +199,7 @@ def insert_before(n_clicks, value):
         namejson = "edited_data.json"
         with open(namejson, 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, sort_keys=False, indent=4, ensure_ascii=False)
-
+        return "Insertion Completed"
 
 
 @app.callback(
@@ -211,6 +216,7 @@ def delete_event(n_clicks, value):
     )
     if value=='x':
         a=2
+        return " "
     else:
         if value in tut:
             tut.remove(value)
@@ -234,8 +240,12 @@ def delete_event(n_clicks, value):
 
 
 
-
-
+@app.callback(
+    dash.dependencies.Output('input-box1', 'options'),
+    [dash.dependencies.Input('input-box1', 'value')]
+    )
+def update_date_dropdown(name):
+        return [{'label': i, 'value': i} for i in tut]
 
 
 

@@ -27,9 +27,9 @@ for p in loaded['people']:
     allUsers.append(p['name'])
     idLer.append(p['id'])
 
-
-
 hash = dict(zip(allUsers,idLer))
+
+
 
 
 deneme=[]
@@ -40,16 +40,35 @@ rows = cur.fetchall()
 for row in rows:
     deneme.append(row)
 
+
 kullanici=[]
 deviceOfKullanici=[]
 
 
-atama=""
+atama1="Devices used by id 1 :"
+atama2="Devices used by id 2 :"
+atama3="Devices used by id 3 :"
+atama4="Devices used by id 4 :"
+atama5="Devices used by id 5 :"
+atama6="Devices used by id 6 :"
+
 deneme.sort()
-for num, x in enumerate(deneme):
-    for bum, y in enumerate(x):
-        atama=atama+": "+str(y)
-    atama=atama+os.linesep
+for row in deneme:
+    if row[0] == 1:
+        atama1= atama1 + " " + str(row[1])
+    if row[0] == 2:
+        atama2= atama2 + " " + str(row[1])
+    if row[0] == 3:
+        atama3= atama3 + " " + str(row[1])
+    if row[0] == 4:
+        atama4= atama4 + " " + str(row[1])
+    if row[0] == 5:
+        atama5= atama5 + " " + str(row[1])
+    if row[0] == 6:
+        atama6= atama6 + " " + str(row[1])
+
+
+
 
 
 
@@ -110,14 +129,15 @@ app.layout = html.Div(children=[
                      {'label': 'Show Users Outside', 'value': 2},
                      {'label': 'Show Device Status', 'value': 3},
                      {'label': 'Show Devices Used By Users', 'value': 4},
-                     {'label': 'Turn All Devices On', 'value': 5}
+                     {'label': 'Turn All Devices On', 'value': 5},
+                     {'label': 'Manage Devices', 'value': 6}
                  ],
                  value='0',
                  style={'width': '50%', 'marginLeft': 300}
                  ),
     html.Button('View The Event Log', id='button1', style={'marginLeft': 550}),
     html.Button('Export the Event Log', id='button2', style={'marginLeft': 10}),
-    html.H1(dcc.Input(id='logFileId', type='text', value='Enter here name of Log File'),
+    html.H1(dcc.Input(id='logFileId', type='text', value='Enter here name of Log File',style={'width': '150%'}),
             style={'opacity': '1', 'color': 'black', 'fontSize': 15, 'display': 'inline-block'}),
     html.Div(id='output-container-button2', style={'color': 'Black', 'fontSize': 18}),
     html.Div(id='output-container-button22', style={'color': 'Black', 'fontSize': 18}),
@@ -135,7 +155,7 @@ app.layout = html.Div(children=[
     html.Div(children='''
       
     ''', style={'color': 'black', 'fontSize': 30, 'marginLeft': 600}),
-    html.Div(id='display-options', style={'color': 'red', 'width': '50%','fontSize': 18, 'marginLeft': 550}),
+    html.Div(id='display-options', style={'backgroundColor':'Grey', 'color': 'yellow', 'width': '20%','heigth': '20%','fontSize': 25, 'marginLeft': 550}),
 
     html.Div(children='''
         Inside/Outside
@@ -157,16 +177,6 @@ app.layout = html.Div(children=[
     , style={'marginBottom': 50, 'marginTop': 25, 'marginLeft': 100})
 
 
-@app.callback(
-    dash.dependencies.Output('output-container-button222', 'children'),
-    [dash.dependencies.Input('ozellikler', 'value')])
-
-def show_devices(value):
-    global deneme
-    temp=deneme
-
-    if value == 4:
-        return temp
 
 
 
@@ -181,7 +191,8 @@ def show_devices(value):
 
     if value == 3:
         webbrowser.open('https://smarteff.herokuapp.com/ShowDeviceStatus', new=2)
-
+    if value == 6:
+        webbrowser.open('https://smarteff.herokuapp.com/ManageDevices', new=2)
 
 def turn_all_devices_on(n_clicks, value):    #deniz ile ekleme yapılacak.
     temp = ''.format(
@@ -192,7 +203,13 @@ def turn_all_devices_on(n_clicks, value):    #deniz ile ekleme yapılacak.
     if value == 5:
         URL = "http://127.0.0.1:5000/TurnOnAllDevices"
         URL = URL
-        requests.post(url=URL)
+        return redirect(url=URL,code=307)
+
+
+
+
+
+
 
 
 @app.callback(
@@ -342,6 +359,14 @@ def update_input(value, n_clicks):
 def update_input2(value):
     global inUsers
     global outUsers
+    global atama1
+    global atama2
+    global atama3
+    global atama4
+    global atama5
+    global atama6
+
+    temp =atama1+"   "+atama2+"   "+atama3+"   "+atama4+"   "+atama5+"   "+atama6
 
 
     inUsers = ','.join(inside)
@@ -354,7 +379,7 @@ def update_input2(value):
     if value == 3:
         return ""
     if value == 4:
-        return ""
+        return temp
     if value == 5:
         return ""
     else:
