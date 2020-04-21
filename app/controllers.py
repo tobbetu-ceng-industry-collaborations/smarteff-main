@@ -608,50 +608,39 @@ def list_users():
 # endpoint to list devices of specified person with suspension information 
 @app.route("/ListDevices/<person_id>", methods=['GET'])
 def list_devices(person_id):
-
     # get person
     person = Person.query.get_or_404(person_id)
-    
-    # automation field templates to append
-    automation_body1={
-    	'suspend':"True",
-    	'expiration':""
-    }
-    automation_body2={
-    	'suspend':"False",
-    }
-
     # response json
     response = []
 
     # for every device, check if there is any suspension, append information accordingly
     for device in person.devices:
-        
+
         # fetch device info
         device_info = device.serialize
         device_id = device_info["id"]
-        
+
         # check if there is any suspension for the device
-        select_statement = db.select([suspension_request]).where(db.and_(suspension_request.c.person_id==person_id, suspension_request.c.device_id==device_id))
-        query = db.session.execute(select_statement)
+        select_statement = db.select([suspension_request.c.suspension_end]).where(db.and_(suspension_request.c.person_id == person_id, suspension_request.c.device_id == device_id))
+        result = db.session.execute(select_statement).scalar()
 
-        # result
-        query = query.first()
-
-        # append automation body as json
-        if query != None:
-            expire_date = query.suspension_end
-            automation_body3 = automation_body1
-            automation_body3["expiration"] = expire_date
-            device_info["automation"] = automation_body3
+        if result != None:
+            automation_body = {
+                'suspend': "True",
+                'expiration': result
+            }
+            device_info["automation"] = automation_body
         else:
+            automation_body2 = {
+                'suspend': "False",
+            }
             device_info["automation"] = automation_body2
-        
+
         # concat new information(automation) with device information
         response.append(device_info)
-
     # return json
     return jsonify({'devices': response})
+
 
 # endpoint to list scheduled shutdowns for specified person
 @app.route("/ListScheduledShutdowns/<person_id>", methods=['GET'])
