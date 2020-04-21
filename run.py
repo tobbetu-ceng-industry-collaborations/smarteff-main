@@ -8,11 +8,7 @@ import dash_html_components as html
 import json
 import random
 import requests
-
-
-
-
-
+from werkzeug.utils import redirect
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 response = requests.get("https://smarteff.herokuapp.com/ListPersons")
@@ -155,7 +151,7 @@ app.layout = html.Div(children=[
     html.Div(children='''
       
     ''', style={'color': 'black', 'fontSize': 30, 'marginLeft': 600}),
-    html.Div(id='display-options', style={'backgroundColor':'Grey', 'color': 'yellow', 'width': '20%','heigth': '20%','fontSize': 25, 'marginLeft': 550}),
+    html.Div(id='display-options', style={'color': 'black', 'width': '20%','heigth': '20%','fontSize': 25, 'marginLeft': 550}),
 
     html.Div(children='''
         Inside/Outside
@@ -347,7 +343,7 @@ def exit_event(n_clicks, value, value3, value2):
 def update_input(value, n_clicks):
     if value in outside:
         return "outside"
-    if value in inside:
+    elif value in inside:
         return "inside"
     else:
         return "-"

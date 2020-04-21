@@ -40,26 +40,26 @@ app.layout = html.Div(style={'backgroundColor': colors['background'],'display': 
 
     html.Div(children='''
             Select event
-        ''', style={'color': 'black', 'fontSize': 20, 'display': 'inline-block'}),
+        ''', style={'color': 'black', 'fontSize': 30, 'display': 'inline-block'}),
 
         dcc.Dropdown(id='input-box1',
                      options=[{ 'label': event, 'value': event} for event in tut],
                      value='x',
-                     style={'width': '50%'}
+                     style={'heigth': '50%' , 'width': '65%', 'fontSize': 25}
                      ),
 
-    html.Div(id='output-of-selection',children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
-    html.Div(id='output-of-selection2',children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
-    html.Div(id='output-of-selection3',children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
+    html.Div(id='output-of-selection',children=" ", style={'color': 'Black', 'fontSize': 25, 'marginLeft': 500}),
+    html.Div(id='output-of-selection2',children=" ", style={'color': 'Black', 'fontSize': 25, 'marginLeft': 500}),
+    html.Div(id='output-of-selection3',children=" ", style={'color': 'Black', 'fontSize': 25, 'marginLeft': 500}),
     html.Div(id='output-of-selection_dump',children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
     html.Div(id='output-of-selection_dump2',children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
-    html.Button('Delete', id='button1', style={'marginLeft': 500}),
-    html.Button('Insert After', id='button2', style={'marginLeft': 10}),
-    html.Button('Insert Before', id='button3', style={'marginLeft': 10}),
+    html.Button('Delete', id='button1', style={'marginLeft': 500,'fontSize': 18}),
+    html.Button('Insert After', id='button2', style={'marginLeft': 10,'fontSize': 18}),
+    html.Button('Insert Before', id='button3', style={'marginLeft': 10,'fontSize': 18}),
 
     html.H1(dcc.Input(id='input-box-event', type='text', value="Enter the event here: (with format ID,Event,Time)",
                       style={'width': '100%'}),
-            style={'opacity': '1', 'color': 'black', 'fontSize': 15, 'marginLeft': 500}),
+            style={'opacity': '1', 'color': 'black', 'fontSize': 18, 'marginLeft': 500}),
 
     html.Div(id='output-of-buttons', children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
     html.Div(id='output-of-buttons2', children=" ", style={'color': 'Black', 'fontSize': 18, 'marginLeft': 500}),
